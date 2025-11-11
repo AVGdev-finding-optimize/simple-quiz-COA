@@ -9,7 +9,7 @@
       "Máy tính lớn, Máy tính mini, Vi máy tính"
     ],
     "answer": 1,
-    [cite_start]"explanation": "Bài giảng 01.pdf (trang 5) phân loại máy tính thành: Máy tính để bàn (Desktop), Máy chủ (Server), và Máy tính nhúng (Embedded). [cite: 25, 28, 32]"
+    "explanation": "Bài giảng 01.pdf (trang 5) phân loại máy tính thành: Máy tính để bàn (Desktop), Máy chủ (Server), và Máy tính nhúng (Embedded). [cite: 25, 28, 32]"
   },
   {
     "type": "msq",
@@ -21,13 +21,13 @@
       "Input/Output (Vào/Ra)"
     ],
     "answer": [0, 1, 3],
-    "explanation": "Sơ đồ 'Components of a Computer' (slide 6) cho thấy Processor, Memory, và Input/Output là các thành phần phần cứng cốt lõi. [cite_start]Trình biên dịch là một phần của phần mềm. [cite: 36]"
+    "explanation": "Sơ đồ 'Components of a Computer' (slide 6) cho thấy Processor, Memory, và Input/Output là các thành phần phần cứng cốt lõi. Trình biên dịch là một phần của phần mềm. [cite: 36]"
   },
   {
     "type": "fitb",
-    [cite_start]"question": "Giao diện giữa phần cứng và phần mềm lớp thấp (low-level software) được gọi là ... [cite: 267, 268]",
+    "question": "Giao diện giữa phần cứng và phần mềm lớp thấp (low-level software) được gọi là ... [cite: 267, 268]",
     "answer": "Instruction Set Architecture (ISA)",
-    [cite_start]"explanation": "Kiến trúc tập lệnh (ISA) định nghĩa giao diện giữa phần cứng và phần mềm, chuẩn hóa các lệnh. [cite: 267, 268, 289]"
+    "explanation": "Kiến trúc tập lệnh (ISA) định nghĩa giao diện giữa phần cứng và phần mềm, chuẩn hóa các lệnh. [cite: 267, 268, 289]"
   },
   {
     "type": "mcq",
@@ -39,7 +39,7 @@
       "DVD"
     ],
     "answer": 2,
-    [cite_start]"explanation": "RAM là bộ nhớ 'volatile' (khả biến), nghĩa là nó mất dữ liệu khi tắt nguồn, trong khi đĩa từ và bộ nhớ flash là 'non-volatile'. [cite: 169, 170, 171, 172, 173]"
+    "explanation": "RAM là bộ nhớ 'volatile' (khả biến), nghĩa là nó mất dữ liệu khi tắt nguồn, trong khi đĩa từ và bộ nhớ flash là 'non-volatile'. [cite: 169, 170, 171, 172, 173]"
   },
   {
     "type": "mcq",
@@ -51,7 +51,7 @@
       "Chỉ dựa trên dung lượng"
     ],
     "answer": 1,
-    [cite_start]"explanation": "Hệ thống phân cấp bộ nhớ đi từ cấp cao nhất (Upper Level) là nhanh nhất, nhỏ nhất (như thanh ghi) đến cấp thấp nhất (Lower Level) là chậm nhất, lớn nhất (như đĩa). [cite: 183, 184]"
+    "explanation": "Hệ thống phân cấp bộ nhớ đi từ cấp cao nhất (Upper Level) là nhanh nhất, nhỏ nhất (như thanh ghi) đến cấp thấp nhất (Lower Level) là chậm nhất, lớn nhất (như đĩa). [cite: 183, 184]"
   },
   {
     "type": "mcq",
@@ -63,7 +63,7 @@
       "Idempotent law (Luật lũy đẳng)"
     ],
     "answer": 2,
-    [cite_start]"explanation": "Luật 0 và 1 (Zero and One laws) định nghĩa các tính chất của 0 và 1, bao gồm $A + 1 = 1$ và $A \\cdot 0 = 0$. [cite: 480, 481, 482]"
+    "explanation": "Luật 0 và 1 (Zero and One laws) định nghĩa các tính chất của 0 và 1, bao gồm $A + 1 = 1$ và $A \\cdot 0 = 0$. [cite: 480, 481, 482]"
   },
   {
     "type": "mcq",
@@ -75,7 +75,7 @@
       "$A + B$"
     ],
     "answer": 1,
-    [cite_start]"explanation": "Luật DeMorgan phát biểu: $\\overline{(A + B)} = \\overline{A} \\cdot \\overline{B}$. [cite: 499, 501]"
+    "explanation": "Luật DeMorgan phát biểu: $\\overline{(A + B)} = \\overline{A} \\cdot \\overline{B}$. [cite: 499, 501]"
   },
   {
     "type": "mcq",
@@ -87,7 +87,7 @@
       "AND"
     ],
     "answer": 3,
-    [cite_start]"explanation": "Phép toán AND (HỘI) chỉ trả về '1' nếu cả hai toán hạng (A và B) đều là '1'. [cite: 431, 433]"
+    "explanation": "Phép toán AND (HỘI) chỉ trả về '1' nếu cả hai toán hạng (A và B) đều là '1'. [cite: 431, 433]"
   },
   {
     "type": "mcq",
@@ -99,7 +99,7 @@
       "XNOR"
     ],
     "answer": 0,
-    "explanation": "Biểu thức cho XOR là $(\\overline{A} \\cdot B) + (A \\cdot \\overline{B})$. [cite_start]Tuy nhiên, slide 21 có lỗi cú pháp, nếu diễn giải biểu thức là $(\\overline{A} \cdot B) + (A \cdot \overline{B})$ thì đó là XOR. [cite: 545, 546, 548, 549]"
+    "explanation": "Biểu thức cho XOR là $(\\overline{A} \\cdot B) + (A \\cdot \\overline{B})$. Tuy nhiên, slide 21 có lỗi cú pháp, nếu diễn giải biểu thức là $(\\overline{A} \cdot B) + (A \cdot \overline{B})$ thì đó là XOR. [cite: 545, 546, 548, 549]"
   },
   {
     "type": "mcq",
@@ -111,7 +111,7 @@
       "Flip-Flop"
     ],
     "answer": 1,
-    [cite_start]"explanation": "Mạch tổ hợp (Combinatorial logic circuits) có đầu ra phụ thuộc hoàn toàn vào các đầu vào hiện tại của chúng. [cite: 1119, 1120]"
+    "explanation": "Mạch tổ hợp (Combinatorial logic circuits) có đầu ra phụ thuộc hoàn toàn vào các đầu vào hiện tại của chúng. [cite: 1119, 1120]"
   },
   {
     "type": "mcq",
@@ -123,13 +123,13 @@
       "Cả mức và cạnh"
     ],
     "answer": 2,
-    [cite_start]"explanation": "Latches lưu trữ dữ liệu khi clock ở một mức nhất định (ví dụ: mức cao hoặc mức thấp), do đó chúng là 'level triggered'. [cite: 1046, 1047]"
+    "explanation": "Latches lưu trữ dữ liệu khi clock ở một mức nhất định (ví dụ: mức cao hoặc mức thấp), do đó chúng là 'level triggered'. [cite: 1046, 1047]"
   },
   {
     "type": "fitb",
     "question": "Một D-Flip Flop là một D-Latch được kích hoạt bằng ...",
     "answer": "cạnh (edge triggered)",
-    [cite_start]"explanation": "Một D-Flip Flop là một D-Latch được kích hoạt bằng cạnh (edge triggered), nghĩa là nó chỉ lưu trữ dữ liệu vào thời điểm cạnh lên hoặc cạnh xuống của clock. [cite: 1078]"
+    "explanation": "Một D-Flip Flop là một D-Latch được kích hoạt bằng cạnh (edge triggered), nghĩa là nó chỉ lưu trữ dữ liệu vào thời điểm cạnh lên hoặc cạnh xuống của clock. [cite: 1078]"
   },
   {
     "type": "mcq",
@@ -141,7 +141,7 @@
       "8"
     ],
     "answer": 2,
-    "explanation": "Để chọn 1 trong N đầu vào, Mux cần k đường chọn sao cho $2^k \\ge N$. [cite_start]Để chọn 1 trong 8, ta cần $2^k \\ge 8$, vậy k=3. [cite: 898, 899]"
+    "explanation": "Để chọn 1 trong N đầu vào, Mux cần k đường chọn sao cho $2^k \\ge N$. Để chọn 1 trong 8, ta cần $2^k \\ge 8$, vậy k=3. [cite: 898, 899]"
   },
   {
     "type": "mcq",
@@ -153,7 +153,7 @@
       "14"
     ],
     "answer": 2,
-    [cite_start]"explanation": "$1100_2 = (1 \\times 2^3) + (1 \\times 2^2) + (0 \\times 2^1) + (0 \\times 2^0) = 8 + 4 + 0 + 0 = 12_{10}$. [cite: 1535]"
+    "explanation": "$1100_2 = (1 \\times 2^3) + (1 \\times 2^2) + (0 \\times 2^1) + (0 \\times 2^0) = 8 + 4 + 0 + 0 = 12_{10}$. [cite: 1535]"
   },
   {
     "type": "mcq",
@@ -165,7 +165,7 @@
       "2560"
     ],
     "answer": 0,
-    [cite_start]"explanation": "$A8F_{16} = (10 \\times 16^2) + (8 \\times 16^1) + (15 \\times 16^0) = (10 \\times 256) + (8 \\times 16) + (15 \\times 1) = 2560 + 128 + 15 = 2703_{10}$. [cite: 1574]"
+    "explanation": "$A8F_{16} = (10 \\times 16^2) + (8 \\times 16^1) + (15 \\times 16^0) = (10 \\times 256) + (8 \\times 16) + (15 \\times 1) = 2560 + 128 + 15 = 2703_{10}$. [cite: 1574]"
   },
   {
     "type": "mcq",
@@ -189,7 +189,7 @@
       "Hai bộ cộng bán phần và một bộ cộng toàn phần"
     ],
     "answer": 2,
-    "explanation": "Một bộ cộng Ripple Carry n-bit cần n bộ cộng toàn phần (Full-Adder). [cite_start]Bit Cin đầu tiên có thể là 0. [cite: 1601, 1605]"
+    "explanation": "Một bộ cộng Ripple Carry n-bit cần n bộ cộng toàn phần (Full-Adder). Bit Cin đầu tiên có thể là 0. [cite: 1601, 1605]"
   },
   {
     "type": "msq",
@@ -201,7 +201,7 @@
       "Nhân các số mũ (Multiply exponents)"
     ],
     "answer": [0, 1, 2],
-    "explanation": "Các bước bao gồm gióng hàng dấu chấm (bằng cách dịch chuyển số có số mũ nhỏ hơn), cộng các phần định trị, sau đó chuẩn hóa và làm tròn kết quả. [cite_start]Các số mũ được cộng (không phải nhân). [cite: 1694, 1696, 1699]"
+    "explanation": "Các bước bao gồm gióng hàng dấu chấm (bằng cách dịch chuyển số có số mũ nhỏ hơn), cộng các phần định trị, sau đó chuẩn hóa và làm tròn kết quả. Các số mũ được cộng (không phải nhân). [cite: 1694, 1696, 1699]"
   },
   {
     "type": "mcq",
@@ -213,12 +213,12 @@
       "Number-Approx-Nil"
     ],
     "answer": 1,
-    [cite_start]"explanation": "NaN là viết tắt của Not-a-Number (Không phải là số), dùng để chỉ các kết quả không hợp lệ hoặc không xác định như 0.0 / 0.0. [cite: 1693]"
+    "explanation": "NaN là viết tắt của Not-a-Number (Không phải là số), dùng để chỉ các kết quả không hợp lệ hoặc không xác định như 0.0 / 0.0. [cite: 1693]"
   },
   {
     "type": "fitb",
     "question": "Một bus dữ liệu 64-bit có bus clock 800Mhz và một thao tác R/W mất 4 chu kỳ. Tốc độ truyền dữ liệu (tính bằng Bps) là ...",
     "answer": "1.600.000.000 Bps",
-    "explanation": "Số lượt truyền/giây = $(800 \times 10^6) / 4 = 200 \times 10^6$. Kích thước truyền = 64 bit = 8 bytes. [cite_start]Tốc độ = $(200 \times 10^6) \times 8 = 1.600.000.000$ Bps (hay 1600 MBps). [cite: 1022, 1023, 1024]"
+    "explanation": "Số lượt truyền/giây = $(800 \times 10^6) / 4 = 200 \times 10^6$. Kích thước truyền = 64 bit = 8 bytes. Tốc độ = $(200 \times 10^6) \times 8 = 1.600.000.000$ Bps (hay 1600 MBps). [cite: 1022, 1023, 1024]"
   }
 ]
