@@ -1,0 +1,423 @@
+[
+  {
+    "type": "mcq",
+    "question": "Trong các lớp máy tính được thảo luận, lớp nào có yêu cầu khắt khe nhất về chi phí (cost) và tiêu thụ năng lượng (power)?",
+    "options": [
+      "Desktop computers",
+      "Server computers",
+      "Embedded computers",
+      "Supercomputers"
+    ],
+    "answer": 2,
+    "explanation": "Máy tính nhúng (Embedded computers) thường được sản xuất với số lượng lớn và dùng trong các thiết bị di động, do đó có yêu cầu rất khắt khe về chi phí và năng lượng. (Nguồn: Slide 01.pdf, Trang 5)"
+  },
+  {
+    "type": "msq",
+    "question": "Theo bài giảng, ba lớp máy tính chính (classes of computers) là gì?",
+    "options": [
+      "Mainframe computers",
+      "Desktop computers",
+      "Server computers",
+      "Embedded computers"
+    ],
+    "answer": [1, 2, 3],
+    "explanation": "Bài giảng phân loại máy tính thành ba lớp chính: Máy tính để bàn (Desktop), Máy chủ (Server), và Máy tính nhúng (Embedded). (Nguồn: Slide 01.pdf, Trang 5)"
+  },
+  {
+    "type": "fitb",
+    "question": "Kiến trúc tập lệnh (ISA) định nghĩa ranh giới giao tiếp (interface) giữa ... và ...",
+    "answer": "phần cứng, phần mềm",
+    "explanation": "ISA (Instruction Set Architecture) là giao diện quan trọng giữa phần cứng và phần mềm cấp thấp. (Nguồn: Slide 01.pdf, Trang 18)"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo định nghĩa đơn giản trong bài giảng, Kiến trúc máy tính (Computer Architecture) là sự kết hợp của hai yếu tố nào?",
+    "options": [
+      "Phần cứng và Hệ điều hành",
+      "ISA và Tổ chức máy (Machine Organization)",
+      "ALU và Bộ nhớ",
+      "Trình biên dịch và ISA"
+    ],
+    "answer": 1,
+    "explanation": "Một định nghĩa đơn giản cho Kiến trúc máy tính là: Kiến trúc tập lệnh (ISA) + Tổ chức máy (Machine Organization). (Nguồn: Slide 01.pdf, Trang 16)"
+  },
+  {
+    "type": "msq",
+    "question": "Các thành phần cơ bản của một máy tính theo mô hình trong bài giảng bao gồm?",
+    "options": [
+      "Processor (Bộ xử lý)",
+      "Memory (Bộ nhớ)",
+      "Input (Đầu vào)",
+      "Output (Đầu ra)",
+      "Network (Mạng)"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "Các thành phần cơ bản bao gồm Input, Output, Memory, và Processor (Processor bao gồm Datapath và Control). Network là một thành phần mở rộng. (Nguồn: Slide 01.pdf, Trang 6)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong hệ thống phân cấp bộ nhớ (Memory Hierarchy), loại bộ nhớ nào có thời gian truy cập nhanh nhất?",
+    "options": [
+      "Main Memory (Bộ nhớ chính)",
+      "L2 Cache",
+      "Registers (Thanh ghi)",
+      "Magnetic Disk (Đĩa từ)"
+    ],
+    "answer": 2,
+    "explanation": "Thanh ghi (CPU Registers) nằm ở đỉnh của hệ thống phân cấp, có dung lượng nhỏ nhất nhưng tốc độ truy cập nhanh nhất (tính bằng picoseconds). (Nguồn: Slide 01.pdf, Trang 19)"
+  },
+  {
+    "type": "fitb",
+    "question": "Trình biên dịch (Compiler) là một phần của 'Phần mềm hệ thống' (System Software) có nhiệm vụ dịch ngôn ngữ bậc cao sang ...",
+    "answer": "mã máy",
+    "explanation": "Trình biên dịch (Compiler) dịch mã nguồn ngôn ngữ bậc cao (HLL) sang mã máy (machine code) để phần cứng có thể thực thi. (Nguồn: Slide 01.pdf, Trang 20 & 30)"
+  },
+  {
+    "type": "mcq",
+    "question": "Chuyển số nhị phân 101101_2 sang hệ thập phân:",
+    "options": [
+      "42",
+      "45",
+      "53",
+      "37"
+    ],
+    "answer": 1,
+    "explanation": "1*2^5 + 0*2^4 + 1*2^3 + 1*2^2 + 0*2^1 + 1*2^0 = 32 + 0 + 8 + 4 + 0 + 1 = 45. (Nguồn: Slide 02.pdf, Trang 86-115)"
+  },
+  {
+    "type": "mcq",
+    "question": "Chuyển số thập phân 29_10 sang hệ thập lục phân (hexadecimal):",
+    "options": [
+      "1C",
+      "1E",
+      "1D",
+      "29"
+    ],
+    "answer": 2,
+    "explanation": "29 / 16 = 1 dư 13 (D). 1 / 16 = 0 dư 1. Viết ngược lại ta được 1D_16. (Nguồn: Slide 02.pdf, Trang 131-139)"
+  },
+  {
+    "type": "fitb",
+    "question": "Biểu diễn số -5_10 bằng phương pháp bù 2 (2's complement) 8-bit là ...",
+    "answer": "11111011",
+    "explanation": "Số 5 (8-bit) là 00000101. Đảo bit (bù 1) được 11111010. Cộng 1 (bù 2) được 11111011. (Nguồn: Slide 02.pdf, Trang 184)"
+  },
+  {
+    "type": "msq",
+    "question": "Các phương pháp biểu diễn số nguyên có dấu (signed integer) phổ biến nào được đề cập trong bài giảng?",
+    "options": [
+      "Sign-bit Magnitude (Dấu và độ lớn)",
+      "1's Complement (Bù 1)",
+      "2's Complement (Bù 2)",
+      "Biased (Thiên vị)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Bài giảng liệt kê 3 phương pháp chính cho số nguyên có dấu: Sign-bit Magnitude, 1's Complement, và 2's Complement. Biased dùng cho phần mũ của số floating point. (Nguồn: Slide 02.pdf, Trang 83)"
+  },
+  {
+    "type": "mcq",
+    "question": "Luật DeMorgan cho biểu thức (A + B) ngang là gì?",
+    "options": [
+      "A ngang + B ngang",
+      "A.B",
+      "A ngang . B ngang",
+      "A + B ngang"
+    ],
+    "answer": 2,
+    "explanation": "Theo luật DeMorgan, phủ định của một tổng bằng tích các phủ định: (A + B) ngang = A ngang . B ngang. (Nguồn: Slide 02.pdf, Trang 15)"
+  },
+  {
+    "type": "fitb",
+    "question": "Trong Đại số Boole, luật A + (B . C) = (A + B) . (A + C) được gọi là luật ...",
+    "answer": "Phân phối",
+    "explanation": "Đây là luật phân phối (Distributive law) của phép OR đối với phép AND. (Nguồn: Slide 02.pdf, Trang 15)"
+  },
+  {
+    "type": "mcq",
+    "question": "Cổng logic nào cho đầu ra là 0 CHỈ KHI tất cả các đầu vào là 0?",
+    "options": [
+      "AND",
+      "OR",
+      "NAND",
+      "XOR"
+    ],
+    "answer": 1,
+    "explanation": "Cổng OR (hoặc) chỉ cho ra 0 khi tất cả các đầu vào của nó là 0. (Nguồn: Slide 02.pdf, Trang 10)"
+  },
+  {
+    "type": "mcq",
+    "question": "Một bộ Mux 8-to-1 (Multiplexer) cần bao nhiêu đường tín hiệu chọn (select lines)?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Số đường chọn k cần thiết cho N đầu vào là k = log2(N). Do đó, log2(8) = 3 đường chọn. (Nguồn: Slide 02.pdf, Trang 49)"
+  },
+  {
+    "type": "msq",
+    "question": "Các mạch logic nào sau đây là mạch logic tuần tự (Sequential Logic - có khả năng lưu trữ trạng thái)?",
+    "options": [
+      "D-Latch",
+      "Full Adder",
+      "D-Flip Flop",
+      "Decoder"
+    ],
+    "answer": [0, 2],
+    "explanation": "Latch và Flip-Flop là các phần tử nhớ cơ bản, thuộc logic tuần tự. Full Adder và Decoder là các mạch logic tổ hợp (combinatorial). (Nguồn: Slide 02.pdf, Trang 61-68)"
+  },
+  {
+    "type": "fitb",
+    "question": "Độ trễ của đường dài nhất từ đầu vào đến đầu ra trong một mạch logic tổ hợp được gọi là ...",
+    "answer": "đường tới hạn",
+    "explanation": "Đây là định nghĩa của đường tới hạn (critical path), nó quyết định độ trễ truyền (propagation delay) của toàn mạch. (Nguồn: Slide 02.pdf, Trang 53)"
+  },
+  {
+    "type": "mcq",
+    "question": "(Tính toán) Một máy tính có data bus 64 bit. Một thao tác đọc/ghi RAM mất 4 chu kỳ. Bus clock là 800Mhz. Tốc độ truyền dữ liệu (data transfer rate) tối đa là bao nhiêu?",
+    "options": [
+      "800 MB/s",
+      "1600 MB/s",
+      "3200 MB/s",
+      "6400 MB/s"
+    ],
+    "answer": 1,
+    "explanation": "Số lượt truyền mỗi giây = 800 * 10^6 Hz / 4 chu kỳ = 200 * 10^6 lượt/giây. Mỗi lượt truyền 64 bit = 8 Bytes. Tốc độ = 200 * 10^6 * 8 = 1,600 * 10^6 B/s = 1600 MB/s. (Nguồn: Slide 02.pdf, Trang 59)"
+  },
+  {
+    "type": "fitb",
+    "question": "Trong biểu diễn số thực dấu phẩy động IEEE 754 32-bit (single precision), giá trị bias của phần mũ là ...",
+    "answer": "127",
+    "explanation": "Chuẩn IEEE 754 32-bit sử dụng 8 bit cho phần mũ với giá trị bias là 127. (Nguồn: Hennessy & Patterson, 4th Ed., Trang I-15; Slide 02.pdf cũng ngụ ý điều này ở trang 223)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong biểu diễn số thực dấu phẩy động IEEE 754 64-bit (double precision), phần định trị (fraction/mantissa) sử dụng bao nhiêu bit?",
+    "options": [
+      "11 bit",
+      "23 bit",
+      "52 bit",
+      "64 bit"
+    ],
+    "answer": 2,
+    "explanation": "Chuẩn IEEE 754 64-bit sử dụng 1 bit dấu, 11 bit mũ (exponent) và 52 bit định trị (fraction). (Nguồn: Slide 02.pdf, Trang 220)"
+  },
+  {
+    "type": "fitb",
+    "question": "Hiện tượng khi kết quả của một phép cộng nhị phân vượt quá khả năng biểu diễn của số bit cho phép được gọi là ...",
+    "answer": "tràn số",
+    "explanation": "Đây là định nghĩa của hiện tượng tràn số (Overflow). (Nguồn: Slide 02.pdf, Trang 166)"
+  },
+  {
+    "type": "mcq",
+    "question": "Bộ nhớ RAM (Random Access Memory) là loại bộ nhớ gì?",
+    "options": [
+      "Khả biến (Volatile)",
+      "Bất biến (Non-volatile)",
+      "Chỉ đọc (Read-only)",
+      "Truy cập tuần tự (Sequential)"
+    ],
+    "answer": 0,
+    "explanation": "RAM là bộ nhớ khả biến (volatile), nghĩa là nó mất dữ liệu khi mất nguồn điện. (Nguồn: Slide 01.pdf, Trang 18)"
+  },
+  {
+    "type": "mcq",
+    "question": "(Tính toán) Chuyển số thập phân 100_10 sang hệ nhị phân:",
+    "options": [
+      "1100100",
+      "1010100",
+      "1100010",
+      "1110010"
+    ],
+    "answer": 0,
+    "explanation": "100 / 2 = 50 (dư 0); 50 / 2 = 25 (dư 0); 25 / 2 = 12 (dư 1); 12 / 2 = 6 (dư 0); 6 / 2 = 3 (dư 0); 3 / 2 = 1 (dư 1); 1 / 2 = 0 (dư 1). Viết ngược lại: 1100100_2. (Nguồn: Slide 02.pdf, Trang 87-107)"
+  },
+  {
+    "type": "mcq",
+    "question": "Kiến trúc tập lệnh (ISA) của một máy tính RISC (Reduced Instruction Set Computer) thường có đặc điểm gì?",
+    "options": [
+      "Số lượng lệnh lớn và phức tạp",
+      "Nhiều chế độ địa chỉ phức tạp",
+      "Tất cả các lệnh có độ dài cố định",
+      "Hầu hết các lệnh đều có thể truy cập bộ nhớ"
+    ],
+    "answer": 2,
+    "explanation": "Kiến trúc RISC nhấn mạnh vào các lệnh đơn giản và có độ dài cố định để dễ dàng cho việc thực thi pipeline. (Nguồn: Hennessy & Patterson, 4th Ed., Trang B-45)"
+  },
+  {
+    "type": "msq",
+    "question": "Các phương pháp tiếp cận chính để khai thác song song mức lệnh (ILP - Instruction-Level Parallelism) là gì?",
+    "options": [
+      "Dựa trên phần cứng (Dynamic scheduling)",
+      "Dựa trên phần mềm (Static scheduling)",
+      "Dựa trên đa luồng (Multithreading)",
+      "Dựa trên đa xử lý (Multiprocessing)"
+    ],
+    "answer": [0, 1],
+    "explanation": "Hai cách tiếp cận chính để khai thác ILP là dựa trên phần cứng (lập lịch động, vd: Tomasulo) và dựa trên phần mềm (lập lịch tĩnh, vd: VLIW). (Nguồn: Hennessy & Patterson, 4th Ed., Trang 66)"
+  },
+  {
+    "type": "mcq",
+    "question": "Định luật Amdahl (Amdahl's Law) được sử dụng để tính toán điều gì?",
+    "options": [
+      "Xác suất lỗi của hệ thống",
+      "Sự tăng tốc (speedup) tối đa có thể đạt được khi cải thiện một phần của hệ thống",
+      "Hiệu suất năng lượng của bộ xử lý",
+      "Dung lượng bộ nhớ cache cần thiết"
+    ],
+    "answer": 1,
+    "explanation": "Định luật Amdahl định nghĩa sự tăng tốc có thể đạt được bằng cách sử dụng một chế độ thực thi nhanh hơn bị giới hạn bởi phần trăm thời gian mà chế độ nhanh hơn đó có thể được sử dụng. (Nguồn: Hennessy & Patterson, 4th Ed., Trang 39)"
+  },
+  {
+    "type": "fitb",
+    "question": "Trong một hệ thống đa xử lý, cơ chế phần cứng đảm bảo rằng tất cả các bộ xử lý thấy cùng một giá trị cho cùng một địa chỉ bộ nhớ được gọi là ...",
+    "answer": "đồng bộ cache",
+    "explanation": "Đồng bộ cache (Cache Coherence) là cơ chế đảm bảo tính nhất quán của dữ liệu được chia sẻ và lưu trữ trong nhiều cache cục bộ. (Nguồn: Hennessy & Patterson, 4th Ed., Trang 206)"
+  },
+  {
+    "type": "mcq",
+    "question": "Năng lượng tiêu thụ chủ yếu trong các chip CMOS khi các transistor đang tích cực chuyển mạch được gọi là gì?",
+    "options": [
+      "Năng lượng tĩnh (Static power)",
+      "Năng lượng rò rỉ (Leakage power)",
+      "Năng lượng động (Dynamic power)",
+      "Năng lượng nhiệt (Thermal power)"
+    ],
+    "answer": 2,
+    "explanation": "Nguồn tiêu thụ năng lượng chủ yếu truyền thống trong CMOS là do chuyển mạch transistor, được gọi là năng lượng động (Dynamic power). (Nguồn: Hennessy & Patterson, 4th Ed., Trang 18)"
+  },
+  {
+    "type": "msq",
+    "question": "Hệ điều hành (Operating System) là một phần của phần mềm hệ thống và có các nhiệm vụ chính nào?",
+    "options": [
+      "Quản lý bộ nhớ và lưu trữ",
+      "Biên dịch mã nguồn",
+      "Lên lịch tác vụ và chia sẻ tài nguyên",
+      "Xử lý các thao tác Vào/Ra (Input/Output)"
+    ],
+    "answer": [0, 2, 3],
+    "explanation": "Hệ điều hành quản lý I/O, quản lý bộ nhớ/lưu trữ, và lên lịch tác vụ/chia sẻ tài nguyên. Biên dịch mã là nhiệm vụ của Trình biên dịch (Compiler). (Nguồn: Slide 01.pdf, Trang 29)"
+  },
+  {
+    "type": "mcq",
+    "question": "Tín hiệu đồng hồ (Clock) 1 GHz có chu kỳ (period) là bao nhiêu?",
+    "options": [
+      "10 nanoseconds",
+      "1 nanosecond",
+      "100 nanoseconds",
+      "0.1 nanosecond"
+    ],
+    "answer": 1,
+    "explanation": "Tần số (Frequency) = 1 / Chu kỳ (Period). Do đó, Chu kỳ = 1 / Tần số = 1 / (1 * 10^9 Hz) = 1 * 10^-9 giây = 1 nanosecond. (Nguồn: Slide 02.pdf, Trang 57)"
+  },
+  {
+    "type": "fitb",
+    "question": "Tần số (Frequency) của clock được tính bằng 1 chia cho ... của clock.",
+    "answer": "Chu kỳ",
+    "explanation": "Frequency = 1 / Period. (Nguồn: Slide 02.pdf, Trang 57)"
+  },
+  {
+    "type": "mcq",
+    "question": "Phép toán logic 'A XOR B' (còn được viết là A ⊕ B) cho kết quả là 1 khi nào?",
+    "options": [
+      "Khi cả A và B đều là 1",
+      "Khi cả A và B đều là 0",
+      "Khi A và B khác nhau",
+      "Khi A và B giống nhau"
+    ],
+    "answer": 2,
+    "explanation": "XOR (Exclusive-OR) cho ra 1 chỉ khi các đầu vào của nó khác nhau (một đầu vào là 1 và đầu vào kia là 0). (Nguồn: Slide 02.pdf, Trang 21-22)"
+  },
+  {
+    "type": "msq",
+    "question": "Trong hệ thống phân cấp bộ nhớ (Memory Hierarchy), các đặc điểm nào sau đây thường đúng khi di chuyển từ cấp thấp (ví dụ: Đĩa) lên cấp cao (ví dụ: Thanh ghi)?",
+    "options": [
+      "Dung lượng (Capacity) tăng lên",
+      "Thời gian truy cập (Access Time) giảm xuống",
+      "Chi phí mỗi bit (Cost per bit) tăng lên",
+      "Tính bất biến (Non-volatility) tăng lên"
+    ],
+    "answer": [1, 2],
+    "explanation": "Khi đi lên các cấp cao hơn (gần CPU hơn), bộ nhớ trở nên nhanh hơn (thời gian truy cập giảm) và đắt hơn (chi phí/bit tăng), nhưng dung lượng lại nhỏ hơn. (Nguồn: Slide 01.pdf, Trang 19)"
+  },
+  {
+    "type": "mcq",
+    "question": "(Tính toán) Chuyển số bát phân 75_8 sang hệ thập phân:",
+    "options": [
+      "61",
+      "75",
+      "57",
+      "123"
+    ],
+    "answer": 0,
+    "explanation": "7 * 8^1 + 5 * 8^0 = 56 + 5 = 61. (Nguồn: Slide 02.pdf, Trang 126)"
+  },
+  {
+    "type": "mcq",
+    "question": "Tín hiệu nào sau đây được sử dụng để đồng bộ hóa các hoạt động I/O và các thành phần trong mạch logic tuần tự?",
+    "options": [
+      "Tín hiệu Dữ liệu (Data signal)",
+      "Tín hiệu Địa chỉ (Address signal)",
+      "Tín hiệu Điều khiển (Control signal)",
+      "Tín hiệu Đồng hồ (Clock)"
+    ],
+    "answer": 3,
+    "explanation": "Tín hiệu Đồng hồ (Clock) được sử dụng để đồng bộ hóa I/O và đảm bảo các giá trị không bị lưu trữ khi chúng đang ở trạng thái chuyển tiếp (transient). (Nguồn: Slide 02.pdf, Trang 57)"
+  },
+  {
+    "type": "msq",
+    "question": "Các thành phần nào sau đây là cần thiết để xây dựng một mạch Half Adder (bộ cộng bán phần)?",
+    "options": [
+      "Một cổng XOR",
+      "Một cổng AND",
+      "Một cổng OR",
+      "Một cổng NOT"
+    ],
+    "answer": [0, 1],
+    "explanation": "Một Half Adder tính tổng (Sum) bằng cổng XOR (Sum = A ⊕ B) và tính bit nhớ (Carry) bằng cổng AND (Cout = A . B). (Nguồn: Slide 02.pdf, Trang 159)"
+  },
+  {
+    "type": "mcq",
+    "question": "(Tính toán) Một máy tính có bus clock 400Mhz. Một thao tác đọc/ghi RAM mất 4 chu kỳ. Bus dữ liệu rộng 64 bit. Tốc độ truyền dữ liệu là bao nhiêu?",
+    "options": [
+      "1600 MB/s",
+      "400 MB/s",
+      "800 MB/s",
+      "100 MB/s"
+    ],
+    "answer": 2,
+    "explanation": "Số lượt truyền mỗi giây = 400 * 10^6 Hz / 4 chu kỳ = 100 * 10^6 lượt/giây. Mỗi lượt truyền 64 bit = 8 Bytes. Tốc độ = 100 * 10^6 * 8 = 800 * 10^6 B/s = 800 MB/s. (Nguồn: Dựa trên logic của Slide 02.pdf, Trang 59)"
+  },
+  {
+    "type": "mcq",
+    "question": "Cấp độ nào của mã chương trình (Levels of Program Code) có tính di động (portability) cao nhất giữa các kiến trúc máy tính khác nhau?",
+    "options": [
+      "Ngôn ngữ bậc cao (High-level language)",
+      "Ngôn ngữ Assembly (Assembly language)",
+      "Ngôn ngữ máy nhị phân (Binary machine language)",
+      "Microcode"
+    ],
+    "answer": 0,
+    "explanation": "Ngôn ngữ bậc cao cung cấp năng suất và tính di động (productivity and portability), vì nó có thể được biên dịch cho nhiều kiến trúc phần cứng khác nhau. (Nguồn: Slide 01.pdf, Trang 30)"
+  },
+  {
+    "type": "mcq",
+    "question": "Một bộ xử lý (Processor) bao gồm hai thành phần chính là gì?",
+    "options": [
+      "ALU và Thanh ghi",
+      "Cache và RAM",
+      "Datapath và Control (Đường dữ liệu và Điều khiển)",
+      "Input và Output"
+    ],
+    "answer": 2,
+    "explanation": "Một bộ xử lý (Processor) được cấu thành từ Datapath (đường dữ liệu, nơi thực hiện các phép toán) và Control (điều khiển, nơi chỉ đạo các hoạt động của datapath). (Nguồn: Slide 01.pdf, Trang 6)"
+  },
+  {
+    "type": "fitb",
+    "question": "Một D-Flip Flop là một D-Latch được kích hoạt theo ... (edge triggered).",
+    "answer": "cạnh",
+    "explanation": "Một D-Flip Flop là một D-Latch được kích hoạt theo cạnh (ví dụ: cạnh lên hoặc cạnh xuống của xung clock), trong khi D-Latch được kích hoạt theo mức (level triggered). (Nguồn: Slide 02.pdf, Trang 65)"
+  }
+]

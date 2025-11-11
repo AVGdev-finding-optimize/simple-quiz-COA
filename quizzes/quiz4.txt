@@ -1,0 +1,429 @@
+[
+  {
+    "type": "mcq",
+    "question": "Ba lớp máy tính (classes of computers) chính được phân loại trong bài giảng là gì?",
+    "options": [
+      "Siêu máy tính, Máy tính lớn, Máy tính mini",
+      "Máy tính cá nhân, Máy trạm, Máy chủ",
+      "Desktop, Server, Embedded",
+      "Laptop, Điện thoại di động, Máy tính bảng"
+    ],
+    "answer": 2,
+    "explanation": "Bài giảng (Slide 01, trang 5) phân loại máy tính thành 3 lớp chính: Desktop computers (máy tính để bàn), Server computers (máy chủ), và Embedded computers (máy tính nhúng) ."
+  },
+  {
+    "type": "msq",
+    "question": "Theo mô hình tổ chức máy tính cơ bản, các thành phần chính của một máy tính bao gồm?",
+    "options": [
+      "Input (Đầu vào)",
+      "Output (Đầu ra)",
+      "Network (Mạng)",
+      "Memory (Bộ nhớ)",
+      "Processor (Bộ xử lý)"
+    ],
+    "answer": [0, 1, 3, 4],
+    "explanation": "Một máy tính bao gồm 5 thành phần cổ điển: Input, Output, Memory, và Processor (Processor bao gồm Control và Datapath) . Network (Mạng) thường được coi là một dạng I/O ."
+  },
+  {
+    "type": "fitb",
+    "question": "Giao diện giữa phần cứng và phần mềm cấp thấp (low-level software) được định nghĩa là ...",
+    "answer": "ISA",
+    "explanation": "Instruction Set Architecture (ISA), hay kiến trúc tập lệnh, là giao diện phần cứng/phần mềm. Đây là phần của máy tính mà lập trình viên assembly hoặc trình biên dịch cần biết để viết mã ."
+  },
+  {
+    "type": "mcq",
+    "question": "Trong hệ thống phân cấp bộ nhớ (memory hierarchy), cấp nào có tốc độ truy cập nhanh nhất?",
+    "options": [
+      "CPU Registers (Thanh ghi)",
+      "L1 Cache",
+      "Main Memory (Bộ nhớ chính - RAM)",
+      "Disk (Đĩa cứng)"
+    ],
+    "answer": 0,
+    "explanation": "Hệ thống phân cấp bộ nhớ được sắp xếp từ nhanh nhất đến chậm nhất: Registers, L1/L2 Cache, Main Memory, Disk. Thanh ghi (Registers) nằm ở cấp cao nhất và nhanh nhất ."
+  },
+  {
+    "type": "mcq",
+    "question": "Bộ nhớ nào sau đây là bộ nhớ khả biến (volatile), tức là sẽ mất dữ liệu khi mất nguồn điện?",
+    "options": [
+      "Magnetic disk (Đĩa từ)",
+      "Flash memory (Bộ nhớ Flash)",
+      "DRAM (Bộ nhớ RAM động)",
+      "ROM (Read-Only Memory)"
+    ],
+    "answer": 2,
+    "explanation": "Bộ nhớ chính (Main memory), thường là DRAM, là bộ nhớ khả biến (volatile), nghĩa là nó mất dữ liệu khi tắt nguồn. Đĩa từ và Flash là bộ nhớ không khả biến (non-volatile) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Theo luật DeMorgan trong Đại số Boolean, biểu thức $\\overline{(A \\cdot B)}$ tương đương với biểu thức nào?",
+    "options": [
+      "$\\overline{A} \\cdot \\overline{B}$",
+      "$\\overline{A} + \\overline{B}$",
+      "$A + B$",
+      "$A \\cdot B$"
+    ],
+    "answer": 1,
+    "explanation": "Luật DeMorgan phát biểu rằng phủ định của một phép AND bằng phép OR của các phủ định: $\\overline{(A \\cdot B)} = \\overline{A} + \\overline{B}$ ."
+  },
+  {
+    "type": "fitb",
+    "question": "Trong Đại số Boolean, luật $(\\overline{\\overline{A}}) = A$ được gọi là luật ...",
+    "answer": "định danh",
+    "explanation": "Luật $\\overline{\\overline{A}} = A$ (phủ định kép) là một phần của Luật đồng nhất (Identity law) ."
+  },
+  {
+    "type": "msq",
+    "question": "Những cổng logic nào sau đây được coi là cổng logic \"phổ dụng\" (universal gates) vì chúng có thể dùng để xây dựng bất kỳ hàm logic nào?",
+    "options": [
+      "AND",
+      "OR",
+      "NAND",
+      "NOR"
+    ],
+    "answer": [2, 3],
+    "explanation": "Cổng NAND và cổng NOR được coi là các cổng logic phổ dụng vì bất kỳ mạch logic nào cũng có thể được xây dựng chỉ bằng cách sử dụng cổng NAND hoặc chỉ bằng cách sử dụng cổng NOR ."
+  },
+  {
+    "type": "mcq",
+    "question": "Phép toán logic nào cho kết quả là '1' nếu hai bit đầu vào khác nhau, và '0' nếu chúng giống nhau?",
+    "options": [
+      "NAND",
+      "OR",
+      "XOR",
+      "XNOR"
+    ],
+    "answer": 2,
+    "explanation": "Phép toán Exclusive-OR (XOR) cho ra '1' chỉ khi hai đầu vào có giá trị khác nhau (một '1' và một '0') ."
+  },
+  {
+    "type": "mcq",
+    "question": "Mạch logic có đầu ra không chỉ phụ thuộc vào đầu vào hiện tại mà còn phụ thuộc vào trạng thái trước đó của mạch được gọi là gì?",
+    "options": [
+      "Mạch tổ hợp (Combinational logic)",
+      "Mạch tuần tự (Sequential logic)",
+      "ALU",
+      "Multiplexer"
+    ],
+    "answer": 1,
+    "explanation": "Mạch logic tuần tự (Sequential logic) bao gồm các phần tử nhớ (như Latch hoặc Flip-Flop), do đó đầu ra của nó phụ thuộc vào cả đầu vào hiện tại và trạng thái (lịch sử) đã được lưu trữ ."
+  },
+  {
+    "type": "mcq",
+    "question": "Một D-Latch (Chốt D) là một thiết bị lưu trữ 1-bit được kích hoạt theo...",
+    "options": [
+      "Mức (Level-triggered)",
+      "Sườn (Edge-triggered)",
+      "Cả mức và sườn",
+      "Không cần tín hiệu clock"
+    ],
+    "answer": 0,
+    "explanation": "Latches (chốt) là các thiết bị nhạy cảm với mức tín hiệu (level-triggered). Dữ liệu được lưu khi tín hiệu clock/enable ở một mức nhất định (thường là mức cao) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Một D-Flip-Flop (FF) là một thiết bị lưu trữ 1-bit được kích hoạt theo...",
+    "options": [
+      "Mức (Level-triggered)",
+      "Sườn (Edge-triggered)",
+      "Cả mức và sườn",
+      "Không cần tín hiệu clock"
+    ],
+    "answer": 1,
+    "explanation": "Flip-Flop là thiết bị nhạy cảm với sườn (edge-triggered). Dữ liệu chỉ được lưu vào thời điểm sườn lên (rising edge) hoặc sườn xuống (falling edge) của xung nhịp ."
+  },
+  {
+    "type": "fitb",
+    "question": "Tần số (Frequency) của một đồng hồ (clock) 500 MHz tương đương với một chu kỳ (period) là ... ns.",
+    "answer": "2",
+    "explanation": "Chu kỳ (Period) là nghịch đảo của Tần số (Frequency). T = 1/f = 1 / (500 * 10^6 Hz) = 2 * 10^-9 giây = 2 ns ."
+  },
+  {
+    "type": "mcq",
+    "question": "Một Multiplexer (MUX) 8-tới-1 (8x1) cần bao nhiêu đường chọn (select lines)?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Để chọn 1 trong N đầu vào, MUX cần k đường chọn sao cho $2^k \\geq N$. Trong trường hợp này, N=8, vậy $2^k = 8$, suy ra k=3 ."
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân của số nhị phân 10110011 (2) là gì?",
+    "options": [
+      "179",
+      "178",
+      "227",
+      "147"
+    ],
+    "answer": 0,
+    "explanation": "$(1 \\cdot 2^7) + (0 \\cdot 2^6) + (1 \\cdot 2^5) + (1 \\cdot 2^4) + (0 \\cdot 2^3) + (0 \\cdot 2^2) + (1 \\cdot 2^1) + (1 \\cdot 2^0) = 128 + 0 + 32 + 16 + 0 + 0 + 2 + 1 = 179$ ."
+  },
+  {
+    "type": "mcq",
+    "question": "Số thập phân 195 được biểu diễn trong hệ thập lục phân (hexadecimal) là?",
+    "options": [
+      "C3",
+      "B3",
+      "C4",
+      "A3"
+    ],
+    "answer": 0,
+    "explanation": "Chia 195 cho 16: 195 / 16 = 12 dư 3. 12 / 16 = 0 dư 12. 12 trong hệ hex là C. Viết ngược lại ta được C3 (16) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Số bát phân (octal) 377 (8) tương đương với giá trị thập phân (decimal) nào?",
+    "options": [
+      "255",
+      "191",
+      "377",
+      "511"
+    ],
+    "answer": 0,
+    "explanation": "$(3 \\cdot 8^2) + (7 \\cdot 8^1) + (7 \\cdot 8^0) = (3 \\cdot 64) + (7 \\cdot 8) + (7 \\cdot 1) = 192 + 56 + 7 = 255$ ."
+  },
+  {
+    "type": "fitb",
+    "question": "Số nhị phân 11011010100 (2) khi chuyển sang hệ thập lục phân (hexadecimal) là ...",
+    "answer": "6D4",
+    "explanation": "Nhóm 4 bit từ phải sang trái: 110 1101 0100. Thêm 0 vào đầu: 0110 1101 0100. Chuyển đổi từng nhóm: 0110 = 6, 1101 = D, 0100 = 4. Kết quả là 6D4 (16) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Phương pháp nào được sử dụng phổ biến nhất trong máy tính hiện đại để biểu diễn số nguyên âm?",
+    "options": [
+      "Dấu và độ lớn (Sign-bit Magnitude)",
+      "Bù 1 (1's Complement)",
+      "Bù 2 (2's Complement)",
+      "Mã Excess-127"
+    ],
+    "answer": 2,
+    "explanation": "Phương pháp bù 2 (2's Complement) là phương pháp được máy tính hiện đại sử dụng phổ biến nhất để biểu diễn số nguyên có dấu vì nó đơn giản hóa phép trừ (chuyển thành phép cộng) và chỉ có một biểu diễn cho số 0 ."
+  },
+  {
+    "type": "mcq",
+    "question": "Số thập phân -50 được biểu diễn bằng phương pháp bù 2 (2's complement) 8-bit là?",
+    "options": [
+      "11001110",
+      "10110010",
+      "11001101",
+      "00110010"
+    ],
+    "answer": 0,
+    "explanation": "1. Chuyển 50 sang nhị phân 8-bit: 50 = 32 + 16 + 2 = 00110010. 2. Đảo bit (bù 1): 11001101. 3. Cộng 1 (bù 2): 11001101 + 1 = 11001110 ."
+  },
+  {
+    "type": "msq",
+    "question": "Những phát biểu nào sau đây đúng về chuẩn dấu phẩy động IEEE 754 32-bit (single precision)?",
+    "options": [
+      "Sử dụng 1 bit cho dấu (Sign).",
+      "Sử dụng 8 bit cho phần mũ (Exponent).",
+      "Sử dụng 23 bit cho phần định trị (Fraction/Mantissa).",
+      "Sử dụng phương pháp bù 2 cho phần mũ."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Chuẩn IEEE 754 32-bit (single precision) sử dụng 1 bit dấu, 8 bit mũ (exponent) theo kiểu biased (Excess-127), và 23 bit định trị (fraction), cùng với một bit 1 ngầm định (hidden bit) ."
+  },
+  {
+    "type": "fitb",
+    "question": "Một mạch cộng 4-bit (Ripple Carry Adder) được xây dựng bằng cách kết nối 4 ...",
+    "answer": "Full Adder",
+    "explanation": "Một mạch cộng Ripple Carry Adder n-bit được tạo ra bằng cách kết nối n mạch cộng toàn phần (Full Adder) 1-bit, trong đó bit nhớ ra (Cout) của bit thấp được nối vào bit nhớ vào (Cin) của bit cao hơn kế tiếp ."
+  },
+  {
+    "type": "msq",
+    "question": "Các thành phần nào sau đây là bộ nhớ không khả biến (non-volatile)?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "Magnetic disk (Đĩa từ)",
+      "Flash memory"
+    ],
+    "answer": [2, 3],
+    "explanation": "Bộ nhớ không khả biến (Non-volatile) giữ lại dữ liệu khi mất nguồn. Đĩa từ (Magnetic disk) và Flash memory là các ví dụ. DRAM và SRAM là bộ nhớ khả biến (volatile) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Thành phần nào của CPU chịu trách nhiệm sinh ra các tín hiệu điều khiển để điều phối hoạt động của các thành phần khác?",
+    "options": [
+      "ALU (Arithmetic Logic Unit)",
+      "Control Unit (Khối điều khiển)",
+      "Register File (Khối thanh ghi)",
+      "Program Counter (PC)"
+    ],
+    "answer": 1,
+    "explanation": "Khối điều khiển (Control Unit) chịu trách nhiệm giải mã lệnh và sinh ra các tín hiệu điều khiển cần thiết để chỉ đạo hoạt động của Datapath, Memory và I/O ."
+  },
+  {
+    "type": "mcq",
+    "question": "Quá trình lặp đi lặp lại của CPU bao gồm tìm nạp (fetch), giải mã (decode), và thực thi (execute) lệnh được gọi là gì?",
+    "options": [
+      "Chu trình lệnh (Instruction cycle)",
+      "Chu trình bus (Bus cycle)",
+      "Pipelining",
+      "Ngắt (Interrupt)"
+    ],
+    "answer": 0,
+    "explanation": "Chu trình lệnh (Instruction cycle) là chu trình cơ bản mà CPU thực hiện để chạy một chương trình, bao gồm các bước tìm nạp lệnh, giải mã lệnh, và thực thi lệnh. (Khái niệm này là nền tảng của môn học, được ngụ ý trong các slide 01 và 02, ví dụ slide 01 trang 19 )."
+  },
+  {
+    "type": "mcq",
+    "question": "Một CPU có tần số 3.0 GHz. Chu kỳ xung nhịp (clock cycle time) của CPU này là bao nhiêu?",
+    "options": [
+      "3.0 ns",
+      "0.33 ns",
+      "33.3 ns",
+      "0.03 ns"
+    ],
+    "answer": 1,
+    "explanation": "Chu kỳ (T) = 1 / Tần số (f). T = 1 / (3.0 * 10^9 Hz) = 0.333... * 10^-9 giây = 0.33 ns ."
+  },
+  {
+    "type": "fitb",
+    "question": "Kiến trúc máy tính (Computer Architecture) theo định nghĩa trong bài giảng bao gồm Kiến trúc tập lệnh (ISA) và ...",
+    "answer": "Tổ chức máy (Machine Organization)",
+    "explanation": "Bài giảng (Slide 01, trang 16) định nghĩa Kiến trúc máy tính = Kiến trúc tập lệnh (Instruction Set Architecture) + Tổ chức máy (Machine Organization) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Trong các cấp độ của mã chương trình, cấp độ nào gần nhất với phần cứng?",
+    "options": [
+      "High-level language (Ngôn ngữ bậc cao)",
+      "Assembly language (Hợp ngữ)",
+      "Machine language (Ngôn ngữ máy)",
+      "Java bytecode"
+    ],
+    "answer": 2,
+    "explanation": "Ngôn ngữ máy (Machine language) là chuỗi các bit nhị phân (0 và 1) mà phần cứng CPU trực tiếp hiểu và thực thi. Hợp ngữ là dạng biểu diễn văn bản của ngôn ngữ máy. Ngôn ngữ bậc cao là trừu tượng nhất ."
+  },
+  {
+    "type": "msq",
+    "question": "Các loại bus chính trong cấu trúc máy tính cơ bản (ví dụ PCI bus) bao gồm?",
+    "options": [
+      "Address Bus (Bus địa chỉ)",
+      "Data Bus (Bus dữ liệu)",
+      "Control Bus (Bus điều khiển)",
+      "Network Bus (Bus mạng)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Một hệ thống bus tiêu chuẩn bao gồm ba thành phần: bus địa chỉ (để xác định vị trí), bus dữ liệu (để truyền dữ liệu) và bus điều khiển (để truyền tín hiệu điều khiển và đồng bộ) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Kỹ thuật 'Pipelining' trong CPU được sử dụng để làm gì?",
+    "options": [
+      "Tăng tốc độ của một lệnh đơn lẻ",
+      "Tăng thông lượng (throughput) của lệnh",
+      "Giảm dung lượng bộ nhớ yêu cầu",
+      "Giảm điện năng tiêu thụ"
+    ],
+    "answer": 1,
+    "explanation": "Pipelining (đường ống) là kỹ thuật cho phép gối đầu việc thực thi nhiều lệnh. Nó không làm giảm thời gian thực thi của một lệnh riêng lẻ, nhưng nó tăng đáng kể thông lượng (số lệnh hoàn thành trong một đơn vị thời gian) của bộ xử lý. (Giáo trình H&P, trang A-2, A-3) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân của số bù 2 8-bit 11110000 là gì?",
+    "options": [
+      "240",
+      "-16",
+      "-15",
+      "-120"
+    ],
+    "answer": 1,
+    "explanation": "Đây là số âm (bit MSB = 1). Để tìm giá trị, ta đảo bit (00001111) và cộng 1 (00010000). 00010000 (2) = 16 (10). Vậy giá trị là -16 ."
+  },
+  {
+    "type": "fitb",
+    "question": "Trong kiến trúc MIPS (ví dụ trên slide), lệnh `add $2, $4, $2` thuộc cấp độ mã ...",
+    "answer": "Assembly language",
+    "explanation": "Đây là cú pháp của hợp ngữ (Assembly language), là dạng biểu diễn văn bản (textual representation) của các lệnh máy ."
+  },
+  {
+    "type": "mcq",
+    "question": "Hiện tượng một chương trình dành 90% thời gian thực thi trong 10% mã lệnh được gọi là ...",
+    "options": [
+      "Định luật Amdahl (Amdahl's Law)",
+      "Nguyên lý tương đương Phần cứng/Phần mềm",
+      "Nguyên lý cục bộ (Principle of Locality)",
+      "Hiện tượng thắt cổ chai Von Neumann"
+    ],
+    "answer": 2,
+    "explanation": "Nguyên lý cục bộ (Principle of Locality) phát biểu rằng các chương trình có xu hướng sử dụng lại dữ liệu và lệnh mà chúng đã sử dụng gần đây. Một quy tắc kinh nghiệm là 90/10 (90% thời gian trong 10% mã lệnh) ."
+  },
+  {
+    "type": "msq",
+    "question": "Những loại xung đột (hazard) nào có thể xảy ra trong một pipeline xử lý lệnh?",
+    "options": [
+      "Xung đột cấu trúc (Structural hazard)",
+      "Xung đột dữ liệu (Data hazard)",
+      "Xung đột bộ nhớ (Memory hazard)",
+      "Xung đột điều khiển (Control hazard)"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "Ba loại xung đột chính trong pipeline là: (1) Xung đột cấu trúc (do tranh chấp tài nguyên phần cứng), (2) Xung đột dữ liệu (do phụ thuộc dữ liệu giữa các lệnh), và (3) Xung đột điều khiển (do các lệnh rẽ nhánh) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Thời gian trung bình để truy cập bộ nhớ (AMAT) được tính bằng công thức nào?",
+    "options": [
+      "Hit time + Miss rate * Miss penalty",
+      "Hit time + (1 - Miss rate) * Miss penalty",
+      "Miss rate * (Hit time + Miss penalty)",
+      "(Hit time + Miss penalty) / Miss rate"
+    ],
+    "answer": 0,
+    "explanation": "Average Memory Access Time (AMAT) = Thời gian truy cập khi Hit + Tỉ lệ Miss * Chi phí khi Miss (Miss Penalty). Đây là công thức cơ bản để đánh giá hiệu năng của hệ thống cache ."
+  },
+  {
+    "type": "fitb",
+    "question": "Một trong những kỹ thuật phần cứng để xử lý xung đột dữ liệu RAW là ..., hay còn gọi là 'bypassing'.",
+    "answer": "Forwarding",
+    "explanation": "Kỹ thuật Forwarding (hay Bypassing) cho phép kết quả từ một lệnh được 'chuyển tiếp' trực tiếp đến đầu vào của lệnh tiếp theo cần nó, mà không cần đợi lệnh đầu tiên ghi kết quả vào thanh ghi, do đó tránh được stall ."
+  },
+  {
+    "type": "mcq",
+    "question": "Tổ chức cache 'Fully Associative' (Liên kết toàn phần) nghĩa là gì?",
+    "options": [
+      "Mỗi khối (block) chỉ có thể được đặt vào một vị trí duy nhất trong cache.",
+      "Mỗi khối có thể được đặt vào bất kỳ vị trí nào trong cache.",
+      "Mỗi khối có thể được đặt vào một nhóm (set) vị trí nhất định trong cache.",
+      "Cache chỉ lưu trữ lệnh."
+    ],
+    "answer": 1,
+    "explanation": "Trong cache liên kết toàn phần (Fully Associative), một khối từ bộ nhớ chính có thể được đặt vào bất kỳ vị trí (block frame) nào trong cache ."
+  },
+  {
+    "type": "msq",
+    "question": "Các đặc điểm nào sau đây mô tả kiến trúc RISC (Reduced Instruction Set Computer)?",
+    "options": [
+      "Số lượng lệnh ít và đơn giản.",
+      "Nhiều lệnh phức tạp, thực thi trong nhiều chu kỳ.",
+      "Chỉ các lệnh Load và Store mới truy cập bộ nhớ.",
+      "Sử dụng nhiều chế độ địa chỉ (addressing modes) phức tạp."
+    ],
+    "answer": [0, 2],
+    "explanation": "Kiến trúc RISC (như MIPS) tập trung vào tập lệnh đơn giản, cố định (giúp pipeline hiệu quả) và tuân theo mô hình load-store (chỉ load/store truy cập bộ nhớ, còn các lệnh ALU thao tác trên thanh ghi) ."
+  },
+  {
+    "type": "mcq",
+    "question": "Theo Định luật Amdahl, nếu một chương trình mất 100 giây để chạy, và 60% thời gian (60 giây) có thể được tăng tốc, tốc độ tăng tốc tổng thể tối đa (nếu 60% đó được tăng tốc vô hạn) là bao nhiêu?",
+    "options": [
+      "100 lần",
+      "4 lần",
+      "2.5 lần",
+      "1.67 lần"
+    ],
+    "answer": 2,
+    "explanation": "Thời gian không thể tăng tốc (unaffected) là 100 - 60 = 40 giây. Nếu phần 60 giây được tăng tốc vô hạn (thời gian thực thi = 0), thời gian chạy mới là 40 giây. Speedup = Thời gian cũ / Thời gian mới = 100 / 40 = 2.5 lần ."
+  },
+  {
+    "type": "fitb",
+    "question": "Kiến trúc máy tính tập trung vào việc khai thác song song ở cấp độ dữ liệu (data-level parallelism) bằng cách thực thi cùng một lệnh trên nhiều dữ liệu khác nhau được gọi là ...",
+    "answer": "SIMD",
+    "explanation": "SIMD (Single Instruction Stream, Multiple Data Streams) là mô hình kiến trúc khai thác tính song song dữ liệu, trong đó một lệnh duy nhất được áp dụng cho nhiều phần tử dữ liệu cùng một lúc ."
+  }
+]

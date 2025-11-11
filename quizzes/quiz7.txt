@@ -1,0 +1,422 @@
+[
+  {
+    "type": "mcq",
+    "question": "Ba lớp máy tính chính được xác định trong bài giảng là gì?",
+    "options": [
+      "Máy tính lớn (Mainframe), Máy tính mini (Minicomputer), Máy tính siêu nhỏ (Microcomputer)",
+      "Máy tính để bàn (Desktop), Máy chủ (Server), Máy tính nhúng (Embedded)",
+      "Siêu máy tính (Supercomputer), Máy trạm (Workstation), Thiết bị hỗ trợ cá nhân (PDA)",
+      "RISC, CISC, VLIW"
+    ],
+    "answer": 1,
+    "explanation": "[cite_start]Slide 01.pdf, Trang 5, liệt kê ba lớp máy tính là: Máy tính để bàn (Desktop), Máy chủ (Server), và Máy tính nhúng (Embedded). [cite: 6612, 6613, 6616, 6620]"
+  },
+  {
+    "type": "mcq",
+    "question": "Giao diện giữa phần cứng và phần mềm cấp thấp (ví dụ: trình biên dịch) được gọi là gì?",
+    "options": [
+      "API (Giao diện lập trình ứng dụng)",
+      "Hệ điều hành (Operating System)",
+      "Kiến trúc tập lệnh (Instruction Set Architecture - ISA)",
+      "Giao diện nhị phân ứng dụng (Application Binary Interface - ABI)"
+    ],
+    "answer": 2,
+    "explanation": "Kiến trúc tập lệnh (ISA) định nghĩa giao diện giữa phần cứng và phần mềm. [cite_start]Slide 01.pdf, Trang 15, 17. [cite: 6855, 6873]"
+  },
+  {
+    "type": "msq",
+    "question": "Theo định luật DeMorgan (DeMorgan's laws), những biểu thức nào sau đây là ĐÚNG?",
+    "options": [
+      "$\\overline{(A \\cdot B)} = \\overline{A} + \\overline{B}$",
+      "$\\overline{(A + B)} = \\overline{A} \\cdot \\overline{B}$",
+      "$\\overline{(A \\cdot B)} = \\overline{A} \\cdot \\overline{B}$",
+      "$\\overline{(A + B)} = \\overline{A} + \\overline{B}$"
+    ],
+    "answer": [0, 1],
+    "explanation": "[cite_start]Slide 02.pdf, Trang 15, trình bày hai định luật DeMorgan. [cite: 7303, 7304, 7305]"
+  },
+  {
+    "type": "msq",
+    "question": "Những toán tử nào sau đây là toán tử Boolean chính (primary)?",
+    "options": [
+      "NOT",
+      "AND",
+      "XOR",
+      "OR"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "Bài giảng định nghĩa 3 toán tử chính là NOT (phủ định), AND (và), và OR (hoặc). [cite_start]Slide 02.pdf, Trang 6. [cite: 7215]"
+  },
+  {
+    "type": "mcq",
+    "question": "Một mạch logic mà đầu ra của nó chỉ phụ thuộc hoàn toàn vào các đầu vào chính hiện tại được gọi là mạch gì?",
+    "options": [
+      "Mạch tuần tự (Sequential)",
+      "Mạch tổ hợp (Combinatorial / Combinatory)",
+      "Mạch chốt (Latch)",
+      "Mạch Flip-Flop"
+    ],
+    "answer": 1,
+    "explanation": "Mạch tổ hợp (Combinatorial) có đầu ra chỉ phụ thuộc vào đầu vào hiện tại, trong khi mạch tuần tự (Sequential) có đầu ra phụ thuộc vào cả đầu vào hiện tại và trạng thái (bộ nhớ) trước đó. [cite_start]Slide 02.pdf, Trang 68. [cite: 7924]"
+  },
+  {
+    "type": "mcq",
+    "question": "Một mạch chọn 1 trong N đầu vào ra 1 đầu ra duy nhất, dựa trên K đường chọn ($2^K \\ge N$), được gọi là gì?",
+    "options": [
+      "Bộ giải mã (Decoder)",
+      "Bộ hợp kênh (Multiplexer - Mux)",
+      "Bộ giải hợp kênh (De-Multiplexer - DeMux)",
+      "Bộ cộng (Adder)"
+    ],
+    "answer": 1,
+    "explanation": "Đây là định nghĩa của một Bộ hợp kênh (Multiplexer). [cite_start]Slide 02.pdf, Trang 49. [cite: 7699, 7701, 7703]"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong mạch chốt SR (SR Latch) được triển khai bằng cổng NOR như trong bài giảng, tổ hợp đầu vào nào được định nghĩa là trạng thái \"Không ổn định\" (Unstable)?",
+    "options": [
+      "S=0, R=0",
+      "S=0, R=1",
+      "S=1, R=0",
+      "S=1, R=1"
+    ],
+    "answer": 3,
+    "explanation": "Bảng sự thật cho SR Latch dùng cổng NOR cho thấy S=1, R=1 là trạng thái không ổn định. [cite_start]Slide 02.pdf, Trang 62. [cite: 7856]"
+  },
+  {
+    "type": "fitb",
+    "question": "Một D-Flip Flop (edge-triggered D-Latch) chỉ lưu trữ dữ liệu (bit D) khi có ...... của tín hiệu đồng hồ (clock).",
+    "answer": "cạnh lên (raising edge)",
+    "explanation": "D-Flip Flop được kích hoạt theo cạnh; slide mô tả nó lưu dữ liệu chỉ ở 'cạnh lên' (raising edge) của đồng hồ. [cite_start]Slide 02.pdf, Trang 65. [cite: 7881, 7887]"
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân (base-10) của số nhị phân $11010_2$ là bao nhiêu?",
+    "options": [
+      "22",
+      "26",
+      "28",
+      "30"
+    ],
+    "answer": 1,
+    "explanation": "Giá trị = $(1 \\times 2^4) + (1 \\times 2^3) + (0 \\times 2^2) + (1 \\times 2^1) + (0 \\times 2^0) = 16 + 8 + 0 + 2 + 0 = 26$. [cite_start]Slide 02.pdf, Trang 113. [cite: 8350]"
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị nhị phân (base-2) của số thập phân $83_{10}$ là bao nhiêu?",
+    "options": [
+      "1010011",
+      "1010101",
+      "1100101",
+      "1001111"
+    ],
+    "answer": 0,
+    "explanation": "Sử dụng phép chia liên tiếp cho 2: $83/2 = 41 R 1; 41/2 = 20 R 1; 20/2 = 10 R 0; 10/2 = 5 R 0; 5/2 = 2 R 1; 2/2 = 1 R 0; 1/2 = 0 R 1$. [cite_start]Đọc ngược các số dư: 1010011. Phương pháp này được mô tả trong Slide 02.pdf, Trang 87. [cite: 8201]"
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân (base-10) của số thập lục phân (hexadecimal) $A8F_{16}$ là bao nhiêu?",
+    "options": [
+      "2703",
+      "4239",
+      "2699",
+      "4240"
+    ],
+    "answer": 0,
+    "explanation": "Giá trị = $(10 \\times 16^2) + (8 \\times 16^1) + (15 \\times 16^0) = (10 \\times 256) + (8 \\times 16) + 15 = 2560 + 128 + 15 = 2703$. [cite_start]Slide 02.pdf, Trang 140. [cite: 8378]"
+  },
+  {
+    "type": "fitb",
+    "question": "Để chuyển đổi một số nhị phân sang bát phân (base-8), chúng ta nhóm các bit thành các bộ ... bit, bắt đầu từ bên phải.",
+    "answer": "3",
+    "explanation": "Vì $2^3 = 8$, mỗi 3 bit nhị phân tương ứng với một chữ số bát phân. [cite_start]Slide 02.pdf, Trang 128. [cite: 7033]"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong hệ thống 8 bit, biểu diễn bù 2 (2's complement) của số $-18_{10}$ là gì?",
+    "options": [
+      "11101110",
+      "11101101",
+      "00010010",
+      "10010010"
+    ],
+    "answer": 0,
+    "explanation": "Bước 1: +18 là 00010010. Bước 2: Đảo bit (bù 1): 11101101. Bước 3: Cộng 1 [cite_start]: 11101110. Slide 02.pdf, Trang 183. [cite: 7067]"
+  },
+  {
+    "type": "mcq",
+    "question": "Số nhị phân $11111010_2$ biểu diễn giá trị thập phân nào nếu sử dụng biểu diễn bù 2 (2's complement) 8 bit?",
+    "options": [
+      "-250",
+      "-10",
+      "-6",
+      "250"
+    ],
+    "answer": 2,
+    "explanation": "Bit MSB là 1, nên đây là số âm. Bước 1: Đảo bit: 00000101. Bước 2: Cộng 1: 00000110. Giá trị này là $6_{10}$. Vì vậy, số ban đầu là $-6_{10}$. [cite_start]Slide 02.pdf, Trang 185. [cite: 7068]"
+  },
+  {
+    "type": "msq",
+    "question": "Những vấn đề nào sau đây tồn tại trong biểu diễn \"Dấu-Lượng\" (Sign-bit Magnitude) VÀ/HOẶC \"Bù 1\" (1's Complement)?",
+    "options": [
+      "Có hai biểu diễn cho số không (0).",
+      "Logic cộng trừ phức tạp.",
+      "Không thể biểu diễn số âm.",
+      "Gây lãng phí bit MSB."
+    ],
+    "answer": [0, 1],
+    "explanation": "Cả hai phương pháp SBM và Bù 1 đều có hai biểu diễn cho số 0 (+0 và -0). SBM yêu cầu logic cộng/trừ phức tạp vì phải xử lý bit dấu riêng biệt. [cite_start]Slide 02.pdf, Trang 176 (SBM) [cite: 7059] [cite_start]và Trang 180 (1's Comp)[cite: 7064]."
+  },
+  {
+    "type": "mcq",
+    "question": "Trong chuẩn IEEE 754 cho số thực 32-bit (single-precision), phần định trị (Fraction/Significand) chiếm bao nhiêu bit?",
+    "options": [
+      "1",
+      "8",
+      "23",
+      "32"
+    ],
+    "answer": 2,
+    "explanation": "Chuẩn IEEE 754 đơn bao gồm 1 bit dấu, 8 bit số mũ (Exponent), và 23 bit phần định trị (Fraction). [cite_start]Slide 02.pdf, Trang 220. [cite: 7090, 7091]"
+  },
+  {
+    "type": "mcq",
+    "question": "Số mũ (Exponent) trong chuẩn IEEE 754 (single-precision) sử dụng biểu diễn 'biased' với độ lệch (bias) là bao nhiêu?",
+    "options": [
+      "64",
+      "127",
+      "128",
+      "255"
+    ],
+    "answer": 1,
+    "explanation": "[cite_start]Đối với single precision, độ lệch là 127. Đối với double precision, độ lệch là 1023. Slide 02.pdf, Trang 220. [cite: 7091]"
+  },
+  {
+    "type": "mcq",
+    "question": "Một mạch cộng hai bit đầu vào (A, B) và một bit nhớ (Cin) để tạo ra một bit tổng (Sum) và một bit nhớ (Cout) được gọi là gì?",
+    "options": [
+      "Bộ cộng bán phần (Half Adder)",
+      "Bộ cộng toàn phần (Full Adder)",
+      "Bộ cộng truyền (Ripple Carry Adder)",
+      "Bộ hợp kênh (Multiplexer)"
+    ],
+    "answer": 1,
+    "explanation": "Bộ cộng toàn phần (Full Adder) thực hiện phép cộng 3 bit (A, B, Cin). Bộ cộng bán phần (Half Adder) chỉ cộng 2 bit (A, B). [cite_start]Slide 02.pdf, Trang 162. [cite: 7047]"
+  },
+  {
+    "type": "mcq",
+    "question": "Một máy tính có bus dữ liệu 64 bit và đồng hồ bus 800 Mhz. Một thao tác đọc/ghi RAM mất 4 chu kỳ bus. Tốc độ truyền dữ liệu (data transfer rate) tối đa là bao nhiêu?",
+    "options": [
+      "800 MB/s",
+      "1600 MB/s",
+      "3200 MB/s",
+      "6400 MB/s"
+    ],
+    "answer": 1,
+    "explanation": "Số lần truyền mỗi giây = (800 * 10^6 chu kỳ/giây) / 4 chu kỳ/truyền = 200 * 10^6 truyền/giây. Kích thước mỗi lần truyền = 64 bit = 8 Byte. Tốc độ = (200 * 10^6) * 8 = 1,600 * 10^6 B/s = 1600 MB/s. [cite_start]Slide 02.pdf, Trang 59. [cite: 7821, 7826, 7828]"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong tổ chức RAM, bus nào được sử dụng để mang dữ liệu đầu vào hoặc đầu ra?",
+    "options": [
+      "Data bus (Bus dữ liệu)",
+      "Control bus (Bus điều khiển)",
+      "Address bus (Bus địa chỉ)",
+      "I/O bus (Bus I/O)"
+    ],
+    "answer": 0,
+    "explanation": "Bus dữ liệu (data bus) được sử dụng để truyền dữ liệu đến và đi từ bộ nhớ. Bus địa chỉ (address bus) được sử dụng để chọn vị trí. [cite_start]Slide 02.pdf, Trang 73. [cite: 8003, 8004]"
+  },
+  {
+    "type": "mcq",
+    "question": "Một bộ nhớ RAM 4GB (Gigabyte) được tổ chức với các slot 64-bit (8 Byte). Cần bao nhiêu đường dây chọn (dây địa chỉ) để địa chỉ hóa mỗi slot?",
+    "options": [
+      "29",
+      "32",
+      "35",
+      "26"
+    ],
+    "answer": 0,
+    "explanation": "Tổng dung lượng = 4GB = $2^2 \\times 2^{30} = 2^{32}$ Byte. Kích thước slot = 8 Byte = $2^3$ Byte. Số lượng slot = Tổng dung lượng / Kích thước slot = $2^{32} / 2^3 = 2^{29}$ slot. Cần 29 đường địa chỉ để chọn một trong $2^{29}$ slot. [cite_start]Dựa trên bài tập ví dụ trong Slide 02.pdf, Trang 78. [cite: 8095, 8098]"
+  },
+  {
+    "type": "mcq",
+    "question": "Loại bộ nhớ nào sau đây là bộ nhớ bất biến (non-volatile)?",
+    "options": [
+      "RAM",
+      "Flash memory",
+      "CPU Registers",
+      "L1 Cache"
+    ],
+    "answer": 1,
+    "explanation": "Bộ nhớ bất biến (Non-volatile) giữ lại dữ liệu khi mất điện. Ví dụ bao gồm Magnetic disk và Flash memory. RAM và Registers là bộ nhớ khả biến (volatile). [cite_start]Slide 01.pdf, Trang 18. [cite: 6757, 6759, 6761]"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo hệ thống phân cấp bộ nhớ, cấp nào có thời gian truy cập nhanh nhất?",
+    "options": [
+      "Main Memory (DRAM)",
+      "CPU Registers",
+      "L1 Cache",
+      "Magnetic Disk"
+    ],
+    "answer": 1,
+    "explanation": "Thanh ghi CPU (CPU Registers) nằm ở đỉnh của hệ thống phân cấp và có thời gian truy cập nhanh nhất (ví dụ: 300-500 ps). [cite_start]Slide 01.pdf, Trang 19. [cite: 6771]"
+  },
+  {
+    "type": "mcq",
+    "question": "Kiến trúc máy tính nào sử dụng bộ nhớ chung cho cả lệnh (instructions) và dữ liệu (data)?",
+    "options": [
+      "Von Neumann",
+      "Harvard",
+      "RISC",
+      "CISC"
+    ],
+    "answer": 0,
+    "explanation": "Kiến trúc Von Neumann sử dụng một bộ nhớ duy nhất cho cả lệnh và dữ liệu, trong khi kiến trúc Harvard sử dụng các bộ nhớ riêng biệt. (Kiến thức cơ bản môn học, được tham khảo trong Hennessy & Patterson, Chương 1 và Phụ lục K.2)[cite_start]. [cite: 8657, 8677]"
+  },
+  {
+    "type": "fitb",
+    "question": "Một chương trình viết bằng C hoặc Java được coi là ngôn ngữ ......, sau đó được trình biên dịch dịch sang hợp ngữ.",
+    "answer": "bậc cao (high-level)",
+    "explanation": "Chương trình C là ngôn ngữ bậc cao (High-level language), được trình biên dịch (C compiler) dịch sang hợp ngữ (Assembly language). [cite_start]Slide 01.pdf, Trang 30. [cite: 6907, 6916]"
+  },
+  {
+    "type": "mcq",
+    "question": "Mục đích chính của kỹ thuật pipeline (đường ống) trong CPU là gì?",
+    "options": [
+      "Giảm thời gian thực thi của một lệnh đơn lẻ.",
+      "Tăng thông lượng (throughput) lệnh tổng thể của CPU.",
+      "Giảm độ phức tạp của tập lệnh.",
+      "Giảm tốc độ đồng hồ của CPU để tiết kiệm điện."
+    ],
+    "answer": 1,
+    "explanation": "Pipelining cho phép gối đầu việc thực thi nhiều lệnh, do đó tăng số lượng lệnh hoàn thành trong một đơn vị thời gian (throughput), mặc dù độ trễ (latency) của một lệnh đơn lẻ có thể tăng nhẹ. (Hennessy & Patterson, Phụ lục A.1)[cite_start]. [cite: 9753]"
+  },
+  {
+    "type": "msq",
+    "question": "Các loại mâu thuẫn (hazard) chính trong pipeline là gì?",
+    "options": [
+      "Mâu thuẫn dữ liệu (Data hazards)",
+      "Mâu thuẫn cấu trúc (Structural hazards)",
+      "Mâu thuẫn điều khiển (Control hazards)",
+      "Mâu thuẫn bộ nhớ (Memory hazards)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Ba loại mâu thuẫn chính là mâu thuẫn cấu trúc (resource conflicts), mâu thuẫn dữ liệu (dependences), và mâu thuẫn điều khiển (branches). (Hennessy & Patterson, Phụ lục A.2)[cite_start]. [cite: 9763]"
+  },
+  {
+    "type": "mcq",
+    "question": "Mâu thuẫn dữ liệu xảy ra khi một lệnh sau cố gắng GHI vào một thanh ghi TRƯỚC KHI một lệnh trước đó ĐỌC nó được gọi là gì?",
+    "options": [
+      "Read After Write (RAW)",
+      "Write After Read (WAR)",
+      "Write After Write (WAW)",
+      "Read After Read (RAR)"
+    ],
+    "answer": 1,
+    "explanation": "Đây là một mâu thuẫn Write After Read (WAR), còn được gọi là một phản phụ thuộc (antidependence). (Hennessy & Patterson, Chương 2.1)[cite_start]. [cite: 9400]"
+  },
+  {
+    "type": "fitb",
+    "question": "Kỹ thuật mà phần cứng sắp xếp lại thứ tự thực thi lệnh để giảm thiểu các chu kỳ chờ (stall), thường sử dụng scoreboard hoặc giải thuật Tomasulo, được gọi là ......",
+    "answer": "lập lịch động (dynamic scheduling)",
+    "explanation": "Lập lịch động (Dynamic scheduling) cho phép thực thi ngoài thứ tự (out-of-order) để che giấu các độ trễ và tránh các mâu thuẫn. (Hennessy & Patterson, Chương 2.4)[cite_start]. [cite: 9417]"
+  },
+  {
+    "type": "mcq",
+    "question": "Sự khác biệt chính giữa kiến trúc RISC và CISC là gì?",
+    "options": [
+      "RISC có nhiều thanh ghi hơn CISC.",
+      "RISC sử dụng mô hình load-store; CISC có thể kết hợp truy cập bộ nhớ và phép toán ALU trong một lệnh.",
+      "RISC chỉ dành cho 64-bit, CISC dành cho 32-bit.",
+      "RISC không thể được pipelined, CISC thì có thể."
+    ],
+    "answer": 1,
+    "explanation": "Một điểm khác biệt cơ bản là RISC là kiến trúc load-store (chỉ truy cập bộ nhớ qua lệnh load/store), trong khi CISC (như 80x86) cho phép các lệnh thực hiện các phép toán ALU trên các toán hạng trong bộ nhớ. (Hennessy & Patterson, Chương 1.3 và Phụ lục B)[cite_start]. [cite: 8866, 9832, 9835]"
+  },
+  {
+    "type": "mcq",
+    "question": "Chính sách thay thế (replacement policy) nào trong cache thay thế khối đã không được sử dụng trong thời gian dài nhất?",
+    "options": [
+      "Least Recently Used (LRU)",
+      "First In, First Out (FIFO)",
+      "Random",
+      "Most Recently Used (MRU)"
+    ],
+    "answer": 0,
+    "explanation": "LRU (Sử dụng ít nhất gần đây) theo dõi các truy cập và thay thế khối không được sử dụng lâu nhất, dựa trên tính cục bộ về thời gian (temporal locality). (Hennessy & Patterson, Phụ lục C.1)[cite_start]. [cite: 9886]"
+  },
+  {
+    "type": "fitb",
+    "question": "Các cache miss (lỗi cache) được phân loại thành 3 C: Compulsory (bắt buộc), Capacity (dung lượng), và ...... (xung đột).",
+    "answer": "Conflict",
+    "explanation": "Mô hình '3 Cs' phân loại các lỗi cache dựa trên nguyên nhân của chúng. (Hennessy & Patterson, Phụ lục C.3)[cite_start]. [cite: 9890]"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong hệ thống có bộ nhớ ảo (virtual memory), bộ đệm (cache) phần cứng dùng để lưu trữ các phép dịch địa chỉ (Virtual-to-Physical) gần đây được gọi là gì?",
+    "options": [
+      "L1 Data Cache",
+      "Write Buffer",
+      "Translation Lookaside Buffer (TLB)",
+      "Reorder Buffer (ROB)"
+    ],
+    "answer": 2,
+    "explanation": "TLB là một bộ đệm (cache) đặc biệt dành cho các phép dịch địa chỉ trang. (Hennessy & Patterson, Chương 5.4 và Phụ lục C.4)[cite_start]. [cite: 9617, 9918]"
+  },
+  {
+    "type": "mcq",
+    "question": "Cơ chế cho phép một thiết bị I/O thông báo cho CPU rằng nó cần được chú ý, làm gián đoạn quá trình thực thi hiện tại của CPU, được gọi là:",
+    "options": [
+      "Ngắt (Interrupt)",
+      "Hỏi vòng (Polling)",
+      "Truy cập bộ nhớ trực tiếp (DMA)",
+      "Lời gọi hệ thống (System Call)"
+    ],
+    "answer": 0,
+    "explanation": "Đây là định nghĩa của một ngắt (interrupt), một cơ chế hiệu quả hơn so với hỏi vòng (polling) chủ động. (Hennessy & Patterson, Chương 1.3, 5.4)[cite_start]. [cite: 8904, 9644]"
+  },
+  {
+    "type": "mcq",
+    "question": "[H&P] Một chương trình chạy trong 100 giây trên một máy tính, trong đó 80 giây dành cho các phép nhân và 20 giây cho các tác vụ khác. Theo Định luật Amdahl, tốc độ tối đa có thể đạt được là bao nhiêu, ngay cả khi phép nhân nhanh vô hạn?",
+    "options": [
+      "4x",
+      "5x",
+      "16x",
+      "100x"
+    ],
+    "answer": 1,
+    "explanation": "Định luật Amdahl cho thấy tốc độ bị giới hạn bởi phần tuần tự (không bị ảnh hưởng). $S_{max} = 1 / (1 - F_{enhanced}) = 1 / (1 - 0.8) = 1 / 0.2 = 5$. Chương trình không bao giờ có thể chạy nhanh hơn 20 giây (thời gian của các tác vụ khác). (Dựa trên Hennessy & Patterson, Chương 1.9)[cite_start]. [cite: 9134, 9145]"
+  },
+  {
+    "type": "msq",
+    "question": "[H&P] Những cấp độ RAID nào sau đây sử dụng 'parity' (chẵn lẻ) để bảo vệ dữ liệu?",
+    "options": [
+      "RAID 1 (Mirroring)",
+      "RAID 3 (Bit-interleaved parity)",
+      "RAID 5 (Distributed block parity)",
+      "RAID 6 (ví dụ: Row-diagonal parity)"
+    ],
+    "answer": [1, 2, 3],
+    "explanation": "RAID 1 sử dụng kỹ thuật 'mirroring' (nhân bản), không phải parity. RAID 3, 4, 5, và 6 đều sử dụng các tính toán parity để dự phòng. (Dựa trên Hennessy & Patterson, Chương 6.2)[cite_start]. [cite: 9689, 9690, 9691]"
+  },
+  {
+    "type": "fitb",
+    "question": "[H&P] Trong lĩnh vực độ tin cậy (dependability), ...... là thước đo về sự hoàn thành dịch vụ liên tục, thường được biểu thị bằng MTTF (Mean Time To Failure).",
+    "answer": "reliability (độ tin cậy)",
+    "explanation": "Module reliability (độ tin cậy của mô-đun) là thước đo dịch vụ liên tục (thời gian cho đến khi hỏng). Ngược lại, availability (tính sẵn sàng) là thước đo sự hoàn thành dịch vụ xen kẽ với sự gián đoạn (MTTF / (MTTF + MTTR)). (Dựa trên Hennessy & Patterson, Chương 1.7)[cite_start]. [cite: 9002, 9003]"
+  },
+  {
+    "type": "mcq",
+    "question": "[H&P] Khái niệm đa luồng (multithreading) chuyển đổi giữa các luồng trên mỗi lệnh, thường theo kiểu round-robin, được gọi là:",
+    "options": [
+      "Đa luồng hạt thô (Coarse-grained multithreading)",
+      "Đa luồng hạt mịn (Fine-grained multithreading)",
+      "Đa luồng đồng thời (Simultaneous multithreading - SMT)",
+      "Đa luồng dự đoán (Speculative multithreading)"
+    ],
+    "answer": 1,
+    "explanation": "Đa luồng hạt mịn (Fine-grained multithreading) xen kẽ các lệnh từ các luồng khác nhau trong mỗi chu kỳ, có hiệu quả trong việc che giấu các độ trễ (stall) ngắn. (Dựa trên Hennessy & Patterson, Chương 3.5)[cite_start]. [cite: 9500]"
+  }
+]

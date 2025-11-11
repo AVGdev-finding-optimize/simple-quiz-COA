@@ -1,0 +1,536 @@
+[
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân của số nhị phân không dấu 110101 là gì?",
+    "options": [
+      "53",
+      "54",
+      "49",
+      "65"
+    ],
+    "answer": 0,
+    "explanation": "Chuyển đổi nhị phân sang thập phân: (1 * 2^5) + (1 * 2^4) + (0 * 2^3) + (1 * 2^2) + (0 * 2^1) + (1 * 2^0) = 32 + 16 + 0 + 4 + 0 + 1 = 53. (Nguồn tham khảo: 02.pdf, trang 111-113)"
+  },
+  {
+    "type": "fitb",
+    "question": "Hệ thống số sử dụng 16 ký hiệu (0-9 và A-F) được gọi là hệ thống ...... (hay hệ cơ số 16).",
+    "answer": "thập lục phân",
+    "explanation": "Hệ thập lục phân (hexadecimal) sử dụng 16 ký hiệu để biểu diễn số, rất hữu ích trong kiến trúc máy tính để biểu diễn địa chỉ bộ nhớ và dữ liệu nhị phân một cách ngắn gọn. (Nguồn tham khảo: 02.pdf, trang 129)"
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân của số 3A (hệ 16) là gì?",
+    "options": [
+      "58",
+      "48",
+      "60",
+      "56"
+    ],
+    "answer": 0,
+    "explanation": "Chuyển đổi thập lục phân sang thập phân: (3 * 16^1) + (A * 16^0) = (3 * 16) + (10 * 1) = 48 + 10 = 58. (Nguồn tham khảo: 02.pdf, trang 140)"
+  },
+  {
+    "type": "msq",
+    "question": "Theo Định luật DeMorgan trong đại số Boolean, biểu thức nào sau đây là đúng?",
+    "options": [
+      "NOT (A AND B) = (NOT A) OR (NOT B)",
+      "NOT (A OR B) = (NOT A) AND (NOT B)",
+      "A AND (B OR C) = (A AND B) OR (A AND C)",
+      "A OR (A AND B) = A"
+    ],
+    "answer": [0, 1],
+    "explanation": "Hai định luật DeMorgan cơ bản là NOT (A.B) = (NOT A) + (NOT B) và NOT (A+B) = (NOT A).(NOT B). Các lựa chọn khác là định luật phân phối (Distributive) và định luật hấp thụ (Absorption). (Nguồn tham khảo: 02.pdf, trang 15)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong biểu diễn số nguyên dùng 8-bit theo phương pháp Bù 2 (2's Complement), giá trị -18 được biểu diễn là:",
+    "options": [
+      "11101110",
+      "10010010",
+      "11101101",
+      "10010001"
+    ],
+    "answer": 0,
+    "explanation": "Để biểu diễn -18 (dùng 8 bit): 1. Biểu diễn +18: 00010010. 2. Đảo bit (Bù 1): 11101101. 3. Cộng 1 (Bù 2): 11101101 + 1 = 11101110. (Nguồn tham khảo: 02.pdf, trang 183)"
+  },
+  {
+    "type": "fitb",
+    "question": "Trong kiến trúc Von Neumann, cả lệnh và dữ liệu đều được lưu trữ chung trong ...... .",
+    "answer": "bộ nhớ chính",
+    "explanation": "Kiến trúc Von Neumann (Princeton) đặc trưng bởi việc sử dụng chung một bộ nhớ và một bus cho cả lệnh (instructions) và dữ liệu (data), khác với kiến trúc Harvard. (Nguồn tham khảo: coareference.pdf, Chương 1 và K.2)"
+  },
+  {
+    "type": "mcq",
+    "question": "ISA là viết tắt của cụm từ nào trong Kiến trúc máy tính?",
+    "options": [
+      "Instruction Set Architecture (Kiến trúc tập lệnh)",
+      "Internal System Architecture (Kiến trúc hệ thống nội)",
+      "Instruction Storage Area (Vùng lưu trữ lệnh)",
+      "Integrated System Adapter (Bộ điều hợp hệ thống tích hợp)"
+    ],
+    "answer": 0,
+    "explanation": "ISA (Instruction Set Architecture) định nghĩa giao diện giữa phần cứng và phần mềm, bao gồm các lệnh, kiểu dữ liệu, thanh ghi, và chế độ địa chỉ mà bộ xử lý hỗ trợ. (Nguồn tham khảo: 01.pdf, trang 24, 27)"
+  },
+  {
+    "type": "mcq",
+    "question": "Thành phần nào của CPU chịu trách nhiệm thực hiện các phép toán số học (cộng, trừ) và logic (AND, OR)?",
+    "options": [
+      "ALU (Arithmetic Logic Unit)",
+      "Control Unit (Khối điều khiển)",
+      "Registers (Thanh ghi)",
+      "System Bus (Bus hệ thống)"
+    ],
+    "answer": 0,
+    "explanation": "ALU (Arithmetic Logic Unit - Đơn vị Số học và Logic) là thành phần cốt lõi của CPU thực hiện các phép tính toán và logic trên các toán hạng. (Nguồn tham khảo: 02.pdf, trang 237)"
+  },
+  {
+    "type": "msq",
+    "question": "Mạch logic nào sau đây được coi là mạch tuần tự (Sequential Logic)?",
+    "options": [
+      "Flip-Flop",
+      "Latch (Chốt)",
+      "Multiplexer (Bộ dồn kênh)",
+      "Decoder (Bộ giải mã)"
+    ],
+    "answer": [0, 1],
+    "explanation": "Mạch tuần tự là mạch có trạng thái (bộ nhớ), đầu ra của nó phụ thuộc vào cả đầu vào hiện tại và trạng thái trước đó. Latch và Flip-Flop là các phần tử nhớ cơ bản. Multiplexer và Decoder là các mạch tổ hợp (combinational logic). (Nguồn tham khảo: 02.pdf, trang 61, 68)"
+  },
+  {
+    "type": "mcq",
+    "question": "Một máy tính có bus dữ liệu 64-bit và bus đồng hồ 800Mhz. Một thao tác đọc/ghi RAM mất 4 chu kỳ bus. Tốc độ truyền dữ liệu (data transfer rate) tối đa là bao nhiêu?",
+    "options": [
+      "1600 MBps",
+      "800 MBps",
+      "3200 MBps",
+      "6400 MBps"
+    ],
+    "answer": 0,
+    "explanation": "Số lượt truyền mỗi giây = (800 * 10^6) / 4 = 200 * 10^6 lượt/giây. Mỗi lượt truyền 64 bit = 8 byte. Tốc độ = (200 * 10^6) * 8 = 1,600,000,000 byte/giây = 1600 MBps. (Nguồn tham khảo: 02.pdf, trang 59)"
+  },
+  {
+    "type": "fitb",
+    "question": "Công thức tính thời gian thực thi CPU (CPU execution time) là: Số lệnh (Instruction Count) x CPI x ...... .",
+    "answer": "Thời gian chu kỳ xung nhịp (Clock Cycle Time)",
+    "explanation": "Thời gian CPU = Số lệnh x Số chu kỳ trung bình mỗi lệnh (CPI) x Thời gian của một chu kỳ xung nhịp (Clock Cycle Time). (Nguồn tham khảo: coareference.pdf, Chương 1, trang 41-42)"
+  },
+  {
+    "type": "mcq",
+    "question": "Một chương trình chạy trong 20 giây trên máy A, có tốc độ xung nhịp 2 GHz. Nếu muốn thiết kế máy B chạy cùng chương trình đó trong 10 giây, và máy B yêu cầu số chu kỳ xung nhịp gấp 1.5 lần máy A, thì máy B phải có tốc độ xung nhịp là bao nhiêu?",
+    "options": [
+      "6.0 GHz",
+      "3.0 GHz",
+      "4.5 GHz",
+      "4.0 GHz"
+    ],
+    "answer": 0,
+    "explanation": "Số chu kỳ_A = Thời gian_A * Xung nhịp_A = 20s * (2 * 10^9) = 40 * 10^9 chu kỳ. Số chu kỳ_B = 1.5 * Số chu kỳ_A = 1.5 * (40 * 10^9) = 60 * 10^9 chu kỳ. Xung nhịp_B = Số chu kỳ_B / Thời gian_B = (60 * 10^9) / 10s = 6 * 10^9 Hz = 6.0 GHz. (Nguồn tham khảo: coareference.pdf, Chương 1, trang 41)"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo Định luật Amdahl, nếu một cải tiến tăng tốc 60% chương trình lên 3 lần, thì tốc độ tăng tốc tổng thể (overall speedup) là bao nhiêu?",
+    "options": [
+      "1.67",
+      "2.00",
+      "1.50",
+      "3.00"
+    ],
+    "answer": 0,
+    "explanation": "Fraction_enhanced = 0.6. Fraction_unenhanced = 1 - 0.6 = 0.4. Speedup_enhanced = 3. Speedup_overall = 1 / (Fraction_unenhanced + (Fraction_enhanced / Speedup_enhanced)) = 1 / (0.4 + (0.6 / 3)) = 1 / (0.4 + 0.2) = 1 / 0.6 = 1.67. (Nguồn tham khảo: coareference.pdf, Chương 1, trang 39)"
+  },
+  {
+    "type": "msq",
+    "question": "Trong pipeline 5 giai đoạn (IF, ID, EX, MEM, WB), những loại xung đột (hazard) nào có thể xảy ra?",
+    "options": [
+      "Xung đột cấu trúc (Structural Hazard)",
+      "Xung đột dữ liệu (Data Hazard)",
+      "Xung đột điều khiển (Control Hazard)",
+      "Xung đột bộ nhớ (Memory Hazard)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Ba loại xung đột chính trong pipeline là: Xung đột cấu trúc (khi hai lệnh cần cùng một tài nguyên phần cứng), Xung đột dữ liệu (khi một lệnh phụ thuộc vào kết quả của lệnh trước đó chưa hoàn thành), và Xung đột điều khiển (do các lệnh rẽ nhánh). (Nguồn tham khảo: coareference.pdf, Phụ lục A, trang A-11)"
+  },
+  {
+    "type": "mcq",
+    "question": "Kỹ thuật 'Forwarding' (hay 'Bypassing') trong pipeline được sử dụng chủ yếu để giải quyết loại xung đột nào?",
+    "options": [
+      "RAW (Read After Write)",
+      "WAR (Write After Read)",
+      "WAW (Write After Write)",
+      "Xung đột điều khiển"
+    ],
+    "answer": 0,
+    "explanation": "Forwarding (chuyển tiếp) là kỹ thuật lấy kết quả từ giai đoạn sau (ví dụ: EX hoặc MEM) và chuyển thẳng về đầu vào của ALU cho lệnh kế tiếp, giải quyết xung đột RAW mà không cần phải chờ đến giai đoạn WB. (Nguồn tham khảo: coareference.pdf, Phụ lục A, trang A-17)"
+  },
+  {
+    "type": "fitb",
+    "question": "Trong pipeline, lệnh được đặt ngay sau một lệnh rẽ nhánh được gọi là ...... (branch delay slot).",
+    "answer": "khe trễ rẽ nhánh",
+    "explanation": "Trong kỹ thuật rẽ nhánh trễ (delayed branch), lệnh trong khe trễ (delay slot) luôn được thực thi, bất kể lệnh rẽ nhánh có được thực hiện hay không. (Nguồn tham khảo: coareference.pdf, Phụ lục A, trang A-23)"
+  },
+  {
+    "type": "mcq",
+    "question": "Kỹ thuật dự đoán rẽ nhánh động (dynamic branch prediction) sử dụng 2 bit cho mỗi mục trong BHT (Branch History Table) có ưu điểm gì so với 1 bit?",
+    "options": [
+      "Nó đòi hỏi phải dự đoán sai hai lần liên tiếp để thay đổi trạng thái dự đoán (ví dụ: từ 'Taken' sang 'Not Taken').",
+      "Nó có thể dự đoán cả hai hướng của nhánh cùng một lúc.",
+      "Nó giảm kích thước của BHT xuống một nửa.",
+      "Nó loại bỏ hoàn toàn các xung đột điều khiển."
+    ],
+    "answer": 0,
+    "explanation": "Bộ đếm bão hòa 2-bit (2-bit saturating counter) thay đổi dự đoán chỉ sau hai lần sai. Điều này giúp tránh thay đổi dự đoán đột ngột đối với các nhánh lặp (loop branches) thường xuyên được thực hiện nhưng có một lần không thực hiện ở cuối. (Nguồn tham khảo: coareference.pdf, Chương 2, trang 82)"
+  },
+  {
+    "type": "mcq",
+    "question": "Giải thuật Tomasulo sử dụng kỹ thuật nào để loại bỏ các xung đột WAR (Write After Read) và WAW (Write After Write)?",
+    "options": [
+      "Đổi tên thanh ghi (Register Renaming)",
+      "Dự đoán rẽ nhánh (Branch Prediction)",
+      "Chuyển tiếp (Forwarding)",
+      "Thực thi theo thứ tự (In-order Execution)"
+    ],
+    "answer": 0,
+    "explanation": "Giải thuật Tomasulo sử dụng các trạm dự trữ (reservation stations) để lưu trữ các toán hạng và gán 'tên' (tag) cho các kết quả đang chờ, thực chất là một hình thức đổi tên thanh ghi động để loại bỏ các xung đột tên (name dependencies) như WAR và WAW. (Nguồn tham khảo: coareference.pdf, Chương 2, trang 92)"
+  },
+  {
+    "type": "mcq",
+    "question": "Tính chất nào của bộ nhớ cache minh họa cho việc dữ liệu vừa được truy cập có khả năng cao sẽ được truy cập lại trong tương lai gần?",
+    "options": [
+      "Tính cục bộ về thời gian (Temporal Locality)",
+      "Tính cục bộ về không gian (Spatial Locality)",
+      "Tính nhất quán (Coherence)",
+      "Tính kết hợp (Associativity)"
+    ],
+    "answer": 0,
+    "explanation": "Tính cục bộ về thời gian (Temporal Locality) là nguyên tắc cho rằng các mục dữ liệu được truy cập gần đây có khả năng cao sẽ được truy cập lại sớm. (Nguồn tham khảo: coareference.pdf, Chương 1, trang 38)"
+  },
+  {
+    "type": "fitb",
+    "question": "Một bộ nhớ cache có 3 loại miss cơ bản (3 C's) là: Compulsory (bắt buộc), Capacity (dung lượng), và ...... .",
+    "answer": "Conflict (xung đột)",
+    "explanation": "Ba loại cache miss (3 C's) là: Compulsory (lần truy cập đầu tiên), Capacity (cache quá nhỏ để chứa hết dữ liệu cần thiết), và Conflict (xảy ra trong cache direct-mapped hoặc set-associative khi quá nhiều khối map vào cùng một set). (Nguồn tham khảo: coareference.pdf, Phụ lục C, trang C-22)"
+  },
+  {
+    "type": "mcq",
+    "question": "Một CPU có thời gian truy cập cache L1 (hit time) là 1 ns, tỷ lệ miss L1 là 5%. Thời gian truy cập bộ nhớ chính (miss penalty) là 120 ns. Thời gian truy cập bộ nhớ trung bình (AMAT) là bao nhiêu?",
+    "options": [
+      "7.0 ns",
+      "1.0 ns",
+      "6.0 ns",
+      "121 ns"
+    ],
+    "answer": 0,
+    "explanation": "AMAT = Hit Time + (Miss Rate * Miss Penalty) = 1 ns + (0.05 * 120 ns) = 1 ns + 6 ns = 7.0 ns. (Nguồn tham khảo: coareference.pdf, Chương 5, trang 290)"
+  },
+  {
+    "type": "msq",
+    "question": "Chính sách ghi (write policy) nào sau đây áp dụng cho bộ nhớ cache?",
+    "options": [
+      "Write-Through (Ghi xuyên)",
+      "Write-Back (Ghi ngược)",
+      "Write-Allocate (Cấp phát khi ghi)",
+      "Write-Around (Ghi xung quanh - Tên khác của No-Write-Allocate)"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "Cache phải quyết định khi nào cập nhật bộ nhớ chính (Write-Through/Write-Back) và liệu có nạp khối vào cache khi ghi miss hay không (Write-Allocate/No-Write-Allocate, hay Write-Around). (Nguồn tham khảo: coareference.pdf, Phụ lục C, trang C-10, C-11)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong bộ nhớ cache 2-way set-associative (kết hợp tập 2 chiều) 64KB với kích thước khối (block) là 64 byte, có bao nhiêu set trong cache?",
+    "options": [
+      "512",
+      "1024",
+      "256",
+      "2048"
+    ],
+    "answer": 0,
+    "explanation": "Số khối = Kích thước cache / Kích thước khối = 64KB / 64B = 65536 / 64 = 1024 khối. Số set = Số khối / Độ kết hợp = 1024 / 2 = 512 set. (Nguồn tham khảo: coareference.pdf, Phụ lục C, trang C-12)"
+  },
+  {
+    "type": "mcq",
+    "question": "Cơ chế chính được sử dụng để chuyển đổi địa chỉ ảo (Virtual Address) sang địa chỉ vật lý (Physical Address) trong quản lý bộ nhớ là gì?",
+    "options": [
+      "Bảng trang (Page Table)",
+      "Bộ đệm ghi (Write Buffer)",
+      "Thanh ghi chỉ số (Index Register)",
+      "Bộ đếm chương trình (Program Counter)"
+    ],
+    "answer": 0,
+    "explanation": "Hệ điều hành và phần cứng MMU (Memory Management Unit) sử dụng Bảng trang (Page Table) để ánh xạ các trang ảo của một tiến trình vào các khung trang vật lý trong bộ nhớ chính. (Nguồn tham khảo: coareference.pdf, Phụ lục C, trang C-40)"
+  },
+  {
+    "type": "fitb",
+    "question": "Một bộ đệm (cache) đặc biệt được dùng để tăng tốc độ chuyển đổi địa chỉ ảo sang địa chỉ vật lý bằng cách lưu trữ các mục bảng trang (PTE) vừa được sử dụng được gọi là ...... .",
+    "answer": "TLB (Translation Lookaside Buffer)",
+    "explanation": "TLB (Translation Lookaside Buffer) là một cache nhỏ, nhanh, lưu trữ các ánh xạ địa chỉ ảo-vật lý (PTEs) gần đây để tránh phải truy cập Bảng trang trong bộ nhớ chính mỗi lần truy cập. (Nguồn tham khảo: coareference.pdf, Phụ lục C, trang C-43)"
+  },
+  {
+    "type": "msq",
+    "question": "Những đặc điểm nào sau đây mô tả kiến trúc RISC (Reduced Instruction Set Computer)?",
+    "options": [
+      "Chỉ các lệnh Load và Store mới truy cập bộ nhớ.",
+      "Tất cả các lệnh đều có độ dài cố định.",
+      "Có nhiều chế độ địa chỉ phức tạp.",
+      "Các lệnh thường thực thi trong nhiều chu kỳ xung nhịp (multicycle)."
+    ],
+    "answer": [0, 1],
+    "explanation": "Kiến trúc RISC (Load-Store) nhấn mạnh vào các lệnh đơn giản, độ dài cố định, và chỉ có lệnh Load/Store truy cập bộ nhớ. Các lệnh ALU chỉ hoạt động trên thanh ghi. Điều này giúp đơn giản hóa pipeline. CISC mới có nhiều chế độ địa chỉ và lệnh đa chu kỳ phức tạp. (Nguồn tham khảo: coareference.pdf, Phụ lục B, trang B-3)"
+  },
+  {
+    "type": "mcq",
+    "question": "Một máy tính có CPI (chu kỳ mỗi lệnh) cơ sở là 1.0. 25% số lệnh là load/store, và tỷ lệ cache miss là 4%. Miss penalty là 50 chu kỳ. CPI thực tế (đã tính miss) là bao nhiêu?",
+    "options": [
+      "1.5",
+      "2.0",
+      "1.0",
+      "2.5"
+    ],
+    "answer": 1,
+    "explanation": "CPI_thực_tế = CPI_cơ_sở + (Tần suất load/store * Tỷ lệ miss * Miss penalty) = 1.0 + (0.25 * 0.04 * 50) = 1.0 + (0.01 * 50) = 1.0 + 0.5 = 1.5. *Chỉnh sửa: Câu hỏi giả định chỉ load/store mới bị miss. CPI_thực_tế = CPI_cơ_sở + (Tần suất L/S * Tỷ lệ miss * Miss penalty) = 1.0 + (0.25 * 0.04 * 50) = 1.0 + 0.5 = 1.5. Nếu tính cả instruction miss (giả sử 1.25 mem access/inst), CPI = 1.0 + (1.25 * 0.04 * 50) = 3.5. Nhưng đề chỉ nói L/S. *Chỉnh sửa 2*: Câu hỏi hỏi 25% lệnh LÀ load/store. Ta cần tính tổng số truy cập bộ nhớ. 100% lệnh cần fetch (I-cache) + 25% lệnh cần data (D-cache) = 1.25 truy cập/lệnh. CPI_thực_tế = 1.0 + (1.25 truy cập/lệnh * 0.04 miss/truy cập * 50 chu kỳ/miss) = 1.0 + 2.5 = 3.5. *Chỉnh sửa 3 - quay lại giả định ban đầu là hợp lý nhất*: Tỷ lệ miss 4% CHỈ ÁP DỤNG cho 25% lệnh load/store. CPI = 1.0 + (0.25 * 0.04 * 50) = 1.5. *Tái kiểm tra ví dụ Sách:* Ví dụ trong Sách (C.2) tính trên tổng số truy cập (1 + 0.5 = 1.5). Giả sử 2% miss rate áp dụng cho CẢ instruction và data. CPI = 1.0 + (1.5 * 0.02 * 25) = 1.75. OK, vậy ta phải giả định tỷ lệ miss 4% này là TỔNG HỢP. Giả sử 1.25 truy cập/lệnh (1 fetch + 0.25 data). CPI = 1.0 + (1.25 * 0.04 * 50) = 1.0 + 2.5 = 3.5. Nếu 4% là miss rate CỦA DATA CACHE THÔI (và I-Cache perfect): CPI = 1.0 + (0.25 * 0.04 * 50) = 1.5. Đây là cách hiểu hợp lý nhất. Chọn 1.5. (Nguồn tham khảo: coareference.pdf, Phụ lục C, trang C-17)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong chuẩn IEEE 754 cho số chấm động 32-bit (single precision), trường mũ (exponent) có độ dài bao nhiêu bit?",
+    "options": [
+      "8 bits",
+      "1 bit",
+      "23 bits",
+      "11 bits"
+    ],
+    "answer": 0,
+    "explanation": "Chuẩn IEEE 754 32-bit (single precision) bao gồm 1 bit dấu (Sign), 8 bit mũ (Exponent) với bias 127, và 23 bit phần định trị (Fraction/Mantissa). (Nguồn tham khảo: 02.pdf, trang 220)"
+  },
+  {
+    "type": "mcq",
+    "question": "Mô hình I/O nào cho phép thiết bị I/O truy cập trực tiếp vào bộ nhớ chính mà không cần sự can thiệp của CPU?",
+    "options": [
+      "DMA (Direct Memory Access)",
+      "Programmed I/O (I/O lập trình)",
+      "Interrupt-driven I/O (I/O điều khiển bằng ngắt)",
+      "Memory-mapped I/O"
+    ],
+    "answer": 0,
+    "explanation": "DMA (Direct Memory Access) cho phép một bộ điều khiển DMA chuyên dụng quản lý việc truyền dữ liệu giữa thiết bị I/O và bộ nhớ chính, giải phóng CPU để làm các công việc khác. (Nguồn tham khảo: coareference.pdf, Chương 6)"
+  },
+  {
+    "type": "msq",
+    "question": "Mô hình RAID nào sau đây KHÔNG cung cấp khả năng chịu lỗi (fault tolerance)?",
+    "options": [
+      "RAID 0",
+      "JBOD (Just a Bunch Of Disks)",
+      "RAID 1",
+      "RAID 5"
+    ],
+    "answer": [0, 1],
+    "explanation": "RAID 0 (striping) và JBOD (chỉ là một nhóm đĩa) không có cơ chế dự phòng. Chúng chỉ nhằm mục đích tăng hiệu suất (RAID 0) hoặc gộp dung lượng (JBOD). RAID 1 (mirroring) và RAID 5 (parity) đều có thể chịu được lỗi của một đĩa. (Nguồn tham khảo: coareference.pdf, Chương 6, trang 362-364)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong RAID 5, một 'small write' (ghi nhỏ) điển hình yêu cầu bao nhiêu thao tác truy cập đĩa vật lý?",
+    "options": [
+      "4 (2 đọc, 2 ghi)",
+      "2 (2 ghi)",
+      "1 (1 ghi)",
+      "N (với N là số đĩa)"
+    ],
+    "answer": 0,
+    "explanation": "Một 'small write' trong RAID 5 yêu cầu: 1. Đọc khối dữ liệu cũ (Old Data). 2. Đọc khối parity cũ (Old Parity). 3. Ghi khối dữ liệu mới (New Data). 4. Ghi khối parity mới (New Parity). Tổng cộng là 4 thao tác đĩa. (Nguồn tham khảo: coareference.pdf, Chương 6, trang 364)"
+  },
+  {
+    "type": "fitb",
+    "question": "Hiện tượng xảy ra khi một khối cache bị vô hiệu hóa vì một từ khác trong cùng khối đó bị ghi bởi một bộ xử lý khác, mặc dù từ đó không được chia sẻ, được gọi là ...... .",
+    "answer": "chia sẻ giả (false sharing)",
+    "explanation": "Chia sẻ giả (False sharing) xảy ra khi các dữ liệu không liên quan nhưng nằm chung trong một khối cache bị vô hiệu hóa, gây ra các cache miss không cần thiết trong hệ thống đa xử lý. (Nguồn tham khảo: coareference.pdf, Chương 4, trang 218)"
+  },
+  {
+    "type": "mcq",
+    "question": "Kiến trúc SMT (Simultaneous Multithreading) cho phép điều gì?",
+    "options": [
+      "Phát hành lệnh từ nhiều luồng (threads) khác nhau trong cùng một chu kỳ xung nhịp.",
+      "Chỉ chuyển đổi luồng khi có cache miss L2.",
+      "Chạy nhiều lõi (cores) trên một chip.",
+      "Biên dịch mã Java sang mã máy."
+    ],
+    "answer": 0,
+    "explanation": "SMT (Đa luồng đồng thời) khai thác TLP (song song mức luồng) trên một bộ xử lý siêu vô hướng (superscalar) bằng cách cho phép các lệnh từ nhiều luồng cùng tranh chấp và sử dụng các đơn vị chức năng trong cùng một chu kỳ. (Nguồn tham khảo: coareference.pdf, Chương 3, trang 173)"
+  },
+  {
+    "type": "mcq",
+    "question": "Một đĩa cứng quay với tốc độ 7200 RPM (vòng/phút). Độ trễ quay trung bình (average rotational latency) là bao nhiêu?",
+    "options": [
+      "4.17 ms",
+      "8.33 ms",
+      "7.20 ms",
+      "16.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Thời gian 1 vòng quay = 60 giây / 7200 vòng = 0.00833 giây = 8.33 ms. Độ trễ quay trung bình bằng 1/2 thời gian một vòng quay = 8.33 ms / 2 = 4.17 ms. (Nguồn tham khảo: coareference.pdf, Chương 6, trang 361)"
+  },
+  {
+    "type": "fitb",
+    "question": "Theo Định luật Little trong lý thuyết hàng đợi, Số lượng tác vụ trung bình trong hệ thống = Tốc độ đến (Arrival Rate) x ...... .",
+    "answer": "Thời gian phản hồi trung bình (Mean Response Time)",
+    "explanation": "Định luật Little là một nguyên lý cơ bản trong lý thuyết hàng đợi, phát biểu rằng số lượng trung bình các mục trong một hệ thống ổn định bằng tốc độ đến trung bình nhân với thời gian trung bình một mục ở trong hệ thống. (Nguồn tham khảo: coareference.pdf, Chương 6, trang 380)"
+  },
+  {
+    "type": "msq",
+    "question": "Những kỹ thuật nào sau đây được sử dụng để giảm Cache Miss Penalty (Chi phí khi miss)?",
+    "options": [
+      "Sử dụng bộ nhớ cache đa tầng (Multilevel Caches)",
+      "Ưu tiên Read Miss hơn Write Miss",
+      "Sử dụng kích thước khối (block size) lớn hơn",
+      "Tăng độ kết hợp (associativity) của cache"
+    ],
+    "answer": [0, 1],
+    "explanation": "Cache đa tầng (L2, L3) cung cấp một mức đệm nhanh hơn bộ nhớ chính, làm giảm miss penalty của L1. Ưu tiên Read (thường khiến CPU chờ) hơn Write (có thể dùng write buffer) cũng làm giảm penalty. Tăng kích thước khối và tăng độ kết hợp là các kỹ thuật để giảm Miss Rate (tỷ lệ miss), không phải Miss Penalty. (Nguồn tham khảo: coareference.pdf, Phụ lục C, trang C-22, C-29, C-34)"
+  },
+  {
+    "type": "mcq",
+    "question": "Kiến trúc nào sử dụng các gói lệnh (bundles) chứa các lệnh có thể thực thi song song, với sự trợ giúp của trình biên dịch để xác định tính song song?",
+    "options": [
+      "EPIC (VLIW)",
+      "Superscalar (Siêu vô hướng)",
+      "Vector Processor",
+      "CISC"
+    ],
+    "answer": 0,
+    "explanation": "Kiến trúc EPIC (Explicitly Parallel Instruction Computing), một dạng của VLIW (Very Long Instruction Word), dựa vào trình biên dịch để nhóm các lệnh độc lập vào các 'gói' (bundles) để phần cứng thực thi song song một cách rõ ràng. (Nguồn tham khảo: coareference.pdf, Chương 2, trang 114)"
+  },
+  {
+    "type": "mcq",
+    "question": "Một bộ xử lý có tốc độ 4.0 GHz. Thời gian của một chu kỳ xung nhịp (clock cycle time) là bao nhiêu?",
+    "options": [
+      "0.25 ns",
+      "2.5 ns",
+      "4.0 ns",
+      "0.4 ps"
+    ],
+    "answer": 0,
+    "explanation": "Thời gian chu kỳ = 1 / Tần số = 1 / (4.0 * 10^9 Hz) = 0.25 * 10^-9 giây = 0.25 ns (nanoseconds). (Nguồn tham khảo: 02.pdf, trang 57)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong phép cộng nhị phân 8-bit, 01101101 + 10010010. Kết quả và trạng thái cờ Nhớ (Carry) và Tràn (Overflow) là gì?",
+    "options": [
+      "Kết quả: 11111111, Carry: 0, Overflow: 0",
+      "Kết quả: 11111111, Carry: 1, Overflow: 0",
+      "Kết quả: 00000000, Carry: 1, Overflow: 1",
+      "Kết quả: 11111111, Carry: 0, Overflow: 1"
+    ],
+    "answer": 0,
+    "explanation": "Phép cộng: 01101101 + 10010010 = 11111111. Không có bit nhớ ra khỏi bit thứ 7 (bit dấu), nên Carry = 0. Hai số đầu vào có dấu khác nhau (0 và 1), do đó phép cộng không bao giờ có thể gây tràn. Overflow = 0. (Nguồn tham khảo: 02.pdf, trang 144-166)"
+  },
+  {
+    "type": "msq",
+    "question": "Thành phần nào trong Hình 1.12 (coareference.pdf, trang 23) được coi là Chi phí Biến đổi (Variable Cost) trong sản xuất vi mạch?",
+    "options": [
+      "Chi phí của một Die (Cost of die)",
+      "Chi phí kiểm tra Die (Cost of testing die)",
+      "Chi phí của bộ Mặt nạ (Mask set)",
+      "Chi phí đóng gói và kiểm tra cuối (Cost of packaging and final test)"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "Chi phí biến đổi (variable cost) là chi phí trên mỗi con chip sản xuất. Chi phí của Die, kiểm tra die, và đóng gói là chi phí biến đổi. Chi phí bộ mặt nạ (Mask set) là Chi phí Cố định (fixed cost), không phụ thuộc vào số lượng chip sản xuất. (Nguồn tham khảo: coareference.pdf, Chương 1, trang 21-25)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong các mô hình nhất quán bộ nhớ (memory consistency models), mô hình nào yêu cầu kết quả của mọi thực thi phải giống như thể các truy cập bộ nhớ của mỗi bộ xử lý được giữ nguyên thứ tự, và các truy cập giữa các bộ xử lý được xen kẽ một cách tùy ý?",
+    "options": [
+      "Sequential Consistency (Nhất quán tuần tự)",
+      "Release Consistency (Nhất quán giải phóng)",
+      "Processor Consistency (Nhất quán bộ xử lý)",
+      "Weak Ordering (Thứ tự yếu)"
+    ],
+    "answer": 0,
+    "explanation": "Nhất quán tuần tự (Sequential Consistency) là mô hình nghiêm ngặt nhất, đòi hỏi việc duy trì thứ tự chương trình trên mỗi bộ xử lý và một thứ tự xen kẽ toàn cục của tất cả các truy cập bộ nhớ. (Nguồn tham khảo: coareference.pdf, Chương 4, trang 243)"
+  },
+  {
+    "type": "fitb",
+    "question": "Trong máy tính RISC 5 giai đoạn (IF, ID, EX, MEM, WB), một lệnh Load (LD) thường tạo ra độ trễ (latency) là ...... chu kỳ, đòi hỏi một lệnh 'stall' nếu lệnh tiếp theo ngay lập tức sử dụng kết quả của nó.",
+    "answer": "1",
+    "explanation": "Lệnh Load lấy dữ liệu từ bộ nhớ ở giai đoạn MEM (giai đoạn 4). Nếu lệnh tiếp theo cần dữ liệu đó ở giai đoạn EX (giai đoạn 3), nó phải chờ 1 chu kỳ (load-use hazard). (Nguồn tham khảo: coareference.pdf, Phụ lục A, trang A-19)"
+  },
+  {
+    "type": "mcq",
+    "question": "Một wafer 300mm có chi phí sản xuất $5500. Kích thước mỗi die là 1.0 cm x 1.0 cm (Diện tích 1 cm^2). Giả sử hệ số $\\alpha=4.0$ và mật độ lỗi (defect density) là 0.4 lỗi/cm^2. Chi phí của một die tốt (cost per good die) là bao nhiêu?",
+    "options": [
+      "~$20.15",
+      "~$12.64",
+      "~$15.50",
+      "~$25.00"
+    ],
+    "answer": 0,
+    "explanation": "1. Số die trên wafer = (pi * (30/2)^2) / 1.0 - (pi * 30) / sqrt(2 * 1.0) approx 706.9 - 66.6 = 640 dies. 2. Die Yield = (1 + (0.4 * 1.0) / 4.0)^-4 = (1 + 0.1)^-4 = (1.1)^-4 approx 0.683. 3. Số die tốt = 640 * 0.683 = 437. 4. Chi phí mỗi die tốt = $5500 / 437 approx $12.58. (Nếu dùng công thức chính xác hơn từ sách: Dies per wafer = 640. Cost per die = 5500 / (640 * 0.683) = $12.58) -- *Kiểm tra lại tính toán của sách (trang 24)*: Sách tính ra 435 die tốt (cho 1.0 cm^2) và chi phí $13. Vậy $5500 / 435 = $12.64. Chọn $12.64. (Nguồn tham khảo: coareference.pdf, Chương 1, trang 22-24)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong các kỹ thuật I/O, 'queuing theory' (lý thuyết hàng đợi) chủ yếu được sử dụng để phân tích mối quan hệ nào?",
+    "options": [
+      "Thông lượng (Throughput) và Thời gian phản hồi (Response Time)",
+      "Dung lượng đĩa (Disk Capacity) và Tốc độ quay (RPM)",
+      "Độ trễ (Latency) và Băng thông (Bandwidth)",
+      "Chi phí (Cost) và Độ tin cậy (Reliability)"
+    ],
+    "answer": 0,
+    "explanation": "Lý thuyết hàng đợi cung cấp một mô hình toán học để phân tích các hệ thống có hàng đợi, cho phép các kiến trúc sư cân bằng giữa thông lượng (số lượng tác vụ hoàn thành) và thời gian phản hồi (độ trễ của mỗi tác vụ). (Nguồn tham khảo: coareference.pdf, Chương 6, trang 372)"
+  },
+  {
+    "type": "fitb",
+    "question": "Trong RAID, kỹ thuật 'mirroring' (sao chép y hệt dữ liệu sang một đĩa khác) được định nghĩa ở cấp độ RAID ...... .",
+    "answer": "1",
+    "explanation": "RAID 1 (Mirroring) tạo ra một bản sao chính xác của dữ liệu trên một hoặc nhiều đĩa khác, cung cấp khả năng chịu lỗi cao nhưng với chi phí lưu trữ gấp đôi. (Nguồn tham khảo: coareference.pdf, Chương 6, trang 362)"
+  },
+  {
+    "type": "mcq",
+    "question": "Khi CPU thực thi một lệnh và truy cập vào TLB, một 'TLB miss' có nghĩa là gì?",
+    "options": [
+      "Mục Bảng trang (PTE) cho địa chỉ ảo đó không có trong TLB.",
+      "Dữ liệu không có trong cache L1.",
+      "Lệnh rẽ nhánh đã được dự đoán sai.",
+      "Trang (page) không có trong bộ nhớ vật lý (gây ra Page Fault)."
+    ],
+    "answer": 0,
+    "explanation": "TLB miss xảy ra khi phần cứng quản lý bộ nhớ (MMU) không tìm thấy ánh xạ địa chỉ ảo-vật lý (PTE) trong bộ đệm TLB, buộc nó phải tra cứu trong Bảng trang (thường ở trong bộ nhớ). (Nguồn tham khảo: coareference.pdf, Phụ lục C, trang C-43)"
+  },
+  {
+    "type": "msq",
+    "question": "Các loại bus nào sau đây là bus hệ thống (system bus) hoặc bus I/O?",
+    "options": [
+      "PCI (Peripheral Component Interconnect)",
+      "SCSI (Small Computer System Interface)",
+      "Address Bus (Bus địa chỉ)",
+      "Data Bus (Bus dữ liệu)"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "Bus địa chỉ và bus dữ liệu là các thành phần của bus hệ thống nội bộ. PCI là một bus I/O ngoại vi phổ biến. SCSI là một bus (hoặc giao thức) để kết nối các thiết bị lưu trữ I/O. (Nguồn tham khảo: 01.pdf, trang 21)"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong các mức độ trừu tượng của thiết kế máy tính, mức độ nào định nghĩa giao diện phần cứng/phần mềm mà lập trình viên hợp ngữ có thể thấy?",
+    "options": [
+      "Kiến trúc tập lệnh (Instruction Set Architecture - ISA)",
+      "Tổ chức (Organization) hay Vi kiến trúc (Microarchitecture)",
+      "Thiết kế logic (Logic Design)",
+      "Phần mềm hệ thống (System Software)"
+    ],
+    "answer": 0,
+    "explanation": "ISA (Kiến trúc tập lệnh) là mức độ trừu tượng đóng vai trò là giao diện giữa phần cứng và phần mềm, định nghĩa những gì lập trình viên (hoặc trình biên dịch) cần biết để tạo ra mã máy chính xác. (Nguồn tham khảo: 01.pdf, trang 24, 27)"
+  },
+  {
+    "type": "fitb",
+    "question": "Một lỗi (fault) tạo ra một ...... (error) tiềm ẩn (latent), nó sẽ trở nên hiệu dụng (effective) khi được kích hoạt, và khi lỗi này ảnh hưởng đến dịch vụ được cung cấp, một ...... (failure) xảy ra.",
+    "answer": "lỗi (error), sự cố (failure)",
+    "explanation": "Mối quan hệ về độ tin cậy là: Lỗi (fault) gây ra Lỗi (error), và Lỗi (error) gây ra Sự cố (failure). (Nguồn tham khảo: coareference.pdf, Chương 6, trang 366)"
+  },
+  {
+    "type": "mcq",
+    "question": "Biểu diễn số thực theo chuẩn IEEE 754 32-bit của số -5.0 là gì? (1 bit dấu, 8 bit mũ, 23 bit định trị)",
+    "options": [
+      "1 10000001 01000000000000000000000",
+      "0 10000001 01000000000000000000000",
+      "1 10000010 10100000000000000000000",
+      "1 01111110 10100000000000000000000"
+    ],
+    "answer": 0,
+    "explanation": "1. Dấu: Âm -> 1. 2. Nhị phân: 5.0 = 101.0_2. 3. Chuẩn hóa: 1.01 * 2^2. 4. Mũ (Exponent): 2 + 127 (bias) = 129 = 10000001_2. 5. Định trị (Fraction): 01000...0 (23 bit). Kết quả: 1 10000001 01000000000000000000000. (Nguồn tham khảo: 02.pdf, trang 222)"
+  }
+]

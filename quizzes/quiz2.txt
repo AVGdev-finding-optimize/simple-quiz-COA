@@ -1,224 +1,470 @@
 [
-  {
-    "type": "mcq",
-    "question": "Ba loại máy tính chính được phân loại trong bài giảng là gì?",
-    "options": [
-      "Máy tính cá nhân, Máy trạm, Siêu máy tính",
-      "Máy tính để bàn, Máy chủ, Máy tính nhúng",
-      "Laptop, Máy tính bảng, Điện thoại thông minh",
-      "Máy tính lớn, Máy tính mini, Vi máy tính"
-    ],
-    "answer": 1,
-    "explanation": "Bài giảng 01.pdf (trang 5) phân loại máy tính thành: Máy tính để bàn (Desktop), Máy chủ (Server), và Máy tính nhúng (Embedded). [cite: 25, 28, 32]"
-  },
-  {
-    "type": "msq",
-    "question": "Những thành phần nào sau đây được coi là thành phần chính của một máy tính theo sơ đồ (slide 6)?",
-    "options": [
-      "Processor (Bộ xử lý)",
-      "Memory (Bộ nhớ)",
-      "Compiler (Trình biên dịch)",
-      "Input/Output (Vào/Ra)"
-    ],
-    "answer": [0, 1, 3],
-    "explanation": "Sơ đồ 'Components of a Computer' (slide 6) cho thấy Processor, Memory, và Input/Output là các thành phần phần cứng cốt lõi. Trình biên dịch là một phần của phần mềm. [cite: 36]"
-  },
-  {
-    "type": "fitb",
-    "question": "Giao diện giữa phần cứng và phần mềm lớp thấp (low-level software) được gọi là ... [cite: 267, 268]",
-    "answer": "Instruction Set Architecture (ISA)",
-    "explanation": "Kiến trúc tập lệnh (ISA) định nghĩa giao diện giữa phần cứng và phần mềm, chuẩn hóa các lệnh. [cite: 267, 268, 289]"
-  },
-  {
-    "type": "mcq",
-    "question": "Thành phần nào của máy tính KHÔNG phải là bộ nhớ 'non-volatile' (bất khả biến)?",
-    "options": [
-      "Magnetic disk (Đĩa từ)",
-      "Flash memory (Bộ nhớ flash)",
-      "RAM (Bộ nhớ truy cập ngẫu nhiên)",
-      "DVD"
-    ],
-    "answer": 2,
-    "explanation": "RAM là bộ nhớ 'volatile' (khả biến), nghĩa là nó mất dữ liệu khi tắt nguồn, trong khi đĩa từ và bộ nhớ flash là 'non-volatile'. [cite: 169, 170, 171, 172, 173]"
-  },
-  {
-    "type": "mcq",
-    "question": "Hệ thống phân cấp bộ nhớ được sắp xếp như thế nào?",
-    "options": [
-      "Từ chậm nhất/lớn nhất đến nhanh nhất/nhỏ nhất",
-      "Từ nhanh nhất/nhỏ nhất đến chậm nhất/lớn nhất",
-      "Chỉ dựa trên chi phí",
-      "Chỉ dựa trên dung lượng"
-    ],
-    "answer": 1,
-    "explanation": "Hệ thống phân cấp bộ nhớ đi từ cấp cao nhất (Upper Level) là nhanh nhất, nhỏ nhất (như thanh ghi) đến cấp thấp nhất (Lower Level) là chậm nhất, lớn nhất (như đĩa). [cite: 183, 184]"
-  },
-  {
-    "type": "mcq",
-    "question": "Trong đại số Boolean, luật nào phát biểu rằng $A + 1 = 1$?",
-    "options": [
-      "Identity law (Luật định danh)",
-      "Inverse laws (Luật nghịch đảo)",
-      "Zero and One laws (Luật 0 và 1)",
-      "Idempotent law (Luật lũy đẳng)"
-    ],
-    "answer": 2,
-    "explanation": "Luật 0 và 1 (Zero and One laws) định nghĩa các tính chất của 0 và 1, bao gồm $A + 1 = 1$ và $A \\cdot 0 = 0$. [cite: 480, 481, 482]"
-  },
-  {
-    "type": "mcq",
-    "question": "Theo luật DeMorgan, biểu thức $\\overline{(A + B)}$ tương đương với biểu thức nào?",
-    "options": [
-      "$\\overline{A} + \\overline{B}$",
-      "$\\overline{A} \\cdot \\overline{B}$",
-      "$A \\cdot B$",
-      "$A + B$"
-    ],
-    "answer": 1,
-    "explanation": "Luật DeMorgan phát biểu: $\\overline{(A + B)} = \\overline{A} \\cdot \\overline{B}$. [cite: 499, 501]"
-  },
-  {
-    "type": "mcq",
-    "question": "Phép toán nào trả về '1' CHỈ KHI cả hai toán hạng là '1'?",
-    "options": [
-      "OR",
-      "NAND",
-      "NOR",
-      "AND"
-    ],
-    "answer": 3,
-    "explanation": "Phép toán AND (HỘI) chỉ trả về '1' nếu cả hai toán hạng (A và B) đều là '1'. [cite: 431, 433]"
-  },
-  {
-    "type": "mcq",
-    "question": "Phép toán $\\overline{(\\overline{A} \\cdot B) + (A \\cdot \\overline{B})}$ là biểu thức của cổng logic nào?",
-    "options": [
-      "XOR (Exclusive-OR)",
-      "NAND",
-      "NOR",
-      "XNOR"
-    ],
-    "answer": 0,
-    "explanation": "Biểu thức cho XOR là $(\\overline{A} \\cdot B) + (A \\cdot \\overline{B})$. Tuy nhiên, slide 21 có lỗi cú pháp, nếu diễn giải biểu thức là $(\\overline{A} \cdot B) + (A \cdot \overline{B})$ thì đó là XOR. [cite: 545, 546, 548, 549]"
-  },
-  {
-    "type": "mcq",
-    "question": "Một mạch logic có đầu ra chỉ phụ thuộc vào các đầu vào hiện tại được gọi là:",
-    "options": [
-      "Mạch tuần tự (Sequential Logic Circuit)",
-      "Mạch tổ hợp (Combinatorial Logic Circuit)",
-      "Latch",
-      "Flip-Flop"
-    ],
-    "answer": 1,
-    "explanation": "Mạch tổ hợp (Combinatorial logic circuits) có đầu ra phụ thuộc hoàn toàn vào các đầu vào hiện tại của chúng. [cite: 1119, 1120]"
-  },
-  {
-    "type": "mcq",
-    "question": "Một D-Latch (chốt D) là loại thiết bị kích hoạt bằng:",
-    "options": [
-      "Cạnh lên (Rising edge)",
-      "Cạnh xuống (Falling edge)",
-      "Mức (Level triggered)",
-      "Cả mức và cạnh"
-    ],
-    "answer": 2,
-    "explanation": "Latches lưu trữ dữ liệu khi clock ở một mức nhất định (ví dụ: mức cao hoặc mức thấp), do đó chúng là 'level triggered'. [cite: 1046, 1047]"
-  },
-  {
-    "type": "fitb",
-    "question": "Một D-Flip Flop là một D-Latch được kích hoạt bằng ...",
-    "answer": "cạnh (edge triggered)",
-    "explanation": "Một D-Flip Flop là một D-Latch được kích hoạt bằng cạnh (edge triggered), nghĩa là nó chỉ lưu trữ dữ liệu vào thời điểm cạnh lên hoặc cạnh xuống của clock. [cite: 1078]"
-  },
-  {
-    "type": "mcq",
-    "question": "Một bộ dồn kênh (Multiplexer hay Mux) 8-đầu-vào-1-đầu-ra cần bao nhiêu đường chọn (select lines)?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "8"
-    ],
-    "answer": 2,
-    "explanation": "Để chọn 1 trong N đầu vào, Mux cần k đường chọn sao cho $2^k \\ge N$. Để chọn 1 trong 8, ta cần $2^k \\ge 8$, vậy k=3. [cite: 898, 899]"
-  },
-  {
-    "type": "mcq",
-    "question": "Giá trị thập phân của số nhị phân không dấu '1100' là gì?",
-    "options": [
-      "6",
-      "10",
-      "12",
-      "14"
-    ],
-    "answer": 2,
-    "explanation": "$1100_2 = (1 \\times 2^3) + (1 \\times 2^2) + (0 \\times 2^1) + (0 \\times 2^0) = 8 + 4 + 0 + 0 = 12_{10}$. [cite: 1535]"
-  },
-  {
-    "type": "mcq",
-    "question": "Số 'A8F' trong hệ thập lục phân (hex) tương đương với giá trị thập phân (decimal) nào?",
-    "options": [
-      "2703",
-      "421",
-      "10815",
-      "2560"
-    ],
-    "answer": 0,
-    "explanation": "$A8F_{16} = (10 \\times 16^2) + (8 \\times 16^1) + (15 \\times 16^0) = (10 \\times 256) + (8 \\times 16) + (15 \\times 1) = 2560 + 128 + 15 = 2703_{10}$. [cite: 1574]"
-  },
-  {
-    "type": "mcq",
-    "question": "Biểu diễn Bù 2 (2's Complement) 8-bit của số -1 là gì?",
-    "options": [
-      "10000001",
-      "11111110",
-      "11111111",
-      "10000000"
-    ],
-    "answer": 2,
-    "explanation": "+1 là 00000001. Đảo bit (Bù 1) là 11111110. Cộng 1 (Bù 2) là 11111111."
-  },
-  {
-    "type": "mcq",
-    "question": "Để cộng hai số nhị phân 3-bit (A, B) và tạo ra một Sum 3-bit và một Cout (nhớ ra) 1-bit, bạn sẽ sử dụng:",
-    "options": [
-      "Ba bộ cộng bán phần (Half-Adder)",
-      "Ba bộ cộng toàn phần (Full-Adder)",
-      "Một bộ cộng bán phần và hai bộ cộng toàn phần",
-      "Hai bộ cộng bán phần và một bộ cộng toàn phần"
-    ],
-    "answer": 2,
-    "explanation": "Một bộ cộng Ripple Carry n-bit cần n bộ cộng toàn phần (Full-Adder). Bit Cin đầu tiên có thể là 0. [cite: 1601, 1605]"
-  },
-  {
-    "type": "msq",
-    "question": "Những bước nào là một phần của quy trình cộng số dấu chấm động?",
-    "options": [
-      "Gióng hàng dấu chấm (Align decimal points)",
-      "Cộng các phần định trị (Add significands)",
-      "Chuẩn hóa kết quả (Normalize result)",
-      "Nhân các số mũ (Multiply exponents)"
-    ],
-    "answer": [0, 1, 2],
-    "explanation": "Các bước bao gồm gióng hàng dấu chấm (bằng cách dịch chuyển số có số mũ nhỏ hơn), cộng các phần định trị, sau đó chuẩn hóa và làm tròn kết quả. Các số mũ được cộng (không phải nhân). [cite: 1694, 1696, 1699]"
-  },
-  {
-    "type": "mcq",
-    "question": "Giá trị 'NaN' trong IEEE 754 là viết tắt của:",
-    "options": [
-      "Negative-a-Number",
-      "Not-a-Number",
-      "Non-aligned-Number",
-      "Number-Approx-Nil"
-    ],
-    "answer": 1,
-    "explanation": "NaN là viết tắt của Not-a-Number (Không phải là số), dùng để chỉ các kết quả không hợp lệ hoặc không xác định như 0.0 / 0.0. [cite: 1693]"
-  },
-  {
-    "type": "fitb",
-    "question": "Một bus dữ liệu 64-bit có bus clock 800Mhz và một thao tác R/W mất 4 chu kỳ. Tốc độ truyền dữ liệu (tính bằng Bps) là ...",
-    "answer": "1.600.000.000 Bps",
-    "explanation": "Số lượt truyền/giây = $(800 \times 10^6) / 4 = 200 \times 10^6$. Kích thước truyền = 64 bit = 8 bytes. Tốc độ = $(200 \times 10^6) \times 8 = 1.600.000.000$ Bps (hay 1600 MBps). [cite: 1022, 1023, 1024]"
-  }
-]
+    {
+      "type": "mcq",
+      "question": "Theo tài liệu, Kiến trúc Máy tính (Computer Architecture) bao gồm hai thành phần chính nào?",
+      "options": [
+        "Phần cứng và Phần mềm",
+        "Bộ xử lý (CPU) và Bộ nhớ (Memory)",
+        "Kiến trúc Tập lệnh (ISA) và Tổ chức Máy (Machine Organization)",
+        "Đường đi dữ liệu (Datapath) và Điều khiển (Control)"
+      ],
+      "answer": 2,
+      "explanation": "Kiến trúc Máy tính (Computer Architecture) được định nghĩa là Kiến trúc Tập lệnh (ISA) + Tổ chức Máy (Machine Organization)."
+    },
+    {
+      "type": "mcq",
+      "question": "Lớp máy tính nào sau đây có yêu cầu khắt khe nhất về điện năng, hiệu năng và chi phí (stringent power/performance/cost constraints)?",
+      "options": [
+        "Máy tính để bàn (Desktop computers)",
+        "Máy chủ (Server computers)",
+        "Máy tính nhúng (Embedded computers)",
+        "Siêu máy tính (Supercomputers)"
+      ],
+      "answer": 2,
+      "explanation": "Máy tính nhúng (Embedded computers) thường bị ẩn đi như một thành phần của hệ thống khác và có các ràng buộc khắt khe về điện năng, hiệu năng và chi phí."
+    },
+    {
+      "type": "msq",
+      "question": "Chọn TẤT CẢ các thành phần được coi là thiết bị Nhập (Input) của máy tính?",
+      "options": [
+        "Màn hình (Display)",
+        "Bàn phím (Keyboard)",
+        "Chuột (Mouse)",
+        "Loa (Speakers)"
+      ],
+      "answer": [1, 2],
+      "explanation": "Các thiết bị giao diện người dùng (User-interface devices) bao gồm Màn hình (xuất), Bàn phím (nhập), Chuột (nhập)."
+    },
+    {
+      "type": "mcq",
+      "question": "Tín hiệu điện áp (Voltage) là một đại lượng vật lý ......., trong khi logic số (Digital logic) trừu tượng hóa nó thành hai mức .......",
+      "options": [
+        "Liên tục / Rời rạc (0 và 1)",
+        "Rời rạc / Liên tục",
+        "Luôn ổn định / Luôn thay đổi",
+        "Không thể đo lường / Có thể đo lường"
+      ],
+      "answer": 0,
+      "explanation": "Điện áp là một đơn vị vật lý, liên tục. Logic số trừu tượng hóa nó thành 2 mức riêng biệt, '1' và '0' (rời rạc)."
+    },
+    {
+      "type": "mcq",
+      "question": "Đại số Boolean (Boolean Algebra) KHÔNG bao gồm toán tử cơ bản nào sau đây?",
+      "options": [
+        "NOT",
+        "AND",
+        "OR",
+        "XOR"
+      ],
+      "answer": 3,
+      "explanation": "Tài liệu liệt kê 3 toán tử chính (primary Operators) là NOT, AND, và OR. XOR là một toán tử phổ biến nhưng được xây dựng từ các toán tử cơ bản này."
+    },
+    {
+      "type": "fitb",
+      "question": "Một Bảng sự thật (Truth Table) với $n$ biến sẽ có tổng cộng ....... hàng.",
+      "answer": "$2^n$",
+      "explanation": "Một Bảng sự thật cho $n$ biến bao gồm $2^n$ hàng, mỗi hàng biểu diễn một tổ hợp duy nhất của '1' và '0' cho các biến đó."
+    },
+    {
+      "type": "mcq",
+      "question": "Toán tử Boolean nào trả về '1' (true) nếu CÓ BẤT KỲ toán hạng nào là '1'?",
+      "options": [
+        "AND",
+        "OR",
+        "NOT",
+        "NAND"
+      ],
+      "answer": 1,
+      "explanation": "Toán tử OR (ký hiệu là $A+B$) trả về '1' nếu bất kỳ toán hạng nào là '1'."
+    },
+    {
+      "type": "mcq",
+      "question": "Biểu thức $\\overline{A \\cdot B}$ tương đương với biểu thức nào theo luật DeMorgan?",
+      "options": [
+        "$\\overline{A} + \\overline{B}$",
+        "$\\overline{A} \\cdot \\overline{B}$",
+        "$A + B$",
+        "$A \\cdot B$"
+      ],
+      "answer": 0,
+      "explanation": "Theo luật DeMorgan, $\\overline{A \\cdot B} = \\overline{A} + \\overline{B}$."
+    },
+    {
+      "type": "mcq",
+      "question": "Luật nào trong Đại số Boolean phát biểu rằng $A + 1 = 1$?",
+      "options": [
+        "Luật Đồng nhất (Identity law)",
+        "Luật Lũy đẳng (Idempotent law)",
+        "Luật 0 và 1 (Zero and One laws)",
+        "Luật Nghịch đảo (Inverse laws)"
+      ],
+      "answer": 2,
+      "explanation": "Luật 0 và 1 (Zero and One laws) bao gồm $A + 1 = 1$ và $A \\cdot 0 = 0$."
+    },
+    {
+      "type": "mcq",
+      "question": "Nếu $A=1$ và $B=0$, giá trị của biểu thức $(A + \\overline{B}) \\cdot 1$ là gì?",
+      "options": [
+        "0",
+        "1",
+        "A",
+        "B"
+      ],
+      "answer": 1,
+      "explanation": "Ta có: $\\overline{B} = \\overline{0} = 1$. Biểu thức trở thành $(1 + 1) \\cdot 1$. Vì $1+1 = 1$ (luật OR) và $1 \\cdot 1 = 1$ (luật AND), kết quả là 1."
+    },
+    {
+      "type": "mcq",
+      "question": "Thứ tự ưu tiên của các toán tử Boolean (từ cao đến thấp) là gì?",
+      "options": [
+        "AND, OR, NOT, Dấu ngoặc",
+        "Dấu ngoặc, NOT, AND, OR",
+        "OR, AND, NOT, Dấu ngoặc",
+        "Dấu ngoặc, AND, OR, NOT"
+      ],
+      "answer": 1,
+      "explanation": "Thứ tự ưu tiên (Operator precedence) là: Dấu ngoặc trong cùng nhất, sau đó đến NOT, rồi đến AND, và cuối cùng là OR."
+    },
+    {
+      "type": "msq",
+      "question": "Chọn TẤT CẢ các luật thuộc nhóm Luật Giao hoán (Commutative laws)?",
+      "options": [
+        "$A + B = B + A$",
+        "$A \\cdot (B + C) = (A \\cdot B) + (A \\cdot C)$",
+        "$A \\cdot B = B \\cdot A$",
+        "$A + (B + C) = (A + B) + C$"
+      ],
+      "answer": [0, 2],
+      "explanation": "Luật giao hoán (Commutative laws) cho biết thứ tự của các toán hạng không quan trọng. Chúng bao gồm $A + B = B + A$ và $A \\cdot B = B \\cdot A$."
+    },
+    {
+      "type": "mcq",
+      "question": "Toán tử NAND là viết tắt của?",
+      "options": [
+        "NOT AND",
+        "NOR AND",
+        "NOT OR",
+        "NOT XOR"
+      ],
+      "answer": 0,
+      "explanation": "NAND là viết tắt của NOT AND. Biểu thức của nó là $\\overline{(A \\cdot B)}$."
+    },
+    {
+      "type": "mcq",
+      "question": "Toán tử XOR (Exclusive-OR) trả về '1' khi nào?",
+      "options": [
+        "Khi cả hai đầu vào là '1'",
+        "Khi cả hai đầu vào là '0'",
+        "Khi hai đầu vào giống nhau",
+        "Khi hai đầu vào khác nhau"
+      ],
+      "answer": 3,
+      "explanation": "XOR (Exclusive-OR) trả về '1' chỉ khi hai đầu vào là khác nhau (một '0' và một '1')."
+    },
+    {
+      "type": "fitb",
+      "question": "Linh kiện điện tử cơ bản được sử dụng để xây dựng các cổng logic như AND, OR, NOT được gọi là .......",
+      "answer": "Transistor",
+      "explanation": "Các cổng logic cơ bản (basic gates) được xây dựng từ các bộ Transistor mắc nối với nhau. Transistor hoạt động như một công tắc điện tử (Electronic Switch)."
+    },
+    {
+      "type": "mcq",
+      "question": "Cổng logic nào dưới đây được biểu diễn bằng ký hiệu hình chữ D với một vòng tròn nhỏ ở đầu ra?",
+      "options": [
+        "AND",
+        "OR",
+        "NAND",
+        "NOR"
+      ],
+      "answer": 2,
+      "explanation": "Cổng AND có ký hiệu hình chữ D. Vòng tròn nhỏ (bubble) biểu thị phép toán đảo ngược (NOT). Do đó, đây là cổng NAND (NOT-AND)."
+    },
+    {
+      "type": "mcq",
+      "question": "Cổng logic nào dưới đây có ký hiệu hình cánh cung (hoặc tàu vũ trụ) với một vòng tròn nhỏ ở đầu ra?",
+      "options": [
+        "AND",
+        "OR",
+        "NAND",
+        "NOR"
+      ],
+      "answer": 3,
+      "explanation": "Cổng OR có ký hiệu hình cánh cung. Vòng tròn nhỏ (bubble) biểu thị phép toán đảo ngược (NOT). Do đó, đây là cổng NOR (NOT-OR)."
+    },
+    {
+      "type": "mcq",
+      "question": "Vòng tròn nhỏ (bubble) ở đầu vào hoặc đầu ra của một cổng logic biểu thị phép toán gì?",
+      "options": [
+        "AND",
+        "OR",
+        "NOT (inversion)",
+        "XOR"
+      ],
+      "answer": 2,
+      "explanation": "Vòng tròn (hoặc bubble) biểu thị sự đảo ngược, tức là phép toán NOT."
+    },
+    {
+      "type": "mcq",
+      "question": "Một mạch logic chọn 1 trong $N$ đầu vào và đưa ra 1 đầu ra duy nhất được gọi là gì?",
+      "options": [
+        "Decoder (Bộ giải mã)",
+        "Multiplexer (Bộ dồn kênh)",
+        "De-Multiplexer (Bộ phân kênh)",
+        "Encoder (Bộ mã hóa)"
+      ],
+      "answer": 1,
+      "explanation": "Multiplexer (Mux) là mạch logic chọn 1 trong $N$ đầu vào. Nó cần $K$ đường chọn (select lines) sao cho $2^K \\ge N$."
+    },
+    {
+      "type": "mcq",
+      "question": "Một mạch logic lấy 1 đầu vào và chuyển nó đến 1 trong $N$ đầu ra được gọi là gì?",
+      "options": [
+        "Decoder (Bộ giải mã)",
+        "Multiplexer (Bộ dồn kênh)",
+        "De-Multiplexer (Bộ phân kênh)",
+        "Encoder (Bộ mã hóa)"
+      ],
+      "answer": 2,
+      "explanation": "De-Multiplexer (DeMux) là mạch logic chuyển 1 bit đầu vào đến 1 trong $N$ đường đầu ra được chọn."
+    },
+    {
+      "type": "mcq",
+      "question": "Mạch logic nào KHÔNG có phần tử nhớ (memory element)?",
+      "options": [
+        "Mạch tuần tự (Sequential Logic)",
+        "Mạch tổ hợp (Combinatorial Logic)",
+        "Latch",
+        "Flip-Flop"
+      ],
+      "answer": 1,
+      "explanation": "Mạch tổ hợp (Combinatorial logic) không bao gồm phần tử nhớ; đầu ra của chúng hoàn toàn phụ thuộc vào đầu vào hiện tại. Mạch tuần tự (Sequential logic) có phần tử nhớ."
+    },
+    {
+      "type": "mcq",
+      "question": "Tần số (Frequency) của một đồng hồ (Clock) được xác định bởi công thức nào liên quan đến chu kỳ (Period)?",
+      "options": [
+        "$Frequency = Period$",
+        "$Frequency = 1 / Period$",
+        "$Frequency = Period / 2$",
+        "$Frequency = Period \\times 2$"
+      ],
+      "answer": 1,
+      "explanation": "Tần số là nghịch đảo của chu kỳ: $Frequency = 1 / Period$."
+    },
+    {
+      "type": "mcq",
+      "question": "Loại kích hoạt (triggering) nào xảy ra khi đồng hồ (clock) đang ở một mức cố định (ví dụ: mức 1)?",
+      "options": [
+        "Kích hoạt theo cạnh (Edge triggering)",
+        "Kích hoạt theo mức (Level triggering)",
+        "Kích hoạt cạnh lên (Rising edge triggered)",
+        "Kích hoạt cạnh xuống (Falling edge triggered)"
+      ],
+      "answer": 1,
+      "explanation": "Kích hoạt theo mức (Level triggering) xảy ra khi đồng hồ ở một trạng thái nhất định (ví dụ: mức 1). Latch là thiết bị kích hoạt theo mức."
+    },
+    {
+      "type": "mcq",
+      "question": "Loại kích hoạt (triggering) nào xảy ra khi đồng hồ (clock) chuyển từ $0 \\rightarrow 1$?",
+      "options": [
+        "Kích hoạt theo cạnh (Edge triggering)",
+        "Kích hoạt theo mức (Level triggering)",
+        "Kích hoạt cạnh lên (Rising edge triggered)",
+        "Kích hoạt cạnh xuống (Falling edge triggered)"
+      ],
+      "answer": 2,
+      "explanation": "Kích hoạt cạnh lên (Rising edge triggered) xảy ra khi đồng hồ đang trong quá trình chuyển đổi từ $0 \\rightarrow 1$."
+    },
+    {
+      "type": "mcq",
+      "question": "Mạch Latch SR (Set-Reset Latch) sẽ ở trạng thái nào khi $S=1$ và $R=1$?",
+      "options": [
+        "Không đổi (No change)",
+        "Set (Q=1)",
+        "Reset (Q=0)",
+        "Không ổn định (Unstable)"
+      ],
+      "answer": 3,
+      "explanation": "Trong mạch SR Latch cơ bản (thường xây dựng bằng cổng NOR hoặc NAND), trạng thái $S=1$ và $R=1$ được coi là không ổn định (Unstable) hoặc bị cấm."
+    },
+    {
+      "type": "mcq",
+      "question": "Sự khác biệt chính giữa D-Latch và D-Flip Flop (D-FF) là gì?",
+      "options": [
+        "D-Latch kích hoạt theo mức (level triggered), D-FF kích hoạt theo cạnh (edge triggered)",
+        "D-Latch kích hoạt theo cạnh (edge triggered), D-FF kích hoạt theo mức (level triggered)",
+        "D-Latch có 2 đầu vào, D-FF có 1 đầu vào",
+        "D-Latch không ổn định, D-FF ổn định"
+      ],
+      "answer": 0,
+      "explanation": "Latch (như D-Latch) là thiết bị kích hoạt theo mức (level triggered). D-Flip Flop (D-FF) là một D-Latch được kích hoạt theo cạnh (edge triggered)."
+    },
+    {
+      "type": "msq",
+      "question": "Mạch tuần tự (Sequential Logic) khác mạch tổ hợp (Combinatorial Logic) ở điểm nào? (Chọn TẤT CẢ các đáp án đúng)",
+      "options": [
+        "Mạch tuần tự có phần tử nhớ (memory elements)",
+        "Mạch tuần tự không có phần tử nhớ",
+        "Đầu ra của mạch tuần tự phụ thuộc vào giá trị trong bộ nhớ (lịch sử)",
+        "Đầu ra của mạch tổ hợp chỉ phụ thuộc vào đầu vào hiện tại"
+      ],
+      "answer": [0, 2, 3],
+      "explanation": "Mạch tuần tự (Sequential) có một hoặc nhiều phần tử nhớ và đầu ra của nó phụ thuộc vào giá trị trong bộ nhớ (lịch sử). Ngược lại, mạch tổ hợp (Combinatorial) không có phần tử nhớ và đầu ra chỉ phụ thuộc vào đầu vào hiện tại."
+    },
+    {
+      "type": "mcq",
+      "question": "Một tập hợp cố định các D-Flip Flop (thường là lũy thừa của 2) hoạt động như một đơn vị duy nhất để lưu trữ/đọc $n$-bit tại một thời điểm được gọi là gì?",
+      "options": [
+        "RAM",
+        "Word (Từ)",
+        "Byte",
+        "Latch"
+      ],
+      "answer": 1,
+      "explanation": "Một \"Word\" (Từ) là một số lượng D-Flip Flop cố định, thường là lũy thừa của 2 (ví dụ: 8, 16, 32, 64), hoạt động như một đơn vị duy nhất."
+    },
+    {
+      "type": "mcq",
+      "question": "Trong RAM (Random Access Memory), các đường dây chọn (select lines) liên quan đến Mux và DeMux được gọi là gì?",
+      "options": [
+        "Bus dữ liệu (Data Bus)",
+        "Bus địa chỉ (Address Bus)",
+        "Bus điều khiển (Control Bus)",
+        "Bus hệ thống (System Bus)"
+      ],
+      "answer": 1,
+      "explanation": "Các đường dây chọn (select lines) được gọi là bus địa chỉ (address bus)."
+    },
+    {
+      "type": "mcq",
+      "question": "Trong RAM (Random Access Memory), các đường dây mang dữ liệu đầu vào hoặc đầu ra được gọi là gì?",
+      "options": [
+        "Bus dữ liệu (Data Bus)",
+        "Bus địa chỉ (Address Bus)",
+        "Bus điều khiển (Control Bus)",
+        "Bus hệ thống (System Bus)"
+      ],
+      "answer": 0,
+      "explanation": "Các đường dây mang dữ liệu đầu vào hoặc đầu ra được gọi là bus dữ liệu (data bus)."
+    },
+    {
+      "type": "mcq",
+      "question": "Biểu diễn số nhị phân KHÔNG DẤU (Unsigned) dùng $K$ bit có thể biểu diễn các giá trị trong khoảng nào?",
+      "options": [
+        "Từ 0 đến $2^K$",
+        "Từ 0 đến $2^K - 1$",
+        "Từ $-2^{K-1}$ đến $2^{K-1} - 1$",
+        "Từ 1 đến $2^K$"
+      ],
+      "answer": 1,
+      "explanation": "Với $K$ bit không dấu, giá trị nhỏ nhất là 0 (tất cả các bit là 0) và giá trị lớn nhất là $2^K - 1$ (tất cả các bit là 1)."
+    },
+    {
+      "type": "mcq",
+      "question": "Để chuyển một số thập phân (Decimal) không dấu sang nhị phân (Binary) không dấu, ta thực hiện phép toán gì lặp đi lặp lại?",
+      "options": [
+        "Nhân với 2",
+        "Chia cho 2",
+        "Cộng với 2",
+        "Trừ đi 2"
+      ],
+      "answer": 1,
+      "explanation": "Phép chuyển đổi được thực hiện thông qua việc chia liên tiếp cho 2 (successive division by 2) và ghi lại các số dư theo thứ tự ngược lại."
+    },
+    {
+      "type": "mcq",
+      "question": "Giá trị thập phân của số nhị phân không dấu $1101_2$ là gì?",
+      "options": [
+        "11",
+        "13",
+        "14",
+        "26"
+      ],
+      "answer": 1,
+      "explanation": "Giá trị = $(1 \\times 2^3) + (1 \\times 2^2) + (0 \\times 2^1) + (1 \\times 2^0) = 8 + 4 + 0 + 1 = 13_{10}$."
+    },
+    {
+      "type": "mcq",
+      "question": "Giá trị nhị phân của số thập phân $12_{10}$ là gì?",
+      "options": [
+        "$1010_2$",
+        "$1011_2$",
+        "$1100_2$",
+        "$1101_2$"
+      ],
+      "answer": 2,
+      "explanation": "Thực hiện phép chia liên tiếp cho 2: 12/2 = 6 dư 0; 6/2 = 3 dư 0; 3/2 = 1 dư 1; 1/2 = 0 dư 1. Đọc ngược lại: $1100_2$."
+    },
+    {
+      "type": "mcq",
+      "question": "Hệ đếm cơ số 8 được gọi là gì?",
+      "options": [
+        "Binary (Nhị phân)",
+        "Decimal (Thập phân)",
+        "Octal (Bát phân)",
+        "Hexadecimal (Thập lục phân)"
+      ],
+      "answer": 2,
+      "explanation": "Hệ đếm Octal (Bát phân) là hệ cơ số 8, sử dụng các ký hiệu từ '0' đến '7'."
+    },
+    {
+      "type": "mcq",
+      "question": "Để chuyển từ hệ Bát phân (Octal) sang Nhị phân (Binary), mỗi chữ số Bát phân được chuyển thành bao nhiêu bit Nhị phân?",
+      "options": [
+        "1 bit",
+        "2 bit",
+        "3 bit",
+        "4 bit"
+      ],
+      "answer": 2,
+      "explanation": "Cần 3 bit nhị phân để biểu diễn 8 giá trị khác nhau (từ 0 đến 7). Ví dụ: $7_8 = 111_2$."
+    },
+    {
+      "type": "mcq",
+      "question": "Hệ đếm cơ số 16 (Hexadecimal) sử dụng các ký hiệu nào cho các giá trị từ 10 đến 15?",
+      "options": [
+        "A, B, C, D, E, F",
+        "10, 11, 12, 13, 14, 15",
+        "X, Y, Z, W, U, V",
+        "H1, H2, H3, H4, H5, H6"
+      ],
+      "answer": 0,
+      "explanation": "Hệ Hexadecimal (Hex) sử dụng các chữ số từ 0-9 và các chữ cái A (10), B (11), C (12), D (13), E (14), F (15)."
+    },
+    {
+      "type": "mcq",
+      "question": "Để chuyển từ hệ Nhị phân (Binary) sang Thập lục phân (Hexadecimal), ta nhóm các bit nhị phân thành các nhóm bao nhiêu bit?",
+      "options": [
+        "2 bit",
+        "3 bit",
+        "4 bit",
+        "8 bit"
+      ],
+      "answer": 2,
+      "explanation": "Ta tổ chức các bit nhị phân thành các nhóm 4 bit (từ phải sang trái), vì $2^4 = 16$. Mỗi nhóm 4 bit tương ứng với một chữ số Hex."
+    },
+    {
+      "type": "mcq",
+      "question": "Giá trị Thập phân (Decimal) của số Hex $1C3_{16}$ là bao nhiêu?",
+      "options": [
+        "451",
+        "11203",
+        "313",
+        "123"
+      ],
+      "answer": 0,
+      "explanation": "Giá trị = $(1 \\times 16^2) + (C \\times 16^1) + (3 \\times 16^0) = (1 \\times 256) + (12 \\times 16) + (3 \\times 1) = 256 + 192 + 3 = 451_{10}$."
+    },
+    {
+      "type": "mcq",
+      "question": "Trong phép cộng nhị phân (Binary Addition), $1 + 1$ cho kết quả là bao nhiêu?",
+      "options": [
+        "Sum = 1, Carry = 0",
+        "Sum = 0, Carry = 1",
+        "Sum = 0, Carry = 0",
+        "Sum = 1, Carry = 1"
+      ],
+      "answer": 1,
+      "explanation": "Phép cộng $1 + 1$ trong hệ nhị phân bằng 2 (thập phân), tức là $10_2$. Do đó, Sum = 0 và Carry (số nhớ) = 1."
+    }
+  ]
