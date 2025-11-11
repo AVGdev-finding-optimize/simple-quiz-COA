@@ -1,0 +1,452 @@
+[
+  {
+    "type": "mcq",
+    "question": "Ba loại máy tính chính được phân loại trong bài giảng là gì?",
+    "options": [
+      "Máy tính cá nhân, Máy trạm, Siêu máy tính",
+      "Máy tính để bàn, Máy chủ, Máy tính nhúng",
+      "Laptop, Máy tính bảng, Điện thoại thông minh",
+      "Máy tính lớn, Máy tính mini, Vi máy tính"
+    ],
+    "answer": 1,
+    "explanation": "Bài giảng 01.pdf (trang 5) phân loại máy tính thành: Máy tính để bàn (Desktop), Máy chủ (Server), và Máy tính nhúng (Embedded)."
+  },
+  {
+    "type": "mcq",
+    "question": "Thành phần nào của máy tính thực hiện các phép toán số học và logic?",
+    "options": [
+      "Memory (Bộ nhớ)",
+      "Input (Đầu vào)",
+      "Control (Điều khiển)",
+      "Datapath (Đường đi dữ liệu)"
+    ],
+    "answer": 3,
+    "explanation": "Datapath (một phần của Processor) chứa các đơn vị chức năng như ALU (Arithmetic Logic Unit) để thực hiện các phép toán."
+  },
+  {
+    "type": "mcq",
+    "question": "ISA (Instruction Set Architecture) là giao diện giữa thành phần nào?",
+    "options": [
+      "Ứng dụng và Hệ điều hành",
+      "Phần cứng và Phần mềm lớp thấp (low-level software)",
+      "CPU và Bộ nhớ chính",
+      "Người dùng và Ứng dụng"
+    ],
+    "answer": 1,
+    "explanation": "ISA (Kiến trúc tập lệnh) định nghĩa cách phần cứng (hardware) và phần mềm lớp thấp (như trình biên dịch và hệ điều hành) tương tác với nhau [01.pdf, trang 26-27]."
+  },
+  {
+    "type": "msq",
+    "question": "Những thành phần nào sau đây được coi là 'non-volatile' (bất khả biến)?",
+    "options": [
+      "RAM",
+      "Flash memory (Bộ nhớ flash)",
+      "Magnetic disk (Đĩa từ)",
+      "CPU Registers (Thanh ghi CPU)"
+    ],
+    "answer": [1, 2],
+    "explanation": "Bộ nhớ 'non-volatile' (bất khả biến) giữ lại dữ liệu ngay cả khi mất điện. Đĩa từ và bộ nhớ flash là non-volatile, trong khi RAM và thanh ghi CPU là volatile (khả biến) [01.pdf, trang 18]."
+  },
+  {
+    "type": "fitb",
+    "question": "Quá trình biên dịch một chương trình C sang mã máy thực thi bao gồm các bước: High-level language -> ... -> Machine language.",
+    "answer": "Assembly language",
+    "explanation": "Trình biên dịch (C compiler) dịch mã C (HLL) sang mã Assembly. Sau đó, Assembler dịch mã Assembly sang mã máy (nhị phân) [01.pdf, trang 30]."
+  },
+  {
+    "type": "mcq",
+    "question": "Trong đại số Boolean, phép toán nào được biểu diễn bằng ký hiệu '•' (dấu chấm) hoặc bằng cách viết liền các biến (ví dụ: AB)?",
+    "options": [
+      "OR",
+      "NOT",
+      "XOR",
+      "AND"
+    ],
+    "answer": 3,
+    "explanation": "Phép toán AND (HỘI) được biểu diễn là A•B hoặc AB [02.pdf, trang 9]."
+  },
+  {
+    "type": "mcq",
+    "question": "Theo luật DeMorgan, biểu thức $\\overline{(A + B)}$ tương đương với biểu thức nào?",
+    "options": [
+      "$\\overline{A} + \\overline{B}$",
+      "$\\overline{A} \\cdot \\overline{B}$",
+      "$A \\cdot B$",
+      "$A + B$"
+    ],
+    "answer": 1,
+    "explanation": "Luật DeMorgan phát biểu: $\\overline{(A + B)} = \\overline{A} \\cdot \\overline{B}$ và $\\overline{(A \\cdot B)} = \\overline{A} + \\overline{B}$ [02.pdf, trang 15]."
+  },
+  {
+    "type": "fitb",
+    "question": "Một bảng liệt kê tất cả các kết quả có thể có của một toán tử Boolean được gọi là ...",
+    "answer": "Bảng sự thật (Truth Table)",
+    "explanation": "Bảng sự thật (Truth Table) được sử dụng để định nghĩa kết quả của các toán tử logic cho tất cả các tổ hợp đầu vào có thể có [02.pdf, trang 7]."
+  },
+  {
+    "type": "mcq",
+    "question": "Phép toán nào trả về 'true' (1) chỉ khi các đầu vào của nó khác nhau?",
+    "options": [
+      "NAND",
+      "NOR",
+      "XOR",
+      "AND"
+    ],
+    "answer": 2,
+    "explanation": "Phép toán Exclusive-OR (XOR) trả về 1 nếu một và chỉ một trong các đầu vào là 1 (tức là chúng khác nhau) [02.pdf, trang 21-22]."
+  },
+  {
+    "type": "mcq",
+    "question": "Luật nào trong Đại số Boolean phát biểu rằng A + 1 = 1?",
+    "options": [
+      "Identity law (Luật định danh)",
+      "Inverse laws (Luật nghịch đảo)",
+      "Zero and One laws (Luật 0 và 1)",
+      "Idempotent law (Luật lũy đẳng)"
+    ],
+    "answer": 2,
+    "explanation": "Luật 0 và 1 (Zero and One laws) định nghĩa các tính chất của 0 và 1, bao gồm A + 1 = 1 và A • 0 = 0 [02.pdf, trang 14]."
+  },
+  {
+    "type": "msq",
+    "question": "Những luật nào sau đây thuộc về Đại số Boolean?",
+    "options": [
+      "Luật giao hoán (Commutative laws)",
+      "Luật kết hợp (Associative laws)",
+      "Luật phân phối (Distributive laws)",
+      "Luật tương đối (Relativity laws)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Các luật Giao hoán, Kết hợp, và Phân phối là các luật cơ bản của Đại số Boolean [02.pdf, trang 15]."
+  },
+  {
+    "type": "mcq",
+    "question": "Cổng logic nào thực hiện phép toán $\\overline{(A \\cdot B)}$?",
+    "options": [
+      "NOR",
+      "AND",
+      "XOR",
+      "NAND"
+    ],
+    "answer": 3,
+    "explanation": "Cổng NAND là viết tắt của NOT-AND, thực hiện phép toán $\\overline{(A \\cdot B)}$ [02.pdf, trang 18]."
+  },
+  {
+    "type": "mcq",
+    "question": "Biểu thức Boolean cho một bộ dồn kênh (Multiplexer) 2-đầu-vào (A, B) với 1 đường chọn (S) để chọn A khi S=0 và B khi S=1 là gì?",
+    "options": [
+      "$(A \\cdot S) + (B \\cdot \\overline{S})$",
+      "$(A + S) \\cdot (B + \\overline{S})$",
+      "$(A \\cdot \\overline{S}) + (B \\cdot S)$",
+      "$(\\overline{A} \\cdot S) + (B \\cdot S)$"
+    ],
+    "answer": 2,
+    "explanation": "Để chọn A khi S=0 (tức là $\\overline{S}=1$), ta dùng $(A \\cdot \\overline{S})$. Để chọn B khi S=1, ta dùng $(B \\cdot S)$. Kết hợp lại ta có $O = (A \\cdot \\overline{S}) + (B \\cdot S)$ [02.pdf, trang 44-45]."
+  },
+  {
+    "type": "mcq",
+    "question": "Một bộ giải mã (Decoder) 3-đầu-vào sẽ có tối đa bao nhiêu đường đầu ra?",
+    "options": [
+      "3",
+      "6",
+      "8",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Một bộ giải mã k-đầu-vào có thể kích hoạt 1 trong tối đa $2^k$ đường đầu ra. Với k=3, $2^3 = 8$."
+  },
+  {
+    "type": "mcq",
+    "question": "Sự khác biệt chính giữa Latch và Flip-Flop là gì?",
+    "options": [
+      "Latch được làm bằng cổng NAND, Flip-Flop làm bằng cổng NOR.",
+      "Latch nhạy cảm với mức (level-triggered), trong khi Flip-Flop nhạy cảm với cạnh (edge-triggered).",
+      "Latch chỉ lưu 1 bit, Flip-Flop lưu 2 bit.",
+      "Latch nhanh hơn Flip-Flop."
+    ],
+    "answer": 1,
+    "explanation": "Latch lưu trữ dữ liệu khi tín hiệu clock ở một mức nhất định (ví dụ: mức cao). Flip-Flop (như D-Flip Flop) chỉ lưu trữ dữ liệu tại thời điểm chuyển cạnh của clock (ví dụ: cạnh lên) [02.pdf, trang 61, 65]."
+  },
+  {
+    "type": "fitb",
+    "question": "Một mạch tuần tự (Sequential Logic Circuit) bao gồm các cổng logic tổ hợp (Combinational Logic) và ...",
+    "answer": "Phần tử nhớ (Memory Elements)",
+    "explanation": "Mạch tuần tự có đầu ra phụ thuộc vào cả đầu vào hiện tại và trạng thái được lưu trữ trong các phần tử nhớ (như flip-flop) [02.pdf, trang 68-69]."
+  },
+  {
+    "type": "mcq",
+    "question": "Thời gian trễ dài nhất từ đầu vào đến đầu ra trong một mạch tổ hợp được gọi là ...",
+    "options": [
+      "Chu kỳ clock (Clock Period)",
+      "Độ trễ truyền (Propagation Delay)",
+      "Thời gian thiết lập (Setup Time)",
+      "Thời gian giữ (Hold Time)"
+    ],
+    "answer": 1,
+    "explanation": "Độ trễ truyền (Propagation Delay), hay còn gọi là đường tới hạn (critical path), là thời gian tối đa để các thay đổi ở đầu vào ảnh hưởng đến đầu ra cuối cùng [02.pdf, trang 53]."
+  },
+  {
+    "type": "mcq",
+    "question": "Để đọc dữ liệu từ 1 trong 8 thanh ghi (Register File), một bộ dồn kênh (Multiplexer) cần bao nhiêu đường chọn (select lines)?",
+    "options": [
+      "8",
+      "1",
+      "3",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Để chọn 1 trong N đầu vào, Mux cần k đường chọn sao cho $2^k \\ge N$. Để chọn 1 trong 8 thanh ghi, ta cần $2^k \\ge 8$, vậy k=3 đường chọn."
+  },
+  {
+    "type": "mcq",
+    "question": "Số thập lục phân (Hexadecimal) 'A' tương đương với giá trị thập phân (Decimal) nào?",
+    "options": [
+      "10",
+      "16",
+      "1",
+      "15"
+    ],
+    "answer": 0,
+    "explanation": "Trong hệ thập lục phân (base-16), các ký hiệu A, B, C, D, E, F được dùng để biểu diễn các giá trị 10, 11, 12, 13, 14, 15 [02.pdf, trang 129]."
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân của số nhị phân không dấu '1101' là gì?",
+    "options": [
+      "11",
+      "13",
+      "14",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "$1101_2 = (1 \\times 2^3) + (1 \\times 2^2) + (0 \\times 2^1) + (1 \\times 2^0) = 8 + 4 + 0 + 1 = 13_{10}$."
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị nhị phân của số thập phân '12' là gì?",
+    "options": [
+      "1010",
+      "1100",
+      "1011",
+      "1110"
+    ],
+    "answer": 1,
+    "explanation": "12 chia 2 = 6 dư 0. 6 chia 2 = 3 dư 0. 3 chia 2 = 1 dư 1. 1 chia 2 = 0 dư 1. Đọc ngược lại: 1100 [02.pdf, trang 106]."
+  },
+  {
+    "type": "mcq",
+    "question": "Số '2DE' trong hệ thập lục phân (hex) tương đương với giá trị thập phân (decimal) nào?",
+    "options": [
+      "734",
+      "222",
+      "742",
+      "512"
+    ],
+    "answer": 0,
+    "explanation": "$2DE_{16} = (2 \\times 16^2) + (13 \\times 16^1) + (14 \\times 16^0) = (2 \\times 256) + (13 \\times 16) + (14 \\times 1) = 512 + 208 + 14 = 734_{10}$ [02.pdf, trang 139]."
+  },
+  {
+    "type": "mcq",
+    "question": "Số nhị phân '10 110 000' (nhóm 3 bit) tương đương với số bát phân (octal) nào?",
+    "options": [
+      "260",
+      "540",
+      "160",
+      "230"
+    ],
+    "answer": 0,
+    "explanation": "Nhóm 3 bit từ phải sang trái: 000 = 0. 110 = 6. 10 = 2. Kết quả là 260 trong hệ bát phân [02.pdf, trang 128]."
+  },
+  {
+    "type": "mcq",
+    "question": "Với 8 bit, phạm vi giá trị của một số nguyên không dấu (unsigned integer) là gì?",
+    "options": [
+      "0 đến 255",
+      "0 đến 256",
+      "-128 đến 127",
+      "1 đến 256"
+    ],
+    "answer": 0,
+    "explanation": "Với K bit, phạm vi không dấu là từ 0 đến $2^K - 1$. Với K=8, $2^8 - 1 = 256 - 1 = 255$ [02.pdf, trang 115]."
+  },
+  {
+    "type": "mcq",
+    "question": "Biểu diễn 'Sign-bit Magnitude' (SBM) 8-bit của số -13 là gì?",
+    "options": [
+      "10001101",
+      "11110011",
+      "11110010",
+      "10001111"
+    ],
+    "answer": 0,
+    "explanation": "Trong SBM, bit trái nhất là bit dấu (1 cho số âm). 13 = 1101. Vậy -13 trong 8-bit SBM là 10001101 [02.pdf, trang 175]."
+  },
+  {
+    "type": "mcq",
+    "question": "Vấn đề chính của biểu diễn Sign-bit Magnitude (SBM) và 1's Complement (Bù 1) là gì?",
+    "options": [
+      "Không thể biểu diễn số 0",
+      "Phép cộng quá phức tạp",
+      "Có hai biểu diễn cho số 0",
+      "Không thể biểu diễn số âm"
+    ],
+    "answer": 2,
+    "explanation": "Cả SBM (+0 và -0) và Bù 1 (+0 và -0) đều có hai cách biểu diễn cho số 0, điều này gây phức tạp cho phần cứng [02.pdf, trang 176, 180]."
+  },
+  {
+    "type": "mcq",
+    "question": "Biểu diễn 2's Complement (Bù 2) 8-bit của số -18 là gì?",
+    "options": [
+      "11101110",
+      "10010010",
+      "11101101",
+      "11110001"
+    ],
+    "answer": 0,
+    "explanation": "Đầu tiên, +18 là 00010010. Đảo bit (bù 1) ta được 11101101. Cộng 1 ta được 11101110 [02.pdf, trang 183]."
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân của số bù 2 8-bit '11111010' là gì?",
+    "options": [
+      "250",
+      "6",
+      "-6",
+      "-10"
+    ],
+    "answer": 2,
+    "explanation": "Vì bit dấu là 1, đây là số âm. Đảo bit: 00000101. Cộng 1: 00000110. Giá trị là 6. Vì vậy, số ban đầu là -6 [02.pdf, trang 185]."
+  },
+  {
+    "type": "mcq",
+    "question": "Một mạch tổ hợp cộng hai bit đầu vào (A, B) để tạo ra Sum (Tổng) và Cout (Số nhớ ra) được gọi là gì?",
+    "options": [
+      "Full-Adder (Bộ cộng toàn phần)",
+      "Multiplexer (Bộ dồn kênh)",
+      "ALU (Đơn vị số học/logic)",
+      "Half-Adder (Bộ cộng bán phần)"
+    ],
+    "answer": 3,
+    "explanation": "Một Half-Adder cộng 2 bit (A, B) và tạo ra 2 bit đầu ra: Sum và Cout (Carry-out) [02.pdf, trang 159]."
+  },
+  {
+    "type": "mcq",
+    "question": "Một Full-Adder (Bộ cộng toàn phần) khác Half-Adder (Bộ cộng bán phần) ở điểm nào?",
+    "options": [
+      "Full-Adder có thể trừ, Half-Adder thì không",
+      "Full-Adder nhanh hơn Half-Adder",
+      "Full-Adder có 3 đầu vào (A, B, Cin), Half-Adder chỉ có 2 (A, B)",
+      "Full-Adder sử dụng cổng XOR, Half-Adder sử dụng cổng AND"
+    ],
+    "answer": 2,
+    "explanation": "Một Full-Adder có 3 đầu vào: A, B, và Cin (Số nhớ vào từ bit trước), cho phép chúng được kết nối nối tiếp (cascade) [02.pdf, trang 161-162]."
+  },
+  {
+    "type": "fitb",
+    "question": "Để thực hiện phép trừ $A - B$ bằng cách sử dụng số bù 2, ta tính $A + (\\dots)$",
+    "answer": "Bù 2 của B",
+    "explanation": "Phép trừ $A - B$ tương đương với phép cộng $A + (-B)$. Trong hệ thống bù 2, -B được biểu diễn bằng bù 2 của B [02.pdf, trang 186]."
+  },
+  {
+    "type": "mcq",
+    "question": "Thành phần nào trong CPU chịu trách nhiệm thực hiện các phép toán như cộng, trừ, AND, OR?",
+    "options": [
+      "Register File (Khối thanh ghi)",
+      "Control Unit (Đơn vị điều khiển)",
+      "ALU (Đơn vị Số học & Logic)",
+      "Memory (Bộ nhớ)"
+    ],
+    "answer": 2,
+    "explanation": "ALU (Arithmetic & Logic Unit) là mạch logic kỹ thuật số thực hiện các phép toán số học (cộng, trừ...) và logic (AND, OR, NOT) [02.pdf, trang 237]."
+  },
+  {
+    "type": "mcq",
+    "question": "Trong chuẩn dấu chấm động IEEE 754 (32-bit), có bao nhiêu bit được dùng cho phần số mũ (Exponent)?",
+    "options": [
+      "1 bit",
+      "8 bit",
+      "23 bit",
+      "32 bit"
+    ],
+    "answer": 1,
+    "explanation": "Chuẩn IEEE 754 32-bit (single precision) sử dụng 1 bit cho dấu, 8 bit cho số mũ (exponent), và 23 bit cho phần định trị (fraction) [02.pdf, trang 220]."
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị 'NaN' trong IEEE 754 đại diện cho điều gì?",
+    "options": [
+      "Vô cực (Infinity)",
+      "Số 0 (Zero)",
+      "Số rất nhỏ (Denormalized number)",
+      "Không phải là số (Not-a-Number)"
+    ],
+    "answer": 3,
+    "explanation": "NaN (Not-a-Number) là một giá trị đặc biệt được dùng để biểu thị một kết quả không xác định hoặc bất hợp pháp, ví dụ như 0.0 / 0.0 [02.pdf, trang 227]."
+  },
+  {
+    "type": "mcq",
+    "question": "Tại sao chuẩn IEEE 754 sử dụng biểu diễn 'biased' (có độ lệch) cho phần số mũ?",
+    "options": [
+      "Để tiết kiệm bit",
+      "Để đảm bảo phần số mũ luôn là một số không âm, giúp đơn giản hóa việc so sánh",
+      "Để tăng độ chính xác của số",
+      "Để xử lý các số NaN"
+    ],
+    "answer": 1,
+    "explanation": "Việc cộng thêm một giá trị Bias (ví dụ: 127) đảm bảo rằng giá trị số mũ được lưu trữ (từ 1 đến 254) luôn không âm, giúp cho việc so sánh độ lớn của hai số dấu chấm động trở nên dễ dàng hơn [02.pdf, trang 220]."
+  },
+  {
+    "type": "mcq",
+    "question": "Bước đầu tiên trong phép cộng hai số dấu chấm động là gì?",
+    "options": [
+      "Cộng hai phần định trị (significand)",
+      "Chuẩn hóa kết quả",
+      "Làm tròn kết quả",
+      "Gióng hàng dấu chấm (Align binary points) bằng cách dịch chuyển số có số mũ nhỏ hơn"
+    ],
+    "answer": 3,
+    "explanation": "Trước khi cộng các phần định trị, số có số mũ nhỏ hơn phải được dịch phải (và tăng số mũ) cho đến khi hai số mũ bằng nhau [02.pdf, trang 228]."
+  },
+  {
+    "type": "msq",
+    "question": "Những thành phần nào sau đây là một phần của 'Processor' (Bộ xử lý) theo sơ đồ trong bài giảng?",
+    "options": [
+      "Datapath (Đường đi dữ liệu)",
+      "Control (Điều khiển)",
+      "Memory (Bộ nhớ)",
+      "Input (Đầu vào)"
+    ],
+    "answer": [0, 1],
+    "explanation": "Theo sơ đồ 'Components of a Computer', Processor (Bộ xử lý) bao gồm hai thành phần chính là Datapath (Đường đi dữ liệu) và Control (Điều khiển) [01.pdf, trang 6]."
+  },
+  {
+    "type": "fitb",
+    "question": "Trong hệ thống phân cấp bộ nhớ (Memory Hierarchy), cấp thấp nhất (ngoại trừ Băng từ) và chậm nhất nhưng có dung lượng lớn nhất là ...",
+    "answer": "Disk (Đĩa)",
+    "explanation": "Hệ thống phân cấp bộ nhớ đi từ nhanh nhất/nhỏ nhất (Thanh ghi) đến chậm nhất/lớn nhất (Đĩa, Băng từ) [01.pdf, trang 19]."
+  },
+  {
+    "type": "mcq",
+    "question": "Trong bus dữ liệu của RAM 4GB (hỗ trợ tối đa 16GB) với bus dữ liệu 64-bit, số lượng dây lựa chọn của bus địa chỉ để hỗ trợ 16GB là bao nhiêu?",
+    "options": [
+      "32",
+      "31",
+      "34",
+      "64"
+    ],
+    "answer": 1,
+    "explanation": "Tổng bộ nhớ là 16GB = $2^4 \\times 2^{30}$ = $2^{34}$ bytes. Mỗi slot 64-bit = 8 bytes = $2^3$ bytes. Số lượng slot = $2^{34} / 2^3 = 2^{31}$. Do đó, cần 31 dây lựa chọn (đường địa chỉ) để chọn 1 trong $2^{31}$ slot [02.pdf, trang 78]."
+  },
+  {
+    "type": "mcq",
+    "question": "Nếu một máy tính có bus clock 800Mhz và một thao tác đọc/ghi RAM mất 4 chu kỳ, tốc độ truyền dữ liệu (data transfer rate) với bus dữ liệu 64-bit là bao nhiêu?",
+    "options": [
+      "800 MBps",
+      "1600 MBps",
+      "3200 MBps",
+      "1526 MBps"
+    ],
+    "answer": 3,
+    "explanation": "Số lượt truyền mỗi giây = $800 \\times 10^6 / 4 = 200 \\times 10^6$. Kích thước mỗi lượt truyền = 64 bit = 8 bytes. Tốc độ = $(200 \\times 10^6) \\times 8 = 1600 \\times 10^6$ Bps = 1600 MBps. (Lưu ý: slide 59 có lỗi tính toán, $8 \\times 2 \\times 10^8$ phải là $16 \\times 10^8$ hay 1600MBps, không phải 1526MBps) [02.pdf, trang 59]."
+  }
+]
