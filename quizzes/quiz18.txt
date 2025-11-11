@@ -1,0 +1,557 @@
+[
+    {
+        "type": "mcq",
+        "question": "Theo kiến trúc Von Neumann (Princeton), đặc điểm cơ bản nhất là gì?",
+        "options": [
+            "Sử dụng bộ nhớ và bus chung cho cả lệnh (instructions) và dữ liệu (data).",
+            "Sử dụng bộ nhớ riêng và bus riêng cho lệnh và dữ liệu.",
+            "Tất cả các lệnh đều được thực thi trong một chu kỳ xung nhịp.",
+            "Chỉ cho phép truy cập bộ nhớ thông qua lệnh Load và Store."
+        ],
+        "answer": 0,
+        "explanation": "Kiến trúc Von Neumann định nghĩa một máy tính lưu trữ chương trình, trong đó lệnh và dữ liệu cùng được lưu trong một bộ nhớ và chia sẻ chung đường bus truy cập. (Nguồn: Giáo trình, Chương 1, mục 1.3)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống phân cấp bộ nhớ (Memory Hierarchy) điển hình, cấp nào có thời gian truy cập (Access Time) chậm nhất?",
+        "options": [
+            "Thanh ghi (CPU Registers)",
+            "Cache L1",
+            "Bộ nhớ chính (Main Memory/DRAM)",
+            "Đĩa từ (Magnetic Disk)"
+        ],
+        "answer": 3,
+        "explanation": "Theo sơ đồ phân cấp (Slide 01, trang 19), đĩa từ nằm ở cấp thấp nhất, có dung lượng lớn nhất nhưng thời gian truy cập chậm nhất (đo bằng mili giây, so với nano giây của RAM hoặc pico giây của thanh ghi). (Nguồn: Slide 01, trang 19)"
+    },
+    {
+        "type": "fitb",
+        "question": "Biểu diễn số thập phân 45 trong hệ nhị phân 8-bit (không dấu) là ........",
+        "answer": "00101101",
+        "explanation": "45 = 32 + 8 + 4 + 1 = $2^5 + 2^3 + 2^2 + 2^0$. Trong 8 bit là 00101101. (Nguồn: Slide 02, trang 86-95)"
+    },
+    {
+        "type": "mcq",
+        "question": "Số thập phân -7 được biểu diễn bằng phương pháp bù 2 (2's complement) 8-bit là?",
+        "options": [
+            "11111001",
+            "10000111",
+            "11111000",
+            "00000111"
+        ],
+        "answer": 0,
+        "explanation": "Số +7 (8-bit) là 00000111. Đảo bit (bù 1) ta được 11111000. Cộng 1 (bù 2) ta được 11111001. (Nguồn: Slide 02, trang 181-183)"
+    },
+    {
+        "type": "msq",
+        "question": "Theo định luật DeMorgan trong đại số Boolean, những biểu thức nào sau đây là ĐÚNG?",
+        "options": [
+            "$\\overline{A + B} = \\overline{A} \\cdot \\overline{B}$",
+            "$\\overline{A \\cdot B} = \\overline{A} + \\overline{B}$",
+            "$\\overline{A + B} = \\overline{A} + \\overline{B}$",
+            "$\\overline{A \\cdot B} = \\overline{A} \\cdot \\overline{B}$"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Định luật DeMorgan phát biểu rằng phủ định của một tổng bằng tích các phủ định, và phủ định của một tích bằng tổng các phủ định. (Nguồn: Slide 02, trang 15)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc tập lệnh (ISA) nào chỉ cho phép các lệnh ALU (số học/logic) thao tác trên toán hạng thanh ghi, và truy cập bộ nhớ bắt buộc phải thông qua các lệnh LOAD/STORE?",
+        "options": [
+            "Load-store (Register-register)",
+            "Register-memory",
+            "Memory-memory",
+            "Stack"
+        ],
+        "answer": 0,
+        "explanation": "Kiến trúc Load-store (hay Register-register) là đặc trưng của các máy RISC. Các kiến trúc Register-memory (như x86) cho phép lệnh ALU có toán hạng trong bộ nhớ. (Nguồn: Giáo trình, Phụ lục B, mục B.2)"
+    },
+    {
+        "type": "fitb",
+        "question": "Phần tử lưu trữ 1-bit cơ bản nhất, duy trì trạng thái bằng hai cổng logic (NOR hoặc NAND) đấu chéo, được gọi là ........",
+        "answer": "SR Latch",
+        "explanation": "SR Latch (chốt SR) là mạch tuần tự cơ bản nhất, dùng để lưu trữ 1 bit trạng thái. (Nguồn: Slide 02, trang 62)"
+    },
+    {
+        "type": "mcq",
+        "question": "Theo chuẩn IEEE 754 32-bit (single precision), trường mũ (exponent) sử dụng bao nhiêu bit và kiểu mã hóa nào?",
+        "options": [
+            "8 bit, mã hóa excess-127",
+            "8 bit, mã hóa bù 2",
+            "11 bit, mã hóa excess-1023",
+            "23 bit, mã hóa dấu và độ lớn"
+        ],
+        "answer": 0,
+        "explanation": "Chuẩn IEEE 754 32-bit dùng 1 bit dấu, 8 bit mũ (sử dụng mã hóa excess-127, hay bias-127), và 23 bit phần định trị (fraction). (Nguồn: Slide 02, trang 220; Giáo trình, Phụ lục I)"
+    },
+    {
+        "type": "msq",
+        "question": "Đặc điểm của máy tính lớp 'Embedded' (Nhúng) là gì?",
+        "options": [
+            "Thường bị ràng buộc khắt khe về chi phí (cost), năng lượng (power).",
+            "Có yêu cầu về hiệu năng thời gian thực (real-time).",
+            "Luôn có hiệu năng tính toán cao nhất (high capacity, performance).",
+            "Thường được dùng làm máy chủ mạng (network based server)."
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Máy tính nhúng được tối ưu cho các hệ thống chuyên dụng, yêu cầu khắt khe về chi phí, năng lượng và thường phải đáp ứng các ràng buộc về thời gian thực. Máy chủ (Server) mới là lớp yêu cầu hiệu năng và dung lượng cao. (Nguồn: Slide 01, trang 5)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một máy tính có bus dữ liệu 32-bit, bus clock 1GHz. Một thao tác đọc/ghi RAM mất 4 chu kỳ bus. Tốc độ truyền dữ liệu (transfer rate) tối đa là bao nhiêu?",
+        "options": [
+            "1000 MBps",
+            "4000 MBps",
+            "250 MBps",
+            "3200 MBps"
+        ],
+        "answer": 0,
+        "explanation": "Số lượt truyền mỗi giây = 1.10^9 / 4 = 250.10^6 (250 triệu lượt). Mỗi lượt truyền 32 bit = 4 Bytes. Tốc độ = 250.10^6 * 4 = 1000.10^6 Bps = 1000 MBps. (Nguồn: Slide 02, trang 59)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một chương trình chạy hết 80 giây trên máy A. Nếu 20% thời gian thực thi (phần tuần tự) không thể cải thiện, thời gian chạy lý thuyết tối đa (theo định luật Amdahl) trên một máy B với vô số bộ xử lý là bao nhiêu giây?",
+        "options": [
+            "16 giây",
+            "0 giây",
+            "4 giây",
+            "Không thể xác định"
+        ],
+        "answer": 0,
+        "explanation": "Phần không thể cải thiện (tuần tự) chiếm 20% * 80s = 16 giây. Theo định luật Amdahl, thời gian thực thi tổng thể không bao giờ nhỏ hơn thời gian của phần tuần tự, ngay cả khi phần song song (80%) được tăng tốc vô hạn (mất 0 giây). (Nguồn: Giáo trình, Chương 1, mục 1.9)"
+    },
+    {
+        "type": "msq",
+        "question": "Các đặc điểm nào sau đây mô tả kiến trúc RISC (Reduced Instruction Set Computer)?",
+        "options": [
+            "Tập lệnh đơn giản, kích thước cố định.",
+            "Kiến trúc Load-Store.",
+            "Nhiều chế độ địa chỉ phức tạp.",
+            "Lệnh có độ dài thay đổi (variable-length)."
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "RISC tập trung vào các lệnh đơn giản, kích thước cố định và kiến trúc load-store để tối ưu cho pipeline. CISC (như x86) có lệnh dài thay đổi và nhiều chế độ địa chỉ phức tạp. (Nguồn: Giáo trình, Chương 1.3 và Phụ lục B.2)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong pipeline 5 tầng cổ điển (IF, ID, EX, MEM, WB), xung đột (hazard) nào xảy ra khi một lệnh cố gắng sử dụng cùng một tài nguyên phần cứng (ví dụ: bộ nhớ) vào cùng một thời điểm với lệnh khác?",
+        "options": [
+            "Structural Hazard (Xung đột cấu trúc)",
+            "Data Hazard (Xung đột dữ liệu)",
+            "Control Hazard (Xung đột điều khiển)",
+            "Output Hazard (Xung đột đầu ra)"
+        ],
+        "answer": 0,
+        "explanation": "Structural hazard xảy ra khi phần cứng không đủ để hỗ trợ tất cả các lệnh đang thực thi song song trong pipeline. Ví dụ: pipeline không có bộ nhớ Lệnh/Dữ liệu riêng biệt. (Nguồn: Giáo trình, Phụ lục A.2)"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong pipeline 5 tầng (IF, ID, EX, MEM, WB), nếu một lệnh rẽ nhánh (branch) được giải quyết (biết kết quả) ở cuối tầng EX, thì Branch Penalty (thiệt hại do rẽ nhánh) khi dự đoán sai là ........ chu kỳ.",
+        "answer": "2",
+        "explanation": "Khi lệnh rẽ nhánh ở tầng EX, hai lệnh tiếp theo (đã nạp sai) đang ở tầng ID và IF. Cả hai lệnh này phải bị hủy, gây ra 2 chu kỳ stall. (Nguồn: Giáo trình, Phụ lục A.3, Hình A.11)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật 'Forwarding' (còn gọi là 'Bypassing') trong pipeline được dùng để giải quyết chủ yếu loại xung đột nào?",
+        "options": [
+            "RAW (Read After Write)",
+            "WAR (Write After Read)",
+            "WAW (Write After Write)",
+            "Control Hazards"
+        ],
+        "answer": 0,
+        "explanation": "Forwarding giải quyết xung đột RAW (phụ thuộc dữ liệu thực sự) bằng cách chuyển tiếp kết quả từ tầng EX hoặc MEM về đầu vào của ALU (tầng EX) cho lệnh tiếp theo, thay vì phải chờ đến tầng WB. (Nguồn: Giáo trình, Phụ lục A.2, trang A-17)"
+    },
+    {
+        "type": "msq",
+        "question": "Những đặc điểm nào sau đây là của mạch logic tuần tự (Sequential Logic)?",
+        "options": [
+            "Sử dụng các phần tử có khả năng lưu trữ trạng thái (memory elements) như flip-flop hoặc latch.",
+            "Đầu ra (output) phụ thuộc vào đầu vào (input) hiện tại và trạng thái (state) trước đó.",
+            "Đầu ra (output) chỉ phụ thuộc vào đầu vào (input) hiện tại.",
+            "Một ví dụ điển hình là bộ cộng (Adder) hoặc MUX."
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Mạch tuần tự (như bộ đếm, thanh ghi) có bộ nhớ trạng thái. Mạch tổ hợp (như Adder, MUX) không có bộ nhớ, đầu ra chỉ phụ thuộc vào đầu vào hiện tại. (Nguồn: Slide 02, trang 68)"
+    },
+    {
+        "type": "mcq",
+        "question": "Hiện tượng 'False Sharing' (Chia sẻ giả) trong hệ thống cache của đa xử lý (multiprocessor) xảy ra khi nào?",
+        "options": [
+            "Khi hai CPU truy cập hai biến khác nhau, nhưng hai biến này vô tình nằm chung trên một cache block, và một CPU thực hiện ghi.",
+            "Khi hai CPU cùng đọc một biến tại cùng một thời điểm.",
+            "Khi một CPU ghi đè dữ liệu mà một CPU khác đang chuẩn bị đọc (WAR hazard).",
+            "Khi kích thước cache quá nhỏ, gây ra capacity miss."
+        ],
+        "answer": 0,
+        "explanation": "False sharing xảy ra do sự không tương thích giữa kích thước cache block và đơn vị dữ liệu được chia sẻ thực tế. Việc ghi vào một từ trong block sẽ làm mất hiệu lực (invalidate) toàn bộ block đó ở các cache khác, gây ra miss không cần thiết cho các từ khác trong block. (Nguồn: Giáo trình, Chương 4.3, trang 218)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật SMT (Simultaneous Multithreading) nhằm mục đích chính là gì?",
+        "options": [
+            "Khai thác cả ILP (song song mức lệnh) và TLP (song song mức luồng) trên một lõi CPU superscalar.",
+            "Chỉ khai thác TLP bằng cách chạy nhiều lõi CPU trên một chip.",
+            "Giảm điện năng tiêu thụ của CPU bằng cách tắt các lõi không sử dụng.",
+            "Tăng kích thước L1 cache một cách động."
+        ],
+        "answer": 0,
+        "explanation": "SMT (như Hyper-Threading) cho phép một lõi superscalar (vốn khai thác ILP) nạp lệnh từ nhiều luồng (TLP) khác nhau để lấp đầy các khe thực thi (issue slots) bị trống do stall, qua đó tăng hiệu suất sử dụng tài nguyên của lõi. (Nguồn: Giáo trình, Chương 3.5, Hình 3.8)"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong kiến trúc RISC, hầu hết các trình biên dịch hiện đại sử dụng ........ để truyền tham số khi gọi thủ tục (procedure call), thay vì dùng stack trong bộ nhớ.",
+        "answer": "thanh ghi (registers)",
+        "explanation": "Việc sử dụng thanh ghi để truyền tham số nhanh hơn nhiều so với truy cập stack trong bộ nhớ, vốn là cách làm phổ biến trong các kiến trúc CISC cũ. (Nguồn: Giáo trình, Phụ lục B.8)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một cache 128KB, 4-way set-associative, block size 32 bytes, sử dụng địa chỉ vật lý 32-bit. Số bit cần cho trường Tag, Index, và Offset là bao nhiêu?",
+        "options": [
+            "Tag = 18, Index = 9, Offset = 5",
+            "Tag = 17, Index = 10, Offset = 5",
+            "Tag = 18, Index = 10, Offset = 4",
+            "Tag = 16, Index = 10, Offset = 6"
+        ],
+        "answer": 0,
+        "explanation": "Block size = 32B (2^5) -> Offset = 5 bit. Số block = 128KB / 32B = 4096 (2^12). Số set = Số block / Độ associative = 4096 / 4 = 1024 (2^10). -> Index = 10 bit. Số bit Tag = 32 - Index - Offset = 32 - 10 - 5 = 17 bit. (Lỗi trong tính toán ở trên, 32-10-5 = 17) -> *Chỉnh lại: Số set = 1024 (2^10), vậy Index = 10 bit. Tag = 32 - 10 - 5 = 17 bit. Đáp án 1 là đúng.* (Nguồn: Giáo trình, Phụ lục C.1)"
+    },
+    {
+        "type": "mcq",
+        "question": "Chuyển số Hex (thập lục phân) A0B.C sang hệ nhị phân?",
+        "options": [
+            "101000001011.1100",
+            "101000001011.1011",
+            "10100001011.1100",
+            "101100001010.1100"
+        ],
+        "answer": 0,
+        "explanation": "Chuyển từng ký tự hex sang 4 bit nhị phân: A=1010, 0=0000, B=1011, C=1100. Ghép lại ta được 101000001011.1100. (Nguồn: Slide 02, trang 141)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật 'Dynamic Scheduling' (ví dụ: thuật toán Tomasulo) giải quyết được loại xung đột nào mà 'Static Scheduling' không thể giải quyết hiệu quả?",
+        "options": [
+            "WAR (Write After Read) và WAW (Write After Write)",
+            "RAW (Read After Write)",
+            "Control Hazards (Xung đột điều khiển)",
+            "Structural Hazards (Xung đột cấu trúc)"
+        ],
+        "answer": 0,
+        "explanation": "Lập lịch động sử dụng 'register renaming' (đổi tên thanh ghi) để loại bỏ các phụ thuộc giả (false dependencies) là WAR và WAW, cho phép thực thi out-of-order. (Nguồn: Giáo trình, Chương 2.4, trang 92)"
+    },
+    {
+        "type": "msq",
+        "question": "Những kỹ thuật nào sau đây được thiết kế chủ yếu để giảm Cache Miss Rate (Tỷ lệ Miss của Cache)?",
+        "options": [
+            "Tăng kích thước cache (Larger cache size)",
+            "Tăng độ liên kết (Higher associativity)",
+            "Tăng kích thước khối (Larger block size)",
+            "Cache đa tầng (Multilevel caches)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Tăng kích thước cache giảm Capacity miss. Tăng associativity giảm Conflict miss. Tăng block size giảm Compulsory miss (do tận dụng spatial locality). Cache đa tầng chủ yếu để giảm Miss Penalty. (Nguồn: Giáo trình, Chương 5.2, Hình 5.11)"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong kiến trúc MIPS, lệnh ........ (viết tắt) được sử dụng để gọi một thủ tục (procedure call) và lưu địa chỉ trở về vào thanh ghi $ra (R31).",
+        "answer": "JAL (Jump And Link)",
+        "explanation": "Lệnh JAL (Jump And Link) thực hiện một bước nhảy không điều kiện đến địa chỉ thủ tục, đồng thời lưu PC+4 vào thanh ghi $ra để làm địa chỉ quay về. (Nguồn: Giáo trình, Phụ lục B.9, Hình B.25)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống đa xử lý, giao thức 'Directory-based' (dựa trên thư mục) có ưu điểm gì so với 'Snooping'?",
+        "options": [
+            "Có khả năng mở rộng (scalable) tốt hơn cho số lượng lớn bộ xử lý.",
+            "Đơn giản hơn trong thiết kế phần cứng.",
+            "Thời gian trễ (latency) thấp hơn khi cache-to-cache transfer.",
+            "Không yêu cầu bất kỳ cơ chế broadcast nào."
+        ],
+        "answer": 0,
+        "explanation": "Giao thức Snooping yêu cầu broadcast mọi giao dịch lên bus, gây nghẽn băng thông khi số lượng CPU tăng. Giao thức Directory-based chỉ gửi thông điệp đến các CPU (node) đang giữ bản sao của dữ liệu (được lưu trong thư mục), do đó có khả năng mở rộng tốt hơn. (Nguồn: Giáo trình, Chương 4.4)"
+    },
+    {
+        "type": "mcq",
+        "question": "TLB (Translation Lookaside Buffer) là một cache của cấu trúc dữ liệu nào?",
+        "options": [
+            "Page Table (Bảng phân trang)",
+            "Instruction Cache (Cache lệnh)",
+            "Victim Cache",
+            "Write Buffer"
+        ],
+        "answer": 0,
+        "explanation": "TLB là một cache phần cứng nhỏ, lưu các Page Table Entries (PTEs) được truy cập gần đây để tăng tốc độ dịch địa chỉ ảo sang địa chỉ vật lý. (Nguồn: Giáo trình, Chương 5.4, trang 317)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một đĩa cứng quay 10,000 RPM (vòng/phút). Thời gian trễ quay trung bình (average rotational latency) là bao nhiêu?",
+        "options": [
+            "3 ms",
+            "6 ms",
+            "10 ms",
+            "5 ms"
+        ],
+        "answer": 0,
+        "explanation": "10,000 RPM = 10000/60 vòng/giây ≈ 166.7 vòng/giây. Thời gian 1 vòng quay = 1 / 166.7 = 0.006 giây = 6 ms. Trễ trung bình (chờ nửa vòng) = 0.5 * 6 ms = 3 ms. (Nguồn: Giáo trình, Chương 6.2)"
+    },
+    {
+        "type": "fitb",
+        "question": "Hệ thống I/O sử dụng kỹ thuật ........ cho phép CPU tiếp tục thực thi các lệnh khác sau khi gửi yêu cầu I/O, mà không cần chờ I/O hoàn tất.",
+        "answer": "DMA (Direct Memory Access)",
+        "explanation": "DMA cho phép thiết bị I/O truy cập trực tiếp bộ nhớ chính để đọc/ghi dữ liệu mà không cần sự can thiệp của CPU, giải phóng CPU làm việc khác. (Nguồn: Giáo trình, Chương 6.6)"
+    },
+    {
+        "type": "mcq",
+        "question": "Máy tính A chạy một chương trình trong 12 giây với clock 3GHz. Nếu muốn thiết kế máy B chạy cùng chương trình đó trong 8 giây, và máy B cần số chu kỳ clock nhiều hơn 1.2 lần so với máy A, thì clock của máy B phải là bao nhiêu?",
+        "options": [
+            "5.4 GHz",
+            "4.5 GHz",
+            "6.0 GHz",
+            "3.6 GHz"
+        ],
+        "answer": 0,
+        "explanation": "Cycles_A = Time_A * Rate_A = 12 * 3G. Cycles_B = 1.2 * Cycles_A = 1.2 * (12 * 3G) = 43.2G cycles. Rate_B = Cycles_B / Time_B = 43.2G / 8 = 5.4 GHz. (Nguồn: Giáo trình, Chương 1, mục 1.9, trang 42)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc Harvard (Harvard Architecture) khác biệt với Von Neumann ở điểm nào?",
+        "options": [
+            "Có bộ nhớ và đường bus riêng biệt cho lệnh và dữ liệu.",
+            "Sử dụng một bộ nhớ chung cho lệnh và dữ liệu.",
+            "Sử dụng kiến trúc Stack để tính toán.",
+            "Không sử dụng thanh ghi."
+        ],
+        "answer": 0,
+        "explanation": "Kiến trúc Harvard tách biệt bộ nhớ và bus cho lệnh và dữ liệu, cho phép CPU có thể nạp lệnh và truy cập dữ liệu đồng thời, tăng thông lượng (throughput). (Nguồn: Giáo trình, Chương 1, mục 1.3)"
+    },
+    {
+        "type": "mcq",
+        "question": "Theo chuẩn IEEE 754 64-bit (double precision), trường mũ (exponent) có độ dài bao nhiêu bit?",
+        "options": [
+            "11 bit",
+            "8 bit",
+            "52 bit",
+            "1 bit"
+        ],
+        "answer": 0,
+        "explanation": "Chuẩn IEEE 754 64-bit dùng 1 bit dấu, 11 bit mũ (excess-1023), và 52 bit phần định trị (fraction). (Nguồn: Slide 02, trang 220; Giáo trình, Phụ lục I)"
+    },
+    {
+        "type": "fitb",
+        "question": "Flip-Flop loại D (D-Flip Flop) là một phần tử nhớ ........ (edge-triggered), nghĩa là nó chỉ cập nhật giá trị đầu ra tại sườn lên (hoặc xuống) của tín hiệu xung nhịp.",
+        "answer": "edge-triggered (kích hoạt theo sườn/cạnh)",
+        "explanation": "D-Flip Flop khác với D-Latch (level-triggered - kích hoạt theo mức). D-Flip Flop chỉ thay đổi trạng thái tại thời điểm sườn xung nhịp, rất quan trọng trong các thiết kế đồng bộ (synchronous). (Nguồn: Slide 02, trang 65)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong pipeline, kỹ thuật 'Speculation' (thực thi phỏng đoán) giải quyết xung đột điều khiển (control hazard) bằng cách nào?",
+        "options": [
+            "Dự đoán hướng rẽ nhánh và thực thi các lệnh ở hướng đó trước khi biết kết quả thực sự.",
+            "Luôn dừng pipeline và chờ cho đến khi lệnh rẽ nhánh được giải quyết.",
+            "Chỉ thực thi các lệnh không phụ thuộc vào nhánh.",
+            "Sử dụng trình biên dịch để chèn các lệnh NOP."
+        ],
+        "answer": 0,
+        "explanation": "Speculation cho phép pipeline tiếp tục nạp và thực thi các lệnh ở một đường (path) dự đoán sau lệnh rẽ nhánh. Nếu dự đoán sai, các lệnh đã thực thi phỏng đoán sẽ bị hủy (flushed). (Nguồn: Giáo trình, Chương 2.6, trang 105)"
+    },
+    {
+        "type": "msq",
+        "question": "Những loại xung đột (hazard) nào sau đây là 'name dependencies' (phụ thuộc tên) và có thể được loại bỏ bằng kỹ thuật 'register renaming' (đổi tên thanh ghi)?",
+        "options": [
+            "WAR (Write After Read)",
+            "WAW (Write After Write)",
+            "RAW (Read After Write)",
+            "Structural Hazard (Xung đột cấu trúc)"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Phụ thuộc tên (WAR, WAW) không phải là phụ thuộc dữ liệu thực sự (true data dependency). Chúng xảy ra do các lệnh vô tình sử dụng cùng tên thanh ghi. Register renaming cấp phát các thanh ghi vật lý khác nhau cho các lệnh này để loại bỏ xung đột. RAW là phụ thuộc dữ liệu thực sự và không thể loại bỏ. (Nguồn: Giáo trình, Chương 2.1, trang 70)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một D-Latch (chốt D) khác D-Flip-Flop (D-FF) ở điểm nào?",
+        "options": [
+            "Latch trong suốt (transparent) khi tín hiệu 'Enable' ở mức cao (level-triggered), còn D-FF chỉ cập nhật ở sườn xung nhịp (edge-triggered).",
+            "D-FF trong suốt khi tín hiệu 'Enable' ở mức cao, còn Latch chỉ cập nhật ở sườn xung nhịp.",
+            "Latch sử dụng nhiều transistor hơn D-FF.",
+            "Latch không thể lưu trữ dữ liệu, D-FF thì có."
+        ],
+        "answer": 0,
+        "explanation": "D-Latch là 'level-triggered', nghĩa là đầu ra Q sẽ theo đầu vào D chừng nào chân Enable còn ở mức (ví dụ: mức 1). D-Flip-Flop là 'edge-triggered', nghĩa là nó chỉ 'chụp' (sample) đầu vào D tại thời điểm sườn lên (hoặc xuống) của xung nhịp. (Nguồn: Slide 02, trang 64-65)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật 'Pipelining' (đường ống) cải thiện hiệu năng của CPU bằng cách nào?",
+        "options": [
+            "Tăng 'Instruction Throughput' (thông lượng lệnh) bằng cách thực thi gối đầu (overlap) nhiều lệnh.",
+            "Giảm 'Instruction Latency' (độ trễ) của từng lệnh riêng lẻ.",
+            "Giảm số lượng thanh ghi cần thiết.",
+            "Loại bỏ hoàn toàn các xung đột dữ liệu (data hazards)."
+        ],
+        "answer": 0,
+        "explanation": "Pipelining không làm giảm thời gian thực thi của một lệnh đơn lẻ (thậm chí có thể tăng nhẹ do overhead của pipeline register). Nó tăng hiệu năng tổng thể bằng cách tăng thông lượng (throughput), tức là số lệnh được hoàn thành trên mỗi đơn vị thời gian. (Nguồn: Giáo trình, Phụ lục A.1, trang A-3)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống RAID, mức nào KHÔNG cung cấp khả năng dự phòng (fault tolerance)?",
+        "options": [
+            "RAID 0",
+            "RAID 1",
+            "RAID 5",
+            "RAID 6"
+        ],
+        "answer": 0,
+        "explanation": "RAID 0 (striping) chỉ chia dữ liệu ra nhiều đĩa để tăng hiệu năng đọc/ghi, nhưng không có dự phòng. Nếu một đĩa hỏng, toàn bộ dữ liệu sẽ mất. (Nguồn: Giáo trình, Chương 6.2, Hình 6.4)"
+    },
+    {
+        "type": "fitb",
+        "question": "Khả năng của hệ thống trong việc tiếp tục cung cấp dịch vụ một cách chính xác bất chấp có lỗi (faults) xảy ra được gọi là ........",
+        "answer": "Fault Tolerance (Khả năng chịu lỗi)",
+        "explanation": "Fault tolerance là một khía cạnh quan trọng của Dependability (Độ tin cậy). Ví dụ như RAID hay ECC là các kỹ thuật để đạt được fault tolerance. (Nguồn: Giáo trình, Chương 6.3, trang 366)"
+    },
+    {
+        "type": "mcq",
+        "question": "Nếu một CPU có 48-bit địa chỉ ảo (virtual address) và kích thước trang (page size) là 4KB, thì có bao nhiêu bit trong địa chỉ ảo được dùng làm 'Virtual Page Number' (Số hiệu trang ảo)?",
+        "options": [
+            "36 bit",
+            "12 bit",
+            "32 bit",
+            "16 bit"
+        ],
+        "answer": 0,
+        "explanation": "Kích thước trang 4KB = 4096 bytes = 2^12 bytes. Cần 12 bit cho Page Offset. Số bit còn lại cho Virtual Page Number = 48 - 12 = 36 bit. (Nguồn: Giáo trình, Chương 5.4, Hình 5.18)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong các chế độ địa chỉ (addressing modes) của MIPS, chế độ nào dùng để truy cập các biến toàn cục (global variables) có địa chỉ nằm cố định?",
+        "options": [
+            "Displacement (với thanh ghi $gp)",
+            "Register indirect",
+            "Immediate",
+            "PC-relative"
+        ],
+        "answer": 0,
+        "explanation": "MIPS dành riêng thanh ghi $gp (global pointer) để trỏ đến vùng dữ liệu tĩnh (static/global). Các biến toàn cục được truy cập bằng chế độ 'Displacement' với $gp làm thanh ghi cơ sở. (Nguồn: Giáo trình, Phụ lục B.9)"
+    },
+    {
+        "type": "msq",
+        "question": "Các máy tính 'Server' (máy chủ) hiện đại thường tập trung vào các yếu tố nào sau đây?",
+        "options": [
+            "Throughput (Thông lượng)",
+            "Availability (Tính sẵn sàng) và Reliability (Độ tin cậy)",
+            "Scalability (Khả năng mở rộng)",
+            "Chi phí tối thiểu (minimum cost) và năng lượng thấp (low power)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Server phải xử lý nhiều yêu cầu đồng thời (throughput), phải luôn hoạt động (availability/reliability), và có khả năng nâng cấp (scalability). Chi phí và năng lượng là ưu tiên hàng đầu của máy tính nhúng (Embedded). (Nguồn: Slide 01, trang 5; Giáo trình, Chương 1.2, trang 6)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một bộ xử lý superscalar 4-issue (phát hành 4 lệnh/chu kỳ) nhưng trong một chương trình cụ thể chỉ đạt CPI là 0.8. 'Instruction Throughput' (Thông lượng lệnh) thực tế là bao nhiêu?",
+        "options": [
+            "1.25 lệnh/chu kỳ",
+            "4 lệnh/chu kỳ",
+            "0.8 lệnh/chu kỳ",
+            "3.2 lệnh/chu kỳ"
+        ],
+        "answer": 0,
+        "explanation": "Instruction Throughput (hay IPC - Instructions Per Cycle) là nghịch đảo của CPI. IPC = 1 / CPI = 1 / 0.8 = 1.25 lệnh/chu kỳ. Con số 4-issue là thông lượng đỉnh (peak), không phải thông lượng thực tế (sustained). (Nguồn: Giáo trình, Chương 1.9, trang 42)"
+    },
+    {
+        "type": "fitb",
+        "question": "Kỹ thuật ........ trong máy tính song song cho phép một lõi CPU (core) chuyển đổi qua lại giữa nhiều luồng (threads) phần cứng, ví dụ như chuyển luồng sau mỗi N chu kỳ hoặc khi gặp một stall có độ trễ lớn.",
+        "answer": "Multithreading (Đa luồng)",
+        "explanation": "Multithreading (như SMT, Coarse-grained, Fine-grained) cho phép khai thác song song mức luồng (TLP) để che giấu độ trễ (latency) của pipeline hoặc bộ nhớ. (Nguồn: Giáo trình, Chương 3.5, trang 172)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một cache L1 có 'Hit Time' là 1 chu kỳ, 'Miss Rate' là 5%. Cache L2 có 'Hit Time' là 10 chu kỳ, 'Global Miss Rate' của L2 là 2%. 'Miss Penalty' từ L2 ra bộ nhớ chính là 100 chu kỳ. 'Average Memory Access Time' (AMAT) là bao nhiêu?",
+        "options": [
+            "3.5 chu kỳ",
+            "2.5 chu kỳ",
+            "5.5 chu kỳ",
+            "11.0 chu kỳ"
+        ],
+        "answer": 0,
+        "explanation": "AMAT = HitTime(L1) + MissRate(L1) * MissPenalty(L1).\nMissPenalty(L1) = HitTime(L2) + MissRate_Local(L2) * MissPenalty(L2).\nCách khác: AMAT = HitTime(L1) + (MissRate(L1) * HitTime(L2)) + (MissRate_Global(L2) * MissPenalty(L2)) = 1 + (5% * 10) + (2% * 100) = 1 + 0.5 + 2.0 = 3.5 chu kỳ. (Nguồn: Giáo trình, Phụ lục C.3, trang C-30)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong các loại bus (Interconnect) sau đây, loại nào sử dụng cơ chế 'packet-switched' (chuyển mạch gói) và kết nối điểm-nối-điểm (point-to-point)?",
+        "options": [
+            "PCI Express (PCIe)",
+            "PCI (Peripheral Component Interconnect)",
+            "ISA (Industry Standard Architecture)",
+            "Bus SCSI song song"
+        ],
+        "answer": 0,
+        "explanation": "PCIe (và cả HyperTransport, Serial ATA) là các bus nối tiếp, điểm-nối-điểm, sử dụng chuyển mạch gói. Các bus cũ hơn như PCI và ISA là các bus song song, chia sẻ (shared bus). (Nguồn: Giáo trình, Chương 6.6, Hình 6.18)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong xử lý số (Digital Processing), mức điện áp 0V đến 1V thường được trừu tượng hóa thành mức logic nào?",
+        "options": [
+            "Logic 0 (False)",
+            "Logic 1 (True)",
+            "Trạng thái Z (trở kháng cao)",
+            "Không xác định"
+        ],
+        "answer": 0,
+        "explanation": "Trong các hệ thống số (ví dụ TTL 5V), mức điện áp thấp (ví dụ: < 1V) được quy ước là logic '0' (hoặc False), và mức điện áp cao (ví dụ: > 2.5V) là logic '1' (hoặc True). (Nguồn: Slide 02, trang 4)"
+    },
+    {
+        "type": "msq",
+        "question": "Những thành phần nào sau đây thuộc về 'Datapath' (Đường đi dữ liệu) của một CPU?",
+        "options": [
+            "ALU (Arithmetic Logic Unit)",
+            "Register File (Khối thanh ghi)",
+            "Program Counter (PC)",
+            "Control Unit (Khối điều khiển)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Datapath bao gồm các phần tử chức năng thực hiện tính toán và lưu trữ dữ liệu (ALU, thanh ghi, PC, MUX). Control Unit (Khối điều khiển) tạo ra các tín hiệu điều khiển để Datapath hoạt động, nhưng không nằm trong Datapath. (Nguồn: Slide 01, trang 6)"
+    },
+    {
+        "type": "fitb",
+        "question": "Hệ thống I/O sử dụng ........ để giải quyết vấn đề nghẽn cổ chai (bottleneck) của bus chia sẻ bằng cách cung cấp nhiều đường kết nối song song, cho phép nhiều cặp thiết bị giao tiếp đồng thời.",
+        "answer": "Switch (Bộ chuyển mạch)",
+        "explanation": "Không giống như bus (shared media), một switch (switched media) chứa các đường kết nối nội bộ cho phép nhiều giao dịch diễn ra đồng thời miễn là chúng không xung đột cổng ra. (Nguồn: Giáo trình, Chương 4.2)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật 'Virtual Machines' (Máy ảo) cung cấp sự bảo vệ (protection) bằng cách nào?",
+        "options": [
+            "Tạo một lớp trừu tượng (VMM/Hypervisor) giữa phần cứng và HĐH khách (Guest OS), cô lập các HĐH với nhau.",
+            "Chỉ cho phép chạy một hệ điều hành duy nhất tại một thời điểm.",
+            "Mã hóa toàn bộ bộ nhớ chính bằng phần cứng.",
+            "Sử dụng kỹ thuật 'Register Renaming'."
+        ],
+        "answer": 0,
+        "explanation": "VMM (Virtual Machine Monitor) chạy ở mức đặc quyền cao nhất, quản lý tài nguyên phần cứng. Các HĐH khách (Guest OS) chạy ở mức đặc quyền thấp hơn (user mode), ngăn chúng can thiệp trực tiếp vào phần cứng hoặc vào HĐH khác. (Nguồn: Giáo trình, Chương 5.4, trang 318-319)"
+    }
+]

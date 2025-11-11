@@ -1,0 +1,428 @@
+[
+    {
+        "type": "msq",
+        "question": "Các biểu thức Boolean nào sau đây tương đương với biểu thức $A + B$?",
+        "options": [
+            "$A + \\overline{A}B$",
+            "$AB + A$",
+            "$A(B+1)$",
+            "$A(\\overline{B}+B) + B$"
+        ],
+        "answer": [0, 3],
+        "explanation": "Sử dụng các luật đại số Boolean: $A + \\overline{A}B = (A + \\overline{A})(A + B) = 1(A + B) = A + B$. Ngoài ra, $A(\\overline{B}+B) + B = A(1) + B = A + B$. (Nguồn: Slide 02.pdf, trang 14-15)"
+    },
+    {
+        "type": "fitb",
+        "question": "Số thập phân $205.5$ được biểu diễn ở dạng nhị phân không dấu là ...... .",
+        "answer": "11001101.1",
+        "explanation": "Phần nguyên: $205 = 128 + 64 + 8 + 4 + 1 = 11001101_2$. Phần phân: $0.5 = 1 \\times 2^{-1} = 0.1_2$. Kết hợp lại ta được $11001101.1_2$. (Nguồn: Slide 02.pdf, trang 87-95, 208)"
+    },
+    {
+        "type": "mcq",
+        "question": "Giá trị thập phân của số bù 2 (two's complement) 8-bit `11100100` là gì?",
+        "options": [
+            "-28",
+            "228",
+            "-27",
+            "-100"
+        ],
+        "answer": 0,
+        "explanation": "Đây là số âm (bit MSB = 1). Để tìm giá trị, ta đảo bit ($00011011$) và cộng 1 ($00011100$). $00011100_2 = 16 + 8 + 4 = 28$. Vì vậy, giá trị là -28. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục I, trang I-7)"
+    },
+    {
+        "type": "msq",
+        "question": "Trong chuẩn biểu diễn số thực dấu phẩy động IEEE 754 32-bit (single precision), các trường (fields) nào sau đây là đúng?",
+        "options": [
+            "Sign (Dấu): 1 bit",
+            "Exponent (Phần mũ): 8 bits",
+            "Mantissa (Phần định trị): 23 bits",
+            "Exponent (Phần mũ): 11 bits"
+        ],
+        "answer": [0, 1, 2],
+        "explanation": "Chuẩn IEEE 754 32-bit bao gồm 1 bit dấu, 8 bit cho phần mũ (với độ dời 127), và 23 bit cho phần định trị (fraction). 11 bit mũ là của chuẩn 64-bit. (Nguồn: Slide 02.pdf, trang 220)"
+    },
+    {
+        "type": "mcq",
+        "question": "Số IEEE 754 32-bit `0x41C80000` (hệ hex) biểu diễn giá trị thập phân nào?",
+        "options": [
+            "25.0",
+            "12.5",
+            "-25.0",
+            "24.0"
+        ],
+        "answer": 0,
+        "explanation": "Dạng nhị phân: $0 10000011 1001000...0$. Dấu = 0. Mũ = $10000011_2 = 131$. Mũ thực = $131 - 127 = 4$. Định trị = $1.1001_2$. Giá trị = $1.1001_2 \\times 2^4 = 11001.0_2 = 16 + 8 + 1 = 25.0$. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục I, trang I-15)"
+    },
+    {
+        "type": "fitb",
+        "question": "Để biểu diễn 10 chữ số thập phân (ví dụ, số điện thoại) bằng mã BCD (Binary-Coded Decimal) dạng đóng gói (packed), cần tổng cộng ...... bits.",
+        "answer": "40",
+        "explanation": "Mỗi chữ số thập phân trong BCD cần 4 bits. BCD đóng gói lưu 2 chữ số trong 1 byte (8 bits). 10 chữ số sẽ cần $10 \\times 4 = 40$ bits (hoặc 5 bytes). (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục B, trang B-14)"
+    },
+    {
+        "type": "mcq",
+        "question": "Thành phần nào của CPU chịu trách nhiệm giải mã lệnh và tạo tín hiệu điều khiển?",
+        "options": [
+            "Control Unit (Khối điều khiển)",
+            "ALU (Khối số học-logic)",
+            "Registers (Thanh ghi)",
+            "System Bus (Bus hệ thống)"
+        ],
+        "answer": 0,
+        "explanation": "Khối điều khiển (Control Unit) diễn dịch mã lệnh (opcode) và phát ra các tín hiệu điều khiển tuần tự để điều khiển datapath thực thi lệnh. (Nguồn: Slide 01.pdf, trang 6)"
+    },
+    {
+        "type": "msq",
+        "question": "Các thành phần cơ bản của một máy tính theo kiến trúc Von Neumann là gì?",
+        "options": [
+            "CPU (Bộ xử lý trung tâm)",
+            "Bộ nhớ (lưu cả lệnh và dữ liệu)",
+            "Thiết bị vào/ra (I/O Devices)",
+            "Bus hệ thống (System Bus)"
+        ],
+        "answer": [0, 1, 2, 3],
+        "explanation": "Kiến trúc Von Neumann cổ điển định nghĩa máy tính gồm 4 thành phần chính: CPU (Control Unit và Datapath/ALU), Bộ nhớ (chung cho lệnh và dữ liệu), Thiết bị I/O, và các đường kết nối (Bus). (Nguồn: Slide 01.pdf, trang 6)"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong CPU, thanh ghi ...... chứa địa chỉ của lệnh kế tiếp sẽ được nạp (fetch) để thực thi.",
+        "answer": "Program Counter (PC)",
+        "explanation": "Thanh ghi PC (Bộ đếm chương trình) luôn trỏ đến địa chỉ của lệnh tiếp theo trong bộ nhớ, đảm bảo luồng thực thi tuần tự của chương trình (trừ khi có lệnh rẽ nhánh). (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục A, trang A-5)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một kiến trúc tập lệnh (ISA) mà trong đó các lệnh ALU chỉ thao tác trên thanh ghi, và chỉ có các lệnh Load/Store mới truy cập bộ nhớ, được gọi là gì?",
+        "options": [
+            "Load-Store Architecture",
+            "Register-Memory Architecture",
+            "Memory-Memory Architecture",
+            "Stack Architecture"
+        ],
+        "answer": 0,
+        "explanation": "Đây là định nghĩa của kiến trúc Load-Store (hay còn gọi là Register-Register), một đặc điểm cốt lõi của các kiến trúc RISC. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 1, trang 9 và Phụ lục B, trang B-3)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc CISC (Complex Instruction Set Computer) thường có đặc điểm nào sau đây?",
+        "options": [
+            "Nhiều lệnh có độ dài thay đổi và nhiều chế độ địa chỉ phức tạp.",
+            "Tất cả các lệnh thực thi trong một chu kỳ xung nhịp.",
+            "Chỉ có lệnh Load và Store truy cập bộ nhớ.",
+            "Tập lệnh nhỏ và đơn giản."
+        ],
+        "answer": 0,
+        "explanation": "CISC (như 80x86) tập trung vào việc cung cấp các lệnh mạnh, phức tạp, thường có độ dài thay đổi và nhiều chế độ địa chỉ để giảm số lượng lệnh trên mỗi chương trình. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục B)"
+    },
+    {
+        "type": "mcq",
+        "question": "Bus ...... được sử dụng để truyền tín hiệu chỉ định loại thao tác đang được thực hiện (ví dụ: đọc bộ nhớ, ghi I/O).",
+        "options": [
+            "Bus điều khiển (Control Bus)",
+            "Bus địa chỉ (Address Bus)",
+            "Bus dữ liệu (Data Bus)",
+            "Bus nội bộ (Internal Bus)"
+        ],
+        "answer": 0,
+        "explanation": "Bus điều khiển mang các tín hiệu đồng bộ và chỉ huy từ CPU đến các thành phần khác, ví dụ như tín hiệu Read/Write. (Nguồn: Slide 02.pdf, trang 73, 75, khái niệm về RD/EN/Address/Data bus)"
+    },
+    {
+        "type": "fitb",
+        "question": "...... là một mạch logic tổ hợp trong CPU chịu trách nhiệm thực hiện các phép toán số học (cộng, trừ) và các phép toán logic (AND, OR, NOT).",
+        "answer": "ALU (Arithmetic Logic Unit)",
+        "explanation": "Khối Số học-Logic (ALU) là trung tâm tính toán của datapath, thực hiện các thao tác theo chỉ dẫn của khối điều khiển. (Nguồn: Slide 01.pdf, trang 6)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc Harvard có ưu điểm gì so với kiến trúc Von Neumann?",
+        "options": [
+            "Cho phép nạp lệnh và truy cập dữ liệu đồng thời.",
+            "Sử dụng chung một bus cho lệnh và dữ liệu.",
+            "Đơn giản hơn trong thiết kế.",
+            "Lưu trữ chương trình và dữ liệu trong cùng một bộ nhớ."
+        ],
+        "answer": 0,
+        "explanation": "Vì kiến trúc Harvard có bus và bộ nhớ riêng biệt cho lệnh và dữ liệu, nó có thể nạp lệnh (IF) và truy cập dữ liệu (MEM) trong cùng một chu kỳ, tránh được xung đột cấu trúc. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 1)"
+    },
+    {
+        "type": "msq",
+        "question": "Các đặc điểm nào sau đây thường thấy trong kiến trúc 80x86 (IA-32)?",
+        "options": [
+            "Lệnh có độ dài thay đổi (Variable-length instructions)",
+            "Kiến trúc Register-Memory (lệnh ALU có thể truy cập bộ nhớ)",
+            "Sử dụng các thanh ghi cờ (condition codes)",
+            "Tất cả lệnh có độ dài cố định 32-bit"
+        ],
+        "answer": [0, 1, 2],
+        "explanation": "80x86 là một kiến trúc CISC điển hình, với các lệnh dài từ 1 đến 18 byte, hỗ trợ các lệnh ALU truy cập bộ nhớ (ví dụ: ADD EAX, [EBX]), và sử dụng thanh ghi cờ (EFLAGS) để lưu kết quả các phép so sánh. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 1, trang 9-10)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một D-Flip Flop (còn gọi là chốt D có xung nhịp) là một thiết bị:",
+        "options": [
+            "Nhạy cảm với cạnh (edge-triggered) và lưu 1 bit trạng thái.",
+            "Nhạy cảm với mức (level-triggered) và lưu 1 bit trạng thái.",
+            "Logic tổ hợp để chọn 1 trong N đầu vào.",
+            "Logic tổ hợp để thực hiện phép cộng."
+        ],
+        "answer": 0,
+        "explanation": "D-Flip Flop lưu trữ giá trị của đầu vào D tại thời điểm có cạnh (rising or falling edge) của tín hiệu xung nhịp (Clock). Nó là thành phần cơ bản xây dựng thanh ghi. (Nguồn: Slide 02.pdf, trang 65)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong pipeline 5 tầng cổ điển (IF, ID, EX, MEM, WB), xung đột (hazard) xảy ra khi lệnh sau cần kết quả của lệnh ALU trước đó (ví dụ: ADD R1, R2, R3; SUB R4, R1, R5) được gọi là gì?",
+        "options": [
+            "RAW (Read After Write)",
+            "WAR (Write After Read)",
+            "WAW (Write After Write)",
+            "Structural Hazard (Xung đột cấu trúc)"
+        ],
+        "answer": 0,
+        "explanation": "Lệnh SUB (đọc R1) phụ thuộc vào kết quả của lệnh ADD (ghi R1). Đây là một xung đột Đọc sau khi Ghi (RAW) hay còn gọi là phụ thuộc dữ liệu thực sự. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục A, trang A-11, A-15)"
+    },
+    {
+        "type": "fitb",
+        "question": "Kỹ thuật ...... trong pipeline cho phép kết quả của một lệnh được chuyển trực tiếp đến đầu vào của lệnh sau mà không cần chờ ghi vào thanh ghi.",
+        "answer": "Forwarding (Chuyển tiếp)",
+        "explanation": "Forwarding (hay Bypassing) là giải pháp phần cứng phổ biến cho xung đột RAW, giúp giảm thiểu số chu kỳ pipeline bị stall (trì hoãn). (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục A, trang A-17)"
+    },
+    {
+        "type": "msq",
+        "question": "Các kỹ thuật nào sau đây được sử dụng để giảm thiểu chi phí (penalty) của các lệnh rẽ nhánh trong pipeline?",
+        "options": [
+            "Dự đoán nhánh (Branch Prediction)",
+            "Nhánh trì hoãn (Delayed Branch)",
+            "Tăng số tầng pipeline",
+            "Sử dụng cache lớn hơn"
+        ],
+        "answer": [0, 1],
+        "explanation": "Dự đoán nhánh (cả tĩnh và động) cố gắng đoán hướng đi của nhánh. Nhánh trì hoãn thực thi một lệnh sau nhánh bất kể kết quả, cho phép compiler lấp đầy 'delay slot' bằng lệnh hữu ích. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 2, trang 80 và Phụ lục A, trang A-22)"
+    },
+    {
+        "type": "mcq",
+        "question": "Giải pháp phần cứng cho xung đột WAW (Write After Write) và WAR (Write After Read) trong các bộ xử lý thực thi ngoài thứ tự (out-of-order) là gì?",
+        "options": [
+            "Đổi tên thanh ghi (Register Renaming)",
+            "Chuyển tiếp (Forwarding)",
+            "Nhánh trì hoãn (Delayed Branch)",
+            "Bộ đệm ghi (Write Buffer)"
+        ],
+        "answer": 0,
+        "explanation": "Đổi tên thanh ghi (sử dụng trong thuật toán Tomasulo hoặc Reorder Buffer) cấp phát các thanh ghi vật lý mới cho các lệnh, loại bỏ các phụ thuộc giả (name dependencies) gây ra xung đột WAR và WAW. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 2, trang 92)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong xử lý phỏng đoán (speculative execution), khi một dự đoán nhánh bị sai (misprediction), hành động cần làm là gì?",
+        "options": [
+            "Xóa (flush) các lệnh đã được nạp phỏng đoán và khôi phục trạng thái.",
+            "Tiếp tục thực thi vì kết quả đã đúng.",
+            "Dừng CPU và báo lỗi hệ thống.",
+            "Chỉ ghi kết quả của các lệnh phỏng đoán."
+        ],
+        "answer": 0,
+        "explanation": "Khi dự đoán sai, tất cả các lệnh đã vào pipeline sau nhánh (các lệnh trên đường đi sai) phải bị hủy bỏ (flushed), và pipeline phải được nạp lại từ đường đi đúng của nhánh. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 2, trang 104-106)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một máy tính có bus dữ liệu 64-bit và bus clock 800MHz. Một thao tác đọc/ghi RAM mất 4 chu kỳ bus. Tốc độ truyền dữ liệu (data transfer rate) tối đa là bao nhiêu?",
+        "options": [
+            "1600 MBps",
+            "800 MBps",
+            "3200 MBps",
+            "6400 MBps"
+        ],
+        "answer": 0,
+        "explanation": "Số lượt truyền mỗi giây = $800 \\times 10^6 / 4 = 200 \\times 10^6$ lượt. Kích thước mỗi lượt truyền = 64 bits = 8 Bytes. Tốc độ = $(200 \\times 10^6) \\times 8 = 1600 \\times 10^6$ Bps = 1600 MBps. (Nguồn: Slide 02.pdf, trang 59)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một chương trình chạy trong 10 giây trên máy A (clock rate 2GHz). Cần thiết kế máy B để chạy chương trình này trong 6 giây. Do thiết kế pipeline mới, CPI của máy B sẽ tăng 1.2 lần so với CPI của máy A. Clock rate của máy B phải là bao nhiêu?",
+        "options": [
+            "4.0 GHz",
+            "3.0 GHz",
+            "3.33 GHz",
+            "2.4 GHz"
+        ],
+        "answer": 0,
+        "explanation": "$Time = IC \\times CPI / ClockRate$. $IC_A = IC_B$. $CPI_B = 1.2 \\times CPI_A$. $Time_A = 10 = (IC \\times CPI_A) / (2 \\times 10^9)$. $Time_B = 6 = (IC \\times 1.2 \\times CPI_A) / Rate_B$. Từ PT đầu: $IC \\times CPI_A = 20 \\times 10^9$. Thay vào PT sau: $6 = (20 \\times 10^9 \\times 1.2) / Rate_B \\Rightarrow Rate_B = (24 \\times 10^9) / 6 = 4 \\times 10^9 = 4$ GHz. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 1, trang 41-42)"
+    },
+    {
+        "type": "fitb",
+        "question": "Định luật ...... được sử dụng để tính toán tốc độ tăng tốc tổng thể tối đa có thể đạt được khi cải thiện một phần của hệ thống.",
+        "answer": "Amdahl",
+        "explanation": "Định luật Amdahl cho thấy sự cải thiện bị giới hạn bởi phần không được tăng tốc của tác vụ. Speedup = $1 / [(1 - F) + (F / S)]$. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 1, trang 39)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một cải tiến phần cứng giúp tăng tốc 20% thời gian thực thi của một chương trình lên 10 lần. Tốc độ tăng tốc tổng thể (overall speedup) là bao nhiêu?",
+        "options": [
+            "~1.22",
+            "1.25",
+            "2.0",
+            "10.0"
+        ],
+        "answer": 0,
+        "explanation": "Sử dụng Định luật Amdahl: $Fraction_{enhanced} = 0.2$, $Speedup_{enhanced} = 10$. $Speedup_{overall} = 1 / [(1 - 0.2) + (0.2 / 10)] = 1 / [0.8 + 0.02] = 1 / 0.82 \\approx 1.2195$. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 1, trang 40)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống phân cấp bộ nhớ, cấp nào sau đây có thời gian truy cập nhanh nhất?",
+        "options": [
+            "Thanh ghi (Registers)",
+            "Cache L1",
+            "Cache L2",
+            "Bộ nhớ chính (Main Memory)"
+        ],
+        "answer": 0,
+        "explanation": "Thanh ghi nằm bên trong CPU datapath, là cấp bộ nhớ nhanh nhất, tiếp theo là L1, L2, rồi đến bộ nhớ chính. (Nguồn: Slide 01.pdf, trang 19)"
+    },
+    {
+        "type": "mcq",
+        "question": "Nguyên tắc lân cận thời gian (Temporal Locality) phát biểu rằng:",
+        "options": [
+            "Nếu một mục dữ liệu được truy cập, nó có khả năng cao sẽ được truy cập lại sớm.",
+            "Nếu một mục dữ liệu được truy cập, các mục dữ liệu gần nó có khả năng cao sẽ được truy cập.",
+            "Dữ liệu nên được lưu trữ gần CPU.",
+            "Chương trình dành 90% thời gian trong 10% mã nguồn."
+        ],
+        "answer": 0,
+        "explanation": "Lân cận thời gian (Temporal Locality) liên quan đến việc tái sử dụng cùng một mục dữ liệu trong một khoảng thời gian ngắn. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 1, trang 38)"
+    },
+    {
+        "type": "msq",
+        "question": "Các loại bộ nhớ nào sau đây là bộ nhớ bất biến (non-volatile), tức là không mất dữ liệu khi mất nguồn điện?",
+        "options": [
+            "Đĩa từ (Magnetic disk)",
+            "Bộ nhớ Flash (Flash memory)",
+            "ROM (Read-Only Memory)",
+            "SRAM (Static RAM)"
+        ],
+        "answer": [0, 1, 2],
+        "explanation": "Đĩa từ, Flash, và ROM đều giữ lại dữ liệu khi không có điện. SRAM và DRAM (bộ nhớ chính) là bộ nhớ khả biến (volatile). (Nguồn: Slide 01.pdf, trang 18)"
+    },
+    {
+        "type": "fitb",
+        "question": "Một cache có tổng dung lượng 1024 khối (blocks) và được tổ chức theo kiểu 4-way set associative (4 khối mỗi tập). Cache này có tổng cộng ...... tập (sets).",
+        "answer": "256",
+        "explanation": "Số tập = Tổng số khối / Số khối trên mỗi tập (độ liên kết) = 1024 / 4 = 256 tập. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục C, trang C-7)"
+    },
+    {
+        "type": "mcq",
+        "question": "Xét một cache 128KB, 2-way set associative, với kích thước khối 64 byte. Với địa chỉ vật lý 32-bit, địa chỉ sẽ được chia thành bao nhiêu bit cho Tag, Index, và Offset?",
+        "options": [
+            "Tag: 16, Index: 10, Offset: 6",
+            "Tag: 17, Index: 9, Offset: 6",
+            "Tag: 10, Index: 16, Offset: 6",
+            "Tag: 18, Index: 8, Offset: 6"
+        ],
+        "answer": 0,
+        "explanation": "Block Offset = $log_2(64) = 6$ bits. Số tập = Dung lượng / (Kích thước khối * Độ liên kết) = $128KB / (64B \\times 2) = 131072 / 128 = 1024$ tập. Index bits = $log_2(1024) = 10$ bits. Tag bits = $32 - 10 - 6 = 16$ bits. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục C, trang C-8)"
+    },
+    {
+        "type": "mcq",
+        "question": "Chính sách ghi cache (write policy) nào chỉ cập nhật khối trong cache, và khối chỉ được ghi về bộ nhớ chính khi nó bị thay thế (replaced)?",
+        "options": [
+            "Write-back",
+            "Write-through",
+            "Write-allocate",
+            "No-write-allocate"
+        ],
+        "answer": 0,
+        "explanation": "Write-back (Ghi lại sau) trì hoãn việc ghi ra bộ nhớ chính cho đến khi khối cache bị thay thế, sử dụng một 'dirty bit' để theo dõi các khối đã bị sửa đổi. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Phụ lục C, trang C-10)"
+    },
+    {
+        "type": "msq",
+        "question": "Mục đích chính của việc sử dụng Bộ nhớ ảo (Virtual Memory) là gì?",
+        "options": [
+            "Cho phép chạy các chương trình có kích thước lớn hơn bộ nhớ vật lý.",
+            "Cung cấp cơ chế bảo vệ bộ nhớ giữa các tiến trình (process).",
+            "Tăng tốc độ truy cập bộ nhớ so với cache.",
+            "Thay thế hoàn toàn sự cần thiết của đĩa cứng."
+        ],
+        "answer": [0, 1],
+        "explanation": "Bộ nhớ ảo sử dụng bộ nhớ chính như một 'cache' cho đĩa, cho phép không gian địa chỉ ảo lớn hơn bộ nhớ vật lý. Nó cũng cung cấp các bảng trang (page tables) riêng biệt cho mỗi tiến trình, đảm bảo sự cô lập và bảo vệ. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 5, trang 315 hoặc Phụ lục C, trang C-39)"
+    },
+    {
+        "type": "fitb",
+        "question": "...... là một cache phần cứng đặc biệt được dùng để tăng tốc độ dịch địa chỉ ảo sang địa chỉ vật lý.",
+        "answer": "TLB (Translation Lookaside Buffer)",
+        "explanation": "TLB lưu trữ các phép dịch địa chỉ (page table entries) được sử dụng gần đây để tránh phải truy cập page table trong bộ nhớ mỗi khi truy cập. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 5, trang 317 hoặc Phụ lục C, trang C-43)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống đa xử lý (multiprocessor), giao thức nhất quán cache (coherence protocol) nào yêu cầu mỗi cache phải theo dõi (snoop) bus hệ thống?",
+        "options": [
+            "Snooping Protocol",
+            "Directory-based Protocol",
+            "MSI Protocol (là một loại snooping)",
+            "Write-through Protocol"
+        ],
+        "answer": 0,
+        "explanation": "Các giao thức Snooping dựa trên việc các bộ điều khiển cache 'nghe ngóng' (snooping) bus (hoặc interconnect) để phát hiện các thao tác ghi/đọc lên các khối dữ liệu mà chúng đang lưu trữ. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 4, trang 208)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong giao thức MSI (Modified, Shared, Invalid), khi một bộ xử lý muốn GHI (write) vào một khối cache đang ở trạng thái 'Shared', nó phải làm gì?",
+        "options": [
+            "Gửi một thông điệp Invalidate (vô hiệu hóa) ra bus để các bản sao khác bị hủy.",
+            "Gửi một thông điệp Update (cập nhật) ra bus để cập nhật các bản sao khác.",
+            "Chỉ cần ghi vào bản sao cục bộ, không cần thông báo.",
+            "Đọc lại khối từ bộ nhớ chính."
+        ],
+        "answer": 0,
+        "explanation": "Để ghi vào một khối 'Shared', bộ xử lý phải giành quyền sở hữu độc quyền (trạng thái 'Modified'). Điều này được thực hiện bằng cách gửi một tín hiệu invalidate ra bus để tất cả các cache khác hủy bỏ bản sao của chúng. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 4, trang 211-213)"
+    },
+    {
+        "type": "mcq",
+        "question": "Phương thức I/O nào cho phép thiết bị I/O truy cập trực tiếp vào bộ nhớ chính (main memory) để đọc/ghi dữ liệu mà không cần sự can thiệp của CPU?",
+        "options": [
+            "Direct Memory Access (DMA)",
+            "Programmed I/O (PIO)",
+            "Interrupt-driven I/O (I/O điều khiển bằng ngắt)",
+            "Memory-mapped I/O"
+        ],
+        "answer": 0,
+        "explanation": "DMA cho phép một bộ điều khiển DMA chuyên dụng quản lý việc truyền dữ liệu giữa I/O và bộ nhớ, giải phóng CPU để làm việc khác. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 6)"
+    },
+    {
+        "type": "mcq",
+        "question": "Ưu điểm chính của RAID 5 so với RAID 4 là gì?",
+        "options": [
+            "Giải quyết được vấn đề 'nút cổ chai' ở đĩa parity (parity disk bottleneck).",
+            "Sử dụng ít đĩa hơn cho cùng một dung lượng.",
+            "Tốc độ đọc nhanh hơn đáng kể.",
+            "Có khả năng chịu lỗi 2 đĩa."
+        ],
+        "answer": 0,
+        "explanation": "RAID 4 lưu tất cả parity trên một đĩa duy nhất, gây ra tắc nghẽn khi có nhiều thao tác ghi nhỏ. RAID 5 phân tán (distributed) các khối parity trên tất cả các đĩa, cho phép các thao tác ghi nhỏ diễn ra song song. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 6, trang 364)"
+    },
+    {
+        "type": "msq",
+        "question": "Những cấp độ RAID nào sau đây có khả năng chịu được lỗi (fault tolerant) của ít nhất một đĩa?",
+        "options": [
+            "RAID 1 (Mirroring)",
+            "RAID 5 (Distributed Parity)",
+            "RAID 6 (Dual Parity)",
+            "RAID 0 (Striping)"
+        ],
+        "answer": [0, 1, 2],
+        "explanation": "RAID 0 (Striping) không có dự phòng và không chịu được lỗi. RAID 1, 5 chịu được 1 lỗi. RAID 6 chịu được 2 lỗi. (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 6, trang 363)"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong đo lường độ tin cậy, ...... là thời gian trung bình từ khi một thành phần bắt đầu hoạt động cho đến khi nó bị hỏng.",
+        "answer": "MTTF (Mean Time To Failure)",
+        "explanation": "MTTF (Thời gian trung bình đến khi hỏng) là một thước đo cơ bản của độ tin cậy cho các thành phần không thể sửa chữa (hoặc không được sửa chữa). (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 1, trang 26)"
+    },
+    {
+        "type": "mcq",
+        "question": "Theo Lý thuyết hàng đợi (Queuing Theory), một hệ thống I/O (với 1 server) nhận trung bình 50 yêu cầu/giây (Arrival Rate) và thời gian phục vụ trung bình (Service Time) là 10ms. Độ bận (Server Utilization) của hệ thống là bao nhiêu?",
+        "options": [
+            "0.5",
+            "0.1",
+            "1.0",
+            "5.0"
+        ],
+        "answer": 0,
+        "explanation": "Server Utilization = Arrival Rate $\\times$ Service Time. Chuyển 10ms = 0.01s. Utilization = 50 req/s $\\times$ 0.01 s/req = 0.5 (hoặc 50%). (Nguồn: Giáo trình Hennessy & Patterson, 4th Ed., Chương 6, trang 381)"
+    }
+]

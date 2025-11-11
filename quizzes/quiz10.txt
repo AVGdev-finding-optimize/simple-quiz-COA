@@ -1,0 +1,536 @@
+[
+    {
+        "type": "mcq",
+        "question": "Theo slide bài giảng, Kiến trúc tập lệnh (ISA - Instruction Set Architecture) được định nghĩa là gì?",
+        "options": [
+            "Giao diện giữa phần cứng và phần mềm hệ thống.",
+            "Tổ chức của CPU, ALU và các thanh ghi.",
+            "Tập hợp các vi mã (microcode) của bộ xử lý.",
+            "Cách thức trình biên dịch thực hiện tối ưu mã."
+        ],
+        "answer": 0,
+        "explanation": "Slide 01.pdf (Trang 24) [cite: 6852-6856] định nghĩa ISA là 'giao diện giữa phần cứng và phần mềm hệ thống' (The hardware/software interface)[cite: 6856]. Nó là phần mà lập trình viên/trình biên dịch có thể thấy được của phần cứng."
+    },
+    {
+        "type": "mcq",
+        "question": "Trong mô hình kiến trúc Von Neumann, điều nào sau đây là đặc điểm chính?",
+        "options": [
+            "Sử dụng chung một bộ nhớ cho cả lệnh (instruction) và dữ liệu (data).",
+            "Sử dụng hai bộ nhớ riêng biệt cho lệnh và dữ liệu.",
+            "Chỉ cho phép các lệnh truy cập thanh ghi (register-only).",
+            "Không sử dụng bộ đếm chương trình (Program Counter)."
+        ],
+        "answer": 0,
+        "explanation": "Kiến trúc Von Neumann, là mô hình cơ bản cho hầu hết các máy tính hiện đại, đặc trưng bởi việc lưu trữ cả lệnh và dữ liệu trong cùng một bộ nhớ chính và truy cập chúng qua cùng một bus. (Kiến thức giáo trình chuẩn, ví dụ: Giáo trình (Hennessy & Patterson, 4th Ed.), Appendix K, Trang K-2)."
+    },
+    {
+        "type": "fitb",
+        "question": "Theo slide bài giảng, quá trình chuyển đổi một số thập phân sang nhị phân được thực hiện bằng cách ...... liên tiếp cho 2 và ghi lại các số dư theo thứ tự ngược lại.",
+        "answer": "chia (division)",
+        "explanation": "Slide 02.pdf (Trang 87) [cite: 8201] mô tả phương pháp 'Unsigned Decimal to Unsigned Binary Conversion' là 'Performed through successive division by 2' (Thực hiện bằng cách chia liên tiếp cho 2)."
+    },
+    {
+        "type": "msq",
+        "question": "Những loại nào sau đây thuộc về bộ nhớ không khả biến (non-volatile memory) theo Slide 01?",
+        "options": [
+            "Magnetic disk (Đĩa từ)",
+            "RAM (Random Access Memory)",
+            "Flash memory",
+            "CPU Registers (Thanh ghi CPU)"
+        ],
+        "answer": [0, 2],
+        "explanation": "Slide 01.pdf (Trang 18) [cite: 6756-6761] phân loại RAM là 'volatile' (mất dữ liệu khi mất điện) [cite: 6757, 6758] và đĩa từ (Magnetic disk) cùng Flash memory là 'non-volatile'[cite: 6759, 6760, 6761]. Thanh ghi CPU cũng là volatile."
+    },
+    {
+        "type": "mcq",
+        "question": "Một máy tính có bus dữ liệu 64 bit, hoạt động đọc/ghi RAM mất 4 chu kỳ, xung nhịp bus là 800Mhz. Tốc độ truyền dữ liệu (transfer rate) là bao nhiêu?",
+        "options": [
+            "1600 MBps",
+            "800 MBps",
+            "3200 MBps",
+            "6400 MBps"
+        ],
+        "answer": 0,
+        "explanation": "Slide 02.pdf (Trang 59) [cite: 7821-7828]. Số lần truyền/giây (Number of transfers per second) = Tần số bus / số chu kỳ mỗi lần truyền = $800 \\times 10^6 \\text{ Hz} / 4 = 200 \\times 10^6$ lần/giây[cite: 7826]. Mỗi lần truyền 64 bit = 8 bytes[cite: 7827]. Tốc độ truyền (Transfer rate) = $(200 \\times 10^6) \\times 8 \\text{ bytes} = 1600 \\times 10^6 \\text{ Bps} = 1600 \\text{ MBps}$ (giả sử 1M = $10^6$)[cite: 7828]."
+    },
+    {
+        "type": "mcq",
+        "question": "Chuyển số Hexadecimal (thập lục phân) $A8F_{16}$ sang số thập phân (decimal):",
+        "options": [
+            "2703",
+            "4239",
+            "2511",
+            "2719"
+        ],
+        "answer": 0,
+        "explanation": "Theo phương pháp tính toán trên Slide 02.pdf (Trang 140)[cite: 8378]: $A8F_{16} = (A \\times 16^2) + (8 \\times 16^1) + (F \\times 16^0) = (10 \\times 256) + (8 \\times 16) + (15 \\times 1) = 2560 + 128 + 15 = 2703_{10}$."
+    },
+    {
+        "type": "msq",
+        "question": "Theo Giáo trình (Hennessy & Patterson), Định luật Amdahl (Amdahl's Law) chỉ ra rằng tốc độ tăng tốc tổng thể bị giới hạn bởi hai yếu tố nào?",
+        "options": [
+            "Phần trăm thời gian mà cải tiến có thể được sử dụng (Fraction_enhanced).",
+            "Tốc độ tăng tốc của riêng phần được cải tiến (Speedup_enhanced).",
+            "Tần số xung nhịp (Clock rate) của bộ xử lý.",
+            "Số lượng lõi (cores) của CPU."
+        ],
+        "answer": [0, 1],
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 39[cite: 9133, 9134]. Định luật Amdahl xác định speedup dựa trên: (1) Phần trăm thời gian tính toán mà cải tiến có thể sử dụng (Fraction_enhanced) [cite: 9134] và (2) Mức độ cải tiến đạt được (Speedup_enhanced)[cite: 9134]."
+    },
+    {
+        "type": "mcq",
+        "question": "Một cache có tổng dung lượng 128 KB, kích thước khối (block size) là 64 byte, và tổ chức là 4-way set-associative. Cache này có bao nhiêu tập (set)?",
+        "options": [
+            "512",
+            "1024",
+            "2048",
+            "256"
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 291[cite: 9613]. Số khối (Number of blocks) = Tổng dung lượng / Kích thước khối = 128 KB / 64 B = 131072 / 64 = 2048 khối. Số tập (Number of sets) = Số khối / Độ liên kết (associativity) = 2048 / 4 = 512 tập."
+    },
+    {
+        "type": "fitb",
+        "question": "Trong pipeline 5 tầng cổ điển (IF, ID, EX, MEM, WB), xung đột xảy ra khi lệnh sau cố gắng đọc dữ liệu từ một thanh ghi trước khi lệnh trước ghi dữ liệu vào đó được gọi là ......",
+        "answer": "xung đột dữ liệu RAW (Read-After-Write)",
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Appendix A (Trang A-15, A-16)[cite: 9394, 9762, 9763]. Xung đột RAW (Read-After-Write) là loại xung đột dữ liệu (data hazard) phổ biến nhất, xảy ra khi một lệnh cố đọc một toán hạng trước khi lệnh trước đó ghi xong kết quả vào toán hạng đó[cite: 9394]."
+    },
+    {
+        "type": "mcq",
+        "question": "Một bộ xử lý 32-bit có bus địa chỉ 32-bit và bus dữ liệu 32-bit. Nếu nó sử dụng các chip nhớ 8-bit (1-bit data-pin), nó cần bao nhiêu chip nhớ để tổ chức bộ nhớ chính?",
+        "options": [
+            "32",
+            "8",
+            "4",
+            "1"
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 310-312 [cite: 9632-9634]. Vì bus dữ liệu là 32-bit, hệ thống cần đọc hoặc ghi 32 bit dữ liệu cùng một lúc. Nếu mỗi chip nhớ cung cấp 1 bit dữ liệu (tổ chức 8-bit là $8M \\times 1$-bit, $16M \\times 1$-bit, v.v.), thì cần 32 chip nhớ để tạo thành một bank nhớ 32-bit."
+    },
+    {
+        "type": "mcq",
+        "question": "Trong các giao thức đồng bộ cache (cache coherence protocols), giao thức 'Write Invalidate' (Ghi và Làm mất hiệu lực) thực hiện điều gì?",
+        "options": [
+            "Khi một CPU ghi, nó gửi thông điệp làm mất hiệu lực (invalidate) tất cả các bản sao (copy) của khối đó ở các cache khác.",
+            "Khi một CPU ghi, nó gửi dữ liệu mới để cập nhật (update) tất cả các bản sao ở các cache khác.",
+            "Nó chỉ cho phép ghi vào bộ nhớ chính (write-through).",
+            "Nó ngăn chặn việc ghi dữ liệu nếu dữ liệu đó đang được chia sẻ."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 208[cite: 9531]. Giao thức Write Invalidate yêu cầu bộ xử lý phải có quyền truy cập độc quyền (exclusive access) vào khối dữ liệu trước khi ghi, điều này được thực hiện bằng cách làm mất hiệu lực các bản sao khác[cite: 9531]."
+    },
+    {
+        "type": "msq",
+        "question": "Những kỹ thuật nào sau đây được sử dụng để GIẢM CHI PHÍ MISS (MISS PENALTY) trong hệ thống cache?",
+        "options": [
+            "Sử dụng cache đa mức (Multilevel caches).",
+            "Ưu tiên Read miss hơn Write (Read priority over writes).",
+            "Tăng độ liên kết (Higher associativity).",
+            "Sử dụng khối (block) lớn hơn."
+        ],
+        "answer": [0, 1],
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang C-22, C-29, C-34[cite: 9898, 9903, 9908]. Cache đa mức (L2, L3) cung cấp dữ liệu nhanh hơn bộ nhớ chính, do đó giảm miss penalty của L1[cite: 9903]. Ưu tiên Read miss (thường làm CPU bị stall) hơn Write (có thể dùng write buffer) cũng giúp giảm miss penalty hiệu dụng[cite: 9908]. Tăng độ liên kết và tăng kích thước khối là để giảm Miss Rate (tỷ lệ miss), không phải Miss Penalty[cite: 9898]."
+    },
+    {
+        "type": "mcq",
+        "question": "Theo Slide 01 (Trang 19), thanh ghi CPU (CPU Registers) có đặc điểm nào sau đây so với các cấp bộ nhớ khác?",
+        "options": [
+            "Thời gian truy cập (Access Time) nhanh nhất và dung lượng (Capacity) nhỏ nhất.",
+            "Thời gian truy cập chậm nhất và dung lượng lớn nhất.",
+            "Chi phí (Cost) thấp nhất trên mỗi GByte.",
+            "Là bộ nhớ không khả biến (Non-volatile)."
+        ],
+        "answer": 0,
+        "explanation": "Slide 01.pdf (Trang 19) [cite: 6771] cho thấy CPU Registers ở đỉnh của hệ thống phân cấp bộ nhớ, với dung lượng nhỏ nhất (100s Bytes), thời gian truy cập nhanh nhất (300-500 ps), và chi phí cao nhất."
+    },
+    {
+        "type": "mcq",
+        "question": "Một ổ đĩa cứng có thời gian tìm kiếm trung bình (average seek time) là 5ms, tốc độ quay 7200 RPM, và tốc độ truyền dữ liệu (transfer rate) là 50 MB/s. Thời gian truy cập trung bình (average access time) cho một sector 4KB là bao nhiêu?",
+        "options": [
+            "9.25ms",
+            "5.08ms",
+            "13.33ms",
+            "4.17ms"
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 361 (ví dụ tương tự). Average Access Time = Avg. Seek + Avg. Rotational Latency + Transfer Time. Avg. Seek = 5ms. Avg. Rotational Latency = 0.5 × (60 giây / 7200 RPM) = 0.5 × 0.00833 s = 4.17 ms. Transfer Time = 4 KB / 50 MB/s = 0.004 MB / 50 MB/s = 0.00008 s = 0.08 ms. Tổng = 5 + 4.17 + 0.08 = 9.25 ms."
+    },
+    {
+        "type": "fitb",
+        "question": "Một D-Flip Flop (D-FF) là một D-Latch được kích hoạt theo ......",
+        "answer": "cạnh (edge triggered)",
+        "explanation": "Slide 02.pdf (Trang 65) [cite: 7882] định nghĩa: 'An edge triggered D-Latch is a D-Flip Flop'. D-latch là 'level triggered' (kích hoạt theo mức)[cite: 7851]."
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc nào sau đây sử dụng các thanh ghi chuyên dụng (special-purpose registers) thay vì một bộ thanh ghi đa dụng (general-purpose registers - GPR)?",
+        "options": [
+            "Kiến trúc bộ tích lũy (Accumulator architecture)",
+            "Kiến trúc Load-Store",
+            "Kiến trúc RISC",
+            "Kiến trúc Memory-Memory"
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Appendix B (Trang B-3, B-4)[cite: 9828]. Kiến trúc bộ tích lũy (Accumulator) sử dụng một thanh ghi ngầm định (accumulator) làm toán hạng và nơi chứa kết quả[cite: 9828]. Các kiến trúc GPR (bao gồm Load-Store) sử dụng các thanh ghi đa dụng[cite: 9828]."
+    },
+    {
+        "type": "mcq",
+        "question": "Chuyển số nhị phân có dấu (biểu diễn bù 2, 8-bit) 11101100 sang hệ thập phân:",
+        "options": [
+            "-20",
+            "236",
+            "-236",
+            "-19"
+        ],
+        "answer": 0,
+        "explanation": "Slide 02.pdf (Trang 184-185)[cite: 7067, 7068]. Số 11101100 có bit MSB là 1, là số âm. Để tìm giá trị, ta đảo bit và cộng 1. Đảo bit: 00010011. Cộng 1: 00010100. $00010100_2 = 16 + 4 = 20_{10}$. Vì vậy, số ban đầu là -20."
+    },
+    {
+        "type": "msq",
+        "question": "Những kỹ thuật nào sau đây được sử dụng trong bộ xử lý 'siêu vô hướng' (superscalar) để khai thác song song mức lệnh (ILP)?",
+        "options": [
+            "Lập lịch động (Dynamic scheduling)",
+            "Đa phát hành (Multiple issue)",
+            "Thực thi suy đoán (Speculative execution)",
+            "Sử dụng nhiều lõi (Multi-core)"
+        ],
+        "answer": [0, 1, 2],
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Chương 2 (Trang 114)[cite: 9438]. Các bộ xử lý superscalar (đặc biệt là loại động) sử dụng kết hợp đa phát hành (multiple issue), lập lịch động (dynamic scheduling), và thực thi suy đoán (speculation) để khai thác ILP[cite: 9438]. Multi-core khai thác song song mức luồng (TLP)."
+    },
+    {
+        "type": "mcq",
+        "question": "Một Multiplexer (Mux) 8x1 (8 đầu vào, 1 đầu ra) cần bao nhiêu đường chọn (select lines)?",
+        "options": [
+            "3",
+            "8",
+            "1",
+            "2"
+        ],
+        "answer": 0,
+        "explanation": "Slide 02.pdf (Trang 49)[cite: 7702, 7703]. Mux N-đầu-vào cần K đường chọn sao cho $2^K \\ge N$. Để chọn 1 trong 8 đầu vào ($N=8$), ta cần $2^K \\ge 8$, suy ra $K=3$."
+    },
+    {
+        "type": "fitb",
+        "question": "Theo Giáo trình (Hennessy & Patterson), phương trình cơ bản cho CPU time là: $\\text{Số lệnh} \\times \\text{CPI} \\times \\text{...}$",
+        "answer": "Thời gian chu kỳ xung nhịp (Clock cycle time)",
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 42[cite: 9160]. CPU time = Instruction count × Cycles per instruction × Clock cycle time[cite: 9160]."
+    },
+    {
+        "type": "mcq",
+        "question": "Hiện tượng 'False Sharing' (Chia sẻ giả) trong hệ thống đa xử lý xảy ra khi:",
+        "options": [
+            "Hai bộ xử lý truy cập các từ (word) khác nhau, nhưng các từ đó nằm chung trong một khối cache (cache block).",
+            "Hai bộ xử lý cùng truy cập chính xác một từ (word) dữ liệu.",
+            "Trình biên dịch đặt sai dữ liệu vào cache.",
+            "Một khối cache bị thay thế do xung đột (conflict miss)."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 218[cite: 9541]. Chia sẻ giả (False sharing) xảy ra khi một khối cache bị làm mất hiệu lực (invalidate) vì một từ trong khối đó được ghi, nhưng từ đó lại không phải là từ đang được đọc bởi bộ xử lý kia[cite: 9541]. Điều này xảy ra do đơn vị đồng bộ cache là khối (block), không phải từ (word)."
+    },
+    {
+        "type": "mcq",
+        "question": "Trong các chế độ địa chỉ (addressing modes) của MIPS, chế độ 'Displacement' (Dịch chuyển) tính toán địa chỉ hiệu dụng (effective address) bằng cách nào?",
+        "options": [
+            "Cộng nội dung một thanh ghi (base register) với một hằng số (offset) 16-bit.",
+            "Cộng nội dung hai thanh ghi.",
+            "Sử dụng trực tiếp một hằng số 32-bit làm địa chỉ.",
+            "Sử dụng nội dung PC cộng với một hằng số offset."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 9 [cite: 8863] và Appendix B (Trang B-9)[cite: 9832]. Chế độ địa chỉ Displacement (dùng cho Load/Store) lấy nội dung thanh ghi cơ sở (base register) cộng với một giá trị offset 16-bit (được sign-extended) để tạo ra địa chỉ bộ nhớ."
+    },
+    {
+        "type": "msq",
+        "question": "Theo Giáo trình (Hennessy & Patterson), những kỹ thuật nào sau đây giúp giảm thời gian truy cập cache (Hit Time)?",
+        "options": [
+            "Sử dụng cache nhỏ và đơn giản (Small and simple caches).",
+            "Dự đoán đường (Way prediction).",
+            "Sử dụng cache đa mức (Multilevel caches).",
+            "Tăng kích thước khối (Larger block size)."
+        ],
+        "answer": [0, 1],
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 293, 309[cite: 9615, 9931]. Cache nhỏ và đơn giản (ví dụ: direct-mapped) có thời gian truy cập nhanh hơn[cite: 9615]. Way prediction cho phép truy cập cache set-associative với tốc độ gần bằng direct-mapped[cite: 9615]. Cache đa mức và khối lớn hơn dùng để giảm Miss Penalty hoặc Miss Rate, không phải Hit Time[cite: 9931]."
+    },
+    {
+        "type": "fitb",
+        "question": "Kỹ thuật cho phép bộ xử lý tiếp tục tìm nạp và thực thi các lệnh sau một lệnh bị miss cache (thay vì chờ) được gọi là cache ......",
+        "answer": "phi chặn (nonblocking cache)",
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 296[cite: 9618, 9619]. Một cache phi chặn (nonblocking) hoặc 'lockup-free' cho phép cache tiếp tục cung cấp các lượt hit trong khi đang xử lý một miss, cho phép 'hit under miss'[cite: 9618, 9619]."
+    },
+    {
+        "type": "mcq",
+        "question": "Một bộ xử lý có thời gian thực thi là 20 giây. Sau khi cải tiến, một tác vụ chiếm 50% thời gian cũ giờ chạy nhanh gấp 2 lần, và một tác vụ khác chiếm 30% thời gian cũ giờ chạy nhanh gấp 3 lần. Tốc độ tăng tốc (speedup) tổng thể là bao nhiêu?",
+        "options": [
+            "1.82",
+            "2.0",
+            "2.5",
+            "5.0"
+        ],
+        "answer": 0,
+        "explanation": "Áp dụng Định luật Amdahl (Giáo trình, Trang 39) [cite: 9135-9137]. Thời gian cũ = 20s. Thời gian mới = Phần không đổi + Phần 1 mới + Phần 2 mới. Phần không đổi = 20s × (1 - 0.5 - 0.3) = 20s × 0.2 = 4s. Phần 1 mới = (20s × 0.5) / 2 = 10s / 2 = 5s. Phần 2 mới = (20s × 0.3) / 3 = 6s / 3 = 2s. Thời gian mới tổng cộng = 4s + 5s + 2s = 11s. Speedup = Thời gian cũ / Thời gian mới = 20s / 11s = 1.818."
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc tập lệnh (ISA) của MIPS 64-bit có bao nhiêu thanh ghi đa dụng (GPR) và thanh ghi dấu phẩy động (FPR)?",
+        "options": [
+            "32 GPR và 32 FPR",
+            "16 GPR và 16 FPR",
+            "64 GPR và 64 FPR",
+            "32 GPR và 16 FPR"
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 9 [cite: 8862] và Appendix B (Trang B-34)[cite: 9858]. MIPS64 có 32 thanh ghi đa dụng (GPRs) 64-bit (R0-R31) [cite: 9858] và 32 thanh ghi dấu phẩy động (FPRs) 64-bit (F0-F31)[cite: 9858]."
+    },
+    {
+        "type": "mcq",
+        "question": "Trong kỹ thuật DMA (Direct Memory Access), thành phần nào điều khiển việc truyền dữ liệu trực tiếp giữa I/O và bộ nhớ, mà không cần sự can thiệp của CPU?",
+        "options": [
+            "Bộ điều khiển DMA (DMA Controller - DMAC)",
+            "ALU",
+            "Thanh ghi (Registers)",
+            "Cache L2"
+        ],
+        "answer": 0,
+        "explanation": "Kiến thức giáo trình chuẩn về I/O. Bộ điều khiển DMA (DMAC) là một thành phần phần cứng chuyên dụng cho phép các thiết bị ngoại vi truyền dữ liệu trực tiếp đến hoặc từ bộ nhớ chính mà không cần CPU phải thực hiện từng thao tác truyền (chỉ cần khởi tạo và nhận thông báo khi hoàn tất)."
+    },
+    {
+        "type": "fitb",
+        "question": "Định luật Amdahl dự đoán rằng tốc độ tăng tốc bị giới hạn bởi phần ...... của chương trình.",
+        "answer": "tuần tự (sequential)",
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 40[cite: 9138]. Định luật Amdahl chỉ ra rằng tốc độ tăng tốc tổng thể bị giới hạn bởi phần trăm thời gian mà cải tiến *không* thể sử dụng được, tức là phần tuần tự (sequential) của tác vụ[cite: 9141]."
+    },
+    {
+        "type": "mcq",
+        "question": "Trong pipeline 5 tầng (IF, ID, EX, MEM, WB), một lệnh 'Branch' (nhánh) thường xác định được địa chỉ đích (target address) và kết quả điều kiện (taken/not taken) ở tầng nào?",
+        "options": [
+            "ID (nếu tối ưu) hoặc EX",
+            "IF",
+            "MEM",
+            "WB"
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Appendix A (Trang A-28, A-35). Trong pipeline cơ bản, điều kiện (ví dụ A==0) được tính ở EX[cite: 9875]. Trong pipeline tối ưu hơn (Trang A-35) [cite: 9784], cả việc tính địa chỉ đích và kiểm tra điều kiện đều được dời lên tầng ID để giảm branch penalty[cite: 9784]."
+    },
+    {
+        "type": "msq",
+        "question": "Các loại xung đột (hazard) chính trong pipeline bao gồm:",
+        "options": [
+            "Xung đột cấu trúc (Structural hazards)",
+            "Xung đột dữ liệu (Data hazards)",
+            "Xung đột điều khiển (Control hazards)",
+            "Xung đột bộ nhớ (Memory hazards)"
+        ],
+        "answer": [0, 1, 2],
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Appendix A (Trang A-11)[cite: 9351]. Ba loại xung đột chính trong pipeline là: Xung đột cấu trúc (Structural hazards) [cite: 9351], Xung đột dữ liệu (Data hazards) [cite: 9351], và Xung đột điều khiển (Control hazards)[cite: 9351]."
+    },
+    {
+        "type": "mcq",
+        "question": "Một máy tính chạy một chương trình hết 10 giây. Người ta muốn nó chạy nhanh gấp 2 lần. Phân tích cho thấy 60% thời gian thực thi là dành cho các phép toán nhân. Cần phải tăng tốc các phép toán nhân lên bao nhiêu lần để đạt được mục tiêu?",
+        "options": [
+            "6",
+            "10",
+            "4",
+            "Không thể đạt được"
+        ],
+        "answer": 0,
+        "explanation": "Áp dụng Định luật Amdahl (Giáo trình, Trang 39)[cite: 9137]. $Speedup_{overall} = 2$. $Fraction_{enhanced} = 0.6$. Giải ra $S_{enhanced} = 6$. (Tính toán: $2 = 1 / [0.4 + 0.6 / S]$ → $S = 6$)."
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật 'Way Prediction' (Dự đoán đường) trong cache được thiết kế chủ yếu để cải thiện yếu tố nào?",
+        "options": [
+            "Giảm thời gian hit (Hit time)",
+            "Giảm tỷ lệ miss (Miss rate)",
+            "Giảm chi phí miss (Miss penalty)",
+            "Giảm xung đột cấu trúc"
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 295[cite: 9617]. Way prediction được dùng để dự đoán khối (way) nào trong một tập (set) sẽ được truy cập, cho phép cache đọc dữ liệu và so sánh tag của chỉ một khối đó. Điều này giúp giảm hit time, gần bằng với cache direct-mapped[cite: 9617]."
+    },
+    {
+        "type": "mcq",
+        "question": "Bit 'Dirty' (Dirty bit) trong một khối cache (cache block) được sử dụng để chỉ ra điều gì?",
+        "options": [
+            "Khối cache đã bị sửa đổi (written to) và cần được ghi lại bộ nhớ chính khi thay thế.",
+            "Khối cache đã bị lỗi và cần được sửa.",
+            "Khối cache là khối được sử dụng gần đây nhất (LRU).",
+            "Khối cache đang được chia sẻ bởi nhiều bộ xử lý."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang C-10[cite: 9883]. Trong chiến lược 'write-back', dirty bit được sử dụng để theo dõi xem khối (block) đã bị sửa đổi hay chưa. Nếu nó 'dirty' (bẩn), nó phải được ghi lại bộ nhớ khi bị thay thế[cite: 9883]."
+    },
+    {
+        "type": "mcq",
+        "question": "Tổ chức cache nào thường có Hit Time ngắn nhất (nhưng có thể có Miss Rate cao nhất)?",
+        "options": [
+            "Direct-mapped (Ánh xạ trực tiếp)",
+            "Fully associative (Liên kết toàn phần)",
+            "4-way set-associative (Liên kết tập 4 chiều)",
+            "2-way set-associative (Liên kết tập 2 chiều)"
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 293, 294[cite: 9615, 9616]. Cache direct-mapped là đơn giản nhất vì nó chỉ cần kiểm tra 1 tag và không cần MUX để chọn dữ liệu từ nhiều đường. Điều này dẫn đến hit time nhanh nhất. Tuy nhiên, nó dễ bị conflict miss nhất."
+    },
+    {
+        "type": "mcq",
+        "question": "Theo Giáo trình (Hennessy & Patterson), mục tiêu chính của việc thiết kế hệ thống phân cấp bộ nhớ (memory hierarchy) là gì?",
+        "options": [
+            "Cung cấp ảo ảnh về một bộ nhớ vừa lớn, vừa nhanh, với chi phí như bộ nhớ rẻ nhất.",
+            "Chỉ tập trung vào việc tăng dung lượng lưu trữ tối đa.",
+            "Chỉ tập trung vào việc giảm thời gian truy cập (latency) xuống mức thấp nhất.",
+            "Đảm bảo 100% cache hit rate."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 288[cite: 9610]. Mục tiêu của hệ thống phân cấp bộ nhớ là cung cấp một hệ thống có chi phí trên mỗi byte gần bằng mức rẻ nhất (ví dụ: đĩa) và tốc độ truy cập gần bằng mức nhanh nhất (ví dụ: thanh ghi/cache)[cite: 9610]."
+    },
+    {
+        "type": "msq",
+        "question": "Những thành phần nào sau đây là thiết yếu cho một Virtual Machine Monitor (VMM) để ảo hóa bộ xử lý?",
+        "options": [
+            "Phải ở mức đặc quyền (privilege level) cao hơn Guest OS.",
+            "Cung cấp ít nhất hai chế độ (mode): system và user.",
+            "Có một tập con các lệnh đặc quyền (privileged instructions) chỉ chạy ở system mode.",
+            "Phải có ít nhất 4 lõi CPU."
+        ],
+        "answer": [0, 1, 2],
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 319[cite: 9641]. VMM phải ở mức đặc quyền cao hơn (để kiểm soát)[cite: 9641]. Cần ít nhất hai chế độ (system/user) để VMM chạy ở system mode và Guest OS chạy ở user mode[cite: 9641]. Các lệnh nhạy cảm phải là lệnh đặc quyền (để VMM có thể trap và mô phỏng chúng)[cite: 9641]."
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống đa xử lý, 'Simultaneous Multithreading' (SMT) khác với 'Multicore' (Đa lõi) ở điểm nào?",
+        "options": [
+            "SMT chia sẻ tài nguyên thực thi (functional units) của một lõi cho nhiều luồng, trong khi Multicore nhân bản toàn bộ lõi (core).",
+            "SMT chỉ chạy được trên kiến trúc CISC, Multicore chỉ chạy trên RISC.",
+            "SMT không cần các bản sao riêng của PC và thanh ghi, Multicore thì cần.",
+            "SMT là kỹ thuật phần mềm, Multicore là kỹ thuật phần cứng."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 173-174 [cite: 9497, 9498] và Trang 198[cite: 9521]. SMT (ví dụ: Hyper-Threading của Intel) cho phép nhiều luồng (threads) cùng chia sẻ các tài nguyên của một lõi (ví dụ: ALU, FPU)[cite: 9497]. Multicore (ví dụ: Core 2 Duo) đặt nhiều lõi xử lý độc lập (mỗi lõi có functional units riêng) lên cùng một con chip[cite: 9521]."
+    },
+    {
+        "type": "fitb",
+        "question": "Trong RAID 1 (Mirroring), nếu bạn có N đĩa dữ liệu, bạn cần thêm ...... đĩa để dự phòng.",
+        "answer": "N",
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 363[cite: 9885]. RAID 1 (Mirroring) yêu cầu một bản sao đầy đủ của dữ liệu. Nếu có 8 đĩa dữ liệu, nó yêu cầu 8 đĩa check (tổng cộng 16 đĩa). Do đó, N đĩa dữ liệu cần N đĩa check[cite: 9885]."
+    },
+    {
+        "type": "mcq",
+        "question": "Xung đột dữ liệu WAW (Write-After-Write) xảy ra khi nào?",
+        "options": [
+            "Một lệnh cố gắng ghi vào một toán hạng trước khi một lệnh trước đó ghi xong vào cùng toán hạng đó.",
+            "Một lệnh cố gắng đọc một toán hạng trước khi lệnh trước đó ghi vào nó.",
+            "Một lệnh cố gắng ghi vào một toán hạng trước khi lệnh trước đó đọc nó.",
+            "Hai lệnh cùng đọc một toán hạng."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 71 [cite: 9395] và Appendix A (Trang A-11). Xung đột WAW (Write-After-Write) là một 'output dependence'. Nó xảy ra khi lệnh j (lệnh sau) cố gắng ghi kết quả trước khi lệnh i (lệnh trước) ghi kết quả của nó vào cùng một đích, làm sai thứ tự ghi[cite: 9395]."
+    },
+    {
+        "type": "msq",
+        "question": "Kiến trúc MIPS (như trong Slide 01 và Appendix B) có những đặc điểm nào?",
+        "options": [
+            "Là kiến trúc Load-Store.",
+            "Tất cả các lệnh có độ dài cố định (32-bit).",
+            "Sử dụng 32 thanh ghi đa dụng (GPRs).",
+            "Hỗ trợ các phép toán ALU trực tiếp trên bộ nhớ (memory-to-memory)."
+        ],
+        "answer": [0, 1, 2],
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Appendix B (Trang B-33, B-34, B-35). MIPS là kiến trúc load-store. Tất cả lệnh MIPS chuẩn dài 32 bit. MIPS có 32 GPRs (R0-R31). Nó không hỗ trợ ALU memory-to-memory."
+    },
+    {
+        "type": "mcq",
+        "question": "Một cache có thời gian hit là 1 ns, miss penalty là 100 ns. Nếu miss rate là 5%, thời gian truy cập bộ nhớ trung bình (Average Memory Access Time - AMAT) là bao nhiêu?",
+        "options": [
+            "6 ns",
+            "1 ns",
+            "5 ns",
+            "101 ns"
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 290 [cite: 9612] và C-15[cite: 9889]. AMAT = Hit Time + (Miss Rate × Miss Penalty). AMAT = 1 ns + (0.05 × 100 ns) = 1 ns + 5 ns = 6 ns[cite: 9889]."
+    },
+    {
+        "type": "mcq",
+        "question": "Trong bộ nhớ ảo (Virtual Memory), mục đích chính của Page Table (Bảng trang) là gì?",
+        "options": [
+            "Ánh xạ địa chỉ trang ảo (Virtual Page Number) sang địa chỉ khung trang vật lý (Physical Page Frame Number).",
+            "Lưu trữ dữ liệu của chương trình đang chạy.",
+            "Dự đoán các lần truy cập bộ nhớ tiếp theo.",
+            "Lưu trữ các thanh ghi của CPU khi chuyển ngữ cảnh (context switch)."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang C-43[cite: 9916]. Page Table là cấu trúc dữ liệu chính được sử dụng bởi hệ thống bộ nhớ ảo để lưu trữ ánh xạ giữa các trang ảo và các trang vật lý trong bộ nhớ[cite: 9916]."
+    },
+    {
+        "type": "fitb",
+        "question": "Số '101.11' trong hệ nhị phân (binary) có giá trị thập phân (decimal) là ......",
+        "answer": "5.75",
+        "explanation": "Slide 02.pdf (Trang 208)[cite: 7083]. Phần nguyên: 101_2 = 1*2^2 + 0*2^1 + 1*2^0 = 4 + 0 + 1 = 5. Phần phân: .11_2 = 1*2^{-1} + 1*2^{-2} = 0.5 + 0.25 = 0.75. Tổng = 5.75."
+    },
+    {
+        "type": "msq",
+        "question": "Những lệnh MIPS nào sau đây được sử dụng để thay đổi luồng điều khiển (control flow) của chương trình?",
+        "options": [
+            "BEQZ",
+            "J (Jump)",
+            "JAL (Jump and Link)",
+            "LD (Load Doubleword)"
+        ],
+        "answer": [0, 1, 2],
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang B-37, B-38[cite: 9862, 9863]. BEQZ (Branch if Equal Zero) là nhánh có điều kiện[cite: 9862]. J (Jump) và JAL (Jump and Link) là các lệnh nhảy không điều kiện (JAL dùng cho gọi hàm)[cite: 9862]. LD là lệnh tải dữ liệu (data transfer)[cite: 9861]."
+    },
+    {
+        "type": "mcq",
+        "question": "Lệnh MIPS 'DADDIU R1, R2, #100' thực hiện phép toán gì?",
+        "options": [
+            "Cộng 100 vào nội dung thanh ghi R2, lưu kết quả vào R1 (không kiểm tra overflow).",
+            "Cộng 100 vào nội dung thanh ghi R1, lưu kết quả vào R2.",
+            "So sánh R1 và R2 với 100.",
+            "Tải giá trị 100 vào thanh ghi R1 và R2."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang B-36, B-40[cite: 9861, 9865]. DADDIU là lệnh 'Add immediate unsigned' (cộng tức thời không dấu) cho 64-bit. Nó cộng nội dung thanh ghi nguồn (R2) với giá trị tức thời 16-bit (100) và lưu kết quả vào thanh ghi đích (R1)[cite: 9861]."
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống I/O, 'Queuing Theory' (Lý thuyết hàng đợi) được sử dụng để phân tích mối quan hệ giữa ......",
+        "options": [
+            "Thông lượng (Throughput) và Thời gian đáp ứng (Response Time).",
+            "Dung lượng đĩa và Tốc độ truyền.",
+            "Độ tin cậy (Reliability) và Tính sẵn sàng (Availability).",
+            "Công suất tiêu thụ (Power) và Nhiệt độ (Temperature)."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 372, 379[cite: 9694, 9695]. Queuing theory là một công cụ toán học giúp phân tích và dự đoán hiệu năng I/O, đặc biệt là sự đánh đổi giữa thông lượng (throughput) và thời gian đáp ứng (response time/latency) khi tải hệ thống tăng lên[cite: 9695, 9701]."
+    },
+    {
+        "type": "fitb",
+        "question": "Số 0.5 (thập phân) được biểu diễn ở dạng dấu phẩy động (floating point) nhị phân chuẩn hóa (normalized) là 1.0 $\\times$ 2 mũ ......",
+        "answer": "-1",
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 7092 (Slide 02, Trang 221). $0.5_{10} = 1/2 = 1 \\times 2^{-1}$. Ở dạng chuẩn hóa (có 1. ở phần định trị), nó là $1.0_2 \\times 2^{-1}$[cite: 7092]."
+    },
+    {
+        "type": "mcq",
+        "question": "Theo Giáo trình (Hennessy & Patterson), lý do chính khiến các bộ xử lý hiện đại (như Intel Pentium 4, AMD Opteron) chuyển sang thiết kế đa lõi (multicore) là gì?",
+        "options": [
+            "Những rào cản về điện năng tiêu thụ (power dissipation) và việc khai thác ILP đã đạt đến giới hạn.",
+            "Trình biên dịch đã trở nên quá phức tạp để lập lịch cho một lõi.",
+            "Thiết kế đa lõi rẻ hơn sản xuất so với một lõi đơn.",
+            "Hết dung lượng địa chỉ 32-bit."
+        ],
+        "answer": 0,
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 4, 18, 182-184 [cite: 8837, 8937-8942, 9505-9508]. Sách nêu rõ sự thay đổi lịch sử (historical switch) sang đa lõi là do 'ba rào cản' (triple hurdles): tiêu thụ điện năng tối đa, còn lại ít ILP để khai thác hiệu quả, và độ trễ bộ nhớ không đổi[cite: 8837]. Điện năng (Power) là rào cản chính[cite: 8939, 9505]."
+    },
+    {
+        "type": "msq",
+        "question": "Trong các kỹ thuật tối ưu cache, kỹ thuật Prefetching (Tìm nạp trước) có thể được thực hiện bởi:",
+        "options": [
+            "Phần cứng (Hardware prefetching)",
+            "Trình biên dịch (Compiler-controlled prefetching)",
+            "Hệ điều hành (Operating system)",
+            "Người dùng (User-level)"
+        ],
+        "answer": [0, 1],
+        "explanation": "Giáo trình (Hennessy & Patterson, 4th Ed.), Trang 305-309 [cite: 9627-9631]. Có hai phương pháp prefetching chính: (1) Hardware prefetching, nơi phần cứng tự động phát hiện các mẫu truy cập (ví dụ: các stream) [cite: 9627] và (2) Compiler-controlled prefetching (hay software prefetching), nơi trình biên dịch chèn các lệnh prefetch đặc biệt vào mã[cite: 9628]."
+    }
+]

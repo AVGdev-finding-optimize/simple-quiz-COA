@@ -1,0 +1,553 @@
+[
+    {
+        "type": "mcq",
+        "question": "Trong các lớp máy tính (classes of computers), lớp nào đặt nặng yêu cầu về 'throughput' (thông lượng), 'availability' (tính sẵn sàng) và 'scalability' (khả năng mở rộng) nhất?",
+        "options": [
+            "Desktop computers (Máy tính để bàn)",
+            "Server computers (Máy chủ)",
+            "Embedded computers (Máy tính nhúng)",
+            "Personal Mobile Devices (Thiết bị di động cá nhân)"
+        ],
+        "answer": 1,
+        "explanation": "Máy chủ (Server) ưu tiên thông lượng (xử lý nhiều yêu cầu), tính sẵn sàng (hoạt động 24/7) và khả năng mở rộng (tăng năng lực khi tải tăng). Máy tính để bàn ưu tiên giá/hiệu năng, và máy nhúng ưu tiên giá, năng lượng và ràng buộc thời gian thực. (Nguồn: Slide 01.pdf, trang 5 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Chuyển số thập lục phân (hex) 2AF sang hệ bát phân (octal):",
+        "options": [
+            "1257",
+            "5277",
+            "1157",
+            "1275"
+        ],
+        "answer": 0,
+        "explanation": "Đầu tiên, chuyển 2AF (hex) sang nhị phân (binary) theo từng nhóm 4 bit: 2 = 0010, A = 1010, F = 1111. Ta được: 0010 1010 1111. Sau đó, nhóm lại thành các nhóm 3 bit từ phải sang trái: (001)(010)(101)(111). Chuyển các nhóm 3 bit này sang bát phân: 1 2 5 7. Vậy 2AF (hex) = 1257 (octal). (Nguồn: Slide 02.pdf, trang 127, 128 )"
+    },
+    {
+        "type": "fitb",
+        "question": "Theo định luật DeMorgan, biểu thức $\\overline{(A \\cdot B)}$ tương đương với biểu thức ...... (sử dụng dấu + cho OR, dấu . cho AND)",
+        "answer": "\\overline{A} + \\overline{B}",
+        "explanation": "Định luật DeMorgan cho phép biến đổi giữa AND và OR: $\\overline{(A \\cdot B)} = \\overline{A} + \\overline{B}$ và $\\overline{(A + B)} = \\overline{A} \\cdot \\overline{B}$. (Nguồn: Slide 02.pdf, trang 15 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Bộ nhớ 'Volatile' (khả biến) là loại bộ nhớ gì?",
+        "options": [
+            "Lưu trữ dữ liệu vĩnh viễn ngay cả khi mất điện",
+            "Mất dữ liệu khi nguồn điện bị ngắt",
+            "Chỉ được sử dụng cho đĩa cứng",
+            "Luôn nhanh hơn bộ nhớ bất biến"
+        ],
+        "answer": 1,
+        "explanation": "Bộ nhớ 'Volatile' (khả biến), ví dụ như RAM, sẽ mất toàn bộ chỉ dẫn và dữ liệu khi nguồn điện bị ngắt. Ngược lại, bộ nhớ 'Non-volatile' (bất biến) như đĩa từ hoặc Flash giữ lại dữ liệu. (Nguồn: Slide 01.pdf, trang 18 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Biểu diễn số thập phân -13 trong hệ nhị phân bù 2 (2's complement) 8-bit là:",
+        "options": [
+            "11110011",
+            "10001101",
+            "11110010",
+            "11111100"
+        ],
+        "answer": 0,
+        "explanation": "Để biểu diễn -13 (8-bit): 1. Lấy số dương: +13 = 00001101. 2. Nghịch đảo bit (1's complement): 11110010. 3. Cộng 1 để được bù 2: 11110010 + 1 = 11110011. (Nguồn: Slide 02.pdf, trang 181-183 )"
+    },
+    {
+        "type": "msq",
+        "question": "Những cổng logic nào sau đây được coi là cổng 'phổ dụng' (universal gates) vì chúng có thể được sử dụng để xây dựng bất kỳ hàm logic nào?",
+        "options": [
+            "AND",
+            "OR",
+            "NAND",
+            "NOR",
+            "XOR"
+        ],
+        "answer": [
+            2,
+            3
+        ],
+        "explanation": "Cổng NAND và cổng NOR là các cổng phổ dụng (universal). Mọi hàm Boolean (bao gồm AND, OR, NOT) đều có thể được xây dựng chỉ bằng cổng NAND hoặc chỉ bằng cổng NOR. (Nguồn: Slide 02.pdf, trang 18, 34 )"
+    },
+    {
+        "type": "msq",
+        "question": "Các đặc điểm của một mạch logic tổ hợp (Combinational Logic Circuit) là gì?",
+        "options": [
+            "Đầu ra chỉ phụ thuộc vào giá trị đầu vào hiện tại.",
+            "Không sử dụng các phần tử nhớ (như flip-flop).",
+            "Có thể thực hiện các hàm như AND, OR, hoặc bộ MUX.",
+            "Đầu ra phụ thuộc vào cả đầu vào hiện tại và trạng thái (state) trước đó."
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Mạch logic tổ hợp (combinational) không có bộ nhớ (phần tử nhớ); đầu ra của nó chỉ phụ thuộc hoàn toàn vào giá trị đầu vào hiện tại. Mạch tuần tự (sequential) phụ thuộc vào cả đầu vào và trạng thái trước đó. (Nguồn: Slide 02.pdf, trang 68 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Lớp phần mềm nào chịu trách nhiệm biên dịch mã Ngôn ngữ Bậc cao (HLL) sang Mã máy (Machine code)?",
+        "options": [
+            "Operating System (Hệ điều hành)",
+            "Compiler (Trình biên dịch)",
+            "Application Software (Phần mềm ứng dụng)",
+            "Assembler (Trình hợp dịch)"
+        ],
+        "answer": 1,
+        "explanation": "Trình biên dịch (Compiler) là một loại phần mềm hệ thống (System software) có nhiệm vụ dịch chương trình viết bằng ngôn ngữ bậc cao (như C) sang mã máy (machine code) mà phần cứng có thể thực thi. Trình hợp dịch (Assembler) dịch assembly sang mã máy. (Nguồn: Slide 01.pdf, trang 29, 30 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Một máy tính có bus dữ liệu 64-bit và bus clock 800Mhz. Một thao tác đọc/ghi RAM mất 4 chu kỳ clock. Tốc độ truyền dữ liệu (data transfer rate) tối đa là bao nhiêu?",
+        "options": [
+            "800 MB/s",
+            "1600 MB/s",
+            "3200 MB/s",
+            "6400 MB/s"
+        ],
+        "answer": 1,
+        "explanation": "Bus 64-bit = 8 Bytes. Tần số truyền (số lượt truyền mỗi giây) = 800 MHz / 4 chu kỳ = 800 * 10^6 / 4 = 200 * 10^6 lượt truyền/giây. Tốc độ truyền dữ liệu = (200 * 10^6 lượt/giây) * 8 Bytes/lượt = 1600 * 10^6 Bytes/giây = 1600 MB/s. (Nguồn: Slide 02.pdf, trang 59 )"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong hệ thống phân cấp bộ nhớ (Memory Hierarchy), cấp bộ nhớ gần CPU nhất (ngoại trừ thanh ghi) là ......",
+        "answer": "L1 Cache (hoặc Cache L1)",
+        "explanation": "Hệ thống phân cấp bộ nhớ tiêu chuẩn, từ nhanh nhất/nhỏ nhất đến chậm nhất/lớn nhất là: CPU Registers -> L1 Cache -> L2 Cache -> Main Memory -> Disk Storage. (Nguồn: Slide 01.pdf, trang 19 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Biểu diễn số -5.875 theo chuẩn dấu phẩy động 8-bit (1 bit dấu, 4 bit mũ, 3 bit phần định trị) với cơ số mũ Excess-7 (Bias=7).",
+        "options": [
+            "1 1001 011",
+            "0 1001 011",
+            "1 1000 011",
+            "1 1001 111"
+        ],
+        "answer": 0,
+        "explanation": "Chuyển sang nhị phân: 5 = 101, 0.875 = 0.111. Vậy 5.875 = 101.111. Chuẩn hóa (dịch dấu phẩy sang trái 2 vị trí): 1.01111 * 2^2. Bit dấu S=1 (vì là số âm). Phần mũ (Exponent) E = 2 + Bias = 2 + 7 = 9 = 1001b. Phần định trị (Fraction) F = 01111. Vì chỉ có 3 bit cho Fraction, ta cắt lấy 3 bit đầu: 011. Kết quả (S E F): 1 1001 011. (Nguồn: Slide 02.pdf, trang 219-221 )"
+    },
+    {
+        "type": "msq",
+        "question": "Các thành phần cơ bản của một CPU (Central Processing Unit) là gì?",
+        "options": [
+            "ALU (Arithmetic Logic Unit)",
+            "Control Unit (Khối điều khiển)",
+            "Registers (Thanh ghi)",
+            "Main Memory (Bộ nhớ chính)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "CPU (Processor) bao gồm Datapath (Đường đi dữ liệu) và Control (Điều khiển). Datapath chứa ALU và các thanh ghi (Registers). Bộ nhớ chính (Main Memory) là một thành phần riêng biệt bên ngoài CPU. (Nguồn: Slide 01.pdf, trang 6 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Một chương trình mất 100 giây để thực thi, trong đó 40 giây dành cho các phép toán FP. Nếu ta tăng tốc các phép toán FP lên 10 lần, tốc độ tổng thể (overall speedup) của chương trình theo Định luật Amdahl là bao nhiêu?",
+        "options": [
+            "1.56",
+            "2.50",
+            "1.67",
+            "10.0"
+        ],
+        "answer": 0,
+        "explanation": "Fraction_enhanced (phần được cải thiện) = 40s / 100s = 0.4. Speedup_enhanced (tốc độ cải thiện) = 10. Speedup_overall = 1 / [(1 - Fraction_enhanced) + (Fraction_enhanced / Speedup_enhanced)] = 1 / [(1 - 0.4) + (0.4 / 10)] = 1 / [0.6 + 0.04] = 1 / 0.64 = 1.5625. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 1.9, trang 39 )"
+    },
+    {
+        "type": "fitb",
+        "question": "Công thức tính thời gian thực thi CPU (CPU execution time) là: Số lệnh (Instruction Count) x CPI x ......?",
+        "answer": "Clock Cycle Time (Chu kỳ xung nhịp)",
+        "explanation": "CPU Time = (Instructions / Program) × (Clock Cycles / Instruction) × (Seconds / Clock Cycle). (Nguồn: Hennessy & Patterson, 4th Ed., Ch 1.9, trang 42 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Một máy tính có clock rate 4 GHz. Nếu một chương trình có CPI là 2.5, thì MIPS (Millions of Instructions Per Second) của nó là bao nhiêu?",
+        "options": [
+            "1000 MIPS",
+            "1600 MIPS",
+            "2500 MIPS",
+            "4000 MIPS"
+        ],
+        "answer": 1,
+        "explanation": "MIPS = Clock Rate / (CPI * 10^6) = (4 * 10^9) / (2.5 * 10^6) = (4000 * 10^6) / (2.5 * 10^6) = 4000 / 2.5 = 1600 MIPS. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 1.9)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong pipeline 5 tầng cổ điển (IF, ID, EX, MEM, WB), mâu thuẫn dữ liệu (data hazard) RAW (Read After Write) xảy ra khi nào?",
+        "options": [
+            "Một lệnh cố gắng GHI vào thanh ghi trước khi một lệnh trước đó ĐỌC nó.",
+            "Một lệnh cố gắng GHI vào thanh ghi trước khi một lệnh trước đó GHI vào nó.",
+            "Một lệnh cố gắng ĐỌC thanh ghi trước khi một lệnh trước đó GHI kết quả vào đó.",
+            "Một lệnh cần một tài nguyên phần cứng (ví dụ: ALU) đang bị một lệnh khác sử dụng."
+        ],
+        "answer": 2,
+        "explanation": "RAW (Read After Write) là mâu thuẫn dữ liệu thực sự (true data dependence). Nó xảy ra khi một lệnh (ví dụ: SUB) cố gắng đọc một toán hạng (ví dụ: ở tầng ID) mà kết quả chưa được ghi lại bởi một lệnh trước đó (ví dụ: ADD ở tầng WB). (Nguồn: Hennessy & Patterson, 4th Ed., App A.2, trang A-15 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Mâu thuẫn WAW (Write After Write) và WAR (Write After Read) thuộc loại mâu thuẫn nào?",
+        "options": [
+            "Mâu thuẫn cấu trúc (Structural Hazards)",
+            "Mâu thuẫn dữ liệu thực sự (True Data Dependences)",
+            "Mâu thuẫn điều khiển (Control Hazards)",
+            "Mâu thuẫn tên (Name Dependences)"
+        ],
+        "answer": 3,
+        "explanation": "Mâu thuẫn WAW và WAR là các mâu thuẫn tên (name dependences) vì chúng xảy ra do việc tái sử dụng cùng một tên thanh ghi (hoặc vị trí bộ nhớ), chứ không phải do luồng dữ liệu thực sự giữa các lệnh. Chúng có thể được loại bỏ bằng cách đổi tên thanh ghi (register renaming). (Nguồn: Hennessy & Patterson, 4th Ed., Ch 2.1, trang 70-71 )"
+    },
+    {
+        "type": "fitb",
+        "question": "Kỹ thuật 'forwarding' (còn gọi là 'bypassing') trong pipeline được dùng để giải quyết mâu thuẫn ......",
+        "answer": "RAW (Read After Write)",
+        "explanation": "Forwarding (hay bypassing) là kỹ thuật phần cứng cho phép chuyển kết quả từ đầu ra của một tầng (ví dụ: EX/MEM) về đầu vào của ALU cho lệnh kế tiếp, giảm thiểu hoặc loại bỏ stall do mâu thuẫn RAW. (Nguồn: Hennessy & Patterson, 4th Ed., App A.2, trang A-17 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong pipeline MIPS 5 tầng, nếu một lệnh 'load' (LD) được theo sau ngay lập tức bởi một lệnh sử dụng kết quả của nó (ví dụ: ADD), pipeline phải làm gì?",
+        "options": [
+            "Không làm gì cả, forwarding là đủ",
+            "Stall 1 chu kỳ",
+            "Stall 2 chu kỳ",
+            "Flush pipeline"
+        ],
+        "answer": 1,
+        "explanation": "Dữ liệu từ lệnh LOAD chỉ sẵn sàng sau tầng MEM. Lệnh ADD cần dữ liệu ở đầu tầng EX. Ngay cả với forwarding, dữ liệu cũng không thể quay ngược thời gian từ cuối tầng MEM về đầu tầng EX trong cùng một chu kỳ. Do đó, pipeline phải stall 1 chu kỳ (chèn 1 bubble). (Nguồn: Hennessy & Patterson, 4th Ed., App A.2, trang A-19 )"
+    },
+    {
+        "type": "msq",
+        "question": "Các kỹ thuật nào sau đây được sử dụng để giảm 'branch penalty' (thiệt hại do rẽ nhánh)?",
+        "options": [
+            "Dự đoán nhánh (Branch Prediction)",
+            "Nhánh trễ (Delayed Branch)",
+            "Tăng số tầng pipeline",
+            "Loop Unrolling (Trải vòng lặp)"
+        ],
+        "answer": [
+            0,
+            1,
+            3
+        ],
+        "explanation": "Dự đoán nhánh (cả tĩnh và động) cố gắng đoán đúng hướng rẽ. Nhánh trễ (Delayed Branch) thực thi một lệnh sau nhánh bất kể kết quả. Trải vòng lặp (Loop Unrolling) giảm số lượng lệnh rẽ nhánh cần thực thi, do đó giảm tổng thiệt hại. Tăng số tầng pipeline thực tế làm tăng branch penalty. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 2.2, 2.3, App A.2 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Thuật toán Tomasulo sử dụng cơ chế nào để loại bỏ mâu thuẫn WAR và WAW?",
+        "options": [
+            "Scoreboarding",
+            "In-order commit",
+            "Register renaming",
+            "Branch prediction"
+        ],
+        "answer": 2,
+        "explanation": "Thuật toán Tomasulo sử dụng các trạm chờ (reservation stations) để đổi tên thanh ghi (register renaming) một cách động. Khi một lệnh được issue, nó được cấp một trạm chờ, và các lệnh sau đó sẽ lấy kết quả từ trạm chờ này, thay vì thanh ghi kiến trúc, do đó loại bỏ mâu thuẫn tên (WAR/WAW). (Nguồn: Hennessy & Patterson, 4th Ed., Ch 2.4, trang 92 )"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong bộ xử lý speculative (dự đoán), lệnh chỉ được phép cập nhật trạng thái kiến trúc (thanh ghi, bộ nhớ) tại tầng ......",
+        "answer": "Commit (hoặc Graduation/Retirement)",
+        "explanation": "Trong thực thi dự đoán, các lệnh có thể hoàn thành (complete) ngoài trật tự, nhưng chúng phải 'commit' (cập nhật trạng thái) theo đúng trật tự chương trình (in-order) để đảm bảo ngoại lệ (exceptions) chính xác và khôi phục đúng sau dự đoán sai. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 2.6, trang 105 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc nào đóng gói (packages) nhiều lệnh song song vào một 'instruction' rất dài duy nhất, và việc lập lịch được thực hiện hoàn toàn bởi trình biên dịch?",
+        "options": [
+            "Superscalar (Siêu vô hướng)",
+            "CISC (Complex Instruction Set Computer)",
+            "VLIW (Very Long Instruction Word)",
+            "SIMD (Single Instruction, Multiple Data)"
+        ],
+        "answer": 2,
+        "explanation": "Kiến trúc VLIW (Very Long Instruction Word) dựa vào trình biên dịch (lập lịch tĩnh) để tìm kiếm và đóng gói nhiều lệnh song song (ví dụ: 1 lệnh integer, 2 lệnh FP, 2 lệnh memory) vào một lệnh dài duy nhất. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 2.7, trang 115-116 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Một cache có tổng cộng 64 blocks (lô), và là 4-way set associative. Cần bao nhiêu bit cho trường Index (chỉ số set)?",
+        "options": [
+            "4 bits",
+            "5 bits",
+            "6 bits",
+            "16 bits"
+        ],
+        "answer": 0,
+        "explanation": "Số lượng set (Number of Sets) = Tổng số blocks / Độ liên kết (Associativity) = 64 blocks / 4 = 16 set. Số bit cần thiết để định địa chỉ 16 set này là log2(16) = 4 bits. (Nguồn: Hennessy & Patterson, 4th Ed., App C.1, trang C-8 )"
+    },
+    {
+        "type": "msq",
+        "question": "Các kỹ thuật nào sau đây giúp TĂNG băng thông cache (increase cache bandwidth)?",
+        "options": [
+            "Non-blocking caches (Cache không khóa)",
+            "Multibanked caches (Cache đa ngân hàng)",
+            "Critical word first",
+            "Larger block size (Kích thước block lớn hơn)"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Pipelined caches, Multibanked caches, và Non-blocking caches là các kỹ thuật tăng băng thông cache. Critical word first giảm miss penalty. Larger block size giảm miss rate nhưng tăng miss penalty. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 5.2, trang 293, 296-299 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong kỹ thuật bộ nhớ ảo (Virtual Memory), một 'Page Fault' (lỗi trang) xảy ra khi nào?",
+        "options": [
+            "Một phép toán số học bị tràn (overflow)",
+            "Dữ liệu trong cache bị sai (corrupted)",
+            "Trang được truy cập không có trong bộ nhớ vật lý (main memory)",
+            "Truy cập vào một địa chỉ bị cấm (protection violation)"
+        ],
+        "answer": 2,
+        "explanation": "Page Fault là một loại exception xảy ra khi bộ xử lý truy cập một trang (page) thuộc không gian địa chỉ ảo, nhưng trang đó hiện không có trong bộ nhớ vật lý (RAM). Hệ điều hành phải nạp trang này từ đĩa vào RAM. (Nguồn: Hennessy & Patterson, 4th Ed., App C.4, trang C-38 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật tối ưu hóa trình biên dịch nào (Compiler Optimization) thay đổi thứ tự của các vòng lặp lồng nhau (nested loops) để cải thiện tính cục bộ không gian (spatial locality)?",
+        "options": [
+            "Loop Unrolling",
+            "Loop Interchange",
+            "Loop Fusion",
+            "Blocking (Blocking)"
+        ],
+        "answer": 1,
+        "explanation": "Loop Interchange (hoán đổi vòng lặp) thay đổi thứ tự của các vòng lặp lồng nhau để làm cho các truy cập bộ nhớ trở nên tuần tự hơn (ví dụ: truy cập theo hàng thay vì theo cột trong mảng 2D), giúp tận dụng tốt hơn spatial locality của cache block. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 5.2, trang 302 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống đa xử lý (multiprocessor), kỹ thuật 'Simultaneous Multithreading' (SMT) nhằm mục đích gì?",
+        "options": [
+            "Tăng số lõi (cores) trên chip",
+            "Chạy nhiều luồng (threads) trên một lõi (core) duy nhất bằng cách chia sẻ tài nguyên thực thi trong cùng một chu kỳ",
+            "Sử dụng trình biên dịch để lập lịch tĩnh cho nhiều luồng",
+            "Giảm điện năng tiêu thụ bằng cách tắt các lõi không sử dụng"
+        ],
+        "answer": 1,
+        "explanation": "SMT (ví dụ: Hyper-Threading của Intel) cho phép một lõi CPU duy nhất (single core) xử lý nhiều luồng (threads) cùng một lúc bằng cách chia sẻ các tài nguyên của bộ xử lý (như các đơn vị chức năng, reorder buffer) trong cùng một chu kỳ, chuyển đổi TLP thành ILP. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 3.5, trang 173-174 )"
+    },
+    {
+        "type": "msq",
+        "question": "Các đặc điểm của kiến trúc RISC (Reduced Instruction Set Computer) là gì?",
+        "options": [
+            "Kiến trúc Load-Store (chỉ load/store truy cập bộ nhớ).",
+            "Nhiều chế độ địa chỉ (addressing modes) phức tạp.",
+            "Định dạng lệnh (instruction format) có độ dài cố định, đơn giản.",
+            "Các lệnh phức tạp, đa chu kỳ (như thao tác chuỗi)."
+        ],
+        "answer": [
+            0,
+            2
+        ],
+        "explanation": "Kiến trúc RISC (như MIPS, ARM) thường có các đặc điểm: 1) Là kiến trúc Load-Store, 2) Định dạng lệnh có độ dài cố định và đơn giản để dễ dàng giải mã và pipelining, 3) Số lượng chế độ địa chỉ ít (ví dụ: displacement, immediate, register indirect). Các lệnh phức tạp và nhiều chế độ địa chỉ là đặc điểm của CISC (như VAX). (Nguồn: Hennessy & Patterson, 4th Ed., App B.2, B.9, trang B-3, A-4 )"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong mô hình lý thuyết hàng đợi (Queuing Theory) M/M/1, nếu T_server (thời gian phục vụ trung bình) là 10ms và Utilization (mức độ sử dụng) là 0.8, thì thời gian chờ trung bình trong hàng đợi (Time_queue) là ...... ms.",
+        "answer": "40",
+        "explanation": "Trong mô hình M/M/1, Time_queue = Time_server × (Utilization / (1 - Utilization)) = 10ms × (0.8 / (1 - 0.8)) = 10ms × (0.8 / 0.2) = 10ms × 4 = 40ms. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 6.5, trang 385 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong kiến trúc VAX, lệnh CALLS là một ví dụ về 'semantic gap' (khoảng cách ngữ nghĩa) vì:",
+        "options": [
+            "Nó quá đơn giản so với lời gọi hàm trong ngôn ngữ bậc cao.",
+            "Nó yêu cầu trình biên dịch phải thực hiện hầu hết công việc.",
+            "Nó quá phức tạp và thực hiện nhiều việc hơn mức cần thiết cho trường hợp thông thường (common case).",
+            "Nó không hỗ trợ đệ quy (recursion)."
+        ],
+        "answer": 2,
+        "explanation": "Lệnh CALLS của VAX là một ví dụ điển hình của 'semantic clash' hay 'overkill'. Nó thực hiện quá nhiều chức năng (tự động lưu thanh ghi, quản lý stack pointer,...) khiến nó chậm chạp và không linh hoạt, trong khi hầu hết các lời gọi hàm thực tế chỉ cần một phần nhỏ chức năng đó, vốn có thể được trình biên dịch xử lý hiệu quả hơn bằng các lệnh đơn giản. (Nguồn: Hennessy & Patterson, 4th Ed., App B.10, trang B-41, B-43 )"
+    },
+    {
+        "type": "msq",
+        "question": "Lợi ích của RAID 5 so với RAID 1 là gì?",
+        "options": [
+            "Hiệu quả sử dụng dung lượng (storage efficiency) cao hơn.",
+            "Tốc độ GHI các khối nhỏ (small random write) nhanh hơn.",
+            "Khả năng chịu lỗi (fault tolerance) tốt hơn (chịu được 2 đĩa hỏng).",
+            "Tốc độ ĐỌC ngẫu nhiên (random read) tương đương hoặc tốt hơn."
+        ],
+        "answer": [
+            0,
+            3
+        ],
+        "explanation": "RAID 5 (parity phân tán) có hiệu quả dung lượng cao hơn (chỉ mất 1 đĩa cho parity) so với RAID 1 (mirroring, mất 50% dung lượng). Cả hai đều có tốc độ đọc ngẫu nhiên tốt (vì có thể đọc từ nhiều đĩa). Tuy nhiên, RAID 1 ghi nhỏ nhanh hơn (chỉ 2 thao tác ghi) so với RAID 5 (cần 2 đọc, 2 ghi - Read-Modify-Write). Cả hai đều chỉ chịu được 1 đĩa hỏng. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 6.2, Hình 6.4, trang 363 )"
+    },
+    {
+        "type": "mcq",
+        "question": "RAID 6 (ví dụ: Row-Diagonal Parity hoặc EVEN-ODD) được thiết kế để cung cấp khả năng chịu lỗi (fault tolerance) cho bao nhiêu đĩa hỏng đồng thời?",
+        "options": [
+            "0 (Không chịu lỗi)",
+            "1 đĩa hỏng",
+            "2 đĩa hỏng",
+            "3 đĩa hỏng"
+        ],
+        "answer": 2,
+        "explanation": "RAID 6 được thiết kế để chịu được 2 đĩa hỏng đồng thời. Điều này đạt được bằng cách sử dụng hai khối kiểm tra (check block) độc lập, ví dụ như P+Q parity, hoặc Row-Diagonal Parity (RAID-DP). (Nguồn: Hennessy & Patterson, 4th Ed., Ch 6.2, trang 365 )"
+    },
+    {
+        "type": "mcq-calc",
+        "question": "Một cache có Average Memory Access Time (AMAT) là 2ns. Hit time là 1ns và Miss penalty là 51ns. Miss rate của cache này là bao nhiêu?",
+        "options": [
+            "1%",
+            "2%",
+            "1.96%",
+            "2.5%"
+        ],
+        "answer": 2,
+        "explanation": "Ta có công thức: AMAT = Hit Time + (Miss Rate × Miss Penalty). Thay số: 2ns = 1ns + (Miss Rate × 51ns). Suy ra: 1ns = Miss Rate × 51ns. Miss Rate = 1 / 51 ≈ 0.0196, tức là 1.96%. (Nguồn: Hennessy & Patterson, 4th Ed., App C.2, trang C-15 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật 'Non-blocking cache' (cache không khóa) chủ yếu giúp cải thiện hiệu năng bằng cách nào?",
+        "options": [
+            "Giảm Hit Time",
+            "Cho phép cache xử lý các 'hit' trong khi đang xử lý một 'miss' (Hit under miss)",
+            "Giảm số lượng 'conflict miss'",
+            "Không cần ghi lại dữ liệu bẩn (dirty data) về bộ nhớ"
+        ],
+        "answer": 1,
+        "explanation": "Non-blocking cache (hay lockup-free cache) cho phép cache tiếp tục phục vụ các yêu cầu 'hit' của CPU ngay cả khi đang trong quá trình xử lý một 'miss', giúp tăng băng thông cache và giảm stall. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 5.2, trang 296 )"
+    },
+    {
+        "type": "fitb",
+        "question": "Một bộ xử lý 3GHz có CPI lý tưởng là 1.0. Chương trình có 0.02 L2 miss trên mỗi lệnh, và L2 miss penalty là 22.5ns. CPI thực tế của chương trình là ......",
+        "answer": "2.35",
+        "explanation": "Chu kỳ xung nhịp (Clock Cycle) = 1 / (3 * 10^9 Hz) = 0.333... ns. Miss Penalty (tính theo chu kỳ) = 22.5ns / 0.333... ns = 67.5 chu kỳ. Stalls/Lệnh = (Misses/Lệnh) * Miss Penalty = 0.02 * 67.5 = 1.35. CPI thực tế = CPI lý tưởng + Stalls = 1.0 + 1.35 = 2.35. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 1.9, App C.2, trang 43, C-17 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Việc sử dụng 'Write Buffer' (bộ đệm ghi) trong cache 'write-through' giúp ích gì?",
+        "options": [
+            "Giảm miss rate.",
+            "Giảm miss penalty.",
+            "Cho phép CPU tiếp tục thực thi trong khi thao tác ghi đang hoàn tất ở bộ nhớ.",
+            "Tăng dung lượng cache."
+        ],
+        "answer": 2,
+        "explanation": "Write buffer là một hàng đợi (queue) chứa dữ liệu đang chờ được ghi xuống bộ nhớ. Trong cache write-through, CPU chỉ cần ghi vào write buffer và tiếp tục, không phải chờ (stall) cho đến khi thao tác ghi xuống bộ nhớ chính hoàn tất, do đó giảm (ẩn) 'write stall'. (Nguồn: Hennessy & Patterson, 4th Ed., App C.1, trang C-11 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc nào (ví dụ: Sun T1) tập trung vào Thread-Level Parallelism (TLP) bằng cách sử dụng nhiều lõi (cores) đơn giản, thực thi 1 lệnh/chu kỳ (single-issue) và 'fine-grained multithreading'?",
+        "options": [
+            "Superscalar (Siêu vô hướng) out-of-order",
+            "CISC (Complex Instruction Set Computer)",
+            "Chip Multiprocessor (CMP) tập trung vào TLP",
+            "VLIW (Very Long Instruction Word)"
+        ],
+        "answer": 2,
+        "explanation": "Kiến trúc Sun T1 (Niagara) là một ví dụ điển hình của Chip Multiprocessor (CMP) tập trung vào TLP. Nó hy sinh hiệu năng ILP (chỉ dùng pipeline 1-issue đơn giản) để đặt nhiều lõi (8) lên chip, mỗi lõi hỗ trợ nhiều luồng (4) để đạt được thông lượng (throughput) cao. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 4.8, trang 249 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong các hệ thống đa xử lý quy mô lớn (large-scale), giao thức nào hiệu quả hơn (ít tốn băng thông) để duy trì cache coherence so với snooping?",
+        "options": [
+            "Giao thức dựa trên Thư mục (Directory-based)",
+            "Giao thức Write-broadcast",
+            "Giao thức MESI",
+            "Không cần giao thức"
+        ],
+        "answer": 0,
+        "explanation": "Giao thức Snooping yêu cầu 'broadcast' (quảng bá) mọi miss tới tất cả các cache, gây tốn băng thông. Giao thức Directory-based duy trì một 'thư mục' trung tâm (nhưng được phân tán) theo dõi trạng thái chia sẻ của từng block, và chỉ gửi thông điệp (invalidate/fetch) đến các node cần thiết, do đó có khả năng mở rộng tốt hơn. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 4.4, trang 230-231 )"
+    },
+    {
+        "type": "mcq-calc",
+        "question": "Sử dụng thuật toán nhân Radix-2 (không tối ưu) cho số 4-bit, phép nhân 1011 (11) với 1101 (13) cần bao nhiêu phép cộng/trừ thanh ghi?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "8"
+        ],
+        "answer": 1,
+        "explanation": "Thuật toán nhân cơ bản (Radix-2) kiểm tra từng bit của số nhân (Multiplier). Nếu bit là 1, cộng số bị nhân (Multiplicand) vào kết quả; nếu là 0, không làm gì (hoặc cộng 0). Với số nhân 1101, có 3 bit 1. Do đó, cần 3 phép cộng (không tính các phép dịch bit). (Nguồn: Hennessy & Patterson, 4th Ed., App I, trang I-4 )"
+    },
+    {
+        "type": "msq",
+        "question": "Hai thành phần chính của thời gian truy cập đĩa từ (disk access time) là gì?",
+        "options": [
+            "Seek Time (Thời gian tìm rãnh)",
+            "Rotational Latency (Độ trễ quay)",
+            "Transfer Time (Thời gian truyền dữ liệu)",
+            "Controller Time (Thời gian xử lý của bộ điều khiển)"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Tổng thời gian truy cập đĩa bao gồm Seek time (di chuyển đầu đọc đến đúng rãnh), Rotational latency (chờ đĩa quay đến đúng sector), Transfer time (thời gian đọc/ghi dữ liệu), và Controller overhead. Trong đó, Seek time và Rotational latency là hai thành phần cơ học chiếm nhiều thời gian nhất. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 6.2)"
+    },
+    {
+        "type": "msq",
+        "question": "Đặc điểm nào mô tả kiến trúc bộ nhớ 'Distributed Shared Memory' (DSM) hay 'NUMA' (Non-Uniform Memory Access)?",
+        "options": [
+            "Có một không gian địa chỉ logic chung (shared address space).",
+            "Thời gian truy cập bộ nhớ là đồng nhất (uniform) từ mọi CPU.",
+            "Bộ nhớ vật lý được phân tán (distributed) cho các bộ xử lý.",
+            "Giao tiếp giữa các CPU chỉ bằng Message Passing."
+        ],
+        "answer": [
+            0,
+            2
+        ],
+        "explanation": "DSM (hay NUMA) có một không gian địa chỉ logic chung (cho phép dùng Lệnh Load/Store) nhưng bộ nhớ vật lý được phân tán cho các node xử lý. Do đó, thời gian truy cập bộ nhớ là không đồng nhất (non-uniform): truy cập bộ nhớ local nhanh hơn truy cập bộ nhớ remote. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 4.1, trang 202 )"
+    },
+    {
+        "type": "fitb",
+        "question": "Khả năng một hệ thống tiếp tục cung cấp dịch vụ một cách liên tục (không bị gián đoạn) được gọi là ..., và thường được đo bằng MTTF.",
+        "answer": "Độ tin cậy (Reliability)",
+        "explanation": "Độ tin cậy (Reliability) là thước đo của việc cung cấp dịch vụ liên tục, được đo bằng MTTF (Mean Time To Failure). Tính sẵn sàng (Availability) là thước đo khả năng cung cấp dịch vụ tại một thời điểm (bao gồm cả thời gian sửa chữa), đo bằng MTTF / (MTTF + MTTR). (Nguồn: Hennessy & Patterson, 4th Ed., Ch 1.7, trang 26 )"
+    },
+    {
+        "type": "mcq-calc",
+        "question": "Một hệ thống RAID 5 sử dụng 6 đĩa (5 đĩa dữ liệu, 1 đĩa parity). Nếu một đĩa (500GB, tốc độ đọc 100 MB/s) bị hỏng, thời gian tối thiểu để 'rebuild' (xây dựng lại) đĩa hỏng đó là bao nhiêu (giả sử chỉ đọc/ghi tuần tự và không có tải khác)?",
+        "options": [
+            "Khoảng 1.4 giờ",
+            "Khoảng 30 phút",
+            "Khoảng 2.8 giờ",
+            "Khoảng 83 phút"
+        ],
+        "answer": 0,
+        "explanation": "Để rebuild 1 đĩa 500GB trong RAID 5, hệ thống phải đọc 500GB dữ liệu từ 4 đĩa còn lại (500GB / 4 đĩa = 125GB mỗi đĩa, nhưng tổng cộng vẫn là 500GB dữ liệu) và ghi 500GB vào đĩa mới. Nút cổ chai là tốc độ đọc (100 MB/s) hoặc ghi. Thời gian = 500 GB / 100 MB/s = (500 * 1024) MB / 100 MB/s = 5120 giây. 5120 giây / 3600 giây/giờ ≈ 1.42 giờ. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 6.2)"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong kiến trúc MIPS, thanh ghi nào luôn luôn chứa giá trị 0?",
+        "answer": "R0 (hoặc $zero)",
+        "explanation": "Thanh ghi R0 ($zero) trong MIPS được thiết kế cứng (hardwired) để luôn trả về giá trị 0, rất hữu ích để tổng hợp các lệnh như move (ADD R1, R2, R0) hoặc load immediate (ADDI R1, R0, 10). (Nguồn: Hennessy & Patterson, 4th Ed., App B.9, trang B-34 )"
+    },
+    {
+        "type": "mcq",
+        "question": "Chế độ địa chỉ (Addressing Mode) nào tính địa chỉ hiệu dụng (effective address) bằng cách cộng nội dung của một thanh ghi (base) với một hằng số (offset) có dấu?",
+        "options": [
+            "Immediate (Tức thời)",
+            "Register Indirect (Gián tiếp thanh ghi)",
+            "Displacement (Dịch chuyển)",
+            "Scaled (Tỷ lệ)"
+        ],
+        "answer": 2,
+        "explanation": "Chế độ địa chỉ Displacement (còn gọi là base-plus-offset) tính địa chỉ hiệu dụng bằng cách: Effective Address = [Base Register] + Offset. Đây là chế độ địa chỉ phổ biến nhất, dùng cho truy cập biến cục bộ (trên stack) và các trường trong cấu trúc. (Nguồn: Hennessy & Patterson, 4th Ed., App B.3, trang B-9 )"
+    },
+    {
+        "type": "msq",
+        "question": "Các kỹ thuật nào sau đây được sử dụng trong bộ xử lý hiện đại để khai thác Instruction-Level Parallelism (ILP)?",
+        "options": [
+            "Pipelining (Đường ống)",
+            "Superscalar (Siêu vô hướng)",
+            "Out-of-Order Execution (Thực thi ngoài trật tự)",
+            "Multicore (Đa lõi)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Pipelining, Superscalar (multiple issue), và Out-of-Order execution (dynamic scheduling) là các kỹ thuật chính để khai thác ILP (song song mức lệnh). Multicore (Đa lõi) là kỹ thuật chính để khai thác TLP (Thread-Level Parallelism). (Nguồn: Hennessy & Patterson, 4th Ed., Ch 2, Ch 3 )"
+    },
+    {
+        "type": "fitb",
+        "question": "Điện năng tiêu thụ của chip CMOS có hai thành phần chính: Điện năng động (dynamic power) và ......",
+        "answer": "Điện năng tĩnh (static power)",
+        "explanation": "Power_total = Power_dynamic + Power_static. Power_dynamic (do chuyển mạch) = 1/2 * C * V^2 * F. Power_static (do rò rỉ) = I_static * V. Khi công nghệ thu nhỏ, điện năng tĩnh (rò rỉ) ngày càng trở nên quan trọng. (Nguồn: Hennessy & Patterson, 4th Ed., Ch 1.5, trang 18 )"
+    }
+]

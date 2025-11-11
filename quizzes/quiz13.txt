@@ -1,0 +1,581 @@
+[
+    {
+        "type": "mcq",
+        "question": "Theo slide bài giảng, lớp máy tính nào (Classes of Computers) có đặc trưng bởi ràng buộc nghiêm ngặt về \"power/performance/cost constraints\"?",
+        "options": [
+            "Desktop computers",
+            "Server computers",
+            "Embedded computers",
+            "Supercomputers"
+        ],
+        "answer": 2,
+        "explanation": "Embedded computers (máy tính nhúng) thường được ẩn giấu như một thành phần của hệ thống khác và có các ràng buộc khắt khe (stringent) về điện năng, hiệu năng và giá thành. [Nguồn: Slide 01, trang 5]"
+    },
+    {
+        "type": "mcq",
+        "question": "Theo định luật DeMorgan trong Đại số Boole, biểu thức $\\overline{(A \\cdot B)}$ tương đương với biểu thức nào?",
+        "options": [
+            "$\\overline{A} \\cdot \\overline{B}$",
+            "$\\overline{A} + \\overline{B}$",
+            "$A + B$",
+            "$\\overline{A} + B$"
+        ],
+        "answer": 1,
+        "explanation": "Định luật DeMorgan (DeMorgan's laws) phát biểu: $\\overline{(A \\cdot B)} = \\overline{A} + \\overline{B}$ và $\\overline{(A + B)} = \\overline{A} \\cdot \\overline{B}$. [Nguồn: Slide 02, trang 15]"
+    },
+    {
+        "type": "fitb",
+        "question": "Phần tử cơ bản để duy trì trạng thái (maintain state) trong mạch tuần tự, và là khối xây dựng (building blocks) cho bộ nhớ, được gọi là ........",
+        "answer": "Latch",
+        "explanation": "Latches (chốt) duy trì trạng thái và là các đơn vị cơ bản (fundamental units) cho lưu trữ, là khối xây dựng (building blocks) cho bộ nhớ. [Nguồn: Slide 02, trang 61]"
+    },
+    {
+        "type": "msq",
+        "question": "Theo sơ đồ \"Components of a Computer\" trong slide, hai thành phần chính cấu tạo nên \"Processor\" (CPU) là gì?",
+        "options": [
+            "Control",
+            "Datapath",
+            "Memory",
+            "Input",
+            "Output"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Sơ đồ ở Slide 01, trang 6 cho thấy Processor (bộ xử lý) bao gồm hai thành phần chính là Control (Khối điều khiển) và Datapath (Đường đi dữ liệu). [Nguồn: Slide 01, trang 6]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một chương trình chạy trong 10 giây trên máy A, với xung nhịp 2 GHz. Chúng ta muốn thiết kế máy B chạy chương trình này trong 6 giây. Nếu máy B cần 1.2 lần số chu kỳ xung nhịp (clock cycles) so với máy A, thì máy B phải có xung nhịp là bao nhiêu?",
+        "options": [
+            "4.0 GHz",
+            "3.0 GHz",
+            "2.5 GHz",
+            "2.0 GHz"
+        ],
+        "answer": 0,
+        "explanation": "Ta có: CPU Time = Clock Cycles / Clock Rate.\nCycles_A = Time_A * Rate_A = 10s * 2 GHz = 20 * 10^9 cycles.\nCycles_B = 1.2 * Cycles_A = 1.2 * 20 * 10^9 = 24 * 10^9 cycles.\nRate_B = Cycles_B / Time_B = (24 * 10^9 cycles) / 6s = 4 * 10^9 Hz = 4.0 GHz.\n[Nguồn: Hennessy & Patterson, 4th Ed., trang 41-42]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một cải tiến làm tăng tốc độ của một chế độ thực thi (mode of execution) lên 10 lần. Chế độ này ban đầu chiếm 50% thời gian thực thi. Tốc độ tổng thể (overall speedup) đạt được là bao nhiêu?",
+        "options": [
+            "1.82",
+            "1.90",
+            "2.00",
+            "5.00"
+        ],
+        "answer": 0,
+        "explanation": "Áp dụng Định luật Amdahl: Speedup_overall = 1 / [(1 - Fraction_enhanced) + (Fraction_enhanced / Speedup_enhanced)] = 1 / [(1 - 0.5) + (0.5 / 10)] = 1 / [0.5 + 0.05] = 1 / 0.55 ≈ 1.82. [Nguồn: Hennessy & Patterson, 4th Ed., trang 40]"
+    },
+    {
+        "type": "fitb",
+        "question": "Để biểu diễn số -18 (âm mười tám) bằng số bù 2 (2's complement) 8-bit, chuỗi bit nhị phân là ........",
+        "answer": "11101110",
+        "explanation": "Bước 1: Chuyển 18 thành nhị phân 8-bit: 00010010. Bước 2: Đảo bit (bù 1): 11101101. Bước 3: Cộng 1: 11101110. [Nguồn: Slide 02, trang 183]"
+    },
+    {
+        "type": "mcq",
+        "question": "Chuyển số thập phân (decimal) 83 sang hệ bát phân (octal) ta được kết quả nào?",
+        "options": [
+            "120",
+            "123",
+            "83",
+            "101"
+        ],
+        "answer": 1,
+        "explanation": "Thực hiện chia 83 cho 8 liên tiếp:\n83 / 8 = 10 dư 3\n10 / 8 = 1 dư 2\n1 / 8 = 0 dư 1\nĐọc ngược lại các số dư ta được 123 (octal). [Nguồn: Slide 02, trang 117-125]"
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc tập lệnh (ISA) nào chỉ cho phép truy cập bộ nhớ bằng các lệnh load và store?",
+        "options": [
+            "Register-memory",
+            "Load-store",
+            "Memory-memory",
+            "Stack architecture"
+        ],
+        "answer": 1,
+        "explanation": "Kiến trúc Load-store (còn gọi là register-register) giới hạn các phép toán ALU chỉ hoạt động trên thanh ghi. Truy cập bộ nhớ chỉ được thực hiện thông qua các lệnh load và store riêng biệt. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix B, trang B-3, B-6]"
+    },
+    {
+        "type": "msq",
+        "question": "Các loại hazard (chướng ngại) chính trong pipeline bao gồm những loại nào?",
+        "options": [
+            "Structural hazards (Chướng ngại cấu trúc)",
+            "Data hazards (Chướng ngại dữ liệu)",
+            "Control hazards (Chướng ngại điều khiển)",
+            "Execution hazards (Chướng ngại thực thi)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Ba loại chướng ngại chính trong pipeline là: 1. Structural hazards (xung đột tài nguyên phần cứng), 2. Data hazards (phụ thuộc dữ liệu như RAW, WAR, WAW), và 3. Control hazards (liên quan đến lệnh rẽ nhánh). [Nguồn: Hennessy & Patterson, 4th Ed., Appendix A, trang A-11]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một CPU có CPI (chu kỳ/lệnh) lý tưởng là 1.0 (khi hit cache). Tỷ lệ cache miss là 2%. Miss penalty là 25 chu kỳ. Nếu 50% lệnh là lệnh truy cập dữ liệu (load/store), CPI thực tế của CPU là bao nhiêu?",
+        "options": [
+            "1.50",
+            "1.75",
+            "2.00",
+            "2.50"
+        ],
+        "answer": 1,
+        "explanation": "Mỗi lệnh đều truy cập instruction cache (1.0 truy cập). 50% lệnh truy cập data cache (0.5 truy cập). Tổng truy cập bộ nhớ/lệnh = 1.0 + 0.5 = 1.5. Memory stall cycles/IC = (Truy cập/Lệnh) * Miss Rate * Miss Penalty = 1.5 * 0.02 * 25 = 0.75. CPI_thực_tế = CPI_lý_tưởng + Stall cycles/IC = 1.0 + 0.75 = 1.75. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-17]"
+    },
+    {
+        "type": "fitb",
+        "question": "Ba loại cache miss (theo mô hình 3C) bao gồm: Compulsory (bắt buộc), Capacity (dung lượng), và ........",
+        "answer": "Conflict (xung đột)",
+        "explanation": "Mô hình 3C phân loại cache miss thành: 1. Compulsory (lần truy cập đầu tiên), 2. Capacity (cache quá nhỏ để chứa hết working set), và 3. Conflict (do nhiều khối nhớ tranh chấp cùng một set trong cache). [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-22]"
+    },
+    {
+        "type": "mcq",
+        "question": "Chuyển số thập lục phân (hex) A8F sang hệ thập phân (decimal) ta được kết quả nào?",
+        "options": [
+            "2703",
+            "2700",
+            "4203",
+            "4310"
+        ],
+        "answer": 0,
+        "explanation": "A8F (hex) = A * 16^2 + 8 * 16^1 + F * 16^0 = 10 * 256 + 8 * 16 + 15 * 1 = 2560 + 128 + 15 = 2703 (decimal). [Nguồn: Slide 02, trang 140]"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống phân cấp bộ nhớ (memory hierarchy), cấp nào có thời gian truy cập (access time) NHANH NHẤT?",
+        "options": [
+            "Main Memory (RAM)",
+            "L2 Cache",
+            "CPU Registers",
+            "Magnetic Disk"
+        ],
+        "answer": 2,
+        "explanation": "Theo hệ thống phân cấp bộ nhớ, CPU Registers (thanh ghi CPU) là bộ nhớ nhanh nhất (ví dụ: 300-500 ps), tiếp theo là L1/L2 Cache (vài ns), rồi đến Main Memory (vài chục ns), và cuối cùng là Disk (vài ms). [Nguồn: Hennessy & Patterson, 4th Ed., trang 15; Slide 01, trang 19]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một cache có 8 khối (blocks). Một khối bộ nhớ có địa chỉ 12 được nạp vào cache. Nó sẽ được đặt vào khối (block) nào của cache nếu cache là direct-mapped?",
+        "options": [
+            "Block 0",
+            "Block 4",
+            "Block 6",
+            "Bất kỳ khối nào"
+        ],
+        "answer": 1,
+        "explanation": "Trong cache direct-mapped, vị trí khối được xác định bằng (Địa chỉ khối) MOD (Số khối trong cache). 12 MOD 8 = 4. Do đó, khối 12 của bộ nhớ chỉ có thể được đặt vào khối 4 của cache. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-7]"
+    },
+    {
+        "type": "mcq",
+        "question": "Cấu trúc phần cứng nào được sử dụng để tăng tốc độ dịch địa chỉ từ ảo (virtual address) sang vật lý (physical address)?",
+        "options": [
+            "Reservation Station (RS)",
+            "Reorder Buffer (ROB)",
+            "Translation Lookaside Buffer (TLB)",
+            "Write Buffer"
+        ],
+        "answer": 2,
+        "explanation": "Translation Lookaside Buffer (TLB) là một cache đặc biệt, được dùng để lưu trữ các phép dịch địa chỉ (page table entries - PTEs) đã được sử dụng gần đây, nhằm tăng tốc quá trình chuyển đổi từ địa chỉ ảo sang địa chỉ vật lý. [Nguồn: Hennessy & Patterson, 4th Ed., trang 316-317, Appendix C, trang C-44]"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong các cấp độ RAID, RAID 1 (mirroring) cung cấp khả năng chịu lỗi (fault tolerance) bằng cách nào?",
+        "options": [
+            "Sử dụng parity bit xen kẽ (interleaved parity)",
+            "Nhân bản (sao chép) toàn bộ dữ liệu sang một đĩa khác",
+            "Sử dụng mã Hamming (Hamming code)",
+            "Phân phối parity (distributed parity)"
+        ],
+        "answer": 1,
+        "explanation": "RAID 1, hay còn gọi là mirroring (phản chiếu), tạo ra một bản sao chính xác của dữ liệu trên một (hoặc nhiều) đĩa khác. Đây là cách đơn giản nhất để chịu lỗi nhưng tốn kém nhất về dung lượng lưu trữ (overhead 100%). [Nguồn: Hennessy & Patterson, 4th Ed., trang 362, 363]"
+    },
+    {
+        "type": "mcq",
+        "question": "Ưu điểm chính của RAID 5 so với RAID 4 là gì?",
+        "options": [
+            "RAID 5 chịu được 2 lỗi đĩa đồng thời",
+            "RAID 5 có tốc độ đọc nhanh hơn",
+            "RAID 5 loại bỏ được 'nút thắt cổ chai' (bottleneck) của đĩa parity khi thực hiện các thao tác ghi nhỏ (small writes)",
+            "RAID 5 không cần đĩa dự phòng (hot spare)"
+        ],
+        "answer": 2,
+        "explanation": "RAID 4 sử dụng một đĩa parity chuyên dụng, đĩa này phải được truy cập mỗi khi có thao tác ghi, tạo ra nút thắt cổ chai. RAID 5 giải quyết vấn đề này bằng cách phân tán (distributed) các khối parity xen kẽ trên tất cả các đĩa, cho phép nhiều thao tác ghi nhỏ thực hiện song song. [Nguồn: Hennessy & Patterson, 4th Ed., trang 364]"
+    },
+    {
+        "type": "msq",
+        "question": "Phương trình hiệu năng CPU (CPU performance equation) cơ bản phụ thuộc vào ba yếu tố nào?",
+        "options": [
+            "Instruction count (Số lượng lệnh)",
+            "Clock cycles per instruction (CPI - Chu kỳ/lệnh)",
+            "Clock cycle time (Thời gian chu kỳ xung nhịp)",
+            "Cache miss rate (Tỷ lệ miss cache)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "CPU Time = Instruction count * CPI * Clock cycle time. Tỷ lệ miss cache là một yếu tố ảnh hưởng đến CPI, nhưng ba thành phần cơ bản của phương trình là IC, CPI, và Clock cycle time. [Nguồn: Hennessy & Patterson, 4th Ed., trang 42]"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật 'Loop Unrolling' (mở vòng lặp) chủ yếu được compiler sử dụng để tăng cường loại song song nào?",
+        "options": [
+            "Thread-Level Parallelism (TLP)",
+            "Data-Level Parallelism (DLP)",
+            "Instruction-Level Parallelism (ILP)",
+            "Memory-Level Parallelism (MLP)"
+        ],
+        "answer": 2,
+        "explanation": "Loop unrolling (mở vòng lặp) là một kỹ thuật compiler cơ bản để tăng số lượng lệnh trong một khối cơ bản (basic block), tạo ra nhiều cơ hội hơn cho việc lập lịch (scheduling) và khai thác song song mức lệnh (ILP) bằng cách giảm bớt các lệnh overhead của vòng lặp. [Nguồn: Hennessy & Patterson, 4th Ed., trang 77]"
+    },
+    {
+        "type": "fitb",
+        "question": "Hầu hết các kiến trúc RISC hiện đại (như MIPS, ARM, PowerPC) đều thuộc loại kiến trúc ........",
+        "answer": "load-store",
+        "explanation": "Hầu hết các ISA hiện đại đều là kiến trúc thanh ghi đa dụng (GPR). Trong số này, kiến trúc load-store (hay register-register) là phổ biến nhất, nơi các lệnh ALU chỉ hoạt động trên thanh ghi. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix B, trang B-3, B-6]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một 'page fault' (lỗi trang) là một loại exception (ngoại lệ) được xử lý bởi?",
+        "options": [
+            "Hardware (Phần cứng)",
+            "Application (Ứng dụng)",
+            "Compiler (Trình biên dịch)",
+            "Operating System (Hệ điều hành)"
+        ],
+        "answer": 3,
+        "explanation": "Không giống như cache miss (thường do phần cứng xử lý), page fault (khi một trang không có trong bộ nhớ chính) đòi hỏi truy cập đĩa, vốn rất chậm. Do đó, page fault được xử lý bởi phần mềm (Hệ điều hành) để cho phép CPU thực hiện tác vụ khác trong khi chờ đĩa. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-40]"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong chuẩn IEEE 754 32-bit (single precision), trường 'Exponent' (phần mũ) có độ rộng bao nhiêu bit?",
+        "options": [
+            "1 bit",
+            "8 bits",
+            "23 bits",
+            "32 bits"
+        ],
+        "answer": 1,
+        "explanation": "Chuẩn IEEE 754 32-bit (single precision) bao gồm 1 bit dấu (Sign), 8 bit mũ (Exponent), và 23 bit phần định trị (Fraction/Mantissa). [Nguồn: Hennessy & Patterson, 4th Ed., trang 220]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một bộ ghép kênh (Multiplexer - Mux) 8-đầu-vào (8-input) cần bao nhiêu đường chọn (select lines)?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "8"
+        ],
+        "answer": 1,
+        "explanation": "Một bộ Mux N-đầu-vào cần K đường chọn, sao cho 2^K >= N. Trong trường hợp này, N=8. Ta có 2^3 = 8. Do đó, cần 3 đường chọn. [Nguồn: Slide 02, trang 49]"
+    },
+    {
+        "type": "mcq",
+        "question": "Máy tính A chạy một chương trình trong 20 giây. Máy tính B chạy cùng chương trình đó trong 15 giây. Máy B nhanh hơn máy A bao nhiêu lần?",
+        "options": [
+            "0.75 lần",
+            "1.25 lần",
+            "1.33 lần",
+            "0.25 lần"
+        ],
+        "answer": 2,
+        "explanation": "Speedup (Tăng tốc) = Thời gian thực thi (Cũ) / Thời gian thực thi (Mới) = Time_A / Time_B = 20 / 15 = 1.33 lần. [Nguồn: Hennessy & Patterson, 4th Ed., trang 28]"
+    },
+    {
+        "type": "msq",
+        "question": "Những kiến trúc nào sau đây KHÔNG phải là kiến trúc Load-Store?",
+        "options": [
+            "MIPS",
+            "Intel 80x86",
+            "VAX",
+            "SPARC"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "explanation": "MIPS và SPARC là các kiến trúc load-store (RISC) điển hình. Intel 80x86 và VAX là các kiến trúc CISC, thuộc loại register-memory và memory-memory, cho phép các lệnh ALU truy cập trực tiếp vào bộ nhớ. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix B, trang B-6, Appendix J]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một pipeline lý tưởng 5 tầng (IF, ID, EX, MEM, WB) có CPI (Clock cycles per instruction) bằng bao nhiêu nếu không có stalls?",
+        "options": [
+            "5",
+            "0.2",
+            "1",
+            "Không thể xác định"
+        ],
+        "answer": 2,
+        "explanation": "Trong một pipeline lý tưởng, mỗi chu kỳ xung nhịp sẽ hoàn thành một lệnh (mặc dù lệnh đó mất 5 chu kỳ để đi qua pipeline). Do đó, CPI lý tưởng (Ideal CPI) là 1. [Nguồn: Hennessy & Patterson, 4th Ed., trang 66, Appendix A, trang A-12]"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong lý thuyết hàng đợi (Queuing Theory), nếu một hệ thống I/O (ví dụ: một đĩa) nhận 50 yêu cầu/giây (arrival rate) và thời gian phục vụ trung bình (service time) là 10ms (0.01s), thì độ tận dụng (utilization) của máy chủ (server) là ........",
+        "answer": "0.5",
+        "explanation": "Server utilization = Arrival rate * Time_service = 50 req/s * 0.01 s/req = 0.5 (hoặc 50%). [Nguồn: Hennessy & Patterson, 4th Ed., trang 381]"
+    },
+    {
+        "type": "msq",
+        "question": "Mạch logic tuần tự (Sequential Logic Circuits) khác với mạch logic tổ hợp (Combinatorial logic circuits) ở những điểm nào?",
+        "options": [
+            "Mạch tuần tự bao gồm một hoặc nhiều phần tử nhớ (memory elements)",
+            "Đầu ra của mạch tuần tự chỉ phụ thuộc vào đầu vào hiện tại",
+            "Đầu ra của mạch tuần tự phụ thuộc vào giá trị trong phần tử nhớ",
+            "Mạch tuần tự không cần đồng hồ (clock)"
+        ],
+        "answer": [
+            0,
+            2
+        ],
+        "explanation": "Mạch logic tuần tự (Sequential) bao gồm các phần tử nhớ. Đầu ra của nó phụ thuộc vào giá trị trong phần tử nhớ (thường là kết quả của các tính toán trước đó hoặc lịch sử). Ngược lại, mạch tổ hợp (Combinatorial) không có phần tử nhớ, đầu ra chỉ phụ thuộc thuần túy vào đầu vào hiện tại. [Nguồn: Slide 02, trang 68]"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong kiến trúc Von Neumann, mô hình nào cho phép một chương trình sử dụng không gian địa chỉ lớn hơn bộ nhớ vật lý thực có, bằng cách tự động quản lý việc chuyển đổi giữa bộ nhớ chính và đĩa?",
+        "answer": "Virtual Memory (Bộ nhớ ảo)",
+        "explanation": "Bộ nhớ ảo (Virtual Memory) quản lý hai cấp bộ nhớ (chính và phụ), cho phép lập trình viên sử dụng không gian địa chỉ lớn hơn bộ nhớ vật lý, và cũng cung cấp cơ chế bảo vệ (protection). [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-38, C-39]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một trong những đặc điểm chính của kiến trúc RISC (Reduced Instruction Set Computer) là gì?",
+        "options": [
+            "Sử dụng vi mã (microcode) phức tạp",
+            "Nhiều chế độ địa chỉ (addressing modes) phức tạp",
+            "Tập lệnh đơn giản, fixed-length (độ dài cố định)",
+            "Lệnh ALU có thể truy cập bộ nhớ"
+        ],
+        "answer": 2,
+        "explanation": "Kiến trúc RISC nhấn mạnh vào tập lệnh đơn giản, độ dài cố định, và là kiến trúc load-store (lệnh ALU không truy cập bộ nhớ). Ngược lại, CISC (như VAX hay 80x86) có lệnh độ dài thay đổi, nhiều chế độ địa chỉ phức tạp và thường dùng vi mã. [Nguồn: Hennessy & Patterson, 4th Ed., trang 2, Appendix B, trang B-6]"
+    },
+    {
+        "type": "msq",
+        "question": "Nguyên tắc lân cận (Principle of Locality) trong bộ nhớ bao gồm hai loại lân cận nào?",
+        "options": [
+            "Temporal Locality (Lân cận thời gian)",
+            "Spatial Locality (Lân cận không gian)",
+            "Branch Locality (Lân cận rẽ nhánh)",
+            "Register Locality (Lân cận thanh ghi)"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Nguyên tắc lân cận (Principle of Locality) phát biểu rằng các chương trình có xu hướng sử dụng lại dữ liệu và lệnh mà chúng đã sử dụng gần đây. Có hai loại: Lân cận thời gian (Temporal - các mục được truy cập gần đây sẽ sớm được truy cập lại) và Lân cận không gian (Spatial - các mục có địa chỉ gần nhau có xu hướng được truy cập gần nhau). [Nguồn: Hennessy & Patterson, 4th Ed., trang 38, Appendix C, trang C-2]"
+    },
+    {
+        "type": "fitb",
+        "question": "Phần mềm hệ thống (system software) nào chịu trách nhiệm dịch mã ngôn ngữ bậc cao (HLL) sang mã máy (machine code)?",
+        "answer": "Compiler (Trình biên dịch)",
+        "explanation": "Phần mềm hệ thống bao gồm Trình biên dịch (Compiler), chịu trách nhiệm dịch mã HLL sang mã máy, và Hệ điều hành (Operating System), cung cấp các dịch vụ như xử lý I/O, quản lý bộ nhớ. [Nguồn: Slide 01, trang 29]"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật nào cho phép thiết bị I/O truy cập trực tiếp vào bộ nhớ chính (main memory) mà không cần sự can thiệp của CPU?",
+        "options": [
+            "Polling (Hỏi vòng)",
+            "Interrupt (Ngắt)",
+            "Direct Memory Access (DMA)",
+            "Memory-Mapped I/O"
+        ],
+        "answer": 2,
+        "explanation": "Direct Memory Access (DMA) là một cơ chế cho phép một thiết bị I/O truyền dữ liệu trực tiếp đến hoặc từ bộ nhớ chính, giảm tải cho CPU. CPU chỉ cần khởi tạo việc truyền, và nhận ngắt khi hoàn tất. [Nguồn: Kiến thức chuẩn về Kiến trúc máy tính, liên quan đến Hennessy & Patterson, 4th Ed., Chương 6]"
+    },
+    {
+        "type": "msq",
+        "question": "Trong slide \"Abstractions\", những khái niệm nào được định nghĩa là giao diện (interface)?",
+        "options": [
+            "Instruction set architecture (ISA)",
+            "Application binary interface (ABI)",
+            "Implementation",
+            "Compiler"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Slide định nghĩa: ISA (Instruction set architecture) là giao diện phần cứng/phần mềm. ABI (Application binary interface) là ISA cộng với giao diện phần mềm hệ thống. Implementation (thực thi) là các chi tiết bên dưới giao diện. [Nguồn: Slide 01, trang 24]"
+    },
+    {
+        "type": "mcq",
+        "question": "Kiến trúc Harvard (Harvard architecture) khác với kiến trúc Von Neumann ở điểm cơ bản nào?",
+        "options": [
+            "Sử dụng một bộ nhớ duy nhất cho cả lệnh và dữ liệu",
+            "Sử dụng bộ nhớ và bus riêng biệt cho lệnh và dữ liệu",
+            "Không sử dụng bộ nhớ cache",
+            "Chỉ hỗ trợ kiến trúc RISC"
+        ],
+        "answer": 1,
+        "explanation": "Kiến trúc Von Neumann sử dụng chung bộ nhớ và bus cho cả lệnh (instruction) và dữ liệu (data). Kiến trúc Harvard sử dụng các bộ nhớ và bus riêng biệt, cho phép nạp lệnh và truy cập dữ liệu diễn ra đồng thời, thường thấy trong các hệ thống nhúng và DSP. [Nguồn: Kiến thức chuẩn về Kiến trúc máy tính]"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong pipeline 5 tầng (IF, ID, EX, MEM, WB) của MIPS, chướng ngại dữ liệu RAW (Read After Write) giữa lệnh LD và lệnh DSUB (sử dụng kết quả của LD) gây ra bao nhiêu chu kỳ 'stall'?",
+        "options": [
+            "0 (giải quyết bằng forwarding)",
+            "1",
+            "2",
+            "3"
+        ],
+        "answer": 1,
+        "explanation": "Lệnh LD (Load) lấy dữ liệu từ bộ nhớ ở tầng MEM. Lệnh DSUB (Subtract) cần dữ liệu đó ở đầu tầng EX. Dữ liệu từ MEM của LD không thể 'forward' (chuyển tiếp) về đầu tầng EX của DSUB kịp thời gian. Pipeline phải dừng (stall) 1 chu kỳ để dữ liệu được chuyển tiếp từ đầu tầng WB (hoặc cuối MEM) đến đầu tầng EX. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix A, trang A-19, A-20]"
+    },
+    {
+        "type": "mcq",
+        "question": "Nếu một CPU có thời gian chu kỳ (clock cycle time) là 2 ns, thì tần số xung nhịp (clock rate) của nó là bao nhiêu?",
+        "options": [
+            "2 GHz",
+            "200 MHz",
+            "500 MHz",
+            "50 MHz"
+        ],
+        "answer": 2,
+        "explanation": "Clock Rate = 1 / Clock Cycle Time. Clock Rate = 1 / (2 * 10^-9 s) = 0.5 * 10^9 Hz = 500 * 10^6 Hz = 500 MHz. [Nguồn: Hennessy & Patterson, 4th Ed., trang 41]"
+    },
+    {
+        "type": "msq",
+        "question": "Các kỹ thuật nào sau đây được sử dụng để giảm Cache Miss Penalty (Chi phí khi miss cache)?",
+        "options": [
+            "Sử dụng cache lớn hơn (Larger cache size)",
+            "Sử dụng cache đa tầng (Multilevel caches)",
+            "Ưu tiên Read miss hơn Write (Read priority over writes)",
+            "Tăng độ liên kết (Higher associativity)"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "explanation": "Multilevel caches (cache đa tầng) và việc ưu tiên xử lý Read miss trước các Write đang chờ trong write buffer là các kỹ thuật chính để giảm Miss Penalty. Cache lớn hơn và tăng độ liên kết (associativity) là các kỹ thuật để giảm Miss Rate (tỷ lệ miss). [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-22, C-29, C-34]"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong pipeline, việc một lệnh không thể thực thi ở chu kỳ đã định do một lệnh trước đó chưa giải phóng tài nguyên phần cứng (ví dụ: bộ nhớ hoặc ALU) được gọi là ........",
+        "answer": "Structural Hazard (Chướng ngại cấu trúc)",
+        "explanation": "Structural hazard (chướng ngại cấu trúc) xảy ra khi phần cứng không thể hỗ trợ tất cả các tổ hợp lệnh thực thi đồng thời trong pipeline do xung đột tài nguyên. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix A, trang A-11, A-13]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một cache có dung lượng 64KB, kích thước khối (block size) 64 bytes, và là 2-way set-associative. Cache này có bao nhiêu 'set'?",
+        "options": [
+            "128",
+            "256",
+            "512",
+            "1024"
+        ],
+        "answer": 2,
+        "explanation": "Tổng số khối (Total blocks) = Cache size / Block size = 64KB / 64B = 65536 / 64 = 1024 khối.\n        Số Set (Number of sets) = Total blocks / Associativity = 1024 / 2 = 512 set.\n        [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-12]"
+    },
+    {
+        "type": "msq",
+        "question": "Đặc điểm nào sau đây mô tả kiến trúc Von Neumann?",
+        "options": [
+            "Sử dụng chung một bộ nhớ cho cả lệnh và dữ liệu",
+            "Sử dụng bus riêng biệt cho lệnh và dữ liệu",
+            "Thực thi lệnh và truy cập dữ liệu phải tuần tự (không thể đồng thời)",
+            "Chỉ được sử dụng trong các hệ thống CISC"
+        ],
+        "answer": [
+            0,
+            2
+        ],
+        "explanation": "Kiến trúc Von Neumann (hay Princeton) đặc trưng bởi việc lưu trữ lệnh (instructions) và dữ liệu (data) trong cùng một bộ nhớ và sử dụng chung một bus. Điều này dẫn đến 'Von Neumann bottleneck', vì CPU không thể đồng thời nạp lệnh và truy cập dữ liệu. [Nguồn: Kiến thức chuẩn về Kiến trúc máy tính]"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong kỹ thuật speculative execution (thực thi suy đoán) dựa trên phần cứng, cấu trúc nào giữ kết quả của các lệnh đã hoàn thành nhưng chưa được 'commit' (chưa chắc chắn sẽ được thực thi)?",
+        "options": [
+            "Reservation Station (RS)",
+            "Branch Target Buffer (BTB)",
+            "Reorder Buffer (ROB)",
+            "Victim Cache"
+        ],
+        "answer": 2,
+        "explanation": "Reorder Buffer (ROB) là cấu trúc phần cứng giữ kết quả của các lệnh đã thực thi xong (out-of-order) nhưng chờ được commit (in-order). Nó cho phép hệ thống khôi phục trạng thái (recover) khi có dự đoán nhánh sai (misprediction). [Nguồn: Hennessy & Patterson, 4th Ed., trang 106]"
+    },
+    {
+        "type": "mcq",
+        "question": "Chuyển số nhị phân có dấu (bù 2) 1111 1100 sang hệ thập phân (decimal):",
+        "options": [
+            "252",
+            "-4",
+            "-3",
+            "-252"
+        ],
+        "answer": 1,
+        "explanation": "Vì bit cao nhất (MSB) là 1, đây là số âm. Để tìm giá trị, ta lấy bù 2 của nó:\n        1. Đảo bit (bù 1): 0000 0011\n        2. Cộng 1: 0000 0100\n        Giá trị này là 4. Do đó, số ban đầu là -4.\n        [Nguồn: Slide 02, trang 184]"
+    },
+    {
+        "type": "msq",
+        "question": "Những kỹ thuật nào sau đây giúp giảm tỷ lệ Cache Miss (Miss Rate)?",
+        "options": [
+            "Tăng kích thước khối (Larger block size)",
+            "Tăng độ liên kết (Higher associativity)",
+            "Sử dụng cache đa tầng (Multilevel caches)",
+            "Sử dụng cache nhanh hơn (Faster cache)"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Tăng kích thước khối (tận dụng spatial locality) và tăng độ liên kết (giảm conflict misses) là hai trong số các kỹ thuật cơ bản để giảm tỷ lệ cache miss. Cache đa tầng (multilevel) chủ yếu giảm Miss Penalty. Cache nhanh hơn giảm Hit Time. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-22]"
+    },
+    {
+        "type": "fitb",
+        "question": "Kiến trúc tập lệnh của MIPS có 32 thanh ghi đa dụng 64-bit, được đặt tên là R0 đến R31. Thanh ghi R0 luôn có giá trị là ........",
+        "answer": "0",
+        "explanation": "Thanh ghi R0 trong kiến trúc MIPS được thiết kế cố định luôn chứa giá trị 0. Điều này rất hữu ích cho việc tổng hợp các lệnh (ví dụ: lệnh move, load initial) từ các lệnh khác (ví dụ: ADD, ADDI). [Nguồn: Hennessy & Patterson, 4th Ed., Appendix B, trang B-34]"
+    },
+    {
+        "type": "mcq",
+        "question": "Một máy tính có CPI là 2.0 và chạy ở 500 MHz. Nếu một trình biên dịch mới giúp giảm 10% số lượng lệnh (instruction count) nhưng lại làm tăng CPI lên 2.2, tốc độ (speedup) của hệ thống là bao nhiêu?",
+        "options": [
+            "1.00 (không đổi)",
+            "0.90",
+            "1.10",
+            "1.22"
+        ],
+        "answer": 0,
+        "explanation": "Time_old = IC * 2.0; Time_new = 0.9 * IC * 2.2 = 1.98 * IC; Speedup = 2.0 / 1.98 ≈ 1.01, nên chọn đáp án 1.00 (gần nhất)."
+    },
+    {
+        "type": "mcq",
+        "question": "Xét một pipeline 5 tầng không có forwarding. Nếu 30% lệnh là LD (latency 2 stall) và 20% lệnh rẽ nhánh (penalty 1 stall). Giả sử các lệnh này độc lập. CPI của pipeline này là bao nhiêu?",
+        "options": [
+            "1.0",
+            "1.5",
+            "1.8",
+            "2.3"
+        ],
+        "answer": 2,
+        "explanation": "CPI lý tưởng là 1. Stall từ LD = 30% * 2 = 0.6. Stall từ Branch = 20% * 1 = 0.2. CPI thực tế = 1.0 + 0.6 + 0.2 = 1.8. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix A, trang A-12]"
+    },
+    {
+        "type": "mcq",
+        "question": "Chính sách ghi cache (write policy) nào chỉ cập nhật dữ liệu vào khối cache, và chỉ ghi xuống bộ nhớ chính khi khối cache đó bị thay thế?",
+        "options": [
+            "Write-through",
+            "Write-back",
+            "Write-allocate",
+            "No-write-allocate"
+        ],
+        "answer": 1,
+        "explanation": "Chính sách Write-back (ghi ngược) chỉ ghi dữ liệu vào cache. Một 'dirty bit' được sử dụng để theo dõi xem khối cache đã bị sửa đổi hay chưa. Khối này chỉ được ghi lại vào bộ nhớ chính khi nó bị thay thế. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-10]"
+    },
+    {
+        "type": "mcq",
+        "question": "Việc sử dụng các trang có kích thước lớn (large pages hay superpages) trong hệ thống bộ nhớ ảo chủ yếu giúp giảm điều gì?",
+        "options": [
+            "Số lượng Page Faults",
+            "Số lượng TLB misses",
+            "Thời gian truy cập đĩa",
+            "Kích thước của L1 cache"
+        ],
+        "answer": 1,
+        "explanation": "Một mục TLB (TLB entry) có thể ánh xạ một trang lớn (ví dụ 2MB) thay vì một trang nhỏ (ví dụ 4KB). Điều này cho phép TLB ánh xạ một vùng nhớ lớn hơn nhiều với cùng một số lượng entry, do đó làm giảm đáng kể số lần TLB miss. [Nguồn: Hennessy & Patterson, 4th Ed., Appendix C, trang C-45]"
+    }
+]

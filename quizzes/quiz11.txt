@@ -1,0 +1,453 @@
+[
+    {
+        "type": "mcq",
+        "question": "Kiến trúc máy tính nào có đặc điểm sử dụng chung bus và bộ nhớ cho cả lệnh và dữ liệu?",
+        "options": [
+            "Von Neumann",
+            "Harvard",
+            "RISC",
+            "CISC"
+        ],
+        "answer": 0,
+        "explanation": "Kiến trúc Von Neumann định nghĩa máy tính có một bộ nhớ chính duy nhất và một bus duy nhất để truy cập cả lệnh (instructions) và dữ liệu (data). (Nguồn: Giáo trình 'Computer Organization and Architecture' - W. Stallings, Ch. 3)"
+    },
+    {
+        "type": "mcq",
+        "question": "Thanh ghi nào trong CPU chứa địa chỉ của lệnh kế tiếp sẽ được nạp để thực thi?",
+        "options": [
+            "Program Counter (PC)",
+            "Instruction Register (IR)",
+            "Memory Address Register (MAR)",
+            "Accumulator (AC)"
+        ],
+        "answer": 0,
+        "explanation": "Thanh ghi PC (Bộ đếm chương trình) luôn trỏ đến địa chỉ của lệnh tiếp theo trong bộ nhớ mà CPU sẽ tìm nạp (fetch). (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 4)"
+    },
+    {
+        "type": "fitb",
+        "question": "Chu trình lệnh cơ bản của CPU bao gồm 3 bước chính theo thứ tự: Tìm nạp (Fetch), ...... (Decode), và Thực thi (Execute).",
+        "answer": "Giải mã",
+        "explanation": "CPU lặp đi lặp lại chu trình: Lấy lệnh từ bộ nhớ (Fetch), giải mã lệnh đó để biết cần làm gì (Decode), và thực thi hành động đó (Execute). (Nguồn: Giáo trình 'W. Stallings', Ch. 3)"
+    },
+    {
+        "type": "mcq",
+        "question": "Chuyển số nhị phân 1011.01 (hệ 2) sang hệ thập phân (hệ 10)?",
+        "options": [
+            "11.25",
+            "11.5",
+            "9.25",
+            "13.75"
+        ],
+        "answer": 0,
+        "explanation": "Tính toán: (1 * 2^3) + (0 * 2^2) + (1 * 2^1) + (1 * 2^0) + (0 * 2^-1) + (1 * 2^-2) = 8 + 0 + 2 + 1 + 0 + 0.25 = 11.25. (Nguồn: Kiến thức cơ bản hệ thống số)"
+    },
+    {
+        "type": "msq",
+        "question": "Các thành phần cơ bản của một máy tính (theo Slide 01) bao gồm những gì?",
+        "options": [
+            "Input (Đầu vào)",
+            "Output (Đầu ra)",
+            "Memory (Bộ nhớ)",
+            "Processor (Bộ xử lý)"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "explanation": "Một máy tính bao gồm 4 thành phần kinh điển: Input (Đầu vào), Output (Đầu ra), Memory (Bộ nhớ), và Processor (Bộ xử lý). Bộ xử lý gồm Datapath (Đường dữ liệu) và Control (Điều khiển). (Nguồn: Slide 01, trang 6)"
+    },
+    {
+        "type": "mcq",
+        "question": "Biểu diễn số -25 (hệ 10) bằng phương pháp bù 2 (Two's Complement) sử dụng 8 bit là?",
+        "options": [
+            "11100111",
+            "10011001",
+            "11100110",
+            "00011001"
+        ],
+        "answer": 0,
+        "explanation": "Bước 1: Biểu diễn +25 (8-bit): 00011001. Bước 2: Đảo bit (Bù 1): 11100110. Bước 3: Cộng 1 (Bù 2): 11100111. (Nguồn: Giáo trình, Biểu diễn dữ liệu)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một máy tính có tần số xung nhịp (clock rate) là 4.0 GHz. Thời gian của một chu kỳ máy (clock cycle time) là bao nhiêu?",
+        "options": [
+            "0.25 ns",
+            "4.0 ns",
+            "250 ns",
+            "0.004 s"
+        ],
+        "answer": 0,
+        "explanation": "Thời gian chu kỳ = 1 / Tần số. T = 1 / (4.0 * 10^9 Hz) = 0.25 * 10^-9 giây = 0.25 nanoseconds (ns). (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 1)"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong các cấp độ của mã chương trình (Levels of Program Code), ...... là đại diện văn bản của các lệnh máy (machine instructions).",
+        "answer": "Assembly language (Hợp ngữ)",
+        "explanation": "Ngôn ngữ cấp cao (ví dụ C) được biên dịch xuống Hợp ngữ (Assembly), sau đó Hợp ngữ được Assembler dịch sang mã máy nhị phân (Binary machine language). (Nguồn: Slide 01, trang 30)"
+    },
+    {
+        "type": "mcq",
+        "question": "Nguyên tắc nào giải thích tại sao bộ nhớ cache (Cache memory) hoạt động hiệu quả?",
+        "options": [
+            "Nguyên tắc địa phương (Principle of Locality)",
+            "Nguyên tắc mô-đun (Modularity)",
+            "Nguyên tắc ngẫu nhiên (Randomness)",
+            "Định luật Moore (Moore's Law)"
+        ],
+        "answer": 0,
+        "explanation": "Cache hiệu quả do các chương trình có xu hướng truy cập lại dữ liệu và lệnh ở gần các địa chỉ đã truy cập trước đó (locality), bao gồm locality về thời gian (temporal) và không gian (spatial). (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 5)"
+    },
+    {
+        "type": "msq",
+        "question": "Những đặc điểm nào sau đây thường thuộc về kiến trúc RISC (Reduced Instruction Set Computer)?",
+        "options": [
+            "Tập lệnh đơn giản, ít lệnh",
+            "Chỉ các lệnh Load/Store mới truy cập bộ nhớ",
+            "Nhiều chế độ địa chỉ phức tạp",
+            "Các lệnh có thời gian thực thi thay đổi nhiều"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "RISC tập trung vào tập lệnh đơn giản, tối ưu hóa cho pipeline. Hầu hết các lệnh xử lý trên thanh ghi, chỉ dùng Load/Store để di chuyển dữ liệu với bộ nhớ. CISC có lệnh phức tạp và nhiều chế độ địa chỉ. (Nguồn: Giáo trình 'W. Stallings', Ch. 13)"
+    },
+    {
+        "type": "fitb",
+        "question": "Hiện tượng xảy ra khi CPU cần một lệnh hoặc dữ liệu nhưng không tìm thấy trong bộ nhớ Cache được gọi là ......",
+        "answer": "Cache miss (Lỗi Cache)",
+        "explanation": "Khi Cache miss xảy ra, CPU phải dừng và chờ dữ liệu được nạp từ bộ nhớ chính (chậm hơn) vào Cache. (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 5)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong CPU, thành phần nào chịu trách nhiệm thực hiện các phép toán số học (cộng, trừ) và logic (AND, OR)?",
+        "options": [
+            "ALU (Arithmetic Logic Unit)",
+            "Control Unit (Khối điều khiển)",
+            "Registers (Thanh ghi)",
+            "System Bus (Bus hệ thống)"
+        ],
+        "answer": 0,
+        "explanation": "ALU (Đơn vị Số học và Logic) là thành phần thực hiện các phép tính toán học và logic theo yêu cầu từ Khối điều khiển. (Nguồn: Slide 01, trang 6 và Giáo trình)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật 'Pipeline' (đường ống) trong CPU được thiết kế chủ yếu để cải thiện yếu tố nào?",
+        "options": [
+            "Throughput (Thông lượng)",
+            "Latency (Độ trễ) của một lệnh",
+            "Dung lượng bộ nhớ",
+            "Tiêu thụ điện năng"
+        ],
+        "answer": 0,
+        "explanation": "Pipeline không làm giảm thời gian thực thi của một lệnh riêng lẻ (latency), nhưng nó cho phép nhiều lệnh được thực thi song song (gối đầu), do đó làm tăng tổng số lệnh hoàn thành trong một đơn vị thời gian (throughput). (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 4)"
+    },
+    {
+        "type": "msq",
+        "question": "Các loại xung đột (Hazard) chính có thể xảy ra trong một CPU có pipeline là gì?",
+        "options": [
+            "Xung đột cấu trúc (Structural Hazard)",
+            "Xung đột dữ liệu (Data Hazard)",
+            "Xung đột điều khiển (Control Hazard)",
+            "Xung đột bộ nhớ (Memory Hazard)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Ba loại xung đột chính là: (1) Structural: hai lệnh cùng cần một tài nguyên phần cứng. (2) Data: lệnh sau cần kết quả của lệnh trước chưa xong. (3) Control: xảy ra khi có lệnh rẽ nhánh, chưa biết lệnh tiếp theo. (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 4)"
+    },
+    {
+        "type": "fitb",
+        "question": "Thời gian thực thi CPU (CPU Time) của một chương trình được tính bằng công thức: Số lệnh * CPI * ......",
+        "answer": "Chu kỳ máy (Clock Cycle Time)",
+        "explanation": "CPU Time = (Số lượng lệnh) * (Số chu kỳ trung bình mỗi lệnh - CPI) * (Thời gian của 1 chu kỳ máy). (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 1)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một chương trình A chạy trên máy M1 (2 GHz, CPI=1.5) mất 10 giây. Để chạy A trong 6 giây, M2 (máy cải tiến) cần có tần số là bao nhiêu, giả sử CPI của M2 giảm còn 1.2?",
+        "options": [
+            "4.0 GHz",
+            "3.0 GHz",
+            "2.67 GHz",
+            "2.5 GHz"
+        ],
+        "answer": 2,
+        "explanation": "Số lệnh của A = (Time_M1 * ClockRate_M1) / CPI_M1 = (10s * 2e9) / 1.5 = 13.333e9 lệnh. ClockRate_M2 = (Số lệnh * CPI_M2) / Time_M2 = (13.333e9 * 1.2) / 6s = 2.6667e9 Hz ≈ 2.67 GHz."
+    },
+    {
+        "type": "mcq",
+        "question": "Loại bộ nhớ nào sau đây là 'volatile' (khả biến), tức là mất dữ liệu khi mất điện?",
+        "options": [
+            "DRAM",
+            "ROM",
+            "SSD (Ổ cứng thể rắn)",
+            "Flash memory"
+        ],
+        "answer": 0,
+        "explanation": "DRAM (Dynamic RAM) và SRAM (Static RAM) là bộ nhớ khả biến, cần nguồn điện để duy trì dữ liệu. ROM, SSD, và Flash là 'non-volatile' (bất khả biến). (Nguồn: Giáo trình 'W. Stallings', Ch. 5)"
+    },
+    {
+        "type": "fitb",
+        "question": "...... là một kỹ thuật sử dụng ổ đĩa cứng (hoặc SSD) làm bộ nhớ phụ, cho phép hệ thống chạy các chương trình lớn hơn bộ nhớ vật lý (RAM) hiện có.",
+        "answer": "Bộ nhớ ảo (Virtual Memory)",
+        "explanation": "Bộ nhớ ảo sử dụng cơ chế 'paging' hoặc 'segmentation' để ánh xạ địa chỉ ảo của chương trình sang địa chỉ vật lý, và swap (hoán đổi) dữ liệu ra đĩa khi RAM đầy. (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 5)"
+    },
+    {
+        "type": "mcq",
+        "question": "TLB (Translation Lookaside Buffer) là một bộ đệm (cache) đặc biệt được sử dụng để tăng tốc quá trình nào?",
+        "options": [
+            "Dịch địa chỉ ảo sang địa chỉ vật lý",
+            "Tìm kiếm dữ liệu trong Cache L1",
+            "Thực thi lệnh rẽ nhánh",
+            "Truy cập thiết bị I/O"
+        ],
+        "answer": 0,
+        "explanation": "TLB lưu trữ các kết quả dịch địa chỉ (từ Page Table) gần đây. Khi CPU cần dịch địa chỉ ảo, nó kiểm tra TLB trước; nếu tìm thấy (TLB hit), quá trình dịch diễn ra rất nhanh. (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 5)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong hệ thống I/O, kỹ thuật nào cho phép thiết bị ngoại vi truy cập trực tiếp vào bộ nhớ chính (RAM) mà không cần sự can thiệp của CPU?",
+        "options": [
+            "DMA (Direct Memory Access)",
+            "Programmed I/O (I/O Lập trình)",
+            "Interrupt-driven I/O (I/O Điều khiển bằng ngắt)",
+            "Memory-mapped I/O"
+        ],
+        "answer": 0,
+        "explanation": "DMA cho phép một bộ điều khiển (DMAC) quản lý việc truyền dữ liệu giữa I/O và RAM, giải phóng CPU để làm việc khác, giúp tăng hiệu suất hệ thống. (Nguồn: Giáo trình 'W. Stallings', Ch. 7)"
+    },
+    {
+        "type": "msq",
+        "question": "Các phương thức (techniques) chính để thực hiện I/O (Nhập/Xuất) trong máy tính bao gồm?",
+        "options": [
+            "Programmed I/O (I/O Lập trình)",
+            "Interrupt-driven I/O (I/O Điều khiển bằng ngắt)",
+            "DMA (Direct Memory Access)",
+            "Pipelined I/O"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Ba phương thức I/O kinh điển là: (1) Programmed I/O (CPU chờ), (2) Interrupt-driven I/O (CPU bị ngắt khi I/O sẵn sàng), và (3) DMA (truyền trực tiếp). (Nguồn: Giáo trình 'W. Stallings', Ch. 7)"
+    },
+    {
+        "type": "mcq",
+        "question": "Theo Slide 01, thành phần nào chịu trách nhiệm quản lý bộ nhớ, lập lịch tác vụ và xử lý I/O?",
+        "options": [
+            "Operating System (Hệ điều hành)",
+            "Compiler (Trình biên dịch)",
+            "Application software (Phần mềm ứng dụng)",
+            "ALU (Đơn vị số học/logic)"
+        ],
+        "answer": 0,
+        "explanation": "Hệ điều hành (thuộc System software) cung cấp các dịch vụ cốt lõi như quản lý bộ nhớ, lập lịch và xử lý I/O. (Nguồn: Slide 01, trang 29)"
+    },
+    {
+        "type": "fitb",
+        "question": "Kiến trúc ...... có bộ nhớ và bus riêng biệt cho lệnh và dữ liệu, cho phép tìm nạp lệnh và truy cập dữ liệu diễn ra đồng thời.",
+        "answer": "Harvard",
+        "explanation": "Kiến trúc Harvard tách biệt bộ nhớ/bus lệnh và dữ liệu, khắc phục 'nút cổ chai Von Neumann', thường được sử dụng trong các hệ thống nhúng và DSP. (Nguồn: Giáo trình 'W. Stallings', Ch. 3)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một bộ nhớ cache 64 KB, tổ chức theo kiểu set-associative 4 đường (4-way), và kích thước mỗi khối (block) là 32 byte. Hỏi cache này có bao nhiêu 'set' (tập hợp)?",
+        "options": [
+            "128",
+            "512",
+            "256",
+            "1024"
+        ],
+        "answer": 1,
+        "explanation": "Tổng kích thước = 64 KB = 65536 byte. Kích thước 1 set = Số đường * Kích thước khối = 4 * 32 byte = 128 byte. Số Set = Tổng kích thước / Kích thước 1 set = 65536 / 128 = 512. (Nguồn: Bài tập tính toán Cache, 'Hennessy & Patterson', Ch. 5)"
+    },
+    {
+        "type": "mcq",
+        "question": "Kỹ thuật dự đoán rẽ nhánh (Branch Prediction) được sử dụng để giải quyết loại xung đột nào trong pipeline?",
+        "options": [
+            "Xung đột điều khiển (Control Hazard)",
+            "Xung đột dữ liệu (Data Hazard)",
+            "Xung đột cấu trúc (Structural Hazard)",
+            "Xung đột ghi (Write Hazard)"
+        ],
+        "answer": 0,
+        "explanation": "Khi gặp lệnh rẽ nhánh, pipeline không biết lệnh tiếp theo (ở đích nhánh hay lệnh kế tiếp) để nạp. Branch Prediction dự đoán hướng đi để nạp trước, giảm thiểu 'stall' (trì hoãn) do xung đột điều khiển. (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 4)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một hệ thống máy tính có 24 đường địa chỉ (address lines) và bus dữ liệu 16-bit (data lines). Khả năng địa chỉ hóa bộ nhớ tối đa của hệ thống này là bao nhiêu?",
+        "options": [
+            "16 MB (Megabyte)",
+            "32 MB (Megabyte)",
+            "24 MB (Megabyte)",
+            "8 MB (Megabyte)"
+        ],
+        "answer": 0,
+        "explanation": "Khả năng địa chỉ hóa phụ thuộc vào số đường địa chỉ. 2^24 = 16,777,216 địa chỉ. Nếu mỗi địa chỉ là 1 byte (byte-addressable), thì dung lượng là 16,777,216 byte ≈ 16 MB. Bus dữ liệu 16-bit chỉ ảnh hưởng đến lượng dữ liệu truyền trong 1 chu kỳ, không ảnh hưởng đến tổng dung lượng. (Nguồn: Giáo trình, Tổ chức bộ nhớ)"
+    },
+    {
+        "type": "fitb",
+        "question": "Một ổ đĩa cứng (HDD) quay với tốc độ 5400 RPM (vòng/phút). Thời gian trễ quay trung bình (Average Rotational Latency) là ...... miligiây (ms).",
+        "answer": "5.56",
+        "explanation": "Thời gian 1 vòng quay = 60 giây / 5400 vòng = 0.01111 giây = 11.11 ms. Trễ quay trung bình = 1/2 thời gian 1 vòng quay = 11.11 / 2 = 5.555... ≈ 5.56 ms. (Nguồn: Bài tập tính toán I/O, 'W. Stallings', Ch. 6)"
+    },
+    {
+        "type": "msq",
+        "question": "Theo Slide 01, những loại phần mềm nào được đề cập trong sơ đồ 'Below Your Program'?",
+        "options": [
+            "Applications software (Phần mềm ứng dụng)",
+            "Systems software (Phần mềm hệ thống)",
+            "Firmware",
+            "Hardware (Phần cứng)"
+        ],
+        "answer": [
+            0,
+            1,
+            3
+        ],
+        "explanation": "Sơ đồ 'Below Your Program' (Dưới chương trình của bạn) phân cấp gồm: Applications software, Systems software, và Hardware. (Nguồn: Slide 01, trang 29)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong các kỹ thuật ghi Cache, ...... chỉ cập nhật dữ liệu ở khối Cache. Dữ liệu chỉ được ghi xuống bộ nhớ chính khi khối Cache đó bị thay thế.",
+        "options": [
+            "Write-back",
+            "Write-through",
+            "Write-allocate",
+            "Write-around"
+        ],
+        "answer": 0,
+        "explanation": "Write-back (Ghi lại sau) tối ưu hiệu năng bằng cách chỉ ghi vào Cache. Một 'dirty bit' được dùng để đánh dấu khối đã bị thay đổi, và khối này chỉ bị ghi xuống RAM khi bị thay thế. Write-through ghi đồng thời cả Cache và RAM. (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 5)"
+    },
+    {
+        "type": "mcq",
+        "question": "Theo Slide 02, biểu diễn kỹ thuật số (Digital) là một sự ...... của điện áp tương tự (Analog).",
+        "options": [
+            "Trừu tượng hóa (abstraction)",
+            "Khuếch đại (amplification)",
+            "Mô phỏng (simulation)",
+            "Lọc (filtering)"
+        ],
+        "answer": 0,
+        "explanation": "Slide mô tả rằng 'Digital is an abstraction of analog voltage', tức là thay vì dùng giá trị liên tục, chúng ta trừu tượng hóa thành hai mức_logic 1 và 0. (Nguồn: Slide 02, trang 4)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một CPU pipeline 5 giai đoạn lý tưởng (IF, ID, EX, MEM, WB). Cần bao nhiêu chu kỳ xung nhịp để hoàn thành việc thực thi 8 lệnh, giả sử không có xung đột (hazard)?",
+        "options": [
+            "12",
+            "40",
+            "8",
+            "13"
+        ],
+        "answer": 0,
+        "explanation": "Công thức tính: k + (n - 1) chu kỳ, với k là số giai đoạn pipeline và n là số lệnh. Thời gian = 5 + (8 - 1) = 5 + 7 = 12 chu kỳ. (Nguồn: Bài tập Pipeline, 'Hennessy & Patterson', Ch. 4)"
+    },
+    {
+        "type": "msq",
+        "question": "Chuẩn IEEE 754 (Single Precision - 32 bit) biểu diễn một số thực bao gồm những thành phần nào?",
+        "options": [
+            "Sign bit (Bit dấu - 1 bit)",
+            "Exponent (Phần mũ - 8 bit)",
+            "Mantissa/Fraction (Phần định trị - 23 bit)",
+            "Parity bit (Bit chẵn lẻ)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Định dạng 32-bit (Single Precision) bao gồm 1 bit dấu (S), 8 bit cho phần mũ (E) (đã dịch chuyển), và 23 bit cho phần định trị (M) (fraction). (Nguồn: Giáo trình, Biểu diễn dữ liệu)"
+    },
+    {
+        "type": "mcq",
+        "question": "Một hệ thống có CPI (trung bình) là 1.5. Nếu tần số xung nhịp là 3 GHz, hệ thống có thể thực thi được bao nhiêu triệu lệnh mỗi giây (MIPS)?",
+        "options": [
+            "2000 MIPS",
+            "4500 MIPS",
+            "1500 MIPS",
+            "3000 MIPS"
+        ],
+        "answer": 0,
+        "explanation": "Số lệnh mỗi giây = Tần số / CPI = (3 * 10^9) / 1.5 = 2 * 10^9 lệnh/giây. Đổi sang MIPS (Triệu lệnh/giây): 2 * 10^9 / 10^6 = 2000 MIPS. (Nguồn: Bài tập tính toán hiệu năng, 'Hennessy & Patterson', Ch. 1)"
+    },
+    {
+        "type": "fitb",
+        "question": "CPU và các thành phần chính khác (bộ nhớ, I/O) được kết nối với nhau thông qua một tập hợp các đường dây dẫn điện gọi là ......",
+        "answer": "Bus hệ thống (System Bus)",
+        "explanation": "Bus hệ thống (System Bus) thường bao gồm 3 bus con: Bus Địa chỉ (Address Bus), Bus Dữ liệu (Data Bus), và Bus Điều khiển (Control Bus). (Nguồn: Giáo trình 'W. Stallings', Ch. 3)"
+    },
+    {
+        "type": "mcq",
+        "question": "Trong Slide 01, 'Compiler' (Trình biên dịch) được mô tả là gì?",
+        "options": [
+            "Dịch HLL (ngôn ngữ cấp cao) sang mã máy",
+            "Quản lý bộ nhớ và lưu trữ",
+            "Xử lý các tác vụ nhập/xuất (I/O)",
+            "Một loại phần mềm ứng dụng"
+        ],
+        "answer": 0,
+        "explanation": "Compiler (thuộc System Software) được định nghĩa là 'translates HLL code to machine code' (dịch mã ngôn ngữ cấp cao sang mã máy). (Nguồn: Slide 01, trang 29)"
+    },
+    {
+        "type": "fitb",
+        "question": "Xung đột xảy ra khi lệnh sau trong pipeline cần kết quả của lệnh trước đó nhưng lệnh trước chưa hoàn thành giai đoạn ghi kết quả (Write-Back) được gọi là ......",
+        "answer": "Xung đột dữ liệu (Data Hazard)",
+        "explanation": "Đây là loại xung đột RAW (Read After Write). Ví dụ: ADD R1, R2, R3; SUB R4, R1, R5. Lệnh SUB cần giá trị mới của R1 do lệnh ADD tạo ra. (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 4)"
+    },
+    {
+        "type": "msq",
+        "question": "Theo Slide 02, Đại số Boolean (Boolean Algebra) có các phép toán (operations) cơ bản nào?",
+        "options": [
+            "AND",
+            "OR",
+            "NOT",
+            "IF-THEN"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "explanation": "Các phép toán cơ bản của Đại số Boolean (được giới thiệu sau trang Axioms) là AND (và), OR (hoặc), và NOT (phủ định). (Nguồn: Slide 02, trang 6 và các trang tiếp theo)"
+    },
+    {
+        "type": "mcq",
+        "question": "Loại bộ nhớ nào sau đây thường được sử dụng làm bộ nhớ chính (Main Memory) trong máy tính cá nhân hiện đại?",
+        "options": [
+            "DRAM (Dynamic RAM)",
+            "SRAM (Static RAM)",
+            "ROM (Read-Only Memory)",
+            "Magnetic Tape (Băng từ)"
+        ],
+        "answer": 0,
+        "explanation": "DRAM là lựa chọn phổ biến cho RAM chính vì nó cân bằng giữa tốc độ, giá thành và mật độ (dung lượng lớn). SRAM nhanh hơn nhưng đắt hơn nhiều, thường dùng làm Cache. (Nguồn: Giáo trình 'W. Stallings', Ch. 5)"
+    },
+    {
+        "type": "fitb",
+        "question": "Trong Slide 01, hai thành phần chính của Bộ xử lý (Processor) được chỉ ra là Datapath (Đường dữ liệu) và ......",
+        "answer": "Control (Điều khiển)",
+        "explanation": "Sơ đồ 'Components of a Computer' chỉ rõ Processor bao gồm Datapath (nơi xử lý dữ liệu) và Control (nơi điều khiển Datapath, Memory và I/O). (Nguồn: Slide 01, trang 6)"
+    },
+    {
+        "type": "msq",
+        "question": "Những kỹ thuật nào sau đây được sử dụng để giải quyết xung đột dữ liệu (data hazards) trong pipeline?",
+        "options": [
+            "Forwarding (Chuyển tiếp/Bypassing)",
+            "Pipeline stall (Chèn 'bong bóng' trì hoãn)",
+            "Tăng tần số xung nhịp",
+            "Sử dụng Cache lớn hơn"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "explanation": "Xung đột dữ liệu được xử lý chủ yếu bằng (1) Forwarding: chuyển kết quả từ giai đoạn EX hoặc MEM về lại đầu vào ALU, và (2) Stalling: nếu forwarding không thể, pipeline phải dừng lại (chèn NOP) để chờ dữ liệu. (Nguồn: Giáo trình 'Hennessy & Patterson', Ch. 4)"
+    }
+]

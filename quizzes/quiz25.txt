@@ -1,0 +1,542 @@
+[
+  {
+    "type": "mcq",
+    "question": "Theo slide bài giảng (01.pdf), kiến trúc máy tính được định nghĩa là gì?",
+    "options": [
+      "Tập lệnh (ISA) + Tổ chức máy (Machine Organization)",
+      "Thiết kế vi mạch (VLSI Design) + Hệ điều hành (OS)",
+      "Phần cứng + Phần mềm",
+      "Tập lệnh (ISA) + Giao diện phần mềm ứng dụng (ABI)"
+    ],
+    "answer": 0,
+    "explanation": "Kiến trúc máy tính = Kiến trúc tập lệnh (Instruction Set Architecture) + Tổ chức máy (Machine Organization). (Nguồn: 01.pdf, trang 25 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong các lớp máy tính được đề cập trong slide (01.pdf), lớp nào có ràng buộc khắt khe nhất về năng lượng/hiệu năng/chi phí?",
+    "options": [
+      "Máy tính để bàn (Desktop)",
+      "Máy chủ (Server)",
+      "Máy tính nhúng (Embedded)",
+      "Siêu máy tính (Supercomputer)"
+    ],
+    "answer": 2,
+    "explanation": "Máy tính nhúng (Embedded computers) thường bị che giấu như một thành phần của hệ thống và có các ràng buộc nghiêm ngặt (stringent) về năng lượng, hiệu năng và chi phí. (Nguồn: 01.pdf, trang 5 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Theo slide (02.pdf), một mạch logic chọn 1 trong N đầu vào được gọi là ...... (viết tắt là Mux).",
+    "answer": "Multiplexer",
+    "explanation": "Multiplexer (Mux) là mạch chọn 1 trong N đầu vào, sử dụng K đường chọn sao cho $2^K \\ge N$. (Nguồn: 02.pdf, trang 49 )"
+  },
+  {
+    "type": "msq",
+    "question": "Theo slide (02.pdf), các luật nào sau đây thuộc về Đại số Boolean?",
+    "options": [
+      "Luật DeMorgan",
+      "Luật phân phối (Distributive)",
+      "Luật Ohm",
+      "Luật hấp thụ (Absorption)"
+    ],
+    "answer": [0, 1],
+    "explanation": "Slide bài giảng 02.pdf liệt kê các luật của Đại số Boolean bao gồm luật Phân phối (Distributive) và luật DeMorgan. (Nguồn: 02.pdf, trang 15 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Một máy tính có bus dữ liệu 64 bit, hoạt động đọc/ghi RAM mất 4 chu kỳ, xung nhịp bus là 800Mhz. Tốc độ truyền dữ liệu (data transfer rate) là bao nhiêu? (Nguồn: 02.pdf)",
+    "options": [
+      "1600 MBps",
+      "800 MBps",
+      "3200 MBps",
+      "1526 MBps"
+    ],
+    "answer": 3,
+    "explanation": "Số lần truyền mỗi giây = $800 \\times 10^6 / 4 = 2 \\times 10^8$ lần/giây. Mỗi lần truyền 64 bit = 8 Bytes. Tốc độ = $8 \\times 2 \\times 10^8 = 1.6 \\times 10^9$ Bps = 1600000000 Bps. $1600000000 / (1024*1024) \\approx 1525.88$ MBps. (Nguồn: 02.pdf, trang 59 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân của số nhị phân 10110_2 là gì?",
+    "options": [
+      "22",
+      "26",
+      "110",
+      "18"
+    ],
+    "answer": 0,
+    "explanation": "$1*2^4 + 0*2^3 + 1*2^2 + 1*2^1 + 0*2^0 = 16 + 0 + 4 + 2 + 0 = 22$. (Nguồn: 02.pdf, trang 113 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Theo slide (02.pdf), đơn vị lưu trữ cơ bản (fundamental units for storage) duy trì trạng thái và là khối xây dựng cho bộ nhớ được gọi là ...... (chốt).",
+    "answer": "Latch",
+    "explanation": "Latches (chốt) duy trì trạng thái và là đơn vị cơ bản để lưu trữ, làm khối xây dựng cho bộ nhớ. (Nguồn: 02.pdf, trang 61 )"
+  },
+  {
+    "type": "msq",
+    "question": "Theo giáo trình Hennessy & Patterson, những thành phần nào sau đây là rào cản (hurdles) chính làm giảm hiệu năng xử lý song song?",
+    "options": [
+      "Tốc độ xung nhịp của CPU",
+      "Phần trăm tính toán tuần tự (không thể song song hóa) trong chương trình",
+      "Chi phí (độ trễ) giao tiếp/truyền thông giữa các bộ xử lý",
+      "Kích thước của bộ nhớ chính (RAM)"
+    ],
+    "answer": [1, 2],
+    "explanation": "Hai rào cản lớn nhất của xử lý song song là (1) phần tính toán tuần tự (giải thích bằng Định luật Amdahl) và (2) chi phí giao tiếp (độ trễ truy cập từ xa - remote access latency) giữa các bộ xử lý. (Nguồn: coareference.pdf, trang 202-203 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Định luật Amdahl (Amdahl's Law) được sử dụng để tính toán điều gì?",
+    "options": [
+      "Tốc độ truyền dữ liệu tối đa của bus",
+      "Sự tăng tốc (speedup) tổng thể có thể đạt được khi cải thiện một phần của hệ thống",
+      "Tỷ lệ lỗi bit (BER) trong truyền thông không dây",
+      "Mật độ transistor trên một vi mạch"
+    ],
+    "answer": 1,
+    "explanation": "Định luật Amdahl định nghĩa sự tăng tốc (speedup) có thể đạt được bằng cách sử dụng một chế độ thực thi nhanh hơn, bị giới hạn bởi phần trăm thời gian mà chế độ nhanh hơn đó có thể được sử dụng. (Nguồn: coareference.pdf, trang 39 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Một chương trình mất 100 giây để thực thi, trong đó 40 giây là tính toán FP. Nếu một cải tiến phần cứng làm cho các phép toán FP nhanh hơn 10 lần, tốc độ tổng thể của chương trình tăng lên bao nhiêu?",
+    "options": [
+      "1.56 lần",
+      "2.5 lần",
+      "10 lần",
+      "1.4 lần"
+    ],
+    "answer": 0,
+    "explanation": "Áp dụng Định luật Amdahl: $Fraction_{enhanced} = 40/100 = 0.4$. $Speedup_{enhanced} = 10$. $Speedup_{overall} = 1 / ((1 - 0.4) + (0.4 / 10)) = 1 / (0.6 + 0.04) = 1 / 0.64 = 1.5625$. (Nguồn: coareference.pdf, trang 40 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị thập phân của số Hexadecimal A0F_{16} là gì?",
+    "options": [
+      "2575",
+      "1615",
+      "4111",
+      "25615"
+    ],
+    "answer": 0,
+    "explanation": "$A * 16^2 + 0 * 16^1 + F * 16^0 = 10 * 256 + 0 + 15 * 1 = 2560 + 15 = 2575$. (Nguồn: 02.pdf, trang 140 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Với 8 bit, phạm vi biểu diễn của số nguyên không dấu (unsigned integer) là gì?",
+    "options": [
+      "0 đến 255",
+      "-128 đến 127",
+      "0 đến 256",
+      "-127 đến 128"
+    ],
+    "answer": 0,
+    "explanation": "Với K bit, phạm vi số không dấu là từ 0 đến $2^K - 1$. Với K=8, phạm vi là 0 đến $2^8 - 1 = 256 - 1 = 255$. (Nguồn: 02.pdf, trang 115 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Biểu diễn số -18_{10} trong hệ bù 2 (2's complement) 8-bit là gì?",
+    "options": [
+      "11101110",
+      "10010010",
+      "00010010",
+      "11101101"
+    ],
+    "answer": 0,
+    "explanation": "Bước 1: Chuyển 18 sang 8-bit nhị phân: 00010010. Bước 2: Đảo bit (1's complement): 11101101. Bước 3: Cộng 1 (2's complement): 11101101 + 1 = 11101110. (Nguồn: 02.pdf, trang 183 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo giáo trình (coareference.pdf), phương trình hiệu năng CPU cơ bản là gì?",
+    "options": [
+      "CPU Time = (IPC * Cycles) / Clock Rate",
+      "CPU Time = Instruction Count * CPI * Clock Cycle Time",
+      "CPU Time = Instruction Count / MIPS",
+      "CPU Time = (Miss Rate * Miss Penalty) + Hit Time"
+    ],
+    "answer": 1,
+    "explanation": "CPU Time = Số lệnh * Số chu kỳ mỗi lệnh (CPI) * Thời gian chu kỳ xung nhịp (Clock Cycle Time). (Nguồn: coareference.pdf, trang 42 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Theo giáo trình (coareference.pdf), mô hình bộ nhớ trong đó tất cả các bộ xử lý có độ trễ truy cập đồng nhất đến bộ nhớ được gọi là ...... (viết tắt UMA).",
+    "answer": "Uniform Memory Access",
+    "explanation": "Kiến trúc UMA (Uniform Memory Access) có một bộ nhớ vật lý duy nhất với quan hệ đối xứng với tất cả các bộ xử lý và độ trễ truy cập đồng nhất. (Nguồn: coareference.pdf, trang 200 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong kiến trúc pipeline 5 tầng cổ điển (IF, ID, EX, MEM, WB), nguy cơ (hazard) xảy ra khi một lệnh cố gắng đọc một thanh ghi trước khi lệnh trước đó ghi vào nó được gọi là gì?",
+    "options": [
+      "Nguy cơ cấu trúc (Structural Hazard)",
+      "Nguy cơ điều khiển (Control Hazard)",
+      "Nguy cơ Đọc sau Ghi (Read After Write - RAW)",
+      "Nguy cơ Ghi sau Đọc (Write After Read - WAR)"
+    ],
+    "answer": 2,
+    "explanation": "Nguy cơ RAW (Read After Write) xảy ra khi lệnh j cố gắng đọc nguồn trước khi lệnh i ghi vào nó, do đó j nhận sai giá trị cũ. Đây là loại nguy cơ phổ biến nhất và tương ứng với một phụ thuộc dữ liệu thực sự. (Nguồn: coareference.pdf, trang 71 )"
+  },
+  {
+    "type": "msq",
+    "question": "Theo giáo trình (coareference.pdf), những kỹ thuật nào sau đây được sử dụng để giảm chi phí do rẽ nhánh (branch costs) trong pipeline?",
+    "options": [
+      "Dự đoán rẽ nhánh (Branch Prediction)",
+      "Rẽ nhánh trễ (Delayed Branch)",
+      "Chuyển tiếp (Forwarding)",
+      "Đổi tên thanh ghi (Register Renaming)"
+    ],
+    "answer": [0, 1],
+    "explanation": "Giảm chi phí rẽ nhánh có thể thực hiện bằng dự đoán (prediction) và rẽ nhánh trễ (delayed branches). Chuyển tiếp và đổi tên thanh ghi dùng để xử lý nguy cơ dữ liệu. (Nguồn: coareference.pdf, trang 80, App A, trang A-22 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Kỹ thuật 'Loop Unrolling' (Trải vòng lặp) chủ yếu được sử dụng để làm gì?",
+    "options": [
+      "Giảm kích thước mã nguồn",
+      "Tăng cường tính song song mức lệnh (ILP) bằng cách giảm chi phí điều khiển vòng lặp và tạo nhiều lệnh độc lập hơn",
+      "Giảm tỷ lệ cache miss",
+      "Đơn giản hóa việc gỡ lỗi (debug)"
+    ],
+    "answer": 1,
+    "explanation": "Trải vòng lặp sao chép thân vòng lặp nhiều lần để giảm chi phí (overhead) của lệnh rẽ nhánh và tăng số lượng lệnh có thể được lập lịch (scheduled) để khai thác ILP. (Nguồn: coareference.pdf, trang 77-79 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Trong slide (02.pdf), biểu thức $A + \\overline{B} \\cdot C$ yêu cầu lập bảng chân lý (truth table) với bao nhiêu hàng (không kể hàng tiêu đề)?",
+    "answer": "8",
+    "explanation": "Một bảng chân lý liên quan đến n biến sẽ bao gồm $2^n$ hàng. Biểu thức này có 3 biến (A, B, C), do đó số hàng là $2^3 = 8$. (Nguồn: 02.pdf, trang 7 và 13 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo giáo trình (coareference.pdf), trong kiến trúc pipeline của MIPS, kỹ thuật 'forwarding' (còn gọi là 'bypassing') được sử dụng để giải quyết loại nguy cơ nào?",
+    "options": [
+      "Nguy cơ cấu trúc (Structural hazards)",
+      "Nguy cơ điều khiển (Control hazards)",
+      "Nguy cơ dữ liệu RAW (Read After Write)",
+      "Nguy cơ dữ liệu WAW (Write After Write)"
+    ],
+    "answer": 2,
+    "explanation": "Forwarding (hay bypassing) là một kỹ thuật phần cứng giải quyết nguy cơ dữ liệu RAW bằng cách chuyển kết quả từ thanh ghi pipeline (nơi nó được tạo ra) đến đầu vào ALU (nơi nó cần thiết) thay vì đợi nó được ghi vào thanh ghi. (Nguồn: coareference.pdf, App A, trang A-17 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong slide (01.pdf), mô hình kiến trúc máy tính cổ điển nào lưu trữ cả lệnh và dữ liệu trong cùng một bộ nhớ?",
+    "options": [
+      "Kiến trúc Harvard",
+      "Kiến trúc Von Neumann",
+      "Kiến trúc RISC",
+      "Kiến trúc CISC"
+    ],
+    "answer": 1,
+    "explanation": "Mặc dù không được nêu tên rõ ràng trong các trang được cung cấp của 01.pdf, mô hình máy tính cơ bản (Input, Output, Memory, Control, Datapath) nơi cả lệnh và dữ liệu đều ở trong 'Memory' (trang 6) là mô tả của kiến trúc Von Neumann. Kiến trúc Harvard (không được đề cập trong slide) sử dụng bộ nhớ riêng biệt. (Nguồn: Khái niệm chuẩn về Kiến trúc máy tính, suy luận từ 01.pdf, trang 6 )"
+  },
+  {
+    "type": "msq",
+    "question": "Theo giáo trình (coareference.pdf), các thành phần chính của một bộ vi xử lý (processor) hiện đại bao gồm những gì?",
+    "options": [
+      "Đơn vị logic số học (ALU)",
+      "Đường dữ liệu (Datapath) và Đơn vị điều khiển (Control)",
+      "Bộ nhớ chính (RAM)",
+      "Hệ thống Bus"
+    ],
+    "answer": [0, 1],
+    "explanation": "Một bộ xử lý (Processor) bao gồm Datapath (Đường dữ liệu) và Control (Điều khiển). Datapath chứa các đơn vị chức năng như ALU và các thanh ghi. RAM và Bus là các thành phần của máy tính nhưng nằm ngoài bộ xử lý trung tâm (CPU core). (Nguồn: 01.pdf, trang 6 và coareference.pdf, Chương 1 và Phụ lục A)"
+  },
+  {
+    "type": "mcq",
+    "question": "Giá trị của biểu thức Boolean $(A \\cdot B) + (A \\cdot \\overline{B})$ sau khi rút gọn là gì?",
+    "options": [
+      "A",
+      "B",
+      "1",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Sử dụng luật phân phối (distributive law): $(A \\cdot B) + (A \\cdot \\overline{B}) = A \\cdot (B + \\overline{B})$. Sử dụng luật nghịch đảo (inverse law): $(B + \\overline{B}) = 1$. Do đó, biểu thức trở thành $A \\cdot 1$. Sử dụng luật định danh (identity law): $A \\cdot 1 = A$. (Nguồn: 02.pdf, trang 14-15 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong giáo trình (coareference.pdf), công thức tính 'Die yield' (Tỷ lệ die tốt) phụ thuộc chủ yếu vào hai yếu tố nào?",
+    "options": [
+      "Tốc độ xung nhịp và số lõi",
+      "Mật độ lỗi (Defects per unit area) và Diện tích die (Die area)",
+      "Kích thước wafer và số lớp mặt nạ (masking levels)",
+      "Công suất tiêu thụ và vật liệu đóng gói"
+    ],
+    "answer": 1,
+    "explanation": "Công thức tính Die yield = $Wafer yield \\times (1 + (Defects per unit area \\times Die area) / \\alpha)^{-\\alpha}$. Trong đó, Mật độ lỗi và Diện tích die là các biến số chính ảnh hưởng đến tỷ lệ die tốt. (Nguồn: coareference.pdf, trang 22-23 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Một bộ xử lý có CPI cơ bản là 1.0. 30% lệnh là load/store, và tỷ lệ cache miss là 5%. Miss penalty là 100 chu kỳ. CPI tổng thể của bộ xử lý này là bao nhiêu?",
+    "options": [
+      "1.5",
+      "2.5",
+      "1.0",
+      "7.5"
+    ],
+    "answer": 1,
+    "explanation": "$CPI_{total} = CPI_{base} + (Tỷ lệ lệnh memory \\times Tỷ lệ miss \\times Miss penalty) = 1.0 + (0.30 \\times 0.05 \\times 100) = 1.0 + 1.5 = 2.5$. (Nguồn: coareference.pdf, trang 42 và App C, trang C-17 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Theo giáo trình (coareference.pdf), 3 loại nguy cơ (hazard) chính trong pipeline là: cấu trúc (structural), dữ liệu (data), và ...... (control).",
+    "answer": "điều khiển",
+    "explanation": "Ba loại nguy cơ (hazard) trong pipeline là: Nguy cơ cấu trúc (Structural hazards), Nguy cơ dữ liệu (Data hazards), và Nguy cơ điều khiển (Control hazards). (Nguồn: coareference.pdf, App A, trang A-11 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong bộ nhớ cache, nếu một khối (block) chỉ có thể được đặt vào một vị trí duy nhất trong cache, thì đó là loại cache gì?",
+    "options": [
+      "Fully associative (Liên kết toàn phần)",
+      "Set associative (Liên kết tập hợp)",
+      "Direct mapped (Ánh xạ trực tiếp)",
+      "Write-through (Ghi xuyên)"
+    ],
+    "answer": 2,
+    "explanation": "Trong cache ánh xạ trực tiếp (Direct mapped), mỗi khối chỉ có một vị trí duy nhất trong cache mà nó có thể được đặt vào, thường được xác định bằng (Địa chỉ khối) MOD (Số khối trong cache). (Nguồn: coareference.pdf, App C, trang C-7 )"
+  },
+  {
+    "type": "msq",
+    "question": "Theo giáo trình (coareference.pdf), các đặc điểm nào sau đây mô tả kiến trúc RISC (Reduced Instruction Set Computer)?",
+    "options": [
+      "Chỉ các lệnh load và store mới truy cập bộ nhớ.",
+      "Tất cả các lệnh ALU đều có thể truy cập toán hạng trong bộ nhớ.",
+      "Định dạng lệnh đơn giản và có độ dài cố định.",
+      "Số lượng thanh ghi GPR (General-Purpose Register) ít (ví dụ: 1 thanh ghi tích lũy)."
+    ],
+    "answer": [0, 2],
+    "explanation": "RISC (hay kiến trúc load-store) có các đặc điểm: (1) Chỉ load/store truy cập bộ nhớ, (2) Định dạng lệnh cố định và đơn giản. Kiến trúc register-memory (như 80x86) cho phép ALU truy cập bộ nhớ. RISC thường có nhiều GPR (ví dụ 32). (Nguồn: coareference.pdf, trang 9-10 và App B, trang B-3, B-6 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Hiện tượng 'False Sharing' (Chia sẻ giả) trong hệ thống đa xử lý (multiprocessor) xảy ra khi nào?",
+    "options": [
+      "Hai bộ xử lý cùng đọc một khối cache.",
+      "Một khối cache bị vô hiệu hóa (invalidated) do một bộ xử lý ghi vào một từ (word) trong khối đó, nhưng từ đó không được sử dụng bởi bộ xử lý kia.",
+      "Một khối cache được chia sẻ thực sự bởi nhiều bộ xử lý đang cùng truy cập và sửa đổi nó.",
+      "Dữ liệu bị hỏng trong quá trình truyền giữa các cache."
+    ],
+    "answer": 1,
+    "explanation": "False sharing xảy ra khi một khối bị vô hiệu hóa vì một từ trong khối được ghi, nhưng từ đó lại không phải là từ đang được đọc/ghi bởi bộ xử lý kia. Miss này sẽ không xảy ra nếu kích thước khối là một từ. (Nguồn: coareference.pdf, trang 218 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong tiêu chuẩn IEEE 754 cho số chấm động 32-bit (single precision), trường Exponent (số mũ) sử dụng bao nhiêu bit?",
+    "options": [
+      "1 bit",
+      "8 bit",
+      "23 bit",
+      "32 bit"
+    ],
+    "answer": 1,
+    "explanation": "Tiêu chuẩn IEEE 754 single precision 32-bit sử dụng 1 bit cho dấu (Sign), 8 bit cho số mũ (Exponent), và 23 bit cho phần định trị (Fraction/Significand). (Nguồn: coareference.pdf, trang 219 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Trong slide (01.pdf), tầng thấp nhất (chậm nhất và lớn nhất) trong hệ thống phân cấp bộ nhớ (Memory Hierarchy) là ...... (Tape).",
+    "answer": "Tape",
+    "explanation": "Hệ thống phân cấp bộ nhớ đi từ nhanh nhất/nhỏ nhất (CPU Registers) đến chậm nhất/lớn nhất (Tape). (Nguồn: 01.pdf, trang 19 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo giáo trình (coareference.pdf), chiến lược ghi cache 'Write-Back' nghĩa là gì?",
+    "options": [
+      "Dữ liệu được ghi đồng thời vào cả cache và bộ nhớ chính.",
+      "Dữ liệu chỉ được ghi vào cache. Dữ liệu chỉ được cập nhật xuống bộ nhớ chính khi khối cache đó bị thay thế.",
+      "Dữ liệu được ghi vào một bộ đệm (write buffer) trước khi ghi xuống bộ nhớ chính.",
+      "Một khối cache không được cấp phát (allocate) khi ghi miss."
+    ],
+    "answer": 1,
+    "explanation": "Write-back (ghi trả): Thông tin chỉ được ghi vào khối trong cache. Khối cache đã bị sửa đổi (dirty) chỉ được ghi lại vào bộ nhớ chính khi nó bị thay thế. (Nguồn: coareference.pdf, App C, trang C-10 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong RAID 5 (Block-interleaved distributed parity), dữ liệu và parity được lưu trữ như thế nào?",
+    "options": [
+      "Dữ liệu được nhân đôi (mirrored) trên hai đĩa.",
+      "Dữ liệu được striped, và một đĩa riêng biệt được dùng để lưu trữ toàn bộ parity.",
+      "Dữ liệu và khối parity được phân tán (distributed) trên tất cả các đĩa trong mảng.",
+      "Không có dự phòng (redundancy)."
+    ],
+    "answer": 2,
+    "explanation": "RAID 5 phân tán thông tin parity trên tất cả các đĩa, thay vì dùng một đĩa parity chuyên dụng như RAID 4, để loại bỏ điểm nghẽn (bottleneck) khi thực hiện các thao tác ghi nhỏ. (Nguồn: coareference.pdf, trang 364 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Theo giáo trình (coareference.pdf), kỹ thuật cho phép pipeline tiếp tục tìm nạp và thực thi các lệnh sau một lệnh bị miss cache (thay vì dừng toàn bộ) được gọi là cache ...... (nonblocking).",
+    "answer": "nonblocking",
+    "explanation": "Một nonblocking cache (hoặc lockup-free cache) cho phép cache dữ liệu tiếp tục cung cấp các cache hit trong khi đang xử lý một miss, giảm thiểu hình phạt miss hiệu quả. (Nguồn: coareference.pdf, trang 296-297 )"
+  },
+  {
+    "type": "msq",
+    "question": "Giải thuật Tomasulo (Tomasulo's Algorithm) sử dụng các thành phần phần cứng nào để giải quyết nguy cơ dữ liệu và thực thi ngoài thứ tự (out-of-order)?",
+    "options": [
+      "Các trạm chờ (Reservation Stations)",
+      "Bảng lịch sử rẽ nhánh (Branch History Table)",
+      "Bus dữ liệu chung (Common Data Bus - CDB)",
+      "Bộ đệm sắp xếp lại (Reorder Buffer - ROB)"
+    ],
+    "answer": [0, 2],
+    "explanation": "Giải thuật Tomasulo nguyên bản sử dụng các trạm chờ (Reservation Stations) để đệm toán hạng và Bus dữ liệu chung (CDB) để phát kết quả. Reorder Buffer (ROB) là một sự mở rộng sau này để hỗ trợ speculation và precise exceptions, không phải là phần cốt lõi của giải thuật Tomasulo gốc. (Nguồn: coareference.pdf, trang 92-94 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Một bộ xử lý có 32 thanh ghi GPR và 32 thanh ghi FPR. Trong một định dạng lệnh 32-bit (R-type) có 3 toán hạng thanh ghi (2 nguồn, 1 đích), cần bao nhiêu bit để mã hóa các trường thanh ghi này?",
+    "options": [
+      "15 bit",
+      "18 bit",
+      "16 bit",
+      "32 bit"
+    ],
+    "answer": 0,
+    "explanation": "Để định danh 32 thanh ghi (từ 0 đến 31), cần $log_2(32) = 5$ bit cho mỗi thanh ghi. Với 3 toán hạng thanh ghi (rs, rt, rd), tổng số bit cần là $3 \\times 5 = 15$ bit. (Nguồn: coareference.pdf, trang B-35 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo giáo trình (coareference.pdf), máy ảo (Virtual Machines - VM) KHÔNG mang lại lợi ích nào sau đây?",
+    "options": [
+      "Quản lý phần mềm (ví dụ: chạy nhiều HĐH hoặc các phiên bản HĐH khác nhau trên một máy).",
+      "Cách ly (Isolation) và bảo mật (Security) giữa các máy ảo khách (guest VM).",
+      "Quản lý phần cứng (ví dụ: di chuyển một VM đang chạy sang máy chủ vật lý khác).",
+      "Luôn luôn tăng hiệu năng thực thi của ứng dụng so với chạy trực tiếp trên phần cứng."
+    ],
+    "answer": 3,
+    "explanation": "VMs cung cấp lợi ích về quản lý phần mềm, cách ly/bảo mật, và quản lý phần cứng. Tuy nhiên, chúng gây ra một chi phí (overhead) về hiệu năng do quá trình ảo hóa, vì vậy chúng không làm tăng hiệu năng so với chạy native (trừ khi so sánh với một hệ thống được cấu hình rất kém). (Nguồn: coareference.pdf, trang 318 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong slide (02.pdf), một D-Flip Flop (chốt D kích hoạt bằng sườn) khác với D-Latch (chốt D kích hoạt bằng mức) ở điểm nào?",
+    "options": [
+      "D-Flip Flop lưu trữ dữ liệu khi tín hiệu Clock ở mức cao (logic 1).",
+      "D-Flip Flop lưu trữ dữ liệu chỉ tại thời điểm sườn lên (hoặc sườn xuống) của xung Clock.",
+      "D-Latch không cần tín hiệu Clock.",
+      "D-Flip Flop cần 2 đầu vào dữ liệu, D-Latch chỉ cần 1."
+    ],
+    "answer": 1,
+    "explanation": "D-Latch lưu trữ dữ liệu khi Clock ở một mức cố định (level triggered). D-Flip Flop là một D-Latch được kích hoạt bằng sườn (edge triggered), nó chỉ lưu trữ dữ liệu tại thời điểm chuyển tiếp của Clock (ví dụ: sườn lên từ 0->1). (Nguồn: 02.pdf, trang 61 và 65 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo giáo trình (coareference.pdf), kỹ thuật 'Blocking' (chia khối) trong tối ưu hóa trình biên dịch nhằm mục đích chính là gì?",
+    "options": [
+      "Giảm số lượng lệnh thực thi.",
+      "Tăng cường tính cục bộ về thời gian (temporal locality) và không gian (spatial locality) để giảm cache miss.",
+      "Đơn giản hóa việc tính toán địa chỉ.",
+      "Giảm kích thước mã nhị phân."
+    ],
+    "answer": 1,
+    "explanation": "Thuật toán chia khối (blocked algorithms) hoạt động trên các ma trận con (khối) để tối đa hóa các truy cập vào dữ liệu đã được tải vào cache trước khi chúng bị thay thế, qua đó khai thác tính cục bộ về thời gian và không gian. (Nguồn: coareference.pdf, trang 303-304 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Theo giáo trình (coareference.pdf), 'Die' là một vi mạch hình chữ nhật, được cắt ra từ một tấm tròn bằng silicon được gọi là ...... .",
+    "answer": "Wafer",
+    "explanation": "Một wafer (tấm silicon) được kiểm tra và cắt thành các vi mạch (dies) và sau đó được đóng gói (packaged). (Nguồn: coareference.pdf, trang 21 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Một bộ xử lý có công suất động (dynamic power) là 100W. Nếu nhà thiết kế giảm 20% điện áp (Voltage) và tăng 10% tần số (Frequency), công suất động mới sẽ là bao nhiêu?",
+    "options": [
+      "70.4W",
+      "88W",
+      "100W",
+      "64W"
+    ],
+    "answer": 0,
+    "explanation": "$Power_{dynamic} \\propto V^2 \\times F$. $Power_{new} = (V \\times 0.8)^2 \\times (F \\times 1.1) = (V^2 \\times 0.64) \\times (F \\times 1.1) = (V^2 \\times F) \\times (0.64 \\times 1.1) = Power_{old} \\times 0.704$. $100W \\times 0.704 = 70.4W$. (Nguồn: coareference.pdf, trang 18 )"
+  },
+  {
+    "type": "msq",
+    "question": "Theo giáo trình (coareference.pdf), các đặc điểm của kiến trúc MIMD (Multiple Instruction, Multiple Data) là gì?",
+    "options": [
+      "Một lệnh duy nhất được thực thi bởi nhiều bộ xử lý trên các luồng dữ liệu khác nhau.",
+      "Mỗi bộ xử lý tìm nạp (fetch) luồng lệnh của riêng nó.",
+      "Mỗi bộ xử lý hoạt động trên luồng dữ liệu của riêng nó.",
+      "Chỉ có một đơn vị điều khiển (Control Unit) cho tất cả các bộ xử lý."
+    ],
+    "answer": [1, 2],
+    "explanation": "MIMD: Nhiều luồng lệnh, nhiều luồng dữ liệu. Mỗi bộ xử lý tìm nạp lệnh riêng và hoạt động trên dữ liệu riêng. SIMD mới là một lệnh cho nhiều dữ liệu và có 1 đơn vị điều khiển. (Nguồn: coareference.pdf, trang 197 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Trong tiêu chuẩn IEEE 754 64-bit (double precision), số mũ (exponent) được lưu trữ dưới dạng 'biased' (thiên vị). Giá trị thiên vị (bias) này là bao nhiêu?",
+    "options": [
+      "127",
+      "1023",
+      "255",
+      "64"
+    ],
+    "answer": 1,
+    "explanation": "Tiêu chuẩn IEEE 754 sử dụng biểu diễn thiên vị cho số mũ. Mức thiên vị (Bias) là 127 cho single precision (32-bit) và 1023 cho double precision (64-bit). (Nguồn: coareference.pdf, trang 219 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo giáo trình (coareference.pdf), giao thức đảm bảo sự nhất quán cache (cache coherence protocol) nào yêu cầu mỗi cache 'lắng nghe' (snoop) các truy cập bus từ các cache khác?",
+    "options": [
+      "Giao thức dựa trên thư mục (Directory-based)",
+      "Giao thức dựa trên lắng nghe (Snooping)",
+      "Giao thức ghi cập nhật (Write-update)",
+      "Giao thức ghi xuyên (Write-through)"
+    ],
+    "answer": 1,
+    "explanation": "Giao thức Snooping dựa trên việc tất cả các bộ điều khiển cache theo dõi hoặc 'lắng nghe' (snoop) trên phương tiện quảng bá (bus) để xác định xem chúng có bản sao của khối đang được yêu cầu hay không. (Nguồn: coareference.pdf, trang 208 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Một hệ thống I/O nhận trung bình 100 yêu cầu/giây. Thời gian phục vụ trung bình cho mỗi yêu cầu là 8ms. Mức độ sử dụng (utilization) của máy chủ I/O là bao nhiêu?",
+    "options": [
+      "80%",
+      "12.5%",
+      "100%",
+      "8%"
+    ],
+    "answer": 0,
+    "explanation": "Áp dụng Lý thuyết hàng đợi (Queuing Theory): $Server utilization = Arrival rate \\times Time_{server}$. $Server utilization = 100 req/s \\times 0.008 s/req = 0.8$, hay 80%. (Nguồn: coareference.pdf, trang 381 )"
+  },
+  {
+    "type": "msq",
+    "question": "Theo giáo trình (coareference.pdf), các đặc điểm của '3C's' (ba chữ C) gây ra cache miss là gì?",
+    "options": [
+      "Compulsory (Bắt buộc)",
+      "Capacity (Dung lượng)",
+      "Conflict (Xung đột)",
+      "Coherence (Nhất quán)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Ba chữ C cổ điển của cache miss là: Compulsory (miss lần đầu), Capacity (cache quá nhỏ để chứa tất cả dữ liệu cần thiết), và Conflict (do giới hạn về vị trí đặt khối trong cache). Coherence (nhất quán) là chữ C thứ tư, nhưng thường được xét riêng trong ngữ cảnh đa xử lý. (Nguồn: coareference.pdf, App C, trang C-22 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo slide (01.pdf), thành phần nào sau đây KHÔNG thuộc về 'Input/Output'?",
+    "options": [
+      "Màn hình (Display)",
+      "Đường dữ liệu (Datapath)",
+      "Chuột (Mouse)",
+      "Ổ đĩa cứng (Hard disk)"
+    ],
+    "answer": 1,
+    "explanation": "Input/Output bao gồm các thiết bị giao diện người dùng (Màn hình, bàn phím, chuột), thiết bị lưu trữ (Ổ cứng, CD/DVD, flash), và card mạng. Datapath là một phần của Bộ xử lý (Processor). (Nguồn: 01.pdf, trang 6 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Theo giáo trình (coareference.pdf), một ..... (Hypervisor) là phần mềm hỗ trợ máy ảo (VM), tạo ra ảo ảnh rằng người dùng có toàn bộ máy tính cho riêng mình.",
+    "answer": "Virtual Machine Monitor (VMM)",
+    "explanation": "Phần mềm hỗ trợ máy ảo được gọi là Virtual Machine Monitor (VMM) hoặc hypervisor. (Nguồn: coareference.pdf, trang 318 )"
+  },
+  {
+    "type": "mcq",
+    "question": "Theo giáo trình (coareference.pdf), kỹ thuật 'Simultaneous Multithreading' (SMT) cho phép điều gì?",
+    "options": [
+      "Chạy nhiều máy ảo trên một CPU.",
+      "Phân phối một luồng (thread) trên nhiều lõi (core).",
+      "Khai thác song song mức luồng (TLP) và song song mức lệnh (ILP) trên cùng một lõi xử lý.",
+      "Chuyển đổi luồng chỉ khi xảy ra cache miss L2."
+    ],
+    "answer": 2,
+    "explanation": "SMT là một biến thể của multithreading sử dụng tài nguyên của một bộ xử lý đa phát hành (multiple-issue), lập lịch động (dynamically scheduled) để khai thác TLP (Thread-Level Parallelism) cùng lúc nó khai thác ILP (Instruction-Level Parallelism). (Nguồn: coareference.pdf, trang 173 )"
+  },
+  {
+    "type": "fitb",
+    "question": "Theo giáo trình (coareference.pdf), RAID 1 còn được gọi là ...... (Mirroring), trong đó dữ liệu được sao chép hoàn toàn sang một đĩa khác.",
+    "answer": "Mirroring",
+    "explanation": "RAID 1, còn được gọi là mirroring (phản chiếu) hoặc shadowing (tạo bóng), có hai bản sao của mọi mẩu dữ liệu. (Nguồn: coareference.pdf, trang 362 )"
+  }
+]
